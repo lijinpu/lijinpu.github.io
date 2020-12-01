@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Jinpu Li">
+
+
+    <meta name="subtitle" content="李金璞的个人主页">
+
+
+    <meta name="description" content="清华大学社会科学学院在读本科生">
+
+
+
+<title>【笔记】R语言与数据分析入门 | Jinpu Li</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">金璞的个人主页</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">金璞的个人主页</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">【笔记】R语言与数据分析入门</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Jinpu Li</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">十二月 1, 2020&nbsp;&nbsp;12:00:00</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h2 id="R语言教程-王晓宁"><a href="#R语言教程-王晓宁" class="headerlink" title="R语言教程 王晓宁"></a>R语言教程 王晓宁</h2><h4 id="1-R语言基本操作"><a href="#1-R语言基本操作" class="headerlink" title="1. R语言基本操作"></a>1. R语言基本操作</h4><ul>
+<li>软件安装与编程基本操作</li>
+<li>读取、分析数据，数据可视化</li>
+<li>R script与R markdown</li>
+</ul>
+<h5 id="1-0-概述"><a href="#1-0-概述" class="headerlink" title="1.0 概述"></a>1.0 概述</h5><ul>
+<li><p>R Package</p>
+<ul>
+<li>数据分析：dplyr; data.table</li>
+<li>画图：ggplot2</li>
+<li>回归分析：leaps; glm</li>
+<li>机器学习：glmnet; randomForrest; tree; keras</li>
+</ul>
+</li>
+<li><p>开源的问题</p>
+<ul>
+<li><p>稳定性：重启？</p>
+</li>
+<li><p>准确性：学术论文还是找stata</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="1-1-R的安装与介绍"><a href="#1-1-R的安装与介绍" class="headerlink" title="1.1 R的安装与介绍"></a>1.1 R的安装与介绍</h5><ul>
+<li>R Studio界面<ul>
+<li>R script：写代码</li>
+<li>R markdown：输出格式、做笔记</li>
+</ul>
+</li>
+<li>输出代码<ul>
+<li>按键：<code>Ctrl+Enter</code></li>
+<li><code>[ ]</code>：代表第几个</li>
+<li><code>= or &lt;-</code> : 赋值</li>
+</ul>
+</li>
+<li>向量<ul>
+<li><code>x = c(a, b, c)</code></li>
+<li>切片：<code>x[2]</code> <strong>注意：这里的切片和python不同！！！R的1就是1</strong></li>
+</ul>
+</li>
+<li><strong>数据框data.frame</strong><ul>
+<li>最重要的数据结构</li>
+<li>主要是2维数据</li>
+<li>也可以包括3、4维</li>
+<li><strong>调取数据</strong>：<code>data(&quot;数据名称&quot;)</code></li>
+<li><strong>查看数据</strong>：<code>View(数据名称)</code><ul>
+<li>注：有没有引号！！！</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="1-2-循环"><a href="#1-2-循环" class="headerlink" title="1.2 循环"></a>1.2 循环</h5><ul>
+<li><p><strong>for循环</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">z = <span class="number">1</span></span><br><span class="line"><span class="keyword">for</span>(i <span class="keyword">in</span> <span class="number">1</span>:<span class="number">20</span>)&#123;</span><br><span class="line">	z = z*i</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>向量与步数</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">z = <span class="number">1</span></span><br><span class="line">my_factorial =c() <span class="comment">#生成空向量</span></span><br><span class="line"><span class="keyword">for</span> (i <span class="keyword">in</span> <span class="number">1</span>:<span class="number">20</span>)&#123;</span><br><span class="line">    z = z*i</span><br><span class="line">    my_factorial = c(my_factorial, z)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>注：<ul>
+<li><code>1：20</code>代表c(1,2,…,20)</li>
+<li><code>seq(from = 1, to = 20, by =1)</code>是一种等价方法</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="1-3-函数"><a href="#1-3-函数" class="headerlink" title="1.3 函数"></a>1.3 函数</h5><ul>
+<li><p><strong>常用函数</strong></p>
+</li>
+<li><p>seq() #序列向量</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- seq(from = <span class="number">1</span>, to =<span class="number">20</span>, by =<span class="number">1</span>) <span class="comment">#按公差</span></span><br><span class="line">- seq(from =<span class="number">1</span>, to =<span class="number">200</span>, length.out =<span class="number">77</span>) <span class="comment">#按项数</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>length() #长度</li>
+<li>sum() #求和</li>
+<li>mean() #平均数 注：<code>mean(c(1,2,3))</code></li>
+<li>rep(0, times = 40) #生成一串重复的数字 rep(c(1,2,3), times = 40) #生成一串重复的向量 rep(c(1,2,3), each = 40) #生成的是1，1，……2，2，……，3，3……</li>
+<li>print(“hello”) #打印</li>
+</ul>
+</li>
+<li><p>paste(“Tom”, “and”,”jerry”, sep = “ “) #<strong>文本合并函数</strong></p>
+</li>
+<li><p><strong>编写自定义函数</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#例如</span></span><br><span class="line">dayin_jiecheng = <span class="keyword">function</span>(x)&#123;</span><br><span class="line">    z = <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span>(i <span class="keyword">in</span> <span class="number">1</span>:x)&#123;</span><br><span class="line">        z = z*i</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>(z) <span class="comment">#返回的是因变量</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h5 id="1-4-程序的逻辑"><a href="#1-4-程序的逻辑" class="headerlink" title="1.4 程序的逻辑"></a>1.4 程序的逻辑</h5><ul>
+<li><p><strong>常用的比较符号</strong><code>&gt;, &lt;, &gt;=, &lt;=, ==</code></p>
+</li>
+<li><p><strong>且、或、非</strong> <code>&amp;, |, !</code></p>
+<ul>
+<li>注：&amp;的计算优先级高于|，写代码注意加括号</li>
+</ul>
+</li>
+<li><p><strong>逻辑判断函数</strong><code>which</code></p>
+<ul>
+<li>m = c(1,2,3,4,56,6,7,78,8): <code>which(m&gt;5)</code></li>
+<li>which.min(m) #最小</li>
+<li>which.max(m) #最大</li>
+</ul>
+</li>
+<li><p>逻辑判断指令：if和else</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 例</span></span><br><span class="line">jisuan_jine = <span class="keyword">function</span>(x)&#123;</span><br><span class="line">    <span class="keyword">if</span>(x&gt;<span class="number">100</span>)&#123;result = x-(x-<span class="number">100</span>)*<span class="number">0.5</span>&#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;result = x&#125;</span><br><span class="line">    <span class="keyword">return</span>(result)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>思考题：判断一个数是否为质数？</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">my_func = <span class="keyword">function</span>(x)&#123;</span><br><span class="line">  s = c()</span><br><span class="line">  <span class="keyword">for</span> (i <span class="keyword">in</span> <span class="number">2</span>:x)&#123;</span><br><span class="line">    z = x%%i</span><br><span class="line">    s = c(s,z)</span><br><span class="line">  &#125;</span><br><span class="line">  a = length(which(s!=<span class="number">0</span>))</span><br><span class="line">  <span class="keyword">if</span> (a ==length(s)-<span class="number">1</span>)&#123;r = <span class="string">&quot;该数是质数&quot;</span>&#125;</span><br><span class="line">  <span class="keyword">else</span>&#123;r = <span class="string">&quot;该数不是质数&quot;</span>&#125;</span><br><span class="line">  <span class="keyword">return</span>(r)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h5 id="1-5-用R读取数据"><a href="#1-5-用R读取数据" class="headerlink" title="1.5 用R读取数据"></a>1.5 用R读取数据</h5><ul>
+<li><strong>文件操作</strong><ul>
+<li>输入<code>getwd()</code></li>
+<li>更改工作地址<code>setwd(C:/.......)</code> #注：Windows系统一定要改成/</li>
+<li>获取工作地址里的文件信息<code>dir()</code></li>
+<li>创建新文件夹<code>dir.create(&quot;输入名称&quot;)</code></li>
+<li>删除文件夹<code>unlink(&quot;输入名称&quot;, recursive=TRUE)</code> #为删的干净，需要加comma后面一句</li>
+<li>创造新的R script文件 <code>file.create(&quot;name.R&quot;)</code></li>
+<li>删除文件<code>file.remove(&quot;name.R&quot;)</code></li>
+<li>查找”工作地址“里有没有某文件<code>file.exist(&quot;name.R&quot;)</code></li>
+<li>查看某文件的信息<code>file.info(&quot;name.R&quot;)</code></li>
+<li>重命名：<code>file.rename(from =&quot;name.R&quot;, to = &quot;newname.R&quot;)</code></li>
+</ul>
+</li>
+<li><strong>读取数据</strong><ul>
+<li>建议的格式：csv</li>
+<li><strong>读取数据：</strong><code>data = read.csv(&quot;name.csv&quot;, header = TRUE, stringsAsFactors = FALSE)</code><ul>
+<li>Header 是否读取标题</li>
+<li>stringsAsFactors字符串是否作为类别（不写R默认读取为类别）</li>
+<li>需要命名一个变量如<code>data</code></li>
+<li>万能代码：<code>data = read.table(&quot;car.txt&quot;, sep = &quot;\t&quot;, header = TRUE)</code><ul>
+<li>注：read.csv, 即sep = “,”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>观察数据</strong><code>View(data)</code><ul>
+<li>只看前五行<code>head(data,5)</code></li>
+<li>只看后五行<code>tail(data,5)</code></li>
+<li>查看数据的行、列<code>dim(data)</code></li>
+<li><strong>每一列数据</strong>的格式<code>str(data)</code></li>
+<li>数据的简单信息<code>summary(data)</code></li>
+</ul>
+</li>
+<li><strong>想要个别数据</strong><ul>
+<li>某行某列：<code>data[x,y]</code></li>
+<li>某行全部：<code>data[x,]</code></li>
+<li>5-10行：<code>data[5:10,]</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="1-6-分析数据（上）——dplyr"><a href="#1-6-分析数据（上）——dplyr" class="headerlink" title="1.6 分析数据（上）——dplyr"></a>1.6 分析数据（上）——dplyr</h5><ul>
+<li><p><strong>安装包</strong></p>
+<ul>
+<li><code>install.packages(&quot;dplyr&quot;)</code></li>
+</ul>
+</li>
+<li><p><strong>使用软件包</strong></p>
+<ul>
+<li><code>library(dplyr)</code> #注意：此处没有引号！！！</li>
+</ul>
+</li>
+<li><p><strong>数据管道pipe:</strong> <code>%&gt;%</code></p>
+<ul>
+<li>操作：ctrl+shift+M</li>
+<li>含义：计算机在等待下一步操作</li>
+</ul>
+</li>
+<li><p><strong>筛选</strong><code>filter()</code></p>
+<ul>
+<li><p>用法：可用于筛选并存储到新数据</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data_new = data %&gt;% filter(Horsepower &gt; <span class="number">400</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><strong>精确查找</strong><code>%in%</code></p>
+<ul>
+<li>A %in% B 指 所有符合B条件的A</li>
+</ul>
+</li>
+<li><p><strong>选择变量</strong><code>select()</code></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 例如</span></span><br><span class="line">data %&gt;% filter(Weight.lb.&gt;<span class="number">4000</span> &amp; EPA_Class %<span class="keyword">in</span>% c(<span class="string">&quot;suv4wd&quot;</span>)) %&gt;% select(Make.Model, Horsepower)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>排序</strong><code>arrange()</code></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">data %&gt;% arrange(Horsepower) <span class="comment">#从小到大排列</span></span><br><span class="line">data %&gt;% arrange(Horsepower, Weight.lb.) <span class="comment">#第一顺位，第二顺位</span></span><br><span class="line">data %&gt;% arrange(desc(Horsepower)) <span class="comment">#从大到小（逆序排列）</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>重命名</strong><code>rename()</code></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new_data = data %&gt;% rename(hp =Horsepwer) <span class="comment">#注意！！！此处生成的是新数据，需要找一个新变量！</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>新产生一列数据</strong><code>mutate()</code></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data %&gt;% mutate(weight.kg = Weight.lb.* <span class="number">0.454</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>分组运算</strong><code>group_by()</code> and <code>summarise()</code></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">data %&gt;% group_by(EPA_Class) %&gt;% summarise(mean(Horsepower)) </span><br><span class="line"><span class="comment"># 第一步：分组</span></span><br><span class="line"><span class="comment"># 第二步：对每一个组内的数据进行运算</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h5 id="1-7-分析数据（下）——data-table"><a href="#1-7-分析数据（下）——data-table" class="headerlink" title="1.7 分析数据（下）——data.table"></a>1.7 分析数据（下）——data.table</h5><ul>
+<li><p>package使用规则</p>
+<ul>
+<li>10MB内：Excel</li>
+<li>1GB内：dplyr</li>
+<li>1GB以上：data.table</li>
+</ul>
+</li>
+<li><p><strong>调整格式</strong>：使用<code>data.table</code>时需要把data.frame格式调整data.table格式</p>
+<ul>
+<li><p>方法一（不转换格式）：</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">data2 = fread(<span class="string">&#x27;Car04.txt&#x27;</span>, header = <span class="literal">TRUE</span>, stringAsfactors = <span class="literal">FALSE</span>)</span><br><span class="line"><span class="comment"># fread()函数读取速度更快，但是变量名称会变。</span></span><br><span class="line"><span class="comment"># 当变量名称里有括号时，需要用``引起来</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>方法二（转换格式）：</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">data2 = copy(data) <span class="comment">#拷贝数据</span></span><br><span class="line">setDT(data2) <span class="comment">#转换格式</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><strong>data.table的筛选方法</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data2[Horsepower &gt; <span class="number">400</span>]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>注：回顾下dplyr的筛选方法——pipe 与 filter()</li>
+</ul>
+<p>​     <code>data_new = data %&gt;% filter(Horsepower &gt; 400)</code></p>
+<ul>
+<li>总结：<ul>
+<li>与dplyr区别：没有pipe</li>
+<li>相同之处：新生成的数据也需要存储，要赋值给一个新函数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>data.table中的选择</strong></p>
+<p>例如：</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">data2[Horsepower &gt; <span class="number">400</span>][,list(Make.Model, Horsepower)]</span><br><span class="line"><span class="comment"># &quot;,&quot;表示所有行都保留</span></span><br><span class="line"><span class="comment"># []就是管道体系</span></span><br><span class="line"><span class="comment"># list()函数用来担任select()的角色【其中list可用.代替】，如：</span></span><br><span class="line">data2[Horsepower &gt;<span class="number">400</span>][,.(Make.Model, Horsepower)]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>data.table中的rename功能</strong></p>
+<ul>
+<li><p>在发挥select功能的同时可以改名！！！</p>
+</li>
+<li><p>也就是说，data.table里的<code>list()</code>函数间距select()和rename()功能</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data2[,.(model = Make.Model, hp = Horsepower)]</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><strong>data.table中的arrange功能</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">data2[order(Horsepower)] <span class="comment">#从小到大排列 </span></span><br><span class="line">data2[order(-Horsepower)] <span class="comment">#从大到小排列</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>data.table中的mutate功能</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">data2[,kg:=Weight.lb.*<span class="number">0.454</span>] <span class="comment"># :=指定义； 保留所有的行不变，定义一个新列增加到data2里</span></span><br><span class="line">data2[,kg:=<span class="literal">NULL</span>] <span class="comment">#删除一列</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>data.table中的分组运算功能</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data2[,list(avg_hp = mean(Horsepower)), by = EPA_Class]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>输出数据</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">write.csv(data2, file = <span class="string">&quot;sorted_csv&quot;</span>) <span class="comment">#文件保存在工作地址里，可使用getwd()获取工作地址</span></span><br><span class="line"><span class="comment">#节省内存 remove(data) </span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h5 id="1-8-绘制图表"><a href="#1-8-绘制图表" class="headerlink" title="1.8 绘制图表"></a>1.8 绘制图表</h5><ul>
+<li><p><strong>内置画图工具</strong></p>
+<ul>
+<li><p>plot() 函数：画散点图</p>
+<p><code>plot(data$Horsepower, data$Weight)</code></p>
+</li>
+<li><p>hist() 直方图</p>
+<p><code>hist(data$Horsepower)</code></p>
+</li>
+</ul>
+</li>
+<li><p><strong>强大的画图包</strong> <code>ggplot2</code></p>
+<ul>
+<li><p>优点：</p>
+<ul>
+<li>同样使用pipe，可和dplyr完美结合</li>
+<li>每一个pipe就是一个图层，just like photoshop</li>
+</ul>
+</li>
+<li><p><strong>画直方图</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">刚好是反的 </span><br><span class="line"><span class="comment"># 注意函数是ggplot()</span></span><br><span class="line"><span class="comment"># aes坐标</span></span><br><span class="line"><span class="comment"># geom_histogram() 直方图</span></span><br><span class="line"><span class="comment"># binwidth 箱宽</span></span><br><span class="line"><span class="comment"># dev.new() 设置图片浮窗</span></span><br><span class="line"><span class="comment"># dev.off() 关闭图片浮窗</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>画箱线图</strong></p>
+<ul>
+<li><p>功能：看多个变量的分布状态；看outliers</p>
+</li>
+<li><p>怎么看：中位数；25%分位数；75%分位数；1.5倍IQR</p>
+</li>
+<li><p>用法：</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">data %&gt;% ggplot(aes(x = EPA_Class, y = Horsepower)) + geom_boxplot()</span><br><span class="line"><span class="comment"># geom_boxplot 箱线图</span></span><br><span class="line"><span class="comment"># 需要两个坐标</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>增加图例、标题、颜色、线条等（见cheat sheet）</p>
+</li>
+</ul>
+</li>
+<li><p><strong>画散点图</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">data %&gt;% ggplot(aes(x = Weight.lb., y = Horsepower)) + geom_point()</span><br><span class="line"><span class="comment"># R语言中大小写非常重要！</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>画三维信息</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">data %&gt;% ggplot(aes(x = Weight.lb., y = Horsepower, color = MPG_City)) +geom_point()</span><br><span class="line"><span class="comment"># 通过颜色color表现第三维信息</span></span><br><span class="line"><span class="comment"># 也可以通过大小size = ***</span></span><br><span class="line"><span class="comment"># 如果第三维变量是离散变量，最好使用color = ***</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>分离不同类别的图像</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">data %&gt;% ggplot(aes(x = Weight.lb., y = Horsepower)) + geom_point() + facet_wrap(~EPA_Class)</span><br><span class="line"><span class="comment"># facet分割成并列的几个部分</span></span><br><span class="line"><span class="comment"># Wrap合并成一张图</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="1-9-R-script-与-R-markdown"><a href="#1-9-R-script-与-R-markdown" class="headerlink" title="1.9 R script 与 R markdown"></a>1.9 R script 与 R markdown</h5><ul>
+<li><p><strong>R script</strong></p>
+<ul>
+<li><p>使用dplyr和ggplot2中的<code>%&gt;%</code>，如：</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mean_violent_crime = crime.all %&gt;% </span><br><span class="line">  group_by(state) %&gt;% </span><br><span class="line">  summarise(mean.crime.rate = mean(violentcrimes.perpop, na.rm=<span class="literal">TRUE</span>), population=sum(population), n=n())</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><strong>R markdown</strong></p>
+<ul>
+<li><p>参考markdown语法</p>
+</li>
+<li><p>换行需要回车两次</p>
+</li>
+<li><p><code>knit</code>生成报告</p>
+</li>
+<li><p>关于<code>R Chunk</code>的一些注释</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">​```&#123;r setup, include=FALSE&#125;</span><br><span class="line">knitr::opts_chunk$set(echo = TRUE)</span><br><span class="line">​```</span><br><span class="line"><span class="comment"># r setup 表示使用R语言</span></span><br><span class="line"><span class="comment"># include=FALSE表示“不显示代码与结果”</span></span><br><span class="line"><span class="comment"># echo = TRUE 表示显示代码</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>实操：看cheat sheet</p>
+</li>
+<li><p>Latex: 打公式</p>
+<ul>
+<li>基本特征：<ul>
+<li>$$中间的部分是公式</li>
+<li>上标<code>^</code>，下标<code>_</code>，大括号内是整体。特殊符号<code>\alpha</code></li>
+<li>分数：<code>\frac&#123;&#125;&#123;&#125;</code></li>
+<li>积分：<code>\int</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="1-10-一些补充——China-map"><a href="#1-10-一些补充——China-map" class="headerlink" title="1.10 一些补充——China_map"></a>1.10 一些补充——China_map</h5><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">cities = c(beijing, shanghai, zhengzhou, wulumuqi, haerbin, xian, wuhan,</span><br><span class="line">           chengdu, lasa, chongqing, kunming, guangshen) <span class="comment">#这里面每一个变量都是一个向量</span></span><br><span class="line"><span class="comment"># as.data.frame函数：将变量整合成一个数据框（矩阵）</span></span><br><span class="line">mat.cities = as.data.frame(matrix(cities, ncol = <span class="number">4</span>, byrow = <span class="literal">T</span>), stringsAsFactors = <span class="literal">F</span>)</span><br><span class="line"><span class="comment"># 重命名变量的名称</span></span><br><span class="line">names(mat.cities) = c(<span class="string">&#x27;names&#x27;</span>, <span class="string">&#x27;lat&#x27;</span>, <span class="string">&#x27;long&#x27;</span>, <span class="string">&#x27;population&#x27;</span>)</span><br><span class="line"><span class="comment"># 改变数据类型 as.numeric(as.character())</span></span><br><span class="line">mat.cities$population = as.numeric(as.character(mat.cities$population)) / <span class="number">100</span></span><br><span class="line"><span class="comment"># 给图片加标题使用title()</span></span><br><span class="line">title(<span class="string">&#x27;Population&#x27;</span>)</span><br><span class="line"><span class="comment"># 用map()函数读取地图数据</span></span><br><span class="line">china &lt;- map(<span class="string">&quot;china&quot;</span>, plot = <span class="literal">F</span>)</span><br><span class="line"><span class="comment"># ggplot2画地图格式 show.legend表示是否画图例；alpha是透明度，2深、0.5浅；geom_point()画的是点；geom_text表示数据中的文本加到图里去</span></span><br><span class="line">ggplot() + </span><br><span class="line">  geom_path(data = china, aes(long, lat, group = group), color = <span class="string">&#x27;#FD9FA4&#x27;</span>, show.legend = <span class="literal">F</span>) + </span><br><span class="line">geom_point(data = mat.cities, aes(x = long, y = lat, size = population), alpha = <span class="number">2</span>, color = <span class="string">&#x27;#8BB6D6&#x27;</span>) +  </span><br><span class="line">geom_text(data = mat.cities, aes(x = long, y = lat, label = names), family = <span class="string">&quot;STHeiti&quot;</span>) + </span><br><span class="line"><span class="comment"># labs()写图的信息注释； x指横轴；y指纵轴；title指图片标题；size图例信息</span></span><br><span class="line">labs(x = <span class="string">&#x27;经度&#x27;</span>, y = <span class="string">&#x27;纬度&#x27;</span>, title = <span class="string">&#x27;中国十二个地区人口地图&#x27;</span>, size = <span class="string">&#x27;人口（百万）&#x27;</span>) </span><br><span class="line"><span class="comment"># 格式刷的功能，每次附上</span></span><br><span class="line">theme_bw() +</span><br><span class="line">  theme(panel.border = element_blank(),</span><br><span class="line">        text = element_text(family = <span class="string">&quot;STHeiti&quot;</span>),</span><br><span class="line">        plot.title = element_text(hjust = <span class="number">0.5</span>))</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h4 id="2-R语言回归"><a href="#2-R语言回归" class="headerlink" title="2. R语言回归"></a>2. R语言回归</h4><h5 id="2-0-概述"><a href="#2-0-概述" class="headerlink" title="2.0 概述"></a>2.0 概述</h5><ul>
+<li>概率统计基本知识</li>
+<li>线性回归：从基础到进阶</li>
+<li>机器学习初步：Lasso与脊回归</li>
+</ul>
+<h5 id="2-1-概率统计基本知识"><a href="#2-1-概率统计基本知识" class="headerlink" title="2.1 概率统计基本知识"></a>2.1 概率统计基本知识</h5><ul>
+<li><p>概率论基本知识</p>
+<ul>
+<li>先验概率VS后验概率<ul>
+<li>“平行宇宙”的思考方式（频率学派）</li>
+<li>贝叶斯学派（后验概率）</li>
+</ul>
+</li>
+<li>离散型分布VS连续型分布</li>
+<li>几个重要数字：68，95，99.7</li>
+<li>重要分布<ul>
+<li>正态分布</li>
+<li>t分布（n&gt;20时趋近正态分布）</li>
+<li>F分布: 比较两个正态分布的信息量的大小</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>统计基本知识</p>
+<ul>
+<li><p>本质：通过样本信息推断总体信息</p>
+</li>
+<li><p>过程：<strong>先假设总体信息，再用样本信息验证假设</strong>（hypothesis testing)</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-2-简单线性回归"><a href="#2-2-简单线性回归" class="headerlink" title="2.2 简单线性回归"></a>2.2 简单线性回归</h5><ul>
+<li><p><strong>查看直线是否贴合数据</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">plot(ad$TV, ad$sales)</span><br><span class="line"><span class="comment"># 画直线：sales = 0.095*TV, a是截距，b是斜率，y=a+bx</span></span><br><span class="line">abline(a = <span class="number">0</span>, b = <span class="number">0.095</span>, col = <span class="string">&#x27;red&#x27;</span>)</span><br><span class="line">abline(model1, col = <span class="string">&#x27;green&#x27;</span>) <span class="comment">#可以直接将线性模型当作一个量输入</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>高斯-马尔可夫定理</p>
+</li>
+<li><p><strong>使用R跑回归</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">model1 = lm(sales~TV, data = ad)</span><br><span class="line">summary(model1)</span><br><span class="line"><span class="comment">#lm: 线性模型</span></span><br><span class="line">data %&gt;% ggplot(aes(x=TV, y=Sales)) + geom_point() + geom_smooth(method = <span class="string">&quot;lm&quot;</span>, se = <span class="literal">F</span>, color = <span class="string">&quot;red&quot;</span>) <span class="comment">#使用ggplot2画图</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>提醒：需要验证模型的假设是否成立！</li>
+</ul>
+</li>
+<li><p><strong>线性模型三大假设：线性假设（GM1）、同方差假设（GM5）、正态假设（GM6）</strong></p>
+</li>
+<li><p><strong>将总体直线（或散点）和拟合线画在一起</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 第二行是画拟合线，使用geom_smooth()</span></span><br><span class="line">data1 %&gt;% ggplot(aes(x=x, y=y)) + geom_point() + ggtitle(<span class="string">&quot;Question 1.2iv Plot&quot;</span>) +</span><br><span class="line">  geom_smooth(method = <span class="string">&quot;lm&quot;</span>, se = <span class="literal">F</span>, color = <span class="string">&quot;red&quot;</span>) + </span><br><span class="line">  geom_abline(slope = <span class="number">1.2</span>, intercept = <span class="number">1</span>, color = <span class="string">&quot;blue&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p><strong>画残差分布图</strong></p>
+<p><code>plot(model1, 1)</code></p>
+<ul>
+<li><p>验证线性假设：红线（期望）基本在0线上下【均值是否为0】</p>
+</li>
+<li><p>验证同方差假设：残差的值应均匀落在x轴两侧【宽度是否一致】</p>
+</li>
+<li><p>验证正态性假设：因变量与残差应该服从正态分布——【Q-Q plot】, 看是否落在45°线上</p>
+<p><code>plot(model1, 2)</code></p>
+<p>或者：</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">plot(myfit1$fitted, myfit1$resid, main = <span class="string">&quot;Residual Plot&quot;</span>) <span class="comment">#plot(x轴,y轴)的格式</span></span><br><span class="line">abline(h=<span class="number">0</span>, lwd = <span class="number">2</span>, col = <span class="string">&quot;red&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>利用线性回归模型做预测</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">new = ad[<span class="number">1</span>,]</span><br><span class="line">new[<span class="number">2</span>] = <span class="number">100</span></span><br><span class="line">predict(model1, new, interval = <span class="string">&quot;prediction&quot;</span>, se.fit = <span class="literal">TRUE</span>, level = <span class="number">0.95</span>) <span class="comment">#注意此处是new不是new[2]，要把一行都输进去，而不是只输解释变量</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h5 id="2-3-多元线性回归"><a href="#2-3-多元线性回归" class="headerlink" title="2.3 多元线性回归"></a>2.3 多元线性回归</h5><ul>
+<li><p><strong>跑回归前——画图：有一个初步的印象</strong></p>
+<ul>
+<li><p><code>GGally</code>程序包</p>
+<ul>
+<li><strong>画多元解释变量的散点、频率和相关系数</strong></li>
+</ul>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ad %&gt;% select(TV, radio, newspaper, sales) %&gt;% ggpairs()</span><br><span class="line"><span class="comment"># 注意要导入ggplot2, dplyr, GGally</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><strong>多元回归的代码</strong></p>
+ <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">model2 = lm(sales~TV + radio + newspaper, data = ad)</span><br><span class="line">summary(model2)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>RSE: 残差标准差</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">myfit1_rse = sqrt(sum((myfit1$res)^<span class="number">2</span>)/(<span class="number">40</span>-<span class="number">2</span>)) <span class="comment">#res表示residual，残差</span></span><br><span class="line">myfit1_rse</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>置信区间</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">confint(myfit1, <span class="string">&quot;x&quot;</span>, level = <span class="number">0.95</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p><strong>Chow test:</strong> 新增自变量对于减少残差平方和的贡献【Q：如何找解释力最强的一组自变量？】</p>
+<ul>
+<li><p><code>car</code>包</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(car)</span><br><span class="line">Anova(model2)</span><br><span class="line"><span class="comment"># 看结果：各项表示，去掉或增加这个变量，对于结果的影响显著不显著</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><strong>呈现报告</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(jtools)</span><br><span class="line">export_summs(model1, model2, model3)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h5 id="2-4-广义线性模型"><a href="#2-4-广义线性模型" class="headerlink" title="2.4 广义线性模型"></a>2.4 广义线性模型</h5><ul>
+<li><p><strong>二次项</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model4 = lm(sales~TV + I(TV^<span class="number">2</span>), data = ad) <span class="comment">#I for isolated</span></span><br></pre></td></tr></table></figure>
+
+<p>注：区分统计学上的显著性（看统计量）&amp; 经济学上的显著性（看估计值）！</p>
+</li>
+<li><p><strong>画图</strong></p>
+<ul>
+<li><p><code>lines()</code>点动成线</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">plot(ad$TV, ad$sales) <span class="comment">#注意画图的格式是plot(x,y)，先x后y；回归的时候是先y后x</span></span><br><span class="line">cc =ad <span class="comment">#复制数据</span></span><br><span class="line">cc[,<span class="number">2</span>] = seq(<span class="number">0</span>,<span class="number">300</span>, length.out = <span class="number">200</span>) <span class="comment">#找到最小最大值范围后，取200个点【x轴】</span></span><br><span class="line">dd = predict(model4, cc) <span class="comment">#这就是所有的预测值【y轴】</span></span><br><span class="line">lines(cc[,<span class="number">2</span>],dd, col = <span class="string">&#x27;red&#x27;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><strong>交乘项</strong></p>
+<ul>
+<li><p>作用：捕捉自变量间的互补或替代效应</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model6 = lm(sales ~ TV + radio + I(TV^<span class="number">2</span>) + I(TV*radio), data =ad)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>==<strong>总结：回归诊断</strong>==</p>
+<ul>
+<li><p>总步骤</p>
+<ul>
+<li>第一步：观察数据：<code>ggpairs()</code></li>
+<li>第二步：多元线性模型，使用<code>Anova</code>筛选出有解释力的自变量</li>
+<li>第三步：观察残差分布图与Q-Q图，增加高次项与交乘项</li>
+</ul>
+</li>
+<li><p>如果三大假设出了问题怎么办？</p>
+<ul>
+<li><p>第一步：解决异方差性问题</p>
+<ul>
+<li><p>常用方法：<strong>变换因变量，比如对因变量求对数</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ad = ad %&gt;% mutate(Insales = log(sales))</span><br><span class="line">model7 =lm(Insales~TV + radio +I(TV^<span class="number">2</span>) + I(TV*radio), data = ad)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>第二步：解决线性问题</p>
+<ul>
+<li>常用方法：<strong>变换自变量，比如对于正U型可以增加二次项</strong></li>
+<li>思考：如果是倒U型呢？【也是增加二次项】</li>
+</ul>
+</li>
+<li><p>第三步：解决正态性问题</p>
+<ul>
+<li>常用方法：<strong>一般对自变量和因变量进行对数变换</strong></li>
+<li>思考：为什么取对数？【真实世界往往是正态+头部效益，而头部效益是指数级】</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>==<strong>常见的广义线性模型形式</strong>==</p>
+<ol>
+<li>加入平方项：$y = k_1x+k_2x^2+b$ 解释：$x$每增加1，y增加$k_1+2k_2x$, 增速在加快/放缓</li>
+<li>加入交乘项：$y = k_1x_1+k_2x_2+k_3x_1x_2+b$<ul>
+<li><strong>若$k_1$,$k_2$为正：</strong><ul>
+<li><strong>若$k_3$显著为正，$x_1$,$x_2$有互补作用；</strong></li>
+<li><strong>若$k_3$显著为负，$x_1$,$x_2$有替代作用；</strong></li>
+</ul>
+</li>
+<li>思考：其他6种情况呢？【分析方法：求偏导】</li>
+</ul>
+</li>
+<li>对数变换：对谁取了对数变换，谁的单位就解释成百分比的变化<ul>
+<li>$In(y)=kx+b$,  $x$增加1，$y$增加$100k%$</li>
+<li>$y = k*In(x)+b$, $x$增加$1%$, $y$增加$0.01k$</li>
+<li>$In(y) = k*In(x)+b$, $x$增加$1%$, $y$增加$k%$, “弹性”的概念</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p><strong>作业中的代码：from simulation</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">set.seed(<span class="number">1</span>) <span class="comment">#保证前后生成的随机数保持一致</span></span><br><span class="line">x &lt;- seq(<span class="number">0</span>, <span class="number">1</span>, length = <span class="number">40</span>)</span><br><span class="line">y &lt;- rnorm(<span class="number">40</span>, mean = <span class="number">0</span>, sd = <span class="number">2</span>) + <span class="number">1</span> + <span class="number">1.2</span>*x <span class="comment"># rnorm()生成正态分布的随机数</span></span><br><span class="line">data1 &lt;- as.data.frame(cbind(x,y)) <span class="comment">#cbind(x,y)将x、y横向合并</span></span><br><span class="line">data1 %&gt;% ggplot(aes(x=x, y=y)) + geom_point() + ggtitle(<span class="string">&quot;Question 1.1 Plot&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h5 id="2-5-预测力与模型选择"><a href="#2-5-预测力与模型选择" class="headerlink" title="2.5 预测力与模型选择"></a>2.5 预测力与模型选择</h5><ul>
+<li><p><strong>什么是好的模型？</strong></p>
+</li>
+<li><p><strong>查看数据结构</strong><code>str()</code></p>
+</li>
+<li><p><strong>描述数据</strong><code>summary()</code>：看看有没有缺失值</p>
+</li>
+<li><p><strong>清洗数据</strong>：去掉存在NA的数据</p>
+<ul>
+<li><p><code>is.na()</code>: 判断是否是NA</p>
+</li>
+<li><p>找出19列中的哪些行是NA：<code>which(is.na(Hitters[,19]))</code></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">drop = which(is.na(Hitters[,<span class="number">19</span>])) <span class="comment">#将这些命名为一个新的变量drop</span></span><br><span class="line">newhitters = Hitters[-drop,] <span class="comment">#扔掉这些行</span></span><br><span class="line">dim(newhitters) <span class="comment">#查看矩阵的行数、列数</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><strong>探索性数据分析（EDA）</strong></p>
+<ul>
+<li><p>画==频数直方图==</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(ggplot2)</span><br><span class="line">ggplot(newhitters,aes(x = Salary)) +</span><br><span class="line">geom_histogram(bins = <span class="number">40</span>, fill = <span class="string">&quot;red&quot;</span>) +</span><br><span class="line">ggtitle(<span class="string">&quot;Histogram of Salary&quot;</span>) +</span><br><span class="line">ylab(<span class="string">&quot;Frequency&quot;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>画==频率直方图==</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(ggplot2)</span><br><span class="line">ggplot(newhitters) +</span><br><span class="line">geom_histogram(aes(x = Salary, y =..density..),bins = <span class="number">40</span>, fill = <span class="string">&quot;blue&quot;</span>) +</span><br><span class="line">ggtitle(<span class="string">&quot;Histogram of Salary&quot;</span>) +</span><br><span class="line">ylab(<span class="string">&quot;Density&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>注：直方图分布图有一个特点：右斜（Right-skewed)——头部效应：右边有个长长的小尾巴</p>
+<p>处理方法：取对数</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">newhitters = newhitters%&gt;%mutate(Insalary = log(Salary))</span><br><span class="line"><span class="comment"># 不是正态分布但接近了。</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>==<strong>相关性热力图</strong>==——变量数量非常多时，看相关性的更==效率==的方法</p>
+<ul>
+<li><p>需要用到的包：<code>dplyr,ggplot2,tidyverse,reshape2</code></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">plotData &lt;- melt(cor(newhitters[sapply(newhitters, is.numeric)])) <span class="comment">#对原始数据只取数据格式的；cor()指相关系数;melt指存储成矩阵能接受的一种形式（anyway）</span></span><br><span class="line">ggplot(plotData, aes(x = Var1, y = Var2, fill = value)) + <span class="comment">#Var1，Var2来自于plotData，是固定的，不要动；fill=value也不要动，值越大颜色越深</span></span><br><span class="line">  geom_tile() + <span class="comment">#告诉系统要画相关系数热力图</span></span><br><span class="line">  ylab(<span class="string">&quot;&quot;</span>) +</span><br><span class="line">  xlab(<span class="string">&quot;&quot;</span>) +</span><br><span class="line">  scale_fill_gradient(low = <span class="string">&quot;#56B1F7&quot;</span>, high = <span class="string">&quot;#132B43&quot;</span>) + <span class="comment">#填充颜色的选项，浅蓝到深蓝</span></span><br><span class="line">  guides(fill = guide_legend(title = <span class="string">&#x27;Correlation&#x27;</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>==<strong>预测误差</strong>==</p>
+<ul>
+<li><p>$\frac{1}{n}\sum_{i=1}^n(y_i-y_i^`)^2$ #真实数据的值$-$使用模型预测的值</p>
+</li>
+<li><p>预测误差越小越好</p>
+</li>
+<li><p>两种测量预测误差的方法：直接法&amp;间接法</p>
+<ul>
+<li><p><strong>直接法：</strong>再随机收集一批新数据，看看模型在这些新数据中的预测情况</p>
+<ul>
+<li>缺点：收集新数据的成本太高</li>
+<li>解决<ul>
+<li>将已有的数据分成2部分，比如70个建模，30个预测检验</li>
+<li>交叉验证（cross validation）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>间接法</strong>：==找一个类似于$R^2$的统计量，用它来估算预测误差==</p>
+<ul>
+<li><p>常用的间接统计量</p>
+<ul>
+<li><p><strong>AIC</strong>：<strong>Mallow’s $C_p$</strong>: $C_p=\frac{1}{n}(SSR+2d\cdot\hat{\sigma}^2)$  </p>
+<ul>
+<li>注：<ul>
+<li>$n$是数据个数</li>
+<li>$d$自变量个数</li>
+<li>$\hat{\sigma}$是模型的均方误(mean squared error)，即summary()结果的最后一个部分</li>
+</ul>
+</li>
+<li>==<strong>$C_p$的两个性质：</strong>==</li>
+</ul>
+<ol>
+<li>随数据量增大，$C_p$会无限趋近于真实的预测误差</li>
+<li>$C_p$越小，模型误差越小，即预测精度越高<ul>
+<li><em>注意：我们不需要收集任何新数据</em></li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>    - **Bayesian Information Criterion(BIC): 贝叶斯信息标准**
+      - 贝叶斯方法：不存在概率学派声称的“客观概率”。所谓的概率是==主观臆断和后验数据的信息之和
+      - $BIC = \frac&#123;1&#125;&#123;n&#125;(SSR+k\cdot(ln(n))\cdot\hat&#123;\sigma&#125;^2)$
+        - 注：
+          - k是计算参数 = d+1
+        - BIC越小，模型预测能力越好</code></pre>
+<ul>
+<li><p>==<strong>模型选择</strong>==</p>
+<ul>
+<li><p>安装程序包<code>leaps</code></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">fit1 = regsubsets(Insalary~., newhitters, nvmax = <span class="number">20</span>, method = <span class="string">&quot;exhaustive&quot;</span>)</span><br><span class="line"><span class="comment"># Insalary~. 小数点表示把所有一次项都加进去</span></span><br><span class="line"><span class="comment"># 包含二次项 将Insalary~. 改成Insalary~.*.</span></span><br><span class="line"><span class="comment"># nvmax: number of variables maximum 在模型中最多加入多少自变量</span></span><br><span class="line"><span class="comment"># method 可赋3个值：&quot;exhaustive&quot;【穷举，结果更加科学准确】, &quot;forward&quot;【按解释能力最强到最差】, &quot;backward&quot;【按解释能力最差到最强】</span></span><br><span class="line">summary(fit1)$which  <span class="comment">#观察结果  其标准是：残差平方和最小</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>注：以上方法可以获得数个==局部最优==模型</p>
+</li>
+<li><p><strong>寻找全局最优模型</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">summary(fit1)$cp <span class="comment">#可以看到这数个局部最优模型中Cp的值</span></span><br><span class="line">summary(fit1)$bic <span class="comment">#可以看到这数个局部最优模型中BIC的值</span></span><br><span class="line"></span><br><span class="line">plot(summary(fit1)$cp, xlab = <span class="string">&quot;Number of Predictors&quot;</span>, ylab = <span class="string">&quot;Cp&quot;</span>, col = <span class="string">&quot;red&quot;</span>, type =<span class="string">&quot;p&quot;</span>, pch=<span class="number">16</span>) <span class="comment">#p指point散点图；pch=16是圆点，pch=8是星形</span></span><br><span class="line"></span><br><span class="line">plot(summary(fit1)$bic, xlab = <span class="string">&quot;Number of Predictors&quot;</span>, ylab = <span class="string">&quot;BIC&quot;</span>, col = <span class="string">&quot;blue&quot;</span>, type =<span class="string">&quot;p&quot;</span>, pch=<span class="number">16</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>注：$C_p$与$BIC$分别做标准时，选出的模型是不同的</p>
+<p>问：什么时候用哪个标准呢？</p>
+<p>答：==Elbow Rule==, <strong>观察那个地方是下降最明显的。就使用下降最明显附近的点。我们要找的是比上一个模型有很大改进，比下一个模型又没有差很多的模型</strong></p>
+<img src="image-20200217000400755.png" alt="image-20200217000400755" style="zoom:25%;" />
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<img src="image-20200217000437888.png" alt="image-20200217000437888" style="zoom:25%;" />
+
+
+
+<ul>
+<li>总结<ol>
+<li>目的：根据目前的的数据，找出最好的预测未来的模型</li>
+<li>潜在自变量图示分析：自变量少的时候用<code>ggpairs()</code>自变量多的时候用==相关性热力图==</li>
+<li>间接的预测能力标准：$C_p$和$BIC$</li>
+<li>如何找所有的局部最优</li>
+<li>从局部最优中如何找出全局最优</li>
+</ol>
+</li>
+</ul>
+<h5 id="2-6-LASSO-Least-Absolute-Shrinkage-and-Selection-Operator-【机器学习与模型筛选】"><a href="#2-6-LASSO-Least-Absolute-Shrinkage-and-Selection-Operator-【机器学习与模型筛选】" class="headerlink" title="2.6 LASSO (Least Absolute Shrinkage and Selection Operator)【机器学习与模型筛选】"></a>2.6 LASSO (Least Absolute Shrinkage and Selection Operator)【机器学习与模型筛选】</h5><ul>
+<li><p><strong>预测模型时遇到的问题</strong></p>
+<ul>
+<li>自变量数量太多，而数据个数又过少（少行多列）</li>
+<li>有没有办法进行数据降维，筛选出那些有意义的自变量</li>
+<li>==若想要成功跑回归，数据个数要大于自变量个数（维度的概念）==</li>
+</ul>
+</li>
+<li><p><strong>原理：</strong></p>
+<ul>
+<li>$min\sum_{i=1}^n(y_i-\beta_1X_{1i}-\beta_2X_{2i}-…-\beta_pX_pi)^2+\lambda\cdot(|\beta_1|+|\beta_2|+…+|\beta_p|)$</li>
+<li>平衡参数大小与残差平方和之间的关系</li>
+<li>找到最好的$\lambda$, 得到全局最优的模型</li>
+<li>LASSO会把“不那么有用的”自变量的系数压缩成0</li>
+<li>特点<ul>
+<li>$\lambda$很小的时候，接近线性回归模型</li>
+<li>$\lambda$很大的时候，所有系数都是0</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>安装程序包<code>glmnet</code>并给定一个$\lambda$值跑lasso</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Y = newhitters[,<span class="number">20</span>]</span><br><span class="line">X = model.matrix(Insalary~., data = newhitters)[,-<span class="number">1</span>] <span class="comment">#意味着删除第一列的截距项</span></span><br><span class="line">lasso1.10 = glmnet(X,Y, alpha = <span class="number">1</span>, lambda = <span class="number">10</span>) <span class="comment">#alpha = 1代表我们跑的是lasso模型</span></span><br><span class="line">coef(lasso1.10)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>批量生产具有多个不同值$\lambda$的lasso模型</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">lasso1.lambda = glmnet(X,Y, alpha =<span class="number">1</span>) <span class="comment">#不特意指定lambda的值,系统自动生成并储存99个lasso模型</span></span><br><span class="line">plot(<span class="number">1</span>:<span class="number">99</span>,lasso1.lambda$lambda) <span class="comment">#观察这些lambda的值</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>看自变量系数如何随$\lambda$变化而变化</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plot(lasso1.lambda)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>找出99个模型中最好的一个</strong></p>
+<ul>
+<li><p>最好=预测精度最高=预测误差最小</p>
+</li>
+<li><p>如何计算？<strong>直接法！</strong></p>
+</li>
+<li><p>最大程度利用数据的方法：<strong>Cross Validation</strong></p>
+<ul>
+<li><p>思路：比如共100数据，给定一个$\lambda$，90个来训练模型，剩下10个计算预测误差（要分别挑1-10，11-20,…,91-100这10组数据来计算预测误差，剩下90个数据训练模型，最后把这10组预测误差再做平均；<strong>即90个数据训练模型，而有100个数据来检验</strong>)</p>
+</li>
+<li><p>==保证结果可复制，需要控制随机数种子==<code>set.seed(1)</code></p>
+</li>
+<li><p>==<strong>LASSO交叉检验</strong>==</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">lasso1.cv = cv.glmnet(X,Y,alpha = <span class="number">1</span>, nfolds = <span class="number">10</span>)</span><br><span class="line">plot(lasso1.cv)</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<img src="image-20200217161251281.png" alt="image-20200217161251281" style="zoom:33%;" />
+
+<pre><code>      - 第一条竖线：MSE最小，全局最优 `lasso1.cv$lambda.min`
+      - 第二条竖线：一倍标准误：`lasso.cv$lambda.1se`  “奥卡姆剃刀原则”：世界本身是简单的，可以让渡一部分精度，去选一个更简单的模型</code></pre>
+<ul>
+<li><strong>LASSO的问题</strong><ul>
+<li>没有显著性</li>
+<li>结果是有偏的</li>
+</ul>
+</li>
+<li><strong>解决方法</strong><ul>
+<li><strong>relaxed LASSO</strong><ul>
+<li>思路：使用LASSO找出一组系数不为0的自变量后，再对这些自变量使用多元线性回归</li>
+<li>==即先用LASSO降维，而非直接作为预测模型==</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-7-脊回归与Elastic-Net"><a href="#2-7-脊回归与Elastic-Net" class="headerlink" title="2.7 脊回归与Elastic Net"></a>2.7 脊回归与Elastic Net</h5><ul>
+<li><p><strong>Elastic</strong> <strong>Net</strong></p>
+<p>$\frac{\sum_{i=1}^n(y_i-\beta_0-\beta_1X_{1i}-\beta_2X_{2i}-…-\beta_pX_{pi})^2}{2n}+\lambda\cdot{\frac{1-\alpha}{2}\sdot(\beta_1^2+\beta_2^2+…+\beta_p^2)+\alpha\cdot(|\beta_1|+|\beta_2|+…+|\beta_p|)}， 0\le\alpha\le1$</p>
+<ul>
+<li><p>LASSO: L1 Norm</p>
+</li>
+<li><p>脊回归：L2 Norm $\sum_{i=1}^n(y_i-\beta_0-\beta_1X_{1i}-\beta_2X_{2i}-…-\beta_pX_{pi})^2+\lambda\cdot(\beta_1^2+\beta_2^2+…+\beta_p^2)$</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lasso1.cv = cv.glmnet(X,Y,alpha = <span class="number">0</span>, nfolds = <span class="number">10</span>) <span class="comment">#alpha=0即为脊回归</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>脊回归不具有稀疏性，系数会等比例缩小，但不会缩小到0</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>提醒：</strong>==LASSO和脊回归对单位非常敏感==，普通线性回归对单位不敏感</p>
+</li>
+<li><p><strong>数据标准化</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(robustHD)</span><br><span class="line">standardize()</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h4 id="3-R语言高级功能"><a href="#3-R语言高级功能" class="headerlink" title="3. R语言高级功能"></a>3. R语言高级功能</h4><h5 id="3-0-概述"><a href="#3-0-概述" class="headerlink" title="3.0 概述"></a>3.0 概述</h5><ul>
+<li>Logistic回归与分类</li>
+<li>主成分分析</li>
+<li>API与网络爬虫</li>
+<li>文本分析与自然语言处理</li>
+<li>社会网络分析</li>
+</ul>
+<h5 id="3-1-logit回归-amp-分类"><a href="#3-1-logit回归-amp-分类" class="headerlink" title="3.1 logit回归&amp;分类"></a>3.1 logit回归&amp;分类</h5><ul>
+<li><p>因变量只有几个种类（最常见：0-1）</p>
+</li>
+<li><p><strong>Logistic模型</strong>：二分因变量训练</p>
+</li>
+<li><p><strong>logistic模型的本质</strong>：log odds $log\frac{P(A)}{1-P(A)}$</p>
+</li>
+<li><p>为什么？我们希望<strong>把因变量从二元结构变成整个实数轴</strong>，将二元结构转变为从0-1的概率</p>
+</li>
+<li><p>$log\frac{P(A)}{1-P(A)}=kx+b$      $P(A)=\frac{e^{kx+b}}{1+e^{kx+b}}$</p>
+</li>
+<li><p>模型的估算方法：<strong>最大似然估计</strong></p>
+</li>
+<li><p><strong>计算机实现代码</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">log.fit = glm(Y~X, data, family = binomial(logit))</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>==模型标准：AIC越小越好==</strong></li>
+<li>为什么结果中是z value？因为最大似然估计的一个前提是==数据是正态分布的==</li>
+</ul>
+</li>
+<li><p><strong>画图：箱线图</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">boxplot(fram_data$SBP~fram_data$Heart.Disease., ylab = <span class="string">&quot;SBP&quot;</span>, xlab = <span class="string">&quot;HD&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#更酷的画法</span></span><br><span class="line">plot(fram_data$SBP, fram_data$Heart.Disease., col =as.factor(fram_data$Heart.Disease.), xlab = <span class="string">&quot;SBP&quot;</span>, ylab = <span class="string">&quot;HD&quot;</span>)</span><br><span class="line"></span><br><span class="line">legend(<span class="string">&quot;topright&quot;</span>, legend = c(<span class="string">&quot;0&quot;</span>,<span class="string">&quot;1&quot;</span>), lty = c(<span class="number">1</span>,<span class="number">1</span>), lwd = c(<span class="number">2</span>,<span class="number">2</span>), col = unique(as.factor(fram_data$Heart.Disease.))) <span class="comment">#unique代表图例只用画一次</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#把点散开些，使用jitter() pch=4代表画出来是x</span></span><br><span class="line">plot(jitter(fram_data$Heart.Disease., factor = <span class="number">.5</span>)~fram_data$SBP,pch = <span class="number">4</span>,col =as.factor(fram_data$Heart.Disease.), xlab = <span class="string">&quot;SBP&quot;</span>, ylab = <span class="string">&quot;HD&quot;</span>)</span><br><span class="line"></span><br><span class="line">legend(<span class="string">&quot;topright&quot;</span>, legend = c(<span class="string">&quot;0&quot;</span>,<span class="string">&quot;1&quot;</span>), lty = c(<span class="number">1</span>,<span class="number">1</span>), lwd = c(<span class="number">2</span>,<span class="number">2</span>), col = unique(as.factor(fram_data$Heart.Disease.)))</span><br><span class="line"></span><br><span class="line">abline(v = <span class="number">230.2</span>, lwd = <span class="number">5</span>, col = <span class="string">&quot;blue&quot;</span>) <span class="comment">#v代表vertical，竖直</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>logit跑多元回归</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">log.fit1 = glm(Y~X_1 + X_2 + X_3, family = binomial(logit))</span><br><span class="line">summary(model2)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>模型选择问题</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(bestglm)</span><br><span class="line">fram_data.f &lt;- na.omit(fram_data) <span class="comment">#这个函数可以使NA所在的那一行直接被忽略掉，储存到新变量中</span></span><br><span class="line">Xy &lt;- model.matrix(Heart.Disease.~.+<span class="number">0</span>,fram_data.f) <span class="comment">#design matrix +0指不使用截距项</span></span><br><span class="line">Xy &lt;- data.frame(Xy,fram_data.f$Heart.Disease.) <span class="comment">#和因变量结合到一起，data.frame格式为data.frame(x,y)</span></span><br><span class="line">fit.all&lt;-bestglm(Xy, family = binomial, method = <span class="string">&quot;exhaustive&quot;</span>, IC = <span class="string">&quot;AIC&quot;</span>, nvmax = <span class="number">10</span>) <span class="comment">#nvmax指的是允许的自变量的最大个数</span></span><br><span class="line">fit.all$BestModels</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>对概率设置分界线，反推x的界限</strong>（具体方法是人为找一个$P(A)=t$，而后反求x值）并画在上述散点图中</p>
+<img src="image-20200217201519778.png" alt="image-20200217201519778" style="zoom:20%;" />
+
+<ul>
+<li><p><strong>犯两类错误</strong></p>
+<ul>
+<li><p>假阳性（$1-Specificity$)：实际是0，被我们归为1</p>
+</li>
+<li><p>真阳性($Sensitivity$)：实际是1，同时也被我们归为1</p>
+<ul>
+<li><p>真、假阳性会同增同减</p>
+</li>
+<li><p>二者的关系图叫： <strong>ROC Curve</strong></p>
+<ul>
+<li><pre><code class="R">library(pROC)
+log.fit2 = glm(Heart.Disease.~SBP, data = fram_data.f, family = binomial(logit))
+log.fit2.roc = roc(fram_data.f$Heart.Disease., log.fit2$fitted, plot = T, col = &quot;blue&quot;)
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">        &lt;img src&#x3D;&quot;image-20200217202619644.png&quot; alt&#x3D;&quot;image-20200217202619644&quot; style&#x3D;&quot;zoom:20%;&quot; &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">        - 注：</span><br><span class="line">          - 蓝色曲线下面的面积叫$AUC$，&#x3D;&#x3D;值越大，模型的预测能力越好&#x3D;&#x3D;</span><br><span class="line">          - ROC CURVE与上述的分界线无关</span><br><span class="line"></span><br><span class="line">- **如何确定&#x3D;&#x3D;合适的分界线（plot+elbow curve）&#x3D;&#x3D;**</span><br><span class="line"></span><br><span class="line">  &#96;&#96;&#96;R</span><br><span class="line">  #注意specificities&#x3D;1-变量roc</span><br><span class="line">  plot(log.fit2.roc$thresholds, 1-log.fit2.roc$specificities, col &#x3D; &quot;green&quot;, pch &#x3D; 16,</span><br><span class="line">      xlab &#x3D; &quot;Threshold on prob&quot;,</span><br><span class="line">      ylab &#x3D; &quot;False Positive&quot;,</span><br><span class="line">      main &#x3D; &quot;Thresholds vs. False Positive&quot;)</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<img src="image-20200217203555728.png" alt="image-20200217203555728" style="zoom:20%;" />
+</li>
+</ul>
+</li>
+<li><p>小结：机器学习分类过程</p>
+<ol>
+<li>确定两个类别</li>
+<li>Logit回归模型，并使用bestglm选出最好的几个模型</li>
+<li>计算AUC，使用AIC小、AUC大的模型</li>
+<li>挑选合适的分界线<ul>
+<li>思考：是不是只要加入新的自变量，模型的AUC一定会增大呢？【不正确，二者间没有必然关系】</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h5 id="3-2-主成分分析-Principal-Component-Analysis-与聚类"><a href="#3-2-主成分分析-Principal-Component-Analysis-与聚类" class="headerlink" title="3.2 主成分分析(Principal Component Analysis)与聚类"></a>3.2 主成分分析(Principal Component Analysis)与聚类</h5><ul>
+<li><p>使用主成分分析==给数据<strong>降维</strong>==（当有多个相似变量时，希望提取出“最大公约数”），用一个指标概括多个指标</p>
+</li>
+<li><p><strong>R内置画“两两散点图”的方法</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pairs(iqdata[,c(<span class="string">&quot;Word&quot;</span>,<span class="string">&quot;Parag&quot;</span>,<span class="string">&quot;Math&quot;</span>,<span class="string">&quot;Arith&quot;</span>)])</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>随机选50人的数据作为分析样本，并画图</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">set.seed(<span class="number">1</span>)</span><br><span class="line">iqsample &lt;- iqdata[sample(nrow(iqdata), <span class="number">50</span>, replace=<span class="literal">FALSE</span>), c(<span class="string">&quot;Word&quot;</span>,<span class="string">&quot;Parag&quot;</span>, <span class="string">&quot;Math&quot;</span>, <span class="string">&quot;Arith&quot;</span>)] <span class="comment">#sample()函数</span></span><br><span class="line"><span class="comment">#找两个变量看相关性</span></span><br><span class="line">plot(iqsample$Word, iqsample$Parag, pch = <span class="number">16</span>)</span><br><span class="line">abline(<span class="number">1.7</span>, <span class="number">0.3577</span>, lwd=<span class="number">4</span>, col=<span class="string">&quot;red&quot;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如何用一个变量代表两个变量？【**==做投影：提取第一主成分==**】</p>
+<ul>
+<li><em>找到一条线，距离这些点最近。每个点的投影（将直线看作数轴，向直线作垂线）即是新的变量</em></li>
+<li>要找到“数轴”的0点（均值）和单位长度（标准差）——将二维数据变成一维数据<ul>
+<li><strong>注：</strong><ul>
+<li><strong>N维数据最多可以提取出N个主成分</strong></li>
+<li>第一主成分（最核心的趋势，例如：总成绩）与第二主成分（例如：成绩差值）是<strong>正交的</strong>（垂直），两个部分完全不相关</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>代码实现主成分分析</strong> prcomp()函数</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">pc.1 &lt;- prcomp(iqsample[, c(<span class="string">&quot;Word&quot;</span>,<span class="string">&quot;Parag&quot;</span>)])</span><br><span class="line">pc.1$rotation <span class="comment"># weights 查看主成分占各自变量的比例</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#注意：标准化后会得到正交的矩阵</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#标准化实现（一般都要标准化）：</span></span><br><span class="line">pc.1 &lt;- prcomp(iqsample[, c(<span class="string">&quot;Word&quot;</span>,<span class="string">&quot;Parag&quot;</span>)], scale = <span class="literal">TRUE</span>)</span><br><span class="line">pc.1$rotation  <span class="comment"># weights</span></span><br><span class="line"></span><br><span class="line">pc.1$x <span class="comment"># pc scores 查看每个样本点的主成分的值</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>新的主成分：principal component score</li>
+</ul>
+</li>
+<li><p>实例分析</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># pca of all subjects</span></span><br><span class="line">pca.all &lt;- prcomp(iqdata[,  c(<span class="number">11</span>:<span class="number">20</span>)], scale.=<span class="literal">TRUE</span>)</span><br><span class="line">pca.all$rotation</span><br><span class="line"></span><br><span class="line"><span class="comment"># gender role</span></span><br><span class="line">prop.table(table(iqdata$Gender))  <span class="comment"># 查看二值变量的比例</span></span><br><span class="line"><span class="comment">#挑选前2个主成分，颜色用性别这个类别变量填充【回想心脏病案例】</span></span><br><span class="line">plot(pca.all$x[, <span class="number">1</span>], pca.all$x[, <span class="number">2</span>], col=as.factor(iqdata$Gender),</span><br><span class="line">     xlim=c(-<span class="number">10</span>, <span class="number">10</span>), ylim=c(-<span class="number">10</span>, <span class="number">10</span>),</span><br><span class="line">     xlab=<span class="string">&quot;PC1&quot;</span>, ylab=<span class="string">&quot;PC2&quot;</span>)</span><br><span class="line">abline(v=<span class="number">0</span>, h=<span class="number">0</span>) <span class="comment">#增加水平的、过原点的直线&amp;竖直的、过原点的直线</span></span><br><span class="line"><span class="comment"># levels的作用类似于unique(), 将多个提取出来各取一个 </span></span><br><span class="line">legend(<span class="string">&quot;bottomright&quot;</span>, legend=c(as.character(levels(as.factor(iqdata$Gender)))),</span><br><span class="line">       lty=c(<span class="number">1</span>,<span class="number">1</span>), lwd=c(<span class="number">2</span>,<span class="number">2</span>), col=as.factor(iqdata$Gender))</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h5 id="3-3-网页爬虫"><a href="#3-3-网页爬虫" class="headerlink" title="3.3 网页爬虫"></a>3.3 网页爬虫</h5><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(rvest)</span><br><span class="line">lego_movie = html(<span class="string">&quot;http://www.imdb.com/title/tt1490017&quot;</span>)</span><br><span class="line">lego_movie %&gt;% </span><br><span class="line">html_node(<span class="string">&quot;strong span&quot;</span>) %&gt;% <span class="comment">#定位位置</span></span><br><span class="line">html_text() %&gt;%</span><br><span class="line">as.numeric()</span><br><span class="line"></span><br><span class="line">Sys.sleep(<span class="number">5</span>) <span class="comment">#让R休息5秒</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="3-4-利用API（应用程序接口）获取数据"><a href="#3-4-利用API（应用程序接口）获取数据" class="headerlink" title="3.4 利用API（应用程序接口）获取数据"></a>3.4 利用API（应用程序接口）获取数据</h5><p><code>大量可用API汇总：https://github.com/public-apis/public-apis</code></p>
+<h5 id="3-5-正则表达式：适合清理数据"><a href="#3-5-正则表达式：适合清理数据" class="headerlink" title="3.5 正则表达式：适合清理数据"></a>3.5 正则表达式：适合清理数据</h5><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">\\d <span class="comment">#数码【0-9】</span></span><br><span class="line">[[:alpha:]] <span class="comment">#字母【A-z】,每次抓取一位</span></span><br><span class="line">\\w <span class="comment">#数码+字母</span></span><br><span class="line">\\s <span class="comment">#空格</span></span><br><span class="line">. <span class="comment">#除了\n以外全部</span></span><br><span class="line">^ <span class="comment">#开头</span></span><br><span class="line">$ <span class="comment">#定位到结尾</span></span><br><span class="line">+ <span class="comment">#至少抓一次，例如\\w+</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>常用函数：</strong><ul>
+<li>检查是否存在某个字符串：<code>str_detect(data, &#39;TSLA&#39;)</code></li>
+<li>提取字符串: <code>str_extract(data, &quot;^\\d\\d&quot;)</code></li>
+</ul>
+</li>
+</ul>
+<h5 id="3-6-词云图"><a href="#3-6-词云图" class="headerlink" title="3.6 词云图"></a>3.6 词云图</h5><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(wordcloud)</span><br><span class="line"><span class="keyword">library</span>(RColorBrewer)</span><br><span class="line"></span><br><span class="line">number1 = c(<span class="string">&#x27;one&#x27;</span>, <span class="string">&#x27;two&#x27;</span>, <span class="string">&#x27;three&#x27;</span>, <span class="string">&#x27;four&#x27;</span>,<span class="string">&#x27;five&#x27;</span>)</span><br><span class="line"><span class="comment">#画多大</span></span><br><span class="line">number2 = <span class="number">1</span>:<span class="number">5</span></span><br><span class="line"></span><br><span class="line">cor.special = brewer.pal(<span class="number">5</span>,<span class="string">&quot;Dark2&quot;</span>) <span class="comment"># 5 = number of col&#x27;s &quot;Dark2&quot;深色系</span></span><br><span class="line"><span class="comment"># 关闭随机顺序与颜色</span></span><br><span class="line">wordcloud(number1, number2, colors=cor.special, ordered.colors = <span class="literal">F</span>, random.order = <span class="literal">F</span>, random.color = <span class="literal">F</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="3-7-自然语言处理：文本分析——Bag-of-Words"><a href="#3-7-自然语言处理：文本分析——Bag-of-Words" class="headerlink" title="3.7 自然语言处理：文本分析——Bag of Words"></a>3.7 自然语言处理：文本分析——Bag of Words</h5><ul>
+<li><p>本质：每一个单词是一个自变量，取值为它出现的频数</p>
+</li>
+<li><p>目标：利用文本预测评分</p>
+</li>
+</ul>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(data.table)</span><br><span class="line">setwd(<span class="string">&quot;C:/Users/lijinpu/Desktop/Data &amp; R Code/Part 3&quot;</span>)</span><br><span class="line">data.all &lt;- fread(<span class="string">&quot;yelp_subset.csv&quot;</span>, stringsAsFactors = <span class="literal">F</span>)</span><br><span class="line">dim(data.all)</span><br><span class="line">View(data.all)</span><br><span class="line">data = data.all[<span class="number">1</span>:<span class="number">1000</span>,]</span><br><span class="line"></span><br><span class="line">data$rating = c(<span class="number">0</span>) <span class="comment">#建立新变量rating，并设置为全为0的列向量</span></span><br><span class="line">data$rating[data$stars &gt;=<span class="number">4</span>] = <span class="number">1</span></span><br><span class="line">data$rating = as.factor(data$rating) <span class="comment">#设置为“类别”型格式的变量</span></span><br><span class="line"></span><br><span class="line">table(data$rating)/nrow(data) <span class="comment">#看类别型数据的比例</span></span><br><span class="line"></span><br><span class="line">data.text = data$text <span class="comment">#取出文本</span></span><br><span class="line">print(data.text[<span class="number">1</span>:<span class="number">5</span>])</span><br><span class="line"></span><br><span class="line"><span class="keyword">library</span>(tm)</span><br><span class="line"><span class="keyword">library</span>(SnowballC)</span><br><span class="line"></span><br><span class="line"><span class="comment">#step 1 转换成corpus格式</span></span><br><span class="line">mycorpus1 = VCorpus(VectorSource(data.text))</span><br><span class="line"><span class="comment">#step 2 全部转成小写字母</span></span><br><span class="line">mycorpus2 = tm_map(mycorpus1, content_transformer(tolower))</span><br><span class="line"><span class="comment">#step 3 去掉实际无意义的单词,stopwords()里面是个向量，可以自己制作</span></span><br><span class="line">mycorpus3 = tm_map(mycorpus2, removeWords, stopwords(<span class="string">&quot;english&quot;</span>))</span><br><span class="line"><span class="comment">#step 4 去掉标点符号</span></span><br><span class="line">mycorpus4 = tm_map(mycorpus3, removePunctuation)</span><br><span class="line"><span class="comment">#step 5 去掉数字</span></span><br><span class="line">mycorpus5 = tm_map(mycorpus4, removeNumbers)</span><br><span class="line"><span class="comment">#step 6 使用词根 （am, is, are变成be）</span></span><br><span class="line">mycorpus6 = tm_map(mycorpus5, stemDocument, lazy = <span class="literal">TRUE</span>) <span class="comment">#lazy是指最简单的方法</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#转换为单词频率矩阵</span></span><br><span class="line">dtm1 = DocumentTermMatrix(mycorpus6)</span><br><span class="line"><span class="comment">#查看这个矩阵(第一篇 前五十个变量)</span></span><br><span class="line">as.matrix(dtm1[<span class="number">1</span>，<span class="number">1</span>:<span class="number">50</span>])</span><br><span class="line"><span class="comment">#查看矩阵的维度</span></span><br><span class="line">dim(as.matrix(dtm1))</span><br><span class="line"></span><br><span class="line"><span class="comment">#去掉不常见单词 length()看长度</span></span><br><span class="line">threshold = <span class="number">0.01</span>*length(mycorpus6) </span><br><span class="line">words.10 = findFreqTerms(dtm1, lowfreq = threshold)</span><br><span class="line">length(words.10)</span><br><span class="line"></span><br><span class="line"><span class="comment">#制作新的矩阵</span></span><br><span class="line">dtm10 = DocumentTermMatrix(mycorpus6, control = list(dictionary = words.10))</span><br><span class="line"></span><br><span class="line"><span class="comment">#自变量个数大于数据个数，怎么办？用lasso降维！之后再跑多元线性回归。</span></span><br><span class="line"><span class="comment">#使用lasso前，将数据改为dataframe格式</span></span><br><span class="line">data.temp = data.frame(data, as.matrix(dtm10)) <span class="comment">#合并是因为需要原始数据中的因变量</span></span><br><span class="line">data2 = data.temp[,c(<span class="number">11</span>,<span class="number">14</span>:ncol(data.temp))]</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Good</th>
+<th>Bad</th>
+<th>Like</th>
+<th>Favorite</th>
+<th>Personal</th>
+<th>Give</th>
+<th>Rating(因变量)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>文本1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>文本2</td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>文本3</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>文本4</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<ul>
+<li>问题：忽略了单词间逻辑联系的问题</li>
+</ul>
+<h5 id="3-8-社会网络分析"><a href="#3-8-社会网络分析" class="headerlink" title="3.8 社会网络分析"></a>3.8 社会网络分析</h5><ul>
+<li>颠覆性创新 vs 边际性创新</li>
+</ul>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(igraph)</span><br><span class="line"></span><br><span class="line">g1 = graph(edges = c(<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">1</span>), n=<span class="number">3</span>, directed = <span class="literal">F</span>)</span><br><span class="line">plot(g1)</span><br><span class="line"></span><br><span class="line">g2 = graph(edges = c(<span class="string">&#x27;Amy&#x27;</span>,<span class="string">&#x27;Jack&#x27;</span>,<span class="string">&#x27;Jack&#x27;</span>,<span class="string">&#x27;Sam&#x27;</span>,<span class="string">&#x27;Sam&#x27;</span>,<span class="string">&#x27;Amy&#x27;</span>),directed = <span class="literal">F</span>)</span><br><span class="line">plot(g2)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>常用的社会网络指标：<ul>
+<li>度数（degree）<ul>
+<li>有几个邻居</li>
+<li><code>degree(g1)</code></li>
+</ul>
+</li>
+<li>聚类系数 Cluster Coefficient:<ul>
+<li>有多少邻居也是你的邻居</li>
+<li>产生的“三角形”个数</li>
+<li><code>transitivity(g1)</code></li>
+</ul>
+</li>
+<li>结构洞 structural hole<ul>
+<li>你的“经纪”能力：能力越强，数字越低</li>
+<li><code>constraint(g1)</code></li>
+<li>公式<ul>
+<li>$p_{ij}=z_{ij}/(\sum_{q}z_{iq})$</li>
+<li>$c_{ij}=(p_{ij}+\sum_{q}p_{iq}p_{qj})^2, i\ne q\ne j$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Burt与社会网络分析<ul>
+<li>社会网络的问题：忽视个体差异，仅考虑所处的网络位置</li>
+<li>社会网络的意义：网络结构往往能够解决很多问题，比如“为什么女性在职场上晋升不如男性”</li>
+</ul>
+</li>
+</ul>
+<h5 id="3-9-股票K线图"><a href="#3-9-股票K线图" class="headerlink" title="3.9 股票K线图"></a>3.9 股票K线图</h5><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(quantmod)</span><br><span class="line">getSymbols(<span class="string">&quot;GOOG&quot;</span>, src = <span class="string">&quot;yahoo&quot;</span>, from =<span class="string">&quot;2019-01-01&quot;</span>, to = <span class="string">&quot;2020-01-01&quot;</span>)</span><br><span class="line">chartSeries(GOOG)</span><br><span class="line">getSymbols(<span class="string">&quot;600028.SS&quot;</span>, src = <span class="string">&quot;yahoo&quot;</span>, from =<span class="string">&quot;2019-01-01&quot;</span>, to = <span class="string">&quot;2020-01-01&quot;</span>)</span><br><span class="line">chartSeries(`600028.SS`) <span class="comment">#文本中带小数点，因而使用``</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Jinpu Li</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://lijinpu.github.io/2020/12/01/R_Language/">https://lijinpu.github.io/2020/12/01/R_Language/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E7%BC%96%E7%A8%8B/"># 编程</a>
+                    
+                        <a href="/tags/R%E8%AF%AD%E8%A8%80/"># R语言</a>
+                    
+                        <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"># 数据分析</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2020/09/26/hello-world/">Hello World</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Jinpu Li | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
