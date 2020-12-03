@@ -241,25 +241,42 @@
         </header>
 
         <div class="post-content">
-            <h3 id="一、矩阵代数"><a href="#一、矩阵代数" class="headerlink" title="一、矩阵代数"></a>一、矩阵代数</h3><h3 id="二、专题：矩阵求导术"><a href="#二、专题：矩阵求导术" class="headerlink" title="二、专题：矩阵求导术"></a>二、专题：矩阵求导术</h3><h4 id="1-标量对向量求导"><a href="#1-标量对向量求导" class="headerlink" title="1. 标量对向量求导"></a>1. 标量对向量求导</h4><h5 id="1-1-定义"><a href="#1-1-定义" class="headerlink" title="1.1 定义"></a>1.1 定义</h5><p>$$<br>\frac{\partial f}{\partial X}=\frac{\partial f}{\partial x_{ij}}<br>$$</p>
-<ul>
+            <h3 id="一、矩阵代数"><a href="#一、矩阵代数" class="headerlink" title="一、矩阵代数"></a>一、矩阵代数</h3><h3 id="二、专题：矩阵求导术"><a href="#二、专题：矩阵求导术" class="headerlink" title="二、专题：矩阵求导术"></a>二、专题：矩阵求导术</h3><h4 id="1-标量对向量求导"><a href="#1-标量对向量求导" class="headerlink" title="1. 标量对向量求导"></a>1. 标量对向量求导</h4><h5 id="1-1-定义"><a href="#1-1-定义" class="headerlink" title="1.1 定义"></a>1.1 定义</h5><script type="math/tex; mode=display">
+\frac{\partial f}{\partial X}=\frac{\partial f}{\partial x_{ij}}</script><ul>
 <li><strong>$f$对$X$逐元素求导排成与$X$尺寸相同的矩阵</strong></li>
-<li>特别地，$X$为$m$维列向量，$\frac{\partial}{\partial X}=$<br>$$\begin{pmatrix} \frac{\partial}{\partial x_1}\ \frac{\partial}{\partial x_2} \  \vdots \\frac{\partial}{\partial x_m} \end{pmatrix}$$</li>
+<li>特别地，$X$为$m$维列向量，<script type="math/tex; mode=display">\frac{\partial}{\partial X}=
+\begin{pmatrix}
+\frac{\partial}{\partial x_1} \\ 
+\frac{\partial}{\partial x_2} \\  
+\vdots \\ 
+\frac{\partial}{\partial x_m}
+\end{pmatrix}</script></li>
 </ul>
-<h5 id="1-2-一些可用的结论"><a href="#1-2-一些可用的结论" class="headerlink" title="1.2 一些可用的结论"></a>1.2 一些可用的结论</h5><h6 id="1-2-1-线性函数求导"><a href="#1-2-1-线性函数求导" class="headerlink" title="1.2.1 线性函数求导"></a>1.2.1 线性函数求导</h6><p>$$<br>y=a’x=x’a=\sum_{i=1}^{n}a_i x_i<br>$$</p>
-<ul>
-<li>若$a$, $b$为**<em>常数向量**</em>，则有：</li>
+<h5 id="1-2-一些可用的结论"><a href="#1-2-一些可用的结论" class="headerlink" title="1.2 一些可用的结论"></a>1.2 一些可用的结论</h5><h6 id="1-2-1-线性函数求导"><a href="#1-2-1-线性函数求导" class="headerlink" title="1.2.1 线性函数求导"></a>1.2.1 线性函数求导</h6><script type="math/tex; mode=display">
+y=a'x=x'a=\sum_{i=1}^{n}a_i x_i</script><ul>
+<li>若$a$, $b$为<strong><em>常数向量</em></strong>，则有：</li>
 </ul>
-<p>$$<br>\frac{\partial{a’x}}{\partial x}=a\<br>\frac{\partial{x’b}}{\partial x}=b\<br>\text{Notice: 这里注意$a’$与$a$的区别!!!}<br>$$</p>
-<h6 id="1-2-2-二次型问题"><a href="#1-2-2-二次型问题" class="headerlink" title="1.2.2 二次型问题"></a>1.2.2 二次型问题</h6><ul>
-<li>若$A$为**<em>常数矩阵**</em>，</li>
+<script type="math/tex; mode=display">
+\frac{\partial{a'x}}{\partial x}=a\\
+\frac{\partial{x'b}}{\partial x}=b\\
+\text{Notice: 这里注意$a'$与$a$的区别!!!}</script><h6 id="1-2-2-二次型问题"><a href="#1-2-2-二次型问题" class="headerlink" title="1.2.2 二次型问题"></a>1.2.2 二次型问题</h6><ul>
+<li>若$A$为<strong><em>常数矩阵</em></strong>，</li>
 </ul>
-<p>$$<br>A对称：\frac{\partial {x’Ax}}{\partial x}=2Ax<br>\A非对称：\frac{\partial {x’Ax}}{\partial x}=(A+A’)x \ \ \<br>\frac{\partial {x’Ax}}{\partial a_{ij}}=x_i x_j \<br>\frac{\partial {x’Ax}}{\partial A}=x\cdot x’<br>$$</p>
-<h6 id="1-2-3-行列式求导"><a href="#1-2-3-行列式求导" class="headerlink" title="1.2.3 行列式求导"></a>1.2.3 行列式求导</h6><p>$$<br>\frac{\partial |A|}{\partial a_{ij}}=(-1)^{i+j}|A_{ij}|=c_{ij}<br>\ \ \ \ \<br>\because\ A_{ij}^{-1}=\frac{|C_{ji}|}{|A|}\<br>\therefore\ \frac{\partial ln|A|}{\partial {a_{ij}}}=\frac{(-1)^{i+j}|C_{ji}|}{|A|}<br>\ \frac{\partial ln|A|}{\partial {A}}=(A^{-1})’<br>$$</p>
-<h4 id="2-向量对向量求导（暂略）"><a href="#2-向量对向量求导（暂略）" class="headerlink" title="2. 向量对向量求导（暂略）"></a>2. 向量对向量求导（暂略）</h4><h3 id="三、概率论相关"><a href="#三、概率论相关" class="headerlink" title="三、概率论相关"></a>三、概率论相关</h3><h4 id="1-概率论基础"><a href="#1-概率论基础" class="headerlink" title="1. 概率论基础"></a>1. 概率论基础</h4><h4 id="2-多维随机向量的概率分布"><a href="#2-多维随机向量的概率分布" class="headerlink" title="2. 多维随机向量的概率分布"></a>2. 多维随机向量的概率分布</h4><h4 id="3-条件分布"><a href="#3-条件分布" class="headerlink" title="3. 条件分布"></a>3. 条件分布</h4><h4 id="4-随机变量的数字特征：总体矩"><a href="#4-随机变量的数字特征：总体矩" class="headerlink" title="4. 随机变量的数字特征：总体矩"></a>4. 随机变量的数字特征：总体矩</h4><h5 id="4-1-离散与连续"><a href="#4-1-离散与连续" class="headerlink" title="4.1 离散与连续"></a>4.1 离散与连续</h5><h6 id="4-1-1-离散分布"><a href="#4-1-1-离散分布" class="headerlink" title="4.1.1 离散分布"></a>4.1.1 离散分布</h6><p>$$<br>p_k\equiv P(X=x_k)\<br>E(X)\equiv \mu \equiv \sum_{k=1}^{\infty}x_k p_k<br>$$</p>
-<h6 id="4-1-2-连续分布"><a href="#4-1-2-连续分布" class="headerlink" title="4.1.2 连续分布"></a>4.1.2 连续分布</h6><p>$$<br>\int_{-\infty}^{\infty}f(x)dx=1<br>\ E(X)\equiv \mu \equiv \int_{-\infty}^{\infty}xf(x)dx<br>$$</p>
-<h5 id="4-2-矩"><a href="#4-2-矩" class="headerlink" title="4.2 矩"></a>4.2 矩</h5><h6 id="4-2-1-定义"><a href="#4-2-1-定义" class="headerlink" title="4.2.1 定义"></a>4.2.1 定义</h6><p>$$<br>E(g(x))=\int_{-\infty}^{\infty}g(x)f(x)dx<br>$$</p>
-<h6 id="4-2-2-概率统计中常用的两类矩"><a href="#4-2-2-概率统计中常用的两类矩" class="headerlink" title="4.2.2 概率统计中常用的两类矩"></a>4.2.2 概率统计中常用的两类矩</h6><ul>
+<script type="math/tex; mode=display">
+A对称：\frac{\partial {x'Ax}}{\partial x}=2Ax
+\\A非对称：\frac{\partial {x'Ax}}{\partial x}=(A+A')x \\ \ \\
+\frac{\partial {x'Ax}}{\partial a_{ij}}=x_i x_j \\
+\frac{\partial {x'Ax}}{\partial A}=x\cdot x'</script><h6 id="1-2-3-行列式求导"><a href="#1-2-3-行列式求导" class="headerlink" title="1.2.3 行列式求导"></a>1.2.3 行列式求导</h6><script type="math/tex; mode=display">
+\frac{\partial |A|}{\partial a_{ij}}=(-1)^{i+j}|A_{ij}|=c_{ij}
+\\ \ \\ \ \\ 
+\because\ A_{ij}^{-1}=\frac{|C_{ji}|}{|A|}\\
+\therefore\ \frac{\partial ln|A|}{\partial {a_{ij}}}=\frac{(-1)^{i+j}|C_{ji}|}{|A|}
+\\ \frac{\partial ln|A|}{\partial {A}}=(A^{-1})'</script><h4 id="2-向量对向量求导（暂略）"><a href="#2-向量对向量求导（暂略）" class="headerlink" title="2. 向量对向量求导（暂略）"></a>2. 向量对向量求导（暂略）</h4><h3 id="三、概率论相关"><a href="#三、概率论相关" class="headerlink" title="三、概率论相关"></a>三、概率论相关</h3><h4 id="1-概率论基础"><a href="#1-概率论基础" class="headerlink" title="1. 概率论基础"></a>1. 概率论基础</h4><h4 id="2-多维随机向量的概率分布"><a href="#2-多维随机向量的概率分布" class="headerlink" title="2. 多维随机向量的概率分布"></a>2. 多维随机向量的概率分布</h4><h4 id="3-条件分布"><a href="#3-条件分布" class="headerlink" title="3. 条件分布"></a>3. 条件分布</h4><h4 id="4-随机变量的数字特征：总体矩"><a href="#4-随机变量的数字特征：总体矩" class="headerlink" title="4. 随机变量的数字特征：总体矩"></a>4. 随机变量的数字特征：总体矩</h4><h5 id="4-1-离散与连续"><a href="#4-1-离散与连续" class="headerlink" title="4.1 离散与连续"></a>4.1 离散与连续</h5><h6 id="4-1-1-离散分布"><a href="#4-1-1-离散分布" class="headerlink" title="4.1.1 离散分布"></a>4.1.1 离散分布</h6><script type="math/tex; mode=display">
+p_k\equiv P(X=x_k)\\
+E(X)\equiv \mu \equiv \sum_{k=1}^{\infty}x_k p_k</script><h6 id="4-1-2-连续分布"><a href="#4-1-2-连续分布" class="headerlink" title="4.1.2 连续分布"></a>4.1.2 连续分布</h6><script type="math/tex; mode=display">
+\int_{-\infty}^{\infty}f(x)dx=1
+\\ E(X)\equiv \mu \equiv \int_{-\infty}^{\infty}xf(x)dx</script><h5 id="4-2-矩"><a href="#4-2-矩" class="headerlink" title="4.2 矩"></a>4.2 矩</h5><h6 id="4-2-1-定义"><a href="#4-2-1-定义" class="headerlink" title="4.2.1 定义"></a>4.2.1 定义</h6><script type="math/tex; mode=display">
+E(g(x))=\int_{-\infty}^{\infty}g(x)f(x)dx</script><h6 id="4-2-2-概率统计中常用的两类矩"><a href="#4-2-2-概率统计中常用的两类矩" class="headerlink" title="4.2.2 概率统计中常用的两类矩"></a>4.2.2 概率统计中常用的两类矩</h6><ul>
 <li><p>原点矩：$E(X^n)$</p>
 </li>
 <li><p>中心矩：$E(X-E(X))^n$</p>
@@ -283,97 +300,203 @@
 </ul>
 </li>
 </ul>
-<h5 id="4-3-条件期望与条件方差"><a href="#4-3-条件期望与条件方差" class="headerlink" title="4.3 条件期望与条件方差"></a>4.3 条件期望与条件方差</h5><h6 id="4-3-1-条件期望"><a href="#4-3-1-条件期望" class="headerlink" title="4.3.1 条件期望"></a>4.3.1 条件期望</h6><p>$$<br>E(Y|X=x)=E(Y|x)=\int_{-\infty}^{\infty}yf(y|x)dy<br>$$</p>
-<ul>
+<h5 id="4-3-条件期望与条件方差"><a href="#4-3-条件期望与条件方差" class="headerlink" title="4.3 条件期望与条件方差"></a>4.3 条件期望与条件方差</h5><h6 id="4-3-1-条件期望"><a href="#4-3-1-条件期望" class="headerlink" title="4.3.1 条件期望"></a>4.3.1 条件期望</h6><script type="math/tex; mode=display">
+E(Y|X=x)=E(Y|x)=\int_{-\infty}^{\infty}yf(y|x)dy</script><ul>
 <li>Notice: 是关于$x$的函数，$y$已被积分掉</li>
 </ul>
-<h6 id="4-3-2-条件方差"><a href="#4-3-2-条件方差" class="headerlink" title="4.3.2 条件方差"></a>4.3.2 条件方差</h6><p>$$<br>Var(Y|X=x)\equiv Var(Y|x)=\int_{-\infty}^{\infty}[y-E(Y|x)]^{2} f(y|x)dy<br>$$</p>
-<h5 id="4-4-多维随机向量的期望、方差"><a href="#4-4-多维随机向量的期望、方差" class="headerlink" title="4.4 多维随机向量的期望、方差"></a>4.4 多维随机向量的期望、方差</h5><h6 id="4-4-1对向量（矩阵）的期望"><a href="#4-4-1对向量（矩阵）的期望" class="headerlink" title="4.4.1对向量（矩阵）的期望"></a>4.4.1对向量（矩阵）的期望</h6><p>$$<br>E(X)=E\begin{pmatrix}X_1\X_2\ \vdots \ X_n\end{pmatrix}=\begin{pmatrix}E(X_1)\E(X_2)\ \vdots \ E(X_n)\end{pmatrix}<br>$$</p>
-<h6 id="4-4-2-协方差矩阵"><a href="#4-4-2-协方差矩阵" class="headerlink" title="4.4.2 协方差矩阵"></a>4.4.2 协方差矩阵</h6><ul>
-<li>协方差矩阵<br>$$<br>\scriptstyle<br>\begin{equation}<br>\begin{aligned}<br>Cov(X,Y)_{m\times n}&amp;=E[(X-E(X))(Y-E(Y))’]\<br>&amp;=E(XY’)-E(X)E(Y)’ \<br>&amp;=E[\begin{pmatrix}X_1-E(X_1)\X_2-E(X_2)\ \vdots \ X_m-E(X_m)\end{pmatrix}\begin{pmatrix}Y_1-E(Y_1)&amp;Y_2-E(Y_2) &amp;\cdots Y_n-E(Y_n)\end{pmatrix}]\<br>&amp;=E\begin{pmatrix}(X_1-E(X_1))(Y_1-E(Y_1)) &amp;(X_1-E(X_1))(Y_2-E(Y_2)) &amp;\cdots&amp;(X_1-E(X_1))(Y_n-E(Y_n))\(X_2-E(X_2))(Y_1-E(Y_1)) &amp;(X_2-E(X_2))(Y_2-E(Y_2)) &amp;\cdots &amp;(X_2-E(X_2))(Y_n-E(Y_n))\ \vdots &amp;\vdots &amp;\ddots &amp;\vdots \ (X_m-E(X_m))(Y_1-E(Y_1)) &amp;(X_m-E(X_m))(Y_2-E(Y_2)) &amp;\cdots &amp;(X_m-E(X_m))(Y_1-E(Y_1))\end{pmatrix}\<br>&amp;=\begin{pmatrix}Cov(X_1, Y_1) &amp;Cov(X_1, Y_2) &amp;\cdots&amp;Cov(X_1, Y_n)\Cov(X_2,Y_1) &amp;Cov(X_2,Y_2) &amp;\cdots &amp;Cov(X_2,Y_n)\ \vdots &amp;\vdots &amp;\ddots &amp;\vdots \ Cov(X_m,Y_1) &amp;Cov(X_m,Y_2)&amp;\cdots &amp;Cov(X_m,Y_n)\end{pmatrix}<br>\end{aligned}<br>\end{equation}<br>$$</li>
+<h6 id="4-3-2-条件方差"><a href="#4-3-2-条件方差" class="headerlink" title="4.3.2 条件方差"></a>4.3.2 条件方差</h6><script type="math/tex; mode=display">
+Var(Y|X=x)\equiv Var(Y|x)=\int_{-\infty}^{\infty}[y-E(Y|x)]^{2} f(y|x)dy</script><h5 id="4-4-多维随机向量的期望、方差"><a href="#4-4-多维随机向量的期望、方差" class="headerlink" title="4.4 多维随机向量的期望、方差"></a>4.4 多维随机向量的期望、方差</h5><h6 id="4-4-1对向量（矩阵）的期望"><a href="#4-4-1对向量（矩阵）的期望" class="headerlink" title="4.4.1对向量（矩阵）的期望"></a>4.4.1对向量（矩阵）的期望</h6><script type="math/tex; mode=display">
+E(X)=E\begin{pmatrix}X_1\\X_2\\ \vdots \\ X_n\end{pmatrix}=\begin{pmatrix}E(X_1)\\E(X_2)\\ \vdots \\ E(X_n)\end{pmatrix}</script><h6 id="4-4-2-协方差矩阵"><a href="#4-4-2-协方差矩阵" class="headerlink" title="4.4.2 协方差矩阵"></a>4.4.2 协方差矩阵</h6><ul>
+<li>协方差矩阵<script type="math/tex; mode=display">
+\scriptstyle
+\begin{equation}
+\begin{aligned}
+Cov(X,Y)_{m\times n}&=E[(X-E(X))(Y-E(Y))']\\
+&=E(XY')-E(X)E(Y)' \\
+&=E[\begin{pmatrix}X_1-E(X_1)\\X_2-E(X_2)\\ \vdots \\ X_m-E(X_m)\end{pmatrix}\begin{pmatrix}Y_1-E(Y_1)&Y_2-E(Y_2) &\cdots Y_n-E(Y_n)\end{pmatrix}]\\
+&=E\begin{pmatrix}(X_1-E(X_1))(Y_1-E(Y_1)) &(X_1-E(X_1))(Y_2-E(Y_2)) &\cdots&(X_1-E(X_1))(Y_n-E(Y_n))\\(X_2-E(X_2))(Y_1-E(Y_1)) &(X_2-E(X_2))(Y_2-E(Y_2)) &\cdots &(X_2-E(X_2))(Y_n-E(Y_n))\\ \vdots &\vdots &\ddots &\vdots \\ (X_m-E(X_m))(Y_1-E(Y_1)) &(X_m-E(X_m))(Y_2-E(Y_2)) &\cdots &(X_m-E(X_m))(Y_1-E(Y_1))\end{pmatrix}\\
+&=\begin{pmatrix}Cov(X_1, Y_1) &Cov(X_1, Y_2) &\cdots&Cov(X_1, Y_n)\\Cov(X_2,Y_1) &Cov(X_2,Y_2) &\cdots &Cov(X_2,Y_n)\\ \vdots &\vdots &\ddots &\vdots \\ Cov(X_m,Y_1) &Cov(X_m,Y_2)&\cdots &Cov(X_m,Y_n)\end{pmatrix}
+\end{aligned}
+\end{equation}</script></li>
 </ul>
 <ul>
-<li><p>特别地，**<em>方差协方差矩阵**</em><br>$$<br>\begin{equation}<br>\begin{aligned}<br>Var(X)_{m\times m}&amp;=E[(X-E(X))(X-E(X))’]\&amp;=E(XX’)-E(X)E(X)’\<br>&amp;=<br>\begin{pmatrix}Var(X_1) &amp;Cov(X_1, X_2) &amp;\cdots&amp;Cov(X_1, X_m)\Cov(X_2,X_1) &amp;Var(X_2) &amp;\cdots &amp;Cov(X_2,X_m)\ \vdots &amp;\vdots &amp;\ddots &amp;\vdots \ Cov(X_m,X_1) &amp;Cov(X_m,X_2)&amp;\cdots &amp;Var(X_m)\end{pmatrix}</p>
-<p>\end{aligned}<br>\end{equation}<br>$$</p>
-</li>
+<li><p>特别地，<strong><em>方差协方差矩阵</em></strong></p>
+<script type="math/tex; mode=display">
+\begin{equation}
+\begin{aligned}
+Var(X)_{m\times m}&=E[(X-E(X))(X-E(X))']\\&=E(XX')-E(X)E(X)'\\
+&=
+\begin{pmatrix}Var(X_1) &Cov(X_1, X_2) &\cdots&Cov(X_1, X_m)\\Cov(X_2,X_1) &Var(X_2) &\cdots &Cov(X_2,X_m)\\ \vdots &\vdots &\ddots &\vdots \\ Cov(X_m,X_1) &Cov(X_m,X_2)&\cdots &Var(X_m)\end{pmatrix}
+
+\end{aligned}
+\end{equation}</script></li>
 </ul>
-<h6 id="4-4-3-夹心估计量-A、B为常数矩阵"><a href="#4-4-3-夹心估计量-A、B为常数矩阵" class="headerlink" title="4.4.3 夹心估计量(A、B为常数矩阵)"></a>4.4.3 夹心估计量(A、B为常数矩阵)</h6><p>$$<br>Cov(AX,BY)=ACov(X,Y)B’\<br>Var(AX)=AVar(X)A’<br>$$</p>
-<ul>
-<li>特别地，若A为**<em>对称矩阵**</em>，<br>$$<br>Var(AX)=AVar(X)A<br>$$</li>
+<h6 id="4-4-3-夹心估计量-A、B为常数矩阵"><a href="#4-4-3-夹心估计量-A、B为常数矩阵" class="headerlink" title="4.4.3 夹心估计量(A、B为常数矩阵)"></a>4.4.3 夹心估计量(A、B为常数矩阵)</h6><script type="math/tex; mode=display">
+Cov(AX,BY)=ACov(X,Y)B'\\
+Var(AX)=AVar(X)A'</script><ul>
+<li>特别地，若A为<strong><em>对称矩阵</em></strong>，<script type="math/tex; mode=display">
+Var(AX)=AVar(X)A</script></li>
 </ul>
-<h6 id="4-4-4-矩阵和的方差-Var-X-Y"><a href="#4-4-4-矩阵和的方差-Var-X-Y" class="headerlink" title="4.4.4 矩阵和的方差$Var(X+Y)$"></a>4.4.4 矩阵和的方差$Var(X+Y)$</h6><p>$$<br>Var(X+Y)=Var(X)+Var(Y)+Cov(X,Y)+Cov(X,Y)’<br>$$</p>
-<h4 id="5-样本矩：总体矩的参数估计"><a href="#5-样本矩：总体矩的参数估计" class="headerlink" title="5. 样本矩：总体矩的参数估计"></a>5. 样本矩：总体矩的参数估计</h4><h5 id="5-1-期望迭代定律"><a href="#5-1-期望迭代定律" class="headerlink" title="5.1 期望迭代定律"></a>5.1 期望迭代定律</h5><p>$$<br>E(Y)=E_{X}[E(Y|X=x)]\<br>E(g(Y))=E_X[E(g(Y)|X=x)]<br>$$</p>
-<ul>
+<h6 id="4-4-4-矩阵和的方差-Var-X-Y"><a href="#4-4-4-矩阵和的方差-Var-X-Y" class="headerlink" title="4.4.4 矩阵和的方差$Var(X+Y)$"></a>4.4.4 矩阵和的方差$Var(X+Y)$</h6><script type="math/tex; mode=display">
+Var(X+Y)=Var(X)+Var(Y)+Cov(X,Y)+Cov(X,Y)'</script><h4 id="5-样本矩：总体矩的参数估计"><a href="#5-样本矩：总体矩的参数估计" class="headerlink" title="5. 样本矩：总体矩的参数估计"></a>5. 样本矩：总体矩的参数估计</h4><h5 id="5-1-期望迭代定律"><a href="#5-1-期望迭代定律" class="headerlink" title="5.1 期望迭代定律"></a>5.1 期望迭代定律</h5><script type="math/tex; mode=display">
+E(Y)=E_{X}[E(Y|X=x)]\\
+E(g(Y))=E_X[E(g(Y)|X=x)]</script><ul>
 <li><p>给定$X=x$, 先求出$Y$的条件期望</p>
 </li>
 <li><p>再对$X$求期望</p>
 </li>
-<li><p>若$X$离散，无条件期望=条件期望的加权平均<br>$$<br>E(Y)=\sum_{i}P(X=x_i)E(Y|x_i)<br>$$</p>
-<ul>
-<li>证明如下：<br>$$<br>\begin{equation}<br>\begin{aligned}<br>E_{X}[E(Y|x)]&amp;=\sum_{i}P(X=x_i)E(Y|x_i)\<br>&amp;=\sum_{i}P(X=x_i)[\sum_{j}P(Y=y_j|x_i)\cdot y_j]\<br>&amp;=\sum_{i}P(X=x_i)[\sum_{j}\frac{P(Y=y_j,x=x_i)}{P(X=x_i)}\cdot y_j]\<br>&amp;=\sum_{j}[\sum_{i}P(Y=y_j,x=x_i)\cdot y_j]\<br>&amp;=E(Y)<br>\end{aligned}<br>\end{equation}<br>$$</li>
+<li><p>若$X$离散，无条件期望=条件期望的加权平均</p>
+<script type="math/tex; mode=display">
+E(Y)=\sum_{i}P(X=x_i)E(Y|x_i)</script><ul>
+<li>证明如下：<script type="math/tex; mode=display">
+\begin{equation}
+\begin{aligned}
+E_{X}[E(Y|x)]&=\sum_{i}P(X=x_i)E(Y|x_i)\\
+&=\sum_{i}P(X=x_i)[\sum_{j}P(Y=y_j|x_i)\cdot y_j]\\
+&=\sum_{i}P(X=x_i)[\sum_{j}\frac{P(Y=y_j,x=x_i)}{P(X=x_i)}\cdot y_j]\\
+&=\sum_{j}[\sum_{i}P(Y=y_j,x=x_i)\cdot y_j]\\
+&=E(Y)
+\end{aligned}
+\end{equation}</script></li>
 </ul>
 </li>
 </ul>
-<h5 id="5-2-方差分解定律"><a href="#5-2-方差分解定律" class="headerlink" title="5.2 方差分解定律"></a>5.2 方差分解定律</h5><p>$$<br>\begin{aligned}<br>Var(y)&amp;=Var_{X}[E(y|X)]+E_{X}[Var(y|X)]<br>\ \ \<br>对于估计量而言：\<br>Var(b)&amp;=Var_{X}[E(b|X)]+E_{X}[Var(b|X)] \<br>&amp;=E_X[Var(b|X)]\<br>&amp;=E_X[\sigma^2(X’X)^{-1}]\<br>&amp;=\sigma^2E_X[(X’X)^{-1}]</p>
-<p>\end{aligned}<br>$$</p>
-<h4 id="6-随机变量无关的三个层次：线性独立—-gt-均值独立—-gt-线性不相关"><a href="#6-随机变量无关的三个层次：线性独立—-gt-均值独立—-gt-线性不相关" class="headerlink" title="6. 随机变量无关的三个层次：线性独立—&gt;均值独立—&gt;线性不相关"></a>6. 随机变量无关的三个层次：线性独立—&gt;均值独立—&gt;线性不相关</h4><ul>
+<h5 id="5-2-方差分解定律"><a href="#5-2-方差分解定律" class="headerlink" title="5.2 方差分解定律"></a>5.2 方差分解定律</h5><script type="math/tex; mode=display">
+\begin{aligned}
+Var(y)&=Var_{X}[E(y|X)]+E_{X}[Var(y|X)]
+\\ \ \\
+对于估计量而言：\\
+Var(b)&=Var_{X}[E(b|X)]+E_{X}[Var(b|X)] \\
+&=E_X[Var(b|X)]\\
+&=E_X[\sigma^2(X'X)^{-1}]\\
+&=\sigma^2E_X[(X'X)^{-1}]
+
+\end{aligned}</script><h4 id="6-随机变量无关的三个层次：线性独立—-gt-均值独立—-gt-线性不相关"><a href="#6-随机变量无关的三个层次：线性独立—-gt-均值独立—-gt-线性不相关" class="headerlink" title="6. 随机变量无关的三个层次：线性独立—&gt;均值独立—&gt;线性不相关"></a>6. 随机变量无关的三个层次：线性独立—&gt;均值独立—&gt;线性不相关</h4><ul>
 <li><p>相互独立：$f(x,y)=f_x(x)f_y(y)$</p>
 </li>
 <li><p>均值独立：$E(Y|X=x)=E(Y)$</p>
 <ul>
 <li><p>Notice: 并不意味着X均值独立于Y</p>
 </li>
-<li><p>Theorem：若Y均值独立于X，或者X均值独立于Y，则有$Cov(X,Y)=0$<br>$$<br>\begin{equation}<br>\begin{aligned}<br>Cov(X,Y)&amp;=E[(X-EX)(Y-EY)]\<br>&amp;=E_X E_Y[(X-EX)(Y-EY)|X=x]\<br>&amp;=E_X [(X-EX)E_Y[(Y-EY)|X=x]]\<br>&amp;=E_X[[X-E(X)][E(Y|x)-E(Y)]]\<br>&amp;=0<br>\end{aligned}<br>\end{equation}<br>$$</p>
-</li>
+<li><p>Theorem：若Y均值独立于X，或者X均值独立于Y，则有$Cov(X,Y)=0$</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+\begin{aligned}
+Cov(X,Y)&=E[(X-EX)(Y-EY)]\\
+&=E_X E_Y[(X-EX)(Y-EY)|X=x]\\
+&=E_X [(X-EX)E_Y[(Y-EY)|X=x]]\\
+&=E_X[[X-E(X)][E(Y|x)-E(Y)]]\\
+&=0
+\end{aligned}
+\end{equation}</script></li>
 </ul>
 </li>
 </ul>
 <ul>
 <li>线性不相关：$Cov(x,y)=0$</li>
 </ul>
-<h3 id="四、统计基础"><a href="#四、统计基础" class="headerlink" title="四、统计基础"></a>四、统计基础</h3><h4 id="1-常用连续型统计分布"><a href="#1-常用连续型统计分布" class="headerlink" title="1. 常用连续型统计分布"></a>1. 常用连续型统计分布</h4><h5 id="1-1-正态分布"><a href="#1-1-正态分布" class="headerlink" title="1.1 正态分布"></a>1.1 正态分布</h5><h6 id="1-1-1-一维正态分布"><a href="#1-1-1-一维正态分布" class="headerlink" title="1.1.1 一维正态分布"></a>1.1.1 一维正态分布</h6><p>$$<br>f(x)=\frac{1}{\sqrt{2\pi \sigma^2}}e^{\frac{-(x-\mu)^2}{2\sigma^2}}<br>$$</p>
-<h6 id="1-1-2-多维正态分布"><a href="#1-1-2-多维正态分布" class="headerlink" title="1.1.2 多维正态分布"></a>1.1.2 多维正态分布</h6><p>$$<br>f(X_1,X_2,\cdots,X_n)=\frac{1}{(2\pi)^{\frac{n}{2}}|\Sigma|^{1/2}}e^{-\frac{1}{2}(X-\mu)’\Sigma^{-1}(X-\mu)}\<br>\ \ \ \ \ \<br>其中:\ \Sigma=\begin{pmatrix}Var(X_1) &amp;Cov(X_1, X_2) &amp;\cdots&amp;Cov(X_1, X_n)\Cov(X_2,X_1) &amp;Var(X_2) &amp;\cdots &amp;Cov(X_2,X_n)\ \vdots &amp;\vdots &amp;\ddots &amp;\vdots \ Cov(X_n,X_1) &amp;Cov(X_n,X_2)&amp;\cdots &amp;Var(X_n)\end{pmatrix}<br>$$</p>
-<h5 id="1-2-mathcal-X-2-分布​"><a href="#1-2-mathcal-X-2-分布​" class="headerlink" title="1.2 $\mathcal{X}^{2}$分布​"></a>1.2 $\mathcal{X}^{2}$分布​</h5><ul>
-<li><p>若${Z_1,Z_2,\cdots,Z_k}\sim N(0,1)$，则：<br>$$<br>\sum_{i=1}^{k}Z_{i}^2 \sim \mathcal{X}^2(k)<br>$$</p>
-<ul>
+<h3 id="四、统计基础"><a href="#四、统计基础" class="headerlink" title="四、统计基础"></a>四、统计基础</h3><h4 id="1-常用连续型统计分布"><a href="#1-常用连续型统计分布" class="headerlink" title="1. 常用连续型统计分布"></a>1. 常用连续型统计分布</h4><h5 id="1-1-正态分布"><a href="#1-1-正态分布" class="headerlink" title="1.1 正态分布"></a>1.1 正态分布</h5><h6 id="1-1-1-一维正态分布"><a href="#1-1-1-一维正态分布" class="headerlink" title="1.1.1 一维正态分布"></a>1.1.1 一维正态分布</h6><script type="math/tex; mode=display">
+f(x)=\frac{1}{\sqrt{2\pi \sigma^2}}e^{\frac{-(x-\mu)^2}{2\sigma^2}}</script><h6 id="1-1-2-多维正态分布"><a href="#1-1-2-多维正态分布" class="headerlink" title="1.1.2 多维正态分布"></a>1.1.2 多维正态分布</h6><script type="math/tex; mode=display">
+f(X_1,X_2,\cdots,X_n)=\frac{1}{(2\pi)^{\frac{n}{2}}|\Sigma|^{1/2}}e^{-\frac{1}{2}(X-\mu)'\Sigma^{-1}(X-\mu)}\\
+\ \\ \ \\ \ \\
+其中:\ \Sigma=\begin{pmatrix}Var(X_1) &Cov(X_1, X_2) &\cdots&Cov(X_1, X_n)\\Cov(X_2,X_1) &Var(X_2) &\cdots &Cov(X_2,X_n)\\ \vdots &\vdots &\ddots &\vdots \\ Cov(X_n,X_1) &Cov(X_n,X_2)&\cdots &Var(X_n)\end{pmatrix}</script><h5 id="1-2-mathcal-X-2-分布​"><a href="#1-2-mathcal-X-2-分布​" class="headerlink" title="1.2 $\mathcal{X}^{2}$分布​"></a>1.2 $\mathcal{X}^{2}$分布​</h5><ul>
+<li><p>若$\{Z_1,Z_2,\cdots,Z_k\}\sim N(0,1)$，则：</p>
+<script type="math/tex; mode=display">
+\sum_{i=1}^{k}Z_{i}^2 \sim \mathcal{X}^2(k)</script><ul>
 <li><p>期望$k$，方差$2k$</p>
 </li>
 <li><p>if $Z\sim N(0,1), Z^2\sim \mathcal{X}^2(1)$</p>
 </li>
 <li><p>补充：</p>
-<p>若$m$维随机变量$x$服从正态分布$N(\mu, \Sigma)$，其中$\Sigma$为非退化矩阵（满秩），则二次型<br>$$<br>(x-\mu)’\Sigma^{-1}(x-\mu)\sim \chi^2(m)<br>$$</p>
-</li>
+<p>若$m$维随机变量$x$服从正态分布$N(\mu, \Sigma)$，其中$\Sigma$为非退化矩阵（满秩），则二次型</p>
+<script type="math/tex; mode=display">
+(x-\mu)'\Sigma^{-1}(x-\mu)\sim \chi^2(m)</script></li>
 </ul>
 </li>
 </ul>
-<h5 id="1-3-t分布"><a href="#1-3-t分布" class="headerlink" title="1.3 t分布"></a>1.3 t分布</h5><p>$Z\sim N(0,1)，Y\sim \mathcal{X}^2(k)$，且Z与Y相互独立，则<br>$$<br>\frac{Z}{\sqrt{Y/k}}\sim t(k)<br>$$</p>
-<h5 id="1-4-F分布"><a href="#1-4-F分布" class="headerlink" title="1.4 F分布"></a>1.4 F分布</h5><p>$Y_1 \sim \mathcal{X}^(k_1)$, $Y_2\sim \mathcal{X}^2(k_2)$, 且$Y_1,Y_2$相互独立，<br>$$<br>\frac{Y_1/k_1}{Y_2/k_2}\sim F(k_1,k_2)<br>$$</p>
-<ul>
+<h5 id="1-3-t分布"><a href="#1-3-t分布" class="headerlink" title="1.3 t分布"></a>1.3 t分布</h5><p>$Z\sim N(0,1)，Y\sim \mathcal{X}^2(k)$，且Z与Y相互独立，则</p>
+<script type="math/tex; mode=display">
+\frac{Z}{\sqrt{Y/k}}\sim t(k)</script><h5 id="1-4-F分布"><a href="#1-4-F分布" class="headerlink" title="1.4 F分布"></a>1.4 F分布</h5><p>$Y_1 \sim \mathcal{X}^(k_1)$, $Y_2\sim \mathcal{X}^2(k_2)$, 且$Y_1,Y_2$相互独立，</p>
+<script type="math/tex; mode=display">
+\frac{Y_1/k_1}{Y_2/k_2}\sim F(k_1,k_2)</script><ul>
 <li><p>如果$X\sim t(k)$, 则$X^2\sim F(1,k)$    </p>
 </li>
 <li><p>F分布与$\chi^2$分布在大样本下是等价的</p>
-<p>**命题：假设$F\sim F(m, n-K)$**分布，则当$n\rightarrow\infty$时，$mF \stackrel{d}\longrightarrow \chi^2(m)$</p>
+<p><strong>命题：假设$F\sim F(m, n-K)$</strong>分布，则当$n\rightarrow\infty$时，$mF \stackrel{d}\longrightarrow \chi^2(m)$</p>
 </li>
 </ul>
 <h4 id="2-统计推断相关概念"><a href="#2-统计推断相关概念" class="headerlink" title="2. 统计推断相关概念"></a>2. 统计推断相关概念</h4><h5 id="2-1-均方误差"><a href="#2-1-均方误差" class="headerlink" title="2.1 均方误差"></a>2.1 均方误差</h5><ul>
 <li><p>$MSE(\hat{\theta})=E[(\hat{\theta}-\theta)^2]=Var(\hat{\theta})+[Bias(\hat{\theta})]^2$</p>
 </li>
-<li><p>证明：<br>$$<br>\begin{equation}<br>\begin{aligned}<br>MSE(\hat{\theta})&amp;=E[(\hat{\theta}-\theta)^2]\<br>&amp;=E{[\hat{\theta}-E(\hat{\theta})+E(\hat{\theta})-\theta]}\<br>&amp;=E[\hat{\theta}-E(\hat{\theta})]^2 +2E{[\hat{\theta}-E(\hat{\theta})][E(\hat{\theta})-\theta]}+E[E(\hat{\theta})-\theta]^2\<br>&amp;=Var(\hat{\theta})+2[E(\hat{\theta})-\theta]E[\hat{\theta}-E(\hat{\theta})]+[Bias(\hat{\theta})]^2\<br>&amp;=Var(\hat{\theta})+[Bias(\hat{\theta})]^2<br>\end{aligned}<br>\end{equation}<br>$$</p>
-</li>
+<li><p>证明：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+\begin{aligned}
+MSE(\hat{\theta})&=E[(\hat{\theta}-\theta)^2]\\
+&=E\{[\hat{\theta}-E(\hat{\theta})+E(\hat{\theta})-\theta]\}\\
+&=E[\hat{\theta}-E(\hat{\theta})]^2 +2E\{[\hat{\theta}-E(\hat{\theta})][E(\hat{\theta})-\theta]\}+E[E(\hat{\theta})-\theta]^2\\
+&=Var(\hat{\theta})+2[E(\hat{\theta})-\theta]E[\hat{\theta}-E(\hat{\theta})]+[Bias(\hat{\theta})]^2\\
+&=Var(\hat{\theta})+[Bias(\hat{\theta})]^2
+\end{aligned}
+\end{equation}</script></li>
 </ul>
 <h3 id="五、小样本OLS"><a href="#五、小样本OLS" class="headerlink" title="五、小样本OLS"></a>五、小样本OLS</h3><h4 id="1-OLS推导"><a href="#1-OLS推导" class="headerlink" title="1. OLS推导"></a>1. OLS推导</h4><h5 id="1-1-标量形式"><a href="#1-1-标量形式" class="headerlink" title="1.1 标量形式"></a>1.1 标量形式</h5><ul>
-<li><p>标准方程组<br>$$<br>\begin{cases}<br>\frac{1}{n}\sum_{i=1}^{n}e_{i}=0 \<br>\frac{1}{n}\sum_{i=1}^{n}x_i e_{i}=0<br>\end{cases}\ \ \ \ \\  \<br>e_i=y_i-\hat{\alpha}-\hat{\beta}x_i \ \ \<br>\mathop{min}<em>{\hat{\alpha},\hat{\beta}} \sum</em>{i=1}^{n}(y_i-\hat{\alpha}-\hat{\beta}x_i)^2<br>$$</p>
-</li>
-<li><p>推导过程<br>$$<br>\bar{y}=\hat{\alpha}+\hat{\beta}\bar{x}\<br>\downarrow \<br>\sum x_i[(y_i-\bar{y})-\hat{\beta}(x_i-\bar{x})]=0 \<br>\downarrow \<br>\sum x_i(y_i-\bar{y})-\hat{\beta}\sum x_i(x_i-\bar{x})=0 \<br>\downarrow \<br>\hat{\beta}=\frac{\sum x_i(y_i-\bar{y})}{\sum x_i(x_i-\bar{x})}=\frac{\sum (x_i-\bar{x})(y_i-\bar{y})}{\sum (x_i-\bar{x})(x_i-\bar{x})} \<br>\downarrow \<br>\hat{\alpha}=\bar{y}-\hat{\beta}\bar{x}<br>$$</p>
-</li>
+<li><p>标准方程组</p>
+<script type="math/tex; mode=display">
+\begin{cases}
+\frac{1}{n}\sum_{i=1}^{n}e_{i}=0 \\
+\frac{1}{n}\sum_{i=1}^{n}x_i e_{i}=0
+\end{cases}\\ \ \\ \ \\\  \\
+e_i=y_i-\hat{\alpha}-\hat{\beta}x_i \\ \ \\
+\mathop{min}_{\hat{\alpha},\hat{\beta}} \sum_{i=1}^{n}(y_i-\hat{\alpha}-\hat{\beta}x_i)^2</script></li>
+<li><p>推导过程</p>
+<script type="math/tex; mode=display">
+\bar{y}=\hat{\alpha}+\hat{\beta}\bar{x}\\
+\downarrow \\
+\sum x_i[(y_i-\bar{y})-\hat{\beta}(x_i-\bar{x})]=0 \\
+\downarrow \\
+\sum x_i(y_i-\bar{y})-\hat{\beta}\sum x_i(x_i-\bar{x})=0 \\ 
+\downarrow \\
+\hat{\beta}=\frac{\sum x_i(y_i-\bar{y})}{\sum x_i(x_i-\bar{x})}=\frac{\sum (x_i-\bar{x})(y_i-\bar{y})}{\sum (x_i-\bar{x})(x_i-\bar{x})} \\
+\downarrow \\
+\hat{\alpha}=\bar{y}-\hat{\beta}\bar{x}</script></li>
 </ul>
-<h5 id="1-2-向量形式"><a href="#1-2-向量形式" class="headerlink" title="1.2 向量形式"></a>1.2 向量形式</h5><h6 id="1-2-1-代数法"><a href="#1-2-1-代数法" class="headerlink" title="1.2.1 代数法"></a>1.2.1 代数法</h6><p>$$<br>Y=X\hat{\beta}+e \ \ \<br>\begin{equation}<br>\begin{aligned}<br>\mathop{min}<em>{\hat{\beta}}SSR &amp;=\mathop{min}</em>{\hat{\beta}} (Y-X\hat{\beta})’(Y-X\hat{\beta})\<br>&amp;=\mathop{min}<em>{\hat{\beta}}(Y’Y-Y’X\hat{\beta}-\hat{\beta}’X’Y+\hat{\beta}X’X\hat{\beta})\<br>&amp;=\mathop{min}</em>{\hat{\beta}}(Y’Y-\underbrace{2Y’X\hat{\beta}}_{scalar!!!}+\hat{\beta}X’X\hat{\beta}) \</p>
-<p>\end{aligned}<br>\end{equation}<br>\ \ \<br>\frac{\partial SSR}{\partial \hat{\beta}}=-2X’Y+2X’X\hat{\beta}=0 \<br>\text{Notice: 这里用到了 二、1.2中的矩阵求导知识} \<br>\hat{\beta}=(X’X)^{-1}X’Y<br>$$</p>
-<h6 id="1-2-2-几何法"><a href="#1-2-2-几何法" class="headerlink" title="1.2.2 几何法"></a>1.2.2 几何法</h6><p>$$<br>X’e=<br>\begin{pmatrix}<br>1 &amp;1 &amp; \cdots &amp;1 \<br>x_{12} &amp;x_{22} &amp;\cdots &amp;x_{n2} \<br>\vdots &amp;\vdots &amp;\ddots &amp;\vdots \<br>x_{1k} &amp;x_{2k} &amp;\cdots &amp;x_{nk} </p>
-<p>\end{pmatrix}_{k\times n}\cdot<br>\begin{pmatrix}<br>e_1 \ e_2 \ \vdots \ e_n<br>\end{pmatrix}_{n\times 1}=0</p>
-<p>\ \ \ \ \<br>e=Y-X\hat{\beta}\<br>X’(Y-X\hat{\beta})=0 \<br>\hat{\beta}=(X’X)^{-1}X’Y<br>$$</p>
-<h4 id="2-Projection-Matrix-Residual-Making-Matrix-and-Frisch-Waugh-Lovell-Theorem"><a href="#2-Projection-Matrix-Residual-Making-Matrix-and-Frisch-Waugh-Lovell-Theorem" class="headerlink" title="2. Projection Matrix, Residual Making Matrix and Frisch-Waugh-Lovell Theorem"></a>2. Projection Matrix, Residual Making Matrix and Frisch-Waugh-Lovell Theorem</h4><h5 id="2-1-推导"><a href="#2-1-推导" class="headerlink" title="2.1 推导"></a>2.1 推导</h5><p>$$<br>\hat{y}=X\hat{\beta}=X(X’X)^{-1}X’Y\<br>Set\ P_x=X(X’X)^{-1}X’\ [Projection\ Matrix]\<br>e=y-P_{x}y=[I-P_x]y \<br>Set\ M_x=I-P_x=I-X(X’X)^{-1}X’\ [Residual\ Making\ Matrix]\<br>\therefore\ e=M_x y=M_xu\<br>\ \ \ \hat{y}=P_x y<br>$$</p>
-<h5 id="2-2-P-x-M-x-性质"><a href="#2-2-P-x-M-x-性质" class="headerlink" title="2.2 $P_x, M_x$性质"></a>2.2 $P_x, M_x$性质</h5><ol>
+<h5 id="1-2-向量形式"><a href="#1-2-向量形式" class="headerlink" title="1.2 向量形式"></a>1.2 向量形式</h5><h6 id="1-2-1-代数法"><a href="#1-2-1-代数法" class="headerlink" title="1.2.1 代数法"></a>1.2.1 代数法</h6><script type="math/tex; mode=display">
+Y=X\hat{\beta}+e \\ \ \\
+\begin{equation}
+\begin{aligned}
+\mathop{min}_{\hat{\beta}}SSR &=\mathop{min}_{\hat{\beta}} (Y-X\hat{\beta})'(Y-X\hat{\beta})\\
+&=\mathop{min}_{\hat{\beta}}(Y'Y-Y'X\hat{\beta}-\hat{\beta}'X'Y+\hat{\beta}X'X\hat{\beta})\\
+&=\mathop{min}_{\hat{\beta}}(Y'Y-\underbrace{2Y'X\hat{\beta}}_{scalar!!!}+\hat{\beta}X'X\hat{\beta}) \\
+
+\end{aligned}
+\end{equation}
+\\ \ \\
+\frac{\partial SSR}{\partial \hat{\beta}}=-2X'Y+2X'X\hat{\beta}=0 \\ 
+\text{Notice: 这里用到了 二、1.2中的矩阵求导知识} \\
+\hat{\beta}=(X'X)^{-1}X'Y</script><h6 id="1-2-2-几何法"><a href="#1-2-2-几何法" class="headerlink" title="1.2.2 几何法"></a>1.2.2 几何法</h6><script type="math/tex; mode=display">
+X'e=
+\begin{pmatrix}
+1 &1 & \cdots &1 \\
+x_{12} &x_{22} &\cdots &x_{n2} \\
+\vdots &\vdots &\ddots &\vdots \\
+x_{1k} &x_{2k} &\cdots &x_{nk} 
+
+\end{pmatrix}_{k\times n}\cdot
+\begin{pmatrix}
+e_1 \\ e_2 \\ \vdots \\ e_n
+\end{pmatrix}_{n\times 1}=0
+
+\\ \ \\ \ \\ 
+e=Y-X\hat{\beta}\\
+X'(Y-X\hat{\beta})=0 \\
+\hat{\beta}=(X'X)^{-1}X'Y</script><h4 id="2-Projection-Matrix-Residual-Making-Matrix-and-Frisch-Waugh-Lovell-Theorem"><a href="#2-Projection-Matrix-Residual-Making-Matrix-and-Frisch-Waugh-Lovell-Theorem" class="headerlink" title="2. Projection Matrix, Residual Making Matrix and Frisch-Waugh-Lovell Theorem"></a>2. Projection Matrix, Residual Making Matrix and Frisch-Waugh-Lovell Theorem</h4><h5 id="2-1-推导"><a href="#2-1-推导" class="headerlink" title="2.1 推导"></a>2.1 推导</h5><script type="math/tex; mode=display">
+\hat{y}=X\hat{\beta}=X(X'X)^{-1}X'Y\\
+Set\ P_x=X(X'X)^{-1}X'\ [Projection\ Matrix]\\
+e=y-P_{x}y=[I-P_x]y \\
+Set\ M_x=I-P_x=I-X(X'X)^{-1}X'\ [Residual\ Making\ Matrix]\\
+\therefore\ e=M_x y=M_xu\\
+\ \ \ \hat{y}=P_x y</script><h5 id="2-2-P-x-M-x-性质"><a href="#2-2-P-x-M-x-性质" class="headerlink" title="2.2 $P_x, M_x$性质"></a>2.2 $P_x, M_x$性质</h5><ol>
 <li>$P_x+M_x=I$</li>
 <li>对称性：$P_x=P_x’$, $M_x=M_x’$</li>
 <li>等幂矩阵：$P_x P_x=P_x, \ M_x M_x=M_x$<ul>
@@ -386,44 +509,98 @@
 <h5 id="2-3-Frisch-Waugh-Lovell-Theorem"><a href="#2-3-Frisch-Waugh-Lovell-Theorem" class="headerlink" title="2.3 Frisch-Waugh-Lovell Theorem"></a>2.3 Frisch-Waugh-Lovell Theorem</h5><h6 id="2-3-1-描述"><a href="#2-3-1-描述" class="headerlink" title="2.3.1 描述"></a>2.3.1 描述</h6><ul>
 <li>在向量$\vec{y}$对两组变量$X_1, X_2$的线性最小二乘回归中，将$\vec{y}$对$X_1$单独做回归并得到残差，然后将$X_2$中的每列对$X_1$做回归并得到一组残差，将前者得到的残差对后者得到的残差集再次回归，得到$\hat{\beta_2}$ [Partial Out]。</li>
 </ul>
-<h6 id="2-3-2-原理"><a href="#2-3-2-原理" class="headerlink" title="2.3.2 原理"></a>2.3.2 原理</h6><p>$$<br>X=[X_1,X_2]\<br>y=X_1\beta_1+X_2 \beta_2+u\<br>Define\ P_1=X(X’X)^{-1}X’\ M=I-P_1\<br>M_1 y=\underbrace{M_1 X_1\beta_1}_{=0}+M_1X_2 \beta_2+M_1u \<br>其中：\<br>\begin{aligned}<br>&amp;M_1y: y对X_1做回归所得的残差向量<br>\ &amp;M_1X_2:X_2每一列对X_1做回归所得的矩阵（向量集）<br>\end{aligned}<br>$$</p>
-<h6 id="2-3-3-更正式的推导：分块回归与偏回归"><a href="#2-3-3-更正式的推导：分块回归与偏回归" class="headerlink" title="2.3.3 更正式的推导：分块回归与偏回归"></a>2.3.3 更正式的推导：分块回归与偏回归</h6><ul>
-<li>描述<br>$$<br>y=X\beta+u=\begin{pmatrix}X_1&amp;X_2\end{pmatrix} \begin{pmatrix}\beta_1 \ \beta_2\end{pmatrix}+u=X_1\beta_1+X_2\beta_2+u<br>$$</li>
+<h6 id="2-3-2-原理"><a href="#2-3-2-原理" class="headerlink" title="2.3.2 原理"></a>2.3.2 原理</h6><script type="math/tex; mode=display">
+X=[X_1,X_2]\\
+y=X_1\beta_1+X_2 \beta_2+u\\
+Define\ P_1=X(X'X)^{-1}X'\\ M=I-P_1\\
+M_1 y=\underbrace{M_1 X_1\beta_1}_{=0}+M_1X_2 \beta_2+M_1u \\
+其中：\\
+\begin{aligned}
+&M_1y: y对X_1做回归所得的残差向量
+\\ &M_1X_2:X_2每一列对X_1做回归所得的矩阵（向量集）
+\end{aligned}</script><h6 id="2-3-3-更正式的推导：分块回归与偏回归"><a href="#2-3-3-更正式的推导：分块回归与偏回归" class="headerlink" title="2.3.3 更正式的推导：分块回归与偏回归"></a>2.3.3 更正式的推导：分块回归与偏回归</h6><ul>
+<li>描述<script type="math/tex; mode=display">
+y=X\beta+u=\begin{pmatrix}X_1&X_2\end{pmatrix} \begin{pmatrix}\beta_1 \\ \beta_2\end{pmatrix}+u=X_1\beta_1+X_2\beta_2+u</script></li>
 </ul>
 <ul>
-<li><p>正规方程组<br>$$<br>\begin{pmatrix}X_1{‘}X_1&amp;X_1{‘}X_2 \ X_2{‘}X_1&amp;X_2{‘}X_2\end{pmatrix}<br>\begin{pmatrix}\hat{\beta_1 \ \hat{\beta_2}}\end{pmatrix}<br>=\begin{pmatrix}X_1{‘}{y} \ X_2{‘}{y}\end{pmatrix}<br>$$</p>
-</li>
-<li><p>正交分解定理<br>$$<br>\hat{y}=\frac{u_1 y}{u_1 u_1}u_1+\frac{u_2 y}{u_2 u_2}u_2+\cdots+\frac{u_k y}{u_k u_k}u_k<br>$$</p>
-</li>
+<li><p>正规方程组</p>
+<script type="math/tex; mode=display">
+\begin{pmatrix}X_1{'}X_1&X_1{'}X_2 \\ X_2{'}X_1&X_2{'}X_2\end{pmatrix}
+\begin{pmatrix}\hat{\beta_1 \\ \hat{\beta_2}}\end{pmatrix}
+=\begin{pmatrix}X_1{'}{y} \\ X_2{'}{y}\end{pmatrix}</script></li>
+<li><p>正交分解定理</p>
+<script type="math/tex; mode=display">
+\hat{y}=\frac{u_1 y}{u_1 u_1}u_1+\frac{u_2 y}{u_2 u_2}u_2+\cdots+\frac{u_k y}{u_k u_k}u_k</script></li>
 </ul>
 <ul>
-<li>$b_2$的推导<br>$$<br>X_1{‘}X_1 b_1+X_1{‘}X_2b_2=X_1{‘}Y\<br>X_2{‘}X_1 b_1+X_2{‘}X_2b_2=X_2{‘}Y\ \ \<br>b_1=(X_1{‘}X_1)^{-1}X_1{‘}Y-(X_1{‘}X_1)^{-1}X_1{‘}X_2{‘}b_2=(X_1{‘}X_1)^{-1}X_1{‘}(Y-X_2b_2)\ \ \<br>X_2{‘}X_1(X_1{‘}X_1)^{-1}X_1{‘}Y-X_2{‘}X_1(X_1{‘}X_1)^{-1}X_1{‘}X_2b_2+X_2{‘}X_2b_2=X_2{‘}Y\ \ \<br>\begin{aligned}<br>\therefore\ b_2&amp;=[X_2{‘}X_2-X_2{‘}X_1(X_1{‘}X_1)^{-1}X_1{‘}X_2]^{-1}\cdot (X_2{‘}Y-X_2{‘}X_1(X_1{‘}X_1)^{-1}X_1{‘}Y)\<br>&amp;=[X_2{‘}(I-X_1(X_1{‘}X_1)^{-1}X_1{‘})X_2]^{-1}\cdot (X_2{‘}(I-X_1(X_1{‘}X_1)^{-1}X_1{‘})Y)\<br>&amp;=(X_2{‘}M_1X_2)^{-1}(X_2M_1Y)<br>\end{aligned} \ \ \ \<br>\begin{aligned}<br>&amp;Define:\&amp;X_2^{<em>}=M_1X_2 \&amp;Y^{</em>}=M_1Y \<br>And\ \ &amp;b_2=(X_2^{<em>}{‘}X_2^{</em>})^{-1}(X_2^{*}Y)<br>\end{aligned}<br>$$</li>
+<li>$b_2$的推导<script type="math/tex; mode=display">
+X_1{'}X_1 b_1+X_1{'}X_2b_2=X_1{'}Y\\
+X_2{'}X_1 b_1+X_2{'}X_2b_2=X_2{'}Y\\ \ \\
+b_1=(X_1{'}X_1)^{-1}X_1{'}Y-(X_1{'}X_1)^{-1}X_1{'}X_2{'}b_2=(X_1{'}X_1)^{-1}X_1{'}(Y-X_2b_2)\\ \ \\
+X_2{'}X_1(X_1{'}X_1)^{-1}X_1{'}Y-X_2{'}X_1(X_1{'}X_1)^{-1}X_1{'}X_2b_2+X_2{'}X_2b_2=X_2{'}Y\\ \ \\
+\begin{aligned}
+\therefore\ b_2&=[X_2{'}X_2-X_2{'}X_1(X_1{'}X_1)^{-1}X_1{'}X_2]^{-1}\cdot (X_2{'}Y-X_2{'}X_1(X_1{'}X_1)^{-1}X_1{'}Y)\\
+&=[X_2{'}(I-X_1(X_1{'}X_1)^{-1}X_1{'})X_2]^{-1}\cdot (X_2{'}(I-X_1(X_1{'}X_1)^{-1}X_1{'})Y)\\
+&=(X_2{'}M_1X_2)^{-1}(X_2M_1Y)
+\end{aligned} \\ \ \ \\
+\begin{aligned}
+&Define:\\&X_2^{*}=M_1X_2 \\&Y^{*}=M_1Y \\
+And\ \ &b_2=(X_2^{*}{'}X_2^{*})^{-1}(X_2^{*}Y)
+\end{aligned}</script></li>
 </ul>
 <h4 id="3-OLS估计量的性质的证明"><a href="#3-OLS估计量的性质的证明" class="headerlink" title="3. OLS估计量的性质的证明"></a>3. OLS估计量的性质的证明</h4><h5 id="3-1-无偏性-E-hat-beta-beta"><a href="#3-1-无偏性-E-hat-beta-beta" class="headerlink" title="3.1 无偏性 $E(\hat{\beta})=\beta$"></a>3.1 无偏性 $E(\hat{\beta})=\beta$</h5><p>​    证明：$\hat{\beta}=(X’X)^{-1}X’Y=(X’X)^{-1}X’(X\beta+u)=\beta+(X’X)^{-1}X’u$</p>
 <p>​            $E(\hat{\beta})=\beta+(X’X)^{-1}X’E(u)=\beta+(X’X)^{-1}X’E_XE(u|X)=\beta$</p>
 <ul>
 <li><p>一阶矩假定：$E(u)=E_X(E(u|X))=0\leftarrow E(u|X)=0\rightarrow Cov(X,u)=0$</p>
 <ul>
-<li>证明：<br>$$<br>\begin{aligned}<br>Cov(X,u)&amp;=E(Xu)-E(X)E(u)\<br>&amp;=E(Xu)\<br>&amp;=E_X(XE(u|X))\<br>&amp;=0<br>\end{aligned}<br>$$</li>
+<li>证明：<script type="math/tex; mode=display">
+\begin{aligned}
+Cov(X,u)&=E(Xu)-E(X)E(u)\\
+&=E(Xu)\\
+&=E_X(XE(u|X))\\
+&=0
+\end{aligned}</script></li>
 </ul>
 </li>
 </ul>
 <ul>
-<li>二阶矩假定(球形扰动项）【与无偏性无关】：$Var(u)=\sigma^2I$ OR $Var(Y)=\sigma^2I$<br>$$<br>\begin{aligned}<br>Var(\hat{\beta})&amp;=Var(\beta+(X’X)^{-1}X’u)\<br>&amp;=Var((X’X)^{-1}X’u)\<br>&amp;=(X’X)^{-1}X’Var(u)X(X’X)^{-1}\<br>&amp;=\sigma^2(X’X)^{-1}<br>\end{aligned}<br>$$</li>
+<li>二阶矩假定(球形扰动项）【与无偏性无关】：$Var(u)=\sigma^2I$ OR $Var(Y)=\sigma^2I$<script type="math/tex; mode=display">
+\begin{aligned}
+Var(\hat{\beta})&=Var(\beta+(X'X)^{-1}X'u)\\
+&=Var((X'X)^{-1}X'u)\\
+&=(X'X)^{-1}X'Var(u)X(X'X)^{-1}\\
+&=\sigma^2(X'X)^{-1}
+\end{aligned}</script></li>
 </ul>
-<h5 id="3-2-一致性"><a href="#3-2-一致性" class="headerlink" title="3.2 一致性"></a>3.2 一致性</h5><p>$$<br>Pr(|\hat{\beta}_n-\beta|&gt;\varepsilon)\rightarrow0 \ \ as\ \ n\rightarrow\infty \<br>$$</p>
-<ul>
-<li><p>证明：$\hat{\beta}<em>n-\beta=(X’X)^{-1}X’u=[\frac{1}{n}\sum</em>{i=1}^n x_i x_i’]^{-1}[\frac{1}{n}\sum_{i=1}^n x_i u_i]\stackrel{P}\longrightarrow E(x_ix_i’)^{-1}E(x_iu_i)$</p>
-</li>
+<h5 id="3-2-一致性"><a href="#3-2-一致性" class="headerlink" title="3.2 一致性"></a>3.2 一致性</h5><script type="math/tex; mode=display">
+Pr(|\hat{\beta}_n-\beta|>\varepsilon)\rightarrow0 \ \ as\ \ n\rightarrow\infty \\</script><ul>
+<li><p>证明：</p>
+<script type="math/tex; mode=display">\hat{\beta}_n-\beta=(X'X)^{-1}X'u=[\frac{1}{n}\sum_{i=1}^n x_i x_i']^{-1}[\frac{1}{n}\sum_{i=1}^n x_i u_i]\stackrel{P}\longrightarrow E(x_ix_i')^{-1}E(x_iu_i)</script></li>
 <li><p>注意：这里未用二阶矩！也就是说异方差、自相关问题并不影响一致性！</p>
 </li>
 </ul>
-<h5 id="3-3-另外的讨论：对-sigma-2-的无偏估计量-hat-sigma-2"><a href="#3-3-另外的讨论：对-sigma-2-的无偏估计量-hat-sigma-2" class="headerlink" title="3.3 另外的讨论：对$\sigma^2$的无偏估计量$\hat{\sigma}^2$"></a>3.3 另外的讨论：对$\sigma^2$的无偏估计量$\hat{\sigma}^2$</h5><p>$$<br>\hat{\sigma}^2=\frac{\hat{u}’\hat{u}}{n-K}<br>$$</p>
-<ul>
-<li><p>证明：<br>$$<br>\begin{aligned}<br>E(s^2|X)&amp;=E(\frac{\hat{u}’\hat{u}}{n-K}|X)\&amp;=E(\frac{u’Mu}{n-K}|X)\<br>&amp;=\frac{1}{n-K}E(u’Mu|X)<br>\end{aligned}\<br>\begin{aligned}<br>\ \because E(u’Mu|X)&amp;=E(trace(u’Mu|X))\<br>&amp;=traceE(Muu’|X)\<br>&amp;=trace[M\sigma^2I_n]\<br>&amp;=\sigma^2trace(M)\<br>&amp;=\sigma^2trace(I_n-X(X’X)^{-1}X’)\<br>&amp;=\sigma^2(n-K)</p>
-<p>\end{aligned}\</p>
-<p>\begin{aligned}<br>\therefore E(s^2)&amp;=E_XE(s^2|X)\<br>&amp;=\sigma^2<br>\end{aligned}<br>$$</p>
-</li>
+<h5 id="3-3-另外的讨论：对-sigma-2-的无偏估计量-hat-sigma-2"><a href="#3-3-另外的讨论：对-sigma-2-的无偏估计量-hat-sigma-2" class="headerlink" title="3.3 另外的讨论：对$\sigma^2$的无偏估计量$\hat{\sigma}^2$"></a>3.3 另外的讨论：对$\sigma^2$的无偏估计量$\hat{\sigma}^2$</h5><script type="math/tex; mode=display">
+\hat{\sigma}^2=\frac{\hat{u}'\hat{u}}{n-K}</script><ul>
+<li><p>证明：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+E(s^2|X)&=E(\frac{\hat{u}'\hat{u}}{n-K}|X)\\&=E(\frac{u'Mu}{n-K}|X)\\
+&=\frac{1}{n-K}E(u'Mu|X)
+\end{aligned}\\
+\begin{aligned}
+\\ \because E(u'Mu|X)&=E(trace(u'Mu|X))\\
+&=traceE(Muu'|X)\\
+&=trace[M\sigma^2I_n]\\
+&=\sigma^2trace(M)\\
+&=\sigma^2trace(I_n-X(X'X)^{-1}X')\\
+&=\sigma^2(n-K)
+
+\end{aligned}\\
+
+\begin{aligned}
+\therefore E(s^2)&=E_XE(s^2|X)\\
+&=\sigma^2
+\end{aligned}</script></li>
 </ul>
 <h4 id="4-Gauss-Markov-Theorem"><a href="#4-Gauss-Markov-Theorem" class="headerlink" title="4. Gauss-Markov Theorem"></a>4. Gauss-Markov Theorem</h4><h5 id="4-1-描述"><a href="#4-1-描述" class="headerlink" title="4.1 描述"></a>4.1 描述</h5><ul>
 <li>当一阶矩假定、二阶矩假定都满足的时候，相比于其他线性无偏估计量，OLS估计量是最有效的。</li>
@@ -437,52 +614,133 @@
 <li>大样本OLS (放松的假定——同期不相关假定): $E(u_i|X)=c$, $E(u_i)=E_x(u_i|X)=E_x(c)=0$ </li>
 </ul>
 </li>
-<li><strong>二阶矩假定：球形扰动项</strong> 【违背后OLS估计量依旧无偏、一致，但就不是BLUE了】<ul>
-<li>$Var(u_i|X)=\sigma^2$</li>
-<li>$\begin{aligned} Var(u_i|X)&amp;=E(uu’|X)\&amp;=\begin{pmatrix}\sigma^2 &amp;0 &amp;\cdots &amp;0\ 0 &amp;\sigma^2 &amp;\cdots &amp;0 \ \vdots&amp;\vdots&amp;\ddots&amp;\vdots\ 0 &amp;0 &amp;\cdots &amp;\sigma^2\end{pmatrix}\end{aligned}=\sigma^2I$</li>
-</ul>
-</li>
+<li><strong>二阶矩假定：球形扰动项</strong> 【违背后OLS估计量依旧无偏、一致，但就不是BLUE了】<script type="math/tex; mode=display">
+Var(u_i|X)=\sigma^2</script></li>
 </ol>
-<ul>
+<script type="math/tex; mode=display">
+\begin{aligned} 
+Var(u_i|X)&=E(uu'|X) \\ 
+&=\begin{pmatrix}
+  \sigma^2 &0 &\cdots &0 \\ 
+  0 &\sigma^2 &\cdots &0 \\ 
+  \vdots&\vdots&\ddots&\vdots \\ 
+  0 &0 &\cdots &\sigma^2
+  \end{pmatrix} \\
+&=\sigma^2I
+\end{aligned}</script><ul>
 <li><strong><em>注意：正态性假设并非CLRM假定之一，但对于小样本OLS的假设检验很关键</em></strong></li>
 </ul>
 <h5 id="4-3-Gauss-Markov定理的证明"><a href="#4-3-Gauss-Markov定理的证明" class="headerlink" title="4.3 Gauss-Markov定理的证明"></a>4.3 Gauss-Markov定理的证明</h5><ul>
 <li><p>假设：$\hat{\beta}$为任一线性无偏估计</p>
 </li>
 <li><p>需证明：$Var(b|X)\leq Var(\hat{\beta}|X)$</p>
-<p>由于线性假定，故有$\hat \beta=C_{k\times n}y$<br>$$<br>\begin{aligned}<br>&amp;\because\ b=Ay, \ A=(X’X)^{-1}X’\\ \<br>&amp;Define\ D\equiv C-A\ \ \<br>&amp;\therefore\ \hat \beta=Cy=(A+D)y=D(X\beta+u)+b=DX\beta+Du+b\<br>&amp;\therefore\ \beta=E(\hat \beta |X)=E(DX\beta+Du+b|X)=DX\beta+\beta \<br>&amp;\therefore\ DX=0 \<br>&amp;\therefore\  \hat \beta=Du+b \<br>&amp;\therefore\ \hat{\beta}-\beta=(D+A)u \<br>&amp;\therefore\ Var(\hat{\beta}|X)=Var(\hat{\beta}-\beta|X)=Var((D+A)u|X)\<br>&amp; \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  =(D+A)Var(u|X)(D+A)’ \<br>&amp; \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  =\sigma^2(D+A)(D’+A’)\<br>&amp; \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  =\sigma^2(DD’+(X’X)^{-1})\<br>&amp;\therefore\ Var(\hat{\beta}|X)-Var(b|X)=\sigma^2DD’ \<br>\ \&amp;Notice: DD’是半正定矩阵！！！ </p>
-<p>\end{aligned}<br>$$</p>
-</li>
+<p>由于线性假定，故有$\hat \beta=C_{k\times n}y$</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+&\because\ b=Ay, \ A=(X'X)^{-1}X'\\\ \\ 
+&Define\ D\equiv C-A\\ \ \\
+&\therefore\ \hat \beta=Cy=(A+D)y=D(X\beta+u)+b=DX\beta+Du+b\\
+&\therefore\ \beta=E(\hat \beta |X)=E(DX\beta+Du+b|X)=DX\beta+\beta \\
+&\therefore\ DX=0 \\
+&\therefore\  \hat \beta=Du+b \\
+&\therefore\ \hat{\beta}-\beta=(D+A)u \\
+&\therefore\ Var(\hat{\beta}|X)=Var(\hat{\beta}-\beta|X)=Var((D+A)u|X)\\
+& \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  =(D+A)Var(u|X)(D+A)' \\
+& \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  =\sigma^2(D+A)(D'+A')\\
+& \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  =\sigma^2(DD'+(X'X)^{-1})\\
+&\therefore\ Var(\hat{\beta}|X)-Var(b|X)=\sigma^2DD' \\
+\ \\&Notice: DD'是半正定矩阵！！！ 
+
+\end{aligned}</script></li>
 </ul>
-<h4 id="5-R-2-拟合优度：相关的讨论"><a href="#5-R-2-拟合优度：相关的讨论" class="headerlink" title="5. $R^2$拟合优度：相关的讨论"></a>5. $R^2$拟合优度：相关的讨论</h4><h5 id="5-1-残差平方和的另一二次型表示"><a href="#5-1-残差平方和的另一二次型表示" class="headerlink" title="5.1 残差平方和的另一二次型表示"></a>5.1 残差平方和的另一二次型表示</h5><p>$$<br>e’e=Y’M’MY=Y’MY=Y’e=e’Y \ \ \<br>$$</p>
-<h5 id="5-2-与均值相关的等幂矩阵-M-0"><a href="#5-2-与均值相关的等幂矩阵-M-0" class="headerlink" title="5.2 与均值相关的等幂矩阵$M^0$"></a>5.2 与均值相关的等幂矩阵$M^0$</h5><p>$$<br>x=\begin{pmatrix} x_1 \ x_2 \ \vdots\ x_n\end{pmatrix} \ \ \<br>\bar{x}=\frac{1}{n}i’x\ \ \<br>i\bar{x}=i\frac{1}{n}i’x=\begin{pmatrix} \bar{x} \ \bar{x} \ \vdots\ \bar{x}\end{pmatrix}<br>=\frac{1}{n}ii’x\ \ \</p>
-<p>\therefore\ \begin{pmatrix} x_1-\bar{x}\ x_2-\bar{x} \ \vdots\ x_n-\bar{x}\end{pmatrix}<br>=[x-i\bar{x}]=[x-\frac{1}{n}ii’x]\ \  \ \<br>[x-\frac{1}{n}ii’x]=[I-\frac{1}{n}ii’]x=M^0x<br>\ \ \ M^0=I-\frac{1}{n}ii’ \ \ \<br>M^0i=0<br>$$</p>
-<h5 id="5-3-均值离差和"><a href="#5-3-均值离差和" class="headerlink" title="5.3 均值离差和"></a>5.3 均值离差和</h5><p>$$<br>\sum_{i=1}^{n}(x_i-\bar{x})=i’[M^0x]=0’x=0<br>$$</p>
-<h5 id="5-4-均值的离差平方和"><a href="#5-4-均值的离差平方和" class="headerlink" title="5.4 均值的离差平方和"></a>5.4 均值的离差平方和</h5><p>$$<br>\begin{aligned}<br>\sum_{i=1}^{n}(x_i-\bar{x})^2&amp;=\sum_{i=1}^{n}x_i^2-n\bar{x}^2\<br>&amp;=(x-\bar{x})’(x-\bar{x})\<br>&amp;=(M^0x)’(M^0x)\<br>&amp;=x’M^{0}{‘}M^0x \<br>&amp;=x’M^0x<br>\end{aligned}<br>$$</p>
-<p>$$<br>总结：\<br>\begin{pmatrix}<br>\sum_{i=1}^{n}(x_i-\bar{x})^2 &amp;\sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y})\<br>\sum_{i=1}^{n}(y_i-\bar{y})(x_i-\bar{x}) &amp;\sum_{i=1}^{n}(y_i-\bar{y})^2<br>\end{pmatrix}=<br>\begin{pmatrix}<br>x’M^0x &amp;x’M^0y\<br>y’M^0x &amp;y’M^0y<br>\end{pmatrix}<br>$$</p>
-<h5 id="5-5-R-2-推导"><a href="#5-5-R-2-推导" class="headerlink" title="5.5 $R^2$推导"></a>5.5 $R^2$推导</h5><p>$$<br>\begin{aligned}<br>&amp;\because\ y_i-\bar{y}=\hat{y}_i-\bar{y}+e_i\<br>&amp;\therefore\ M^0y=M^0Xb+M^0e \<br>&amp;\because\ e’M^0X=e’X=0\<br>&amp;\because\ y’M^0y=(Xb)’M^0Xb+e’e=\hat{y}M^0\hat{y}+e’e\<br>&amp;\therefore\ SST=SSE+SSR \ \ \<br>&amp;第一种表示方式：R^2=\frac{SSE}{SST}=\frac{(Xb)’M^0Xb}{y’M^0y}=1-\frac{SSR}{SST}=1-\frac{e’e}{y’M^0y}\ \ \ \ \<br>&amp;\because\ e=M_x y=M_x u \<br>&amp;\therefore\ e’e=u’M_xu \ \ \<br>&amp;第二种表示方式： R^2=1-\frac{u’M_xu}{y’M^0y}</p>
-<p>\ \ \ \ \ \ \</p>
-<p>&amp;\because\ (Xb)’M^0Xb=\hat{y}’M^0\hat{y}\ &amp;\hat{y}=Xb,y=\hat{y}+e,M^0e=e,X’e=0  \<br>&amp;\therefore\ \hat{y}’M^0\hat{y}=\hat{y}’M^0(y-e)=\hat{y}’M^0y-\hat{y}’M^0e=\hat{y}’M^0y \<br>\  \ &amp;第三种表示方式:R^2=\frac{\hat{y}’M^0\hat{y}}{y’M^0y}= \frac{\hat{y}’M^0y}{y’M^0y}\cdot \frac{\hat{y}’M^0y}{\hat{y}’M^0\hat{y}}=\frac{[\sum(\hat{y}_i-\bar{y})(y_i-\bar{y})]^2}{\sum(y_i-\bar{y})^2 \sum(\hat{y}_i-\bar{y})^2}<br>\end{aligned}<br>$$</p>
-<h5 id="5-6-Adjusted-R-2"><a href="#5-6-Adjusted-R-2" class="headerlink" title="5.6 Adjusted $R^2$"></a>5.6 Adjusted $R^2$</h5><p>$$<br>\bar{R}^2=1-\frac{e’e/(n-K)}{y’M^0y/(n-1)}=1-\frac{n-1}{n-K}(1-R^2)<br>$$</p>
-<ul>
+<h4 id="5-R-2-拟合优度：相关的讨论"><a href="#5-R-2-拟合优度：相关的讨论" class="headerlink" title="5. $R^2$拟合优度：相关的讨论"></a>5. $R^2$拟合优度：相关的讨论</h4><h5 id="5-1-残差平方和的另一二次型表示"><a href="#5-1-残差平方和的另一二次型表示" class="headerlink" title="5.1 残差平方和的另一二次型表示"></a>5.1 残差平方和的另一二次型表示</h5><script type="math/tex; mode=display">
+e'e=Y'M'MY=Y'MY=Y'e=e'Y \\ \ \\</script><h5 id="5-2-与均值相关的等幂矩阵-M-0"><a href="#5-2-与均值相关的等幂矩阵-M-0" class="headerlink" title="5.2 与均值相关的等幂矩阵$M^0$"></a>5.2 与均值相关的等幂矩阵$M^0$</h5><script type="math/tex; mode=display">
+x=\begin{pmatrix} x_1 \\ x_2 \\ \vdots\\ x_n\end{pmatrix} \\ \ \\ 
+\bar{x}=\frac{1}{n}i'x\\ \ \\
+i\bar{x}=i\frac{1}{n}i'x=\begin{pmatrix} \bar{x} \\ \bar{x} \\ \vdots\\ \bar{x}\end{pmatrix}
+=\frac{1}{n}ii'x\\ \ \\
+
+\therefore\ \begin{pmatrix} x_1-\bar{x}\\ x_2-\bar{x} \\ \vdots\\ x_n-\bar{x}\end{pmatrix}
+=[x-i\bar{x}]=[x-\frac{1}{n}ii'x]\\ \  \\ \ 
+[x-\frac{1}{n}ii'x]=[I-\frac{1}{n}ii']x=M^0x
+\\ \ \\ M^0=I-\frac{1}{n}ii' \\ \ \\
+M^0i=0</script><h5 id="5-3-均值离差和"><a href="#5-3-均值离差和" class="headerlink" title="5.3 均值离差和"></a>5.3 均值离差和</h5><script type="math/tex; mode=display">
+\sum_{i=1}^{n}(x_i-\bar{x})=i'[M^0x]=0'x=0</script><h5 id="5-4-均值的离差平方和"><a href="#5-4-均值的离差平方和" class="headerlink" title="5.4 均值的离差平方和"></a>5.4 均值的离差平方和</h5><script type="math/tex; mode=display">
+\begin{aligned}
+\sum_{i=1}^{n}(x_i-\bar{x})^2&=\sum_{i=1}^{n}x_i^2-n\bar{x}^2\\
+&=(x-\bar{x})'(x-\bar{x})\\
+&=(M^0x)'(M^0x)\\
+&=x'M^{0}{'}M^0x \\
+&=x'M^0x
+\end{aligned}</script><script type="math/tex; mode=display">
+总结：\\
+\begin{pmatrix}
+\sum_{i=1}^{n}(x_i-\bar{x})^2 &\sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y})\\
+\sum_{i=1}^{n}(y_i-\bar{y})(x_i-\bar{x}) &\sum_{i=1}^{n}(y_i-\bar{y})^2
+\end{pmatrix}=
+\begin{pmatrix}
+x'M^0x &x'M^0y\\
+y'M^0x &y'M^0y
+\end{pmatrix}</script><h5 id="5-5-R-2-推导"><a href="#5-5-R-2-推导" class="headerlink" title="5.5 $R^2$推导"></a>5.5 $R^2$推导</h5><script type="math/tex; mode=display">
+\begin{aligned}
+&\because\ y_i-\bar{y}=\hat{y}_i-\bar{y}+e_i\\
+&\therefore\ M^0y=M^0Xb+M^0e \\
+&\because\ e'M^0X=e'X=0\\
+&\because\ y'M^0y=(Xb)'M^0Xb+e'e=\hat{y}M^0\hat{y}+e'e\\
+&\therefore\ SST=SSE+SSR \\ \ \\
+&第一种表示方式：R^2=\frac{SSE}{SST}=\frac{(Xb)'M^0Xb}{y'M^0y}=1-\frac{SSR}{SST}=1-\frac{e'e}{y'M^0y}\\ \ \\ \ \\
+&\because\ e=M_x y=M_x u \\
+&\therefore\ e'e=u'M_xu \\ \ \\ 
+&第二种表示方式： R^2=1-\frac{u'M_xu}{y'M^0y}
+
+\\ \ \\ \ \\ \ \\
+
+
+&\because\ (Xb)'M^0Xb=\hat{y}'M^0\hat{y}\\ &\hat{y}=Xb,y=\hat{y}+e,M^0e=e,X'e=0  \\
+&\therefore\ \hat{y}'M^0\hat{y}=\hat{y}'M^0(y-e)=\hat{y}'M^0y-\hat{y}'M^0e=\hat{y}'M^0y \\
+\\  \ &第三种表示方式:R^2=\frac{\hat{y}'M^0\hat{y}}{y'M^0y}= \frac{\hat{y}'M^0y}{y'M^0y}\cdot \frac{\hat{y}'M^0y}{\hat{y}'M^0\hat{y}}=\frac{[\sum(\hat{y}_i-\bar{y})(y_i-\bar{y})]^2}{\sum(y_i-\bar{y})^2 \sum(\hat{y}_i-\bar{y})^2}
+\end{aligned}</script><h5 id="5-6-Adjusted-R-2"><a href="#5-6-Adjusted-R-2" class="headerlink" title="5.6 Adjusted $R^2$"></a>5.6 Adjusted $R^2$</h5><script type="math/tex; mode=display">
+\bar{R}^2=1-\frac{e'e/(n-K)}{y'M^0y/(n-1)}=1-\frac{n-1}{n-K}(1-R^2)</script><ul>
 <li><p>定理：在一个多元回归中，若一个回归变量$X$的$t$值大于1，将这个变量去掉将导致$\bar{R}^2$减小</p>
 <ul>
 <li><p>证明：</p>
-<p>$R_K^2为全变量回归后的拟合优度；R_1^2为省略x_K后的拟合优度$<br>$$<br>\begin{aligned}<br>&amp;R_K^2=1-\frac{e’e}{y’M^0y}\<br>&amp;R_1^2=1-\frac{e_1{‘}e_{1}}{y’M^0y} \<br>&amp;\bar{R}<em>K^2=1-\frac{n-1}{n-K}(1-R_K^2)\<br>&amp;\bar{R}_1^2=1-\frac{n-1}{n-K+1}(1-R_1^2)\<br>&amp;\bar{R}_K^2-\bar{R}_1^2=\frac{n-1}{n-K+1}\frac{e_1{‘}e</em>{1}}{y’M^0y}-\frac{n-1}{n-K}\frac{e’e}{y’M^0y}</p>
-<p>\end{aligned}<br>$$<br>若剔除一个解释变量后调整$R^2$变小，$\bar{R}_K^2-\bar{R}_1^2&gt;0$, 即要求$(n-K)e_1’e_1&gt;(n-K+1)e’e$, 又因为:<br>$$<br>e_1’e_1=e’e+b_K^2(X_K’M^1X_K)\<br>e’e=(n-K)s^2\<br>\therefore b_K^2(X_K’M^1X_K)&gt;1\<br>定理得证。<br>$$</p>
-</li>
+<p>$R_K^2为全变量回归后的拟合优度；R_1^2为省略x_K后的拟合优度$</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+&R_K^2=1-\frac{e'e}{y'M^0y}\\
+&R_1^2=1-\frac{e_1{'}e_{1}}{y'M^0y} \\
+&\bar{R}_K^2=1-\frac{n-1}{n-K}(1-R_K^2)\\
+&\bar{R}_1^2=1-\frac{n-1}{n-K+1}(1-R_1^2)\\
+&\bar{R}_K^2-\bar{R}_1^2=\frac{n-1}{n-K+1}\frac{e_1{'}e_{1}}{y'M^0y}-\frac{n-1}{n-K}\frac{e'e}{y'M^0y}
+
+\end{aligned}</script><p>若剔除一个解释变量后调整$R^2$变小，$\bar{R}_K^2-\bar{R}_1^2&gt;0$, 即要求$(n-K)e_1’e_1&gt;(n-K+1)e’e$, 又因为:</p>
+<script type="math/tex; mode=display">
+e_1'e_1=e'e+b_K^2(X_K'M^1X_K)\\
+e'e=(n-K)s^2\\
+\therefore b_K^2(X_K'M^1X_K)>1\\
+定理得证。</script></li>
 </ul>
 </li>
 </ul>
 <ul>
 <li><p>补充：为什么$e_1’e_1=e’e+b_K^2(X_K’M^1X_K)$?</p>
-<pre><code> 参见“偏回归”一章，这也说明了为何增加解释变量后$R^2$只增不减。</code></pre>
-</li>
+<pre><code> 参见“偏回归”一章，这也说明了为何增加解释变量后$R^2$只增不减。
+</code></pre></li>
 </ul>
-<h5 id="5-7-证明-SST-SSR-SSE-：标量形式"><a href="#5-7-证明-SST-SSR-SSE-：标量形式" class="headerlink" title="5.7 证明$SST=SSR+SSE$：标量形式"></a>5.7 证明$SST=SSR+SSE$：标量形式</h5><p>证明：$\sum(y_i-\bar y)^2=\sum(\hat{y}_i-\bar{y})^2+\sum e_i^2$<br>$$<br>\begin{aligned}<br>\sum(y_i-\bar y)^2&amp;=\sum(y_i-\hat{y}_i+\hat{y}_i-\bar y)^2<br>\&amp;=\sum(y_i-\hat y)^2+\sum(\hat{y}_i-\bar{y})^2+2\sum(y_i-\hat{y}_i)(\hat{y}_i-\bar{y})<br>\&amp;=\sum(y_i-\hat y)^2+\sum(\hat{y}_i-\bar{y})^2+2\sum(y_i-\hat{y}_i)(a+bx_i-\bar{y})<br>\&amp;=\sum(y_i-\hat y)^2+\sum(\hat{y}_i-\bar{y})^2+2[\sum(y_i-\hat{y}_i)(a-\bar{y})+b\sum(y_i-\hat{y}_i)x_i]<br>\&amp;=\sum(y_i-\hat y)^2+\sum(\hat{y}_i-\bar{y})^2+2[\sum(y_i-a-bx_i)(a-\bar{y})+b\sum(y_i-a-bx_i)x_i]<br>\&amp;=\sum(y_i-\hat y)^2+\sum(\hat{y}_i-\bar{y})^2<br>\&amp;=\sum(\hat{y}_i-\bar{y})^2+\sum e_i^2<br>\end{aligned}<br>$$</p>
-<h5 id="5-8-对单个系数的t检验"><a href="#5-8-对单个系数的t检验" class="headerlink" title="5.8 对单个系数的t检验"></a>5.8 对单个系数的t检验</h5><ul>
-<li><p>$t$统计量的分布<br>$$<br>t_k\equiv\frac{b_k-\bar{\beta_{k}}}{SE(b_k)}\equiv\frac{b_k-\bar{\beta_{k}}}{\sqrt{s^2(X’X)_{kk}^{-1}}}\sim t(n-K)<br>$$</p>
-</li>
+<h5 id="5-7-证明-SST-SSR-SSE-：标量形式"><a href="#5-7-证明-SST-SSR-SSE-：标量形式" class="headerlink" title="5.7 证明$SST=SSR+SSE$：标量形式"></a>5.7 证明$SST=SSR+SSE$：标量形式</h5><p>证明：$\sum(y_i-\bar y)^2=\sum(\hat{y}_i-\bar{y})^2+\sum e_i^2$</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\sum(y_i-\bar y)^2&=\sum(y_i-\hat{y}_i+\hat{y}_i-\bar y)^2
+\\&=\sum(y_i-\hat y)^2+\sum(\hat{y}_i-\bar{y})^2+2\sum(y_i-\hat{y}_i)(\hat{y}_i-\bar{y})
+\\&=\sum(y_i-\hat y)^2+\sum(\hat{y}_i-\bar{y})^2+2\sum(y_i-\hat{y}_i)(a+bx_i-\bar{y})
+\\&=\sum(y_i-\hat y)^2+\sum(\hat{y}_i-\bar{y})^2+2[\sum(y_i-\hat{y}_i)(a-\bar{y})+b\sum(y_i-\hat{y}_i)x_i]
+\\&=\sum(y_i-\hat y)^2+\sum(\hat{y}_i-\bar{y})^2+2[\sum(y_i-a-bx_i)(a-\bar{y})+b\sum(y_i-a-bx_i)x_i]
+\\&=\sum(y_i-\hat y)^2+\sum(\hat{y}_i-\bar{y})^2
+\\&=\sum(\hat{y}_i-\bar{y})^2+\sum e_i^2
+\end{aligned}</script><h5 id="5-8-对单个系数的t检验"><a href="#5-8-对单个系数的t检验" class="headerlink" title="5.8 对单个系数的t检验"></a>5.8 对单个系数的t检验</h5><ul>
+<li><p>$t$统计量的分布</p>
+<script type="math/tex; mode=display">
+t_k\equiv\frac{b_k-\bar{\beta_{k}}}{SE(b_k)}\equiv\frac{b_k-\bar{\beta_{k}}}{\sqrt{s^2(X'X)_{kk}^{-1}}}\sim t(n-K)</script></li>
 <li><p>第一类错误vs第二类错误</p>
 <ul>
 <li>第一类错误：$P(reject\ H_0|H_0)$</li>
@@ -496,25 +754,29 @@
 <h5 id="5-9-对线性假设的F检验"><a href="#5-9-对线性假设的F检验" class="headerlink" title="5.9 对线性假设的F检验"></a>5.9 对线性假设的F检验</h5><ul>
 <li><p>检验的原假设$H_0:R\beta=r$</p>
 </li>
-<li><p>F统计量的分布<br>$$<br>F\equiv\frac{(Rb-r)’[R(X’X)^{-1}R’]^{-1}(Rb-r)/m}{s^2}\sim F(m,n-K)<br>$$</p>
-</li>
+<li><p>F统计量的分布</p>
+<script type="math/tex; mode=display">
+F\equiv\frac{(Rb-r)'[R(X'X)^{-1}R']^{-1}(Rb-r)/m}{s^2}\sim F(m,n-K)</script></li>
 </ul>
-<h5 id="5-10-F统计量的似然比原理表达式"><a href="#5-10-F统计量的似然比原理表达式" class="headerlink" title="5.10 F统计量的似然比原理表达式"></a>5.10 F统计量的似然比原理表达式</h5><p>$$<br>F=\frac{(e^*{‘}e^*-e’e)/m}{e’e/(n-K)}<br>$$</p>
-<h5 id="5-11-预测"><a href="#5-11-预测" class="headerlink" title="5.11 预测"></a>5.11 预测</h5><ul>
-<li><p>预测点的精确值<br>$$<br>y_0=x_0^{‘}\beta+\varepsilon_0<br>$$</p>
-</li>
-<li><p>预测误差<br>$$<br>\hat{y}_0-y_0=x_0^{‘}(b-\beta)-\varepsilon_0<br>$$</p>
-</li>
-<li><p>预测误差的方差<br>$$<br>Var(\hat{y}_0-y_0)=Var(\varepsilon_0)+Var[x_0’(b-\beta)]=\underbrace{\sigma^2}_{y_0本身的不确定性}+\underbrace{\sigma^2x_0’(X’X)^{-1}x_0}_{抽样误差}<br>$$</p>
-</li>
+<h5 id="5-10-F统计量的似然比原理表达式"><a href="#5-10-F统计量的似然比原理表达式" class="headerlink" title="5.10 F统计量的似然比原理表达式"></a>5.10 F统计量的似然比原理表达式</h5><script type="math/tex; mode=display">
+F=\frac{(e^*{'}e^*-e'e)/m}{e'e/(n-K)}</script><h5 id="5-11-预测"><a href="#5-11-预测" class="headerlink" title="5.11 预测"></a>5.11 预测</h5><ul>
+<li><p>预测点的精确值</p>
+<script type="math/tex; mode=display">
+y_0=x_0^{'}\beta+\varepsilon_0</script></li>
+<li><p>预测误差</p>
+<script type="math/tex; mode=display">
+\hat{y}_0-y_0=x_0^{'}(b-\beta)-\varepsilon_0</script></li>
+<li><p>预测误差的方差</p>
+<script type="math/tex; mode=display">
+Var(\hat{y}_0-y_0)=Var(\varepsilon_0)+Var[x_0'(b-\beta)]=\underbrace{\sigma^2}_{y_0本身的不确定性}+\underbrace{\sigma^2x_0'(X'X)^{-1}x_0}_{抽样误差}</script></li>
 <li><p>扰动项服从正态分布 $\hat{y}_0-y_0\sim N(0,\sigma^2+\sigma^2x_0’(X’X)^{-1}x_0)$</p>
 <ul>
 <li>$\sigma^2$未知</li>
 </ul>
 </li>
 </ul>
-<p>$$<br>\frac{\hat{y}_0-y_0}{s\sqrt{1+x_0’(X’X)^{-1}x_0}}\sim t(n-K)<br>$$</p>
-<h3 id="六、大样本OLS：渐进性质"><a href="#六、大样本OLS：渐进性质" class="headerlink" title="六、大样本OLS：渐进性质"></a>六、大样本OLS：渐进性质</h3><h4 id="1-多重共线性-amp-解决方式之一：增大样本量"><a href="#1-多重共线性-amp-解决方式之一：增大样本量" class="headerlink" title="1. 多重共线性&amp;解决方式之一：增大样本量"></a>1. 多重共线性&amp;解决方式之一：增大样本量</h4><h5 id="1-1-概念：完全与非完全"><a href="#1-1-概念：完全与非完全" class="headerlink" title="1.1 概念：完全与非完全"></a>1.1 概念：完全与非完全</h5><ul>
+<script type="math/tex; mode=display">
+\frac{\hat{y}_0-y_0}{s\sqrt{1+x_0'(X'X)^{-1}x_0}}\sim t(n-K)</script><h3 id="六、大样本OLS：渐进性质"><a href="#六、大样本OLS：渐进性质" class="headerlink" title="六、大样本OLS：渐进性质"></a>六、大样本OLS：渐进性质</h3><h4 id="1-多重共线性-amp-解决方式之一：增大样本量"><a href="#1-多重共线性-amp-解决方式之一：增大样本量" class="headerlink" title="1. 多重共线性&amp;解决方式之一：增大样本量"></a>1. 多重共线性&amp;解决方式之一：增大样本量</h4><h5 id="1-1-概念：完全与非完全"><a href="#1-1-概念：完全与非完全" class="headerlink" title="1.1 概念：完全与非完全"></a>1.1 概念：完全与非完全</h5><ul>
 <li><p>Perfect multicollinearity - “Dummy variable trap”- X’X不可逆</p>
 </li>
 <li><p>Imperfect multicollinearity - “model specification problem”- $SE(\hat{\beta}_{OLS})$过高导致数据不显著。数据稍一变，估计值就会大变。</p>
@@ -528,9 +790,9 @@
 <li>否，完全多重共线性</li>
 <li>是<ul>
 <li>$R^2$或$F$高，但单个变量很少会显著</li>
-<li>解释变量的高相关性：用$x_j$对${x_1,x_2,…x_k}$进行回归，发现$R_j^2$较高<ul>
-<li>$Var(\hat{\beta}<em>k|X)=\frac{\sigma^2}{(1-R_k^2)S_k}$, $S_k=\sum_{i=1}^n (x</em>{ik}-\bar{x}_k)^2$</li>
-<li>方差膨胀因子：$VIF_k=\frac{1}{1-R_k^2}$, 原则上 $max{VIF_1, VIF_2,…,VIF_k}\leq 10$</li>
+<li>解释变量的高相关性：用$x_j$对$\{x_1,x_2,…x_k\}$进行回归，发现$R_j^2$较高<ul>
+<li>$Var(\hat{\beta}_k|X)=\frac{\sigma^2}{(1-R_k^2)S_k}$, $S_k=\sum_{i=1}^n (x_{ik}-\bar{x}_k)^2$</li>
+<li>方差膨胀因子：$VIF_k=\frac{1}{1-R_k^2}$, 原则上 $max\{VIF_1, VIF_2,…,VIF_k\}\leq 10$</li>
 </ul>
 </li>
 </ul>
@@ -564,13 +826,13 @@
 </ul>
 </li>
 </ul>
-<h4 id="3-随机收敛"><a href="#3-随机收敛" class="headerlink" title="3. 随机收敛"></a>3. 随机收敛</h4><h5 id="3-1-依概率收敛"><a href="#3-1-依概率收敛" class="headerlink" title="3.1 依概率收敛"></a>3.1 依概率收敛</h5><p>${x_n}_{n=1}^\infty={x_1,x_2,x_3,…}$ 依概率收敛于常数a</p>
+<h4 id="3-随机收敛"><a href="#3-随机收敛" class="headerlink" title="3. 随机收敛"></a>3. 随机收敛</h4><h5 id="3-1-依概率收敛"><a href="#3-1-依概率收敛" class="headerlink" title="3.1 依概率收敛"></a>3.1 依概率收敛</h5><p>$\{x_n\}_{n=1}^\infty=\{x_1,x_2,x_3,…\}$ 依概率收敛于常数a</p>
 <p>记$plim\ x_n=a$, $x_n\stackrel{P}\longrightarrow a$</p>
 <p>若对于任意$\varepsilon&gt;0$, 当$n\rightarrow\infty$时，都有$limP(|x_n-a|&gt;\varepsilon)=0$</p>
 <ul>
 <li><p>随机变量间的收敛</p>
 <ul>
-<li>$x_n\stackrel{P}\longrightarrow x$ if ${x_n-x}_{n=1}^{\infty}$依概率收敛到0</li>
+<li>$x_n\stackrel{P}\longrightarrow x$ if $\{x_n-x\}_{n=1}^{\infty}$依概率收敛到0</li>
 </ul>
 </li>
 <li><p>随机向量间的收敛</p>
@@ -592,11 +854,13 @@
 </li>
 <li><p>证明：依均方收敛——&gt;以概率收敛</p>
 <ul>
-<li>$$<br>P(|x_n-E(x_n)|\geq\varepsilon)\leq\frac{Var(x_n)}{\varepsilon^2}\<br>\mathop{lim}<em>{n\rightarrow\infty}P(|x_n-E(x_n)|\geq\varepsilon)\leq\mathop{lim}</em>{n\rightarrow\infty}\frac{Var(x_n)}{\varepsilon^2}=0<br>$$</li>
+<li><script type="math/tex; mode=display">
+P(|x_n-E(x_n)|\geq\varepsilon)\leq\frac{Var(x_n)}{\varepsilon^2}\\
+\mathop{lim}_{n\rightarrow\infty}P(|x_n-E(x_n)|\geq\varepsilon)\leq\mathop{lim}_{n\rightarrow\infty}\frac{Var(x_n)}{\varepsilon^2}=0</script></li>
 </ul>
 </li>
 </ul>
-<h5 id="3-3-依分布收敛"><a href="#3-3-依分布收敛" class="headerlink" title="3.3 依分布收敛"></a>3.3 依分布收敛</h5><p>${x_n}_{n=1}^{\infty}$与随机变量x的累积分布函数分别记为$F_n(x)$和$F(x)$</p>
+<h5 id="3-3-依分布收敛"><a href="#3-3-依分布收敛" class="headerlink" title="3.3 依分布收敛"></a>3.3 依分布收敛</h5><p>$\{x_n\}_{n=1}^{\infty}$与随机变量x的累积分布函数分别记为$F_n(x)$和$F(x)$</p>
 <p>if $ \forall x$, 都有$limF_n(x)=F(x)$, 则称$x_n\stackrel{d}\longrightarrow x$, 并称x为${x_n}$的渐进分布</p>
 <ul>
 <li>例如：t分布的渐进分布是正态分布<ul>
@@ -604,54 +868,63 @@
 </ul>
 </li>
 </ul>
-<h5 id="3-4-渐进正态：定义"><a href="#3-4-渐进正态：定义" class="headerlink" title="3.4 渐进正态：定义"></a>3.4 渐进正态：定义</h5><p>$$<br>if\ x_n\stackrel{d}\longrightarrow x, 且x\sim Normal(),则称x_n为渐进正态<br>$$</p>
-<ul>
+<h5 id="3-4-渐进正态：定义"><a href="#3-4-渐进正态：定义" class="headerlink" title="3.4 渐进正态：定义"></a>3.4 渐进正态：定义</h5><script type="math/tex; mode=display">
+if\ x_n\stackrel{d}\longrightarrow x, 且x\sim Normal(),则称x_n为渐进正态</script><ul>
 <li><p>定理：</p>
 <p>$x_n\stackrel{d}\longrightarrow x$, 且$g(\cdot)$是连续函数，则$g_n(x)$的渐进分布就是$g(x)$, 即$g_n(x)\stackrel{d}\longrightarrow g(x)$</p>
 </li>
 </ul>
-<h5 id="3-5-各随机收敛的关系"><a href="#3-5-各随机收敛的关系" class="headerlink" title="3.5 各随机收敛的关系"></a>3.5 各随机收敛的关系</h5><p>$$<br>依均方收敛\rightarrow依概率收敛\rightarrow 依分布收敛<br>$$</p>
-<h4 id="4-大样本理论的工具：大数定律-amp-CLT"><a href="#4-大样本理论的工具：大数定律-amp-CLT" class="headerlink" title="4. 大样本理论的工具：大数定律&amp;CLT"></a>4. 大样本理论的工具：大数定律&amp;CLT</h4><h5 id="4-1-大数定律"><a href="#4-1-大数定律" class="headerlink" title="4.1 大数定律"></a>4.1 大数定律</h5><p>【强大数定律：依均方收敛】当样本容量$n$很大时，样本均值趋于总体均值。</p>
+<h5 id="3-5-各随机收敛的关系"><a href="#3-5-各随机收敛的关系" class="headerlink" title="3.5 各随机收敛的关系"></a>3.5 各随机收敛的关系</h5><script type="math/tex; mode=display">
+依均方收敛\rightarrow依概率收敛\rightarrow 依分布收敛</script><h4 id="4-大样本理论的工具：大数定律-amp-CLT"><a href="#4-大样本理论的工具：大数定律-amp-CLT" class="headerlink" title="4. 大样本理论的工具：大数定律&amp;CLT"></a>4. 大样本理论的工具：大数定律&amp;CLT</h4><h5 id="4-1-大数定律"><a href="#4-1-大数定律" class="headerlink" title="4.1 大数定律"></a>4.1 大数定律</h5><p>【强大数定律：依均方收敛】当样本容量$n$很大时，样本均值趋于总体均值。</p>
 <p>【切比雪夫大数定律：依概率收敛】</p>
-<h5 id="4-2-中心极限定理（CLT）"><a href="#4-2-中心极限定理（CLT）" class="headerlink" title="4.2 中心极限定理（CLT）"></a>4.2 中心极限定理（CLT）</h5><p>不管${x_n}_{n=1}^{\infty}$具体分布，当$n\rightarrow\infty$时，样本均值$\bar{x_n}$的渐进分布都是正态分布【但必须是iid】<br>$$<br>\frac{\bar{x}_n-\mu}{\sqrt{\frac{\sigma^2}{n}}}\stackrel{d}\longrightarrow N(0,1)\Rightarrow \bar{x}_n \stackrel{d}\longrightarrow N(\mu, \sigma^2/n)\<br>变形：\<br>\sigma(\frac{\bar{x}_n-\mu}{\sqrt{\frac{\sigma^2}{n}}})\stackrel{d}\longrightarrow \sigma N(0,1)\<br>\frac{\bar{x}_n-\mu}{\sqrt{\frac{1}{n}}}\stackrel{d}\longrightarrow N(0,\sigma^2)\<br>Root-n\ Convergence:\ \sqrt{n}(\bar{x}_n-\mu)\stackrel{d}\longrightarrow N(0,\sigma^2)<br>$$</p>
-<ul>
+<h5 id="4-2-中心极限定理（CLT）"><a href="#4-2-中心极限定理（CLT）" class="headerlink" title="4.2 中心极限定理（CLT）"></a>4.2 中心极限定理（CLT）</h5><p>不管$\{x_n\}_{n=1}^{\infty}$具体分布，当$n\rightarrow\infty$时，样本均值$\bar{x_n}$的渐进分布都是正态分布【但必须是iid】</p>
+<script type="math/tex; mode=display">
+\frac{\bar{x}_n-\mu}{\sqrt{\frac{\sigma^2}{n}}}\stackrel{d}\longrightarrow N(0,1)\Rightarrow \bar{x}_n \stackrel{d}\longrightarrow N(\mu, \sigma^2/n)\\
+变形：\\
+\sigma(\frac{\bar{x}_n-\mu}{\sqrt{\frac{\sigma^2}{n}}})\stackrel{d}\longrightarrow \sigma N(0,1)\\
+\frac{\bar{x}_n-\mu}{\sqrt{\frac{1}{n}}}\stackrel{d}\longrightarrow N(0,\sigma^2)\\
+Root-n\ Convergence:\ \sqrt{n}(\bar{x}_n-\mu)\stackrel{d}\longrightarrow N(0,\sigma^2)</script><ul>
 <li><p>$\bar{x}_n-\mu$趋向0的速度大约为: $\frac{1}{\sqrt{1}}, \frac{1}{\sqrt{2}},…, \frac{1}{\sqrt{n}}$</p>
 </li>
-<li><p>推广到多维的中心极限定理<br>$$<br>\sqrt{n}(\vec{\bar{x}_n}-\vec{\mu})\stackrel{d}\longrightarrow N(\vec{0}, \Sigma)<br>$$</p>
-</li>
+<li><p>推广到多维的中心极限定理</p>
+<script type="math/tex; mode=display">
+\sqrt{n}(\vec{\bar{x}_n}-\vec{\mu})\stackrel{d}\longrightarrow N(\vec{0}, \Sigma)</script></li>
 </ul>
-<h4 id="5-统计量的大样本性质"><a href="#5-统计量的大样本性质" class="headerlink" title="5. 统计量的大样本性质"></a>5. 统计量的大样本性质</h4><h5 id="5-1-一致估计量"><a href="#5-1-一致估计量" class="headerlink" title="5.1 一致估计量"></a>5.1 一致估计量</h5><p>$$<br>plim\ \hat{\beta}_n=\beta\ [依概率收敛]<br>$$</p>
-<h5 id="5-2-渐进正态与渐近方差"><a href="#5-2-渐进正态与渐近方差" class="headerlink" title="5.2 渐进正态与渐近方差"></a>5.2 渐进正态与渐近方差</h5><p>$$<br>\sqrt{n}(\hat{\beta}_n-\beta)\stackrel{d}\longrightarrow N(0,\Sigma)<br>$$</p>
-<ul>
+<h4 id="5-统计量的大样本性质"><a href="#5-统计量的大样本性质" class="headerlink" title="5. 统计量的大样本性质"></a>5. 统计量的大样本性质</h4><h5 id="5-1-一致估计量"><a href="#5-1-一致估计量" class="headerlink" title="5.1 一致估计量"></a>5.1 一致估计量</h5><script type="math/tex; mode=display">
+plim\ \hat{\beta}_n=\beta\ [依概率收敛]</script><h5 id="5-2-渐进正态与渐近方差"><a href="#5-2-渐进正态与渐近方差" class="headerlink" title="5.2 渐进正态与渐近方差"></a>5.2 渐进正态与渐近方差</h5><script type="math/tex; mode=display">
+\sqrt{n}(\hat{\beta}_n-\beta)\stackrel{d}\longrightarrow N(0,\Sigma)</script><ul>
 <li>$\sigma^2$为渐近方差，记为$Avar(\hat{\beta}_n)$</li>
 </ul>
 <h5 id="5-3-渐进有效性"><a href="#5-3-渐进有效性" class="headerlink" title="5.3 渐进有效性"></a>5.3 渐进有效性</h5><p>若$Avar(\hat{\beta}_n)&lt;Avar(\tilde{\beta}_n)$, 则称$\hat{\beta}_n$比$\tilde{\beta}_n$更为渐进有效</p>
-<h5 id="5-4-均方误差"><a href="#5-4-均方误差" class="headerlink" title="5.4 均方误差"></a>5.4 均方误差</h5><p>$$<br>MSE(\hat{\beta})\equiv E[(\hat{\beta}-\beta)^2]<br>$$</p>
-<ul>
-<li><p>证明：$MSE(\hat{\beta})=Var(\hat{\beta})+[Bias(\hat{\beta})]^2$<br>$$<br>MSE(\hat{\beta})\equiv E[(\hat{\beta}-\beta)^2]=E[(\hat{\beta}-E(\hat{\beta})+E(\hat{\beta})-\beta)^2]=Var(\hat{\beta})+[Bias(\hat{\beta})]^2<br>$$</p>
-</li>
+<h5 id="5-4-均方误差"><a href="#5-4-均方误差" class="headerlink" title="5.4 均方误差"></a>5.4 均方误差</h5><script type="math/tex; mode=display">
+MSE(\hat{\beta})\equiv E[(\hat{\beta}-\beta)^2]</script><ul>
+<li><p>证明：$MSE(\hat{\beta})=Var(\hat{\beta})+[Bias(\hat{\beta})]^2$</p>
+<script type="math/tex; mode=display">
+MSE(\hat{\beta})\equiv E[(\hat{\beta}-\beta)^2]=E[(\hat{\beta}-E(\hat{\beta})+E(\hat{\beta})-\beta)^2]=Var(\hat{\beta})+[Bias(\hat{\beta})]^2</script></li>
 <li><p>多维形式：$MSE(\hat{\beta})=E[(\hat{\beta}-\beta)(\hat{\beta}-\beta)’]=Var(\hat{\beta})+[Bias(\hat{\beta})][Bias(\hat{\beta})]’$</p>
 </li>
 </ul>
 <h4 id="6-大样本OLS假定"><a href="#6-大样本OLS假定" class="headerlink" title="6. 大样本OLS假定"></a>6. 大样本OLS假定</h4><ul>
 <li><p>假定1：线性假定</p>
 </li>
-<li><p>假定2：$（K+1)$维随机过程${y_i,x_{i1},…,x_{ik}}$渐进独立平稳，故适用大数定律与CLT</p>
+<li><p>假定2：$（K+1)$维随机过程$\{y_i,x_{i1},…,x_{ik}\}$渐进独立平稳，故适用大数定律与CLT</p>
 </li>
 <li><p>假定3：同期外生性 $E(x_{ik }u_i)=0,\forall i,k$</p>
 </li>
 <li><p>假定4：秩条件：X满列秩</p>
 </li>
-<li><p>假定5：定义如下向量——<br>$$<br>g_i=x_i\varepsilon_i=\begin{pmatrix}x_{i1}\x_{i2}\ \vdots\ \ x_{iK} \end{pmatrix}\varepsilon_i<br>$$<br>$g_i$为鞅差分序列，且其协方差矩阵$S=E[g_ig_i’]=E(\varepsilon_i^2x_ix_i’)$为非退化矩阵</p>
+<li><p>假定5：定义如下向量——</p>
+<script type="math/tex; mode=display">
+g_i=x_i\varepsilon_i=\begin{pmatrix}x_{i1}\\x_{i2}\\ \vdots\ \\ x_{iK} \end{pmatrix}\varepsilon_i</script><p>$g_i$为鞅差分序列，且其协方差矩阵$S=E[g_ig_i’]=E(\varepsilon_i^2x_ix_i’)$为非退化矩阵</p>
 </li>
 </ul>
 <p>Notice：无需假定 严格外生 与 正态随机扰动项！</p>
 <ul>
-<li>假定6：解释变量的四阶矩存在——$E[(x_{ik}x{ij})^2]$存在且为有限$（\forall i,j,k）$</li>
+<li>假定6：解释变量的四阶矩存在——$E[(x_{ik}x_{ij})^2]$存在且为有限$（\forall i,j,k）$</li>
 </ul>
-<h4 id="7-OLS的大样本性质"><a href="#7-OLS的大样本性质" class="headerlink" title="7. OLS的大样本性质"></a>7. OLS的大样本性质</h4><p>由于$X=\begin{pmatrix}x_1’\x_2’\ \vdots \x_n’\end{pmatrix}$,故$X’X=\begin{pmatrix}x_1&amp;x_2&amp; \cdots &amp;x_n\end{pmatrix}\begin{pmatrix}x_1’\x_2’\ \vdots \x_n’\end{pmatrix}=\sum_{i=1}^n[x_ix_i’]_{K\times K}$</p>
+<h4 id="7-OLS的大样本性质"><a href="#7-OLS的大样本性质" class="headerlink" title="7. OLS的大样本性质"></a>7. OLS的大样本性质</h4><p>由于$X=\begin{pmatrix}x_1’\\x_2’\\ \vdots \\x_n’\end{pmatrix}$,故$X’X=\begin{pmatrix}x_1&amp;x_2&amp; \cdots &amp;x_n\end{pmatrix}\begin{pmatrix}x_1’\\x_2’\\ \vdots \\x_n’\end{pmatrix}=\sum_{i=1}^n[x_ix_i’]_{K\times K}$</p>
 <p><strong>定义</strong>$S_{XX}=\frac{1}{n}X’X=\sum\frac{1}{n}x_ix_i’$</p>
-<p>另一方面，$X’y=\begin{pmatrix}x_1&amp;x_2&amp; \cdots &amp;x_n\end{pmatrix}\begin{pmatrix}y_1\y_2\ \vdots \y_n\end{pmatrix}=\sum_{i=1}^nx_iy_i$</p>
+<p>另一方面，$X’y=\begin{pmatrix}x_1&amp;x_2&amp; \cdots &amp;x_n\end{pmatrix}\begin{pmatrix}y_1\\y_2\\ \vdots \\y_n\end{pmatrix}=\sum_{i=1}^nx_iy_i$</p>
 <p>$\therefore\ b=(X’X)^{-1}X’y=S_{XX}^{-1}S_{XY}$</p>
 <ul>
 <li><p>性质一：$\hat{\beta}$一致估计量 $plim\ \hat{\beta}_n=\beta$</p>
@@ -668,24 +941,42 @@
 <li><p>性质三：假设$\hat S$为$S$的一致估计量，则$S_{XX}^{-1}\hat S S_{XX}^{-1}$是$Avar(\hat{\beta})$的一致估计量</p>
 </li>
 </ul>
-<p><strong>证明：大样本下$s^2$是无条件方差$E(\varepsilon_i^2)=\sigma^2$的一致估计量</strong><br>$$<br>\begin{aligned}<br>s^2&amp;\equiv \frac{e’e}{n-K}=\frac{\varepsilon’M\varepsilon}{n-K}=\frac{\varepsilon’[I_n-X(X’X)^{-1}X’]\varepsilon}{n-K}\<br>&amp;=\frac{1}{n-K}[\varepsilon’\varepsilon-\varepsilon’X(X’X)^{-1}X’\varepsilon]\<br>&amp;=\frac{n}{n-K}[\frac{\varepsilon’\varepsilon}{n}-\frac{\varepsilon’X(X’X)^{-1}X’\varepsilon}{n}]\<br>&amp;=\frac{n}{n-K}[\frac{1}{n}\sum\varepsilon_i^2-\bar{g}S_{XX}^{-1}\bar{g}]\<br>&amp;\mathop{\longrightarrow}_{n\rightarrow \infty}\sigma^2<br>\end{aligned}<br>$$</p>
-<h4 id="8-线性假设的大样本检验"><a href="#8-线性假设的大样本检验" class="headerlink" title="8. 线性假设的大样本检验"></a>8. 线性假设的大样本检验</h4><h5 id="8-1-检验单个系数：-H-0-beta-k-bar-beta-k"><a href="#8-1-检验单个系数：-H-0-beta-k-bar-beta-k" class="headerlink" title="8.1 检验单个系数：$H_0:\beta_k=\bar{\beta}_k$"></a>8.1 检验单个系数：$H_0:\beta_k=\bar{\beta}_k$</h5><p>$$<br>t_k=\frac{\sqrt{n}(b_k-\bar{\beta}_k)}{\sqrt{\widehat{Avar}(b_k)}}=\frac{b_k-\bar{\beta}_k}{\sqrt{\frac{1}{n}\widehat{Avar}(b_k)}}\equiv\frac{b_k-\bar{\beta_k}}{SE^*(b_k)}\stackrel{d}\longrightarrow N(0,1)<br>$$</p>
+<p><strong>证明：大样本下$s^2$是无条件方差$E(\varepsilon_i^2)=\sigma^2$的一致估计量</strong></p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+s^2&\equiv \frac{e'e}{n-K}=\frac{\varepsilon'M\varepsilon}{n-K}=\frac{\varepsilon'[I_n-X(X'X)^{-1}X']\varepsilon}{n-K}\\
+&=\frac{1}{n-K}[\varepsilon'\varepsilon-\varepsilon'X(X'X)^{-1}X'\varepsilon]\\
+&=\frac{n}{n-K}[\frac{\varepsilon'\varepsilon}{n}-\frac{\varepsilon'X(X'X)^{-1}X'\varepsilon}{n}]\\
+&=\frac{n}{n-K}[\frac{1}{n}\sum\varepsilon_i^2-\bar{g}S_{XX}^{-1}\bar{g}]\\
+&\mathop{\longrightarrow}_{n\rightarrow \infty}\sigma^2
+\end{aligned}</script><h4 id="8-线性假设的大样本检验"><a href="#8-线性假设的大样本检验" class="headerlink" title="8. 线性假设的大样本检验"></a>8. 线性假设的大样本检验</h4><h5 id="8-1-检验单个系数：-H-0-beta-k-bar-beta-k"><a href="#8-1-检验单个系数：-H-0-beta-k-bar-beta-k" class="headerlink" title="8.1 检验单个系数：$H_0:\beta_k=\bar{\beta}_k$"></a>8.1 检验单个系数：$H_0:\beta_k=\bar{\beta}_k$</h5><script type="math/tex; mode=display">
+t_k=\frac{\sqrt{n}(b_k-\bar{\beta}_k)}{\sqrt{\widehat{Avar}(b_k)}}=\frac{b_k-\bar{\beta}_k}{\sqrt{\frac{1}{n}\widehat{Avar}(b_k)}}\equiv\frac{b_k-\bar{\beta_k}}{SE^*(b_k)}\stackrel{d}\longrightarrow N(0,1)</script><script type="math/tex; mode=display">
+{SE^*(b_k)}\equiv \sqrt{\frac{1}{n}\widehat{Avar}(b_k)}=\sqrt{\frac{1}{n}(S_{XX}^{-1}\hat{S}S_{XX}^{-1})_{kk}}</script><p><strong>异方差稳健的标准误</strong></p>
 <ul>
-<li>${SE^*(b_k)}\equiv \sqrt{\frac{1}{n}\widehat{Avar}(b_k)}=\sqrt{\frac{1}{n}(S_{XX}^{-1}\hat{S}S_{XX}^{-1})_{kk}} $  <strong>异方差稳健的标准误</strong></li>
 <li><strong>统计量$t_k$服从标准正态分布，而不是t分布！！！</strong></li>
 </ul>
 <p><strong>命题：在同方差的假定下，稳健标准误还原为普通标准误</strong></p>
-<p>证明：条件同方差意味着$E(\varepsilon_i^2|x_i)=\sigma^2&gt;0$，根据期望迭代定律：<br>$$<br>S\equiv E(x_ix_i’\varepsilon_i^2)=E_{x_i}E(x_ix_i’\varepsilon_i^2|x_i)=E_{x_i}[x_ix_i’E(\varepsilon_i^2|x_i)]=\sigma^2E(x_ix_i’)\<br>\begin{aligned}<br>\because&amp; s^2\stackrel{p}\longrightarrow \sigma^2, S_{XX}\stackrel{p}\longrightarrow E(x_ix_i’)\<br>\therefore&amp;\ s^2S_{XX}\text{是}S\text{的一致估计量}<br>\ \therefore&amp;\ \widehat{Avar}(b)=S_{XX}^{-1}(s^2S_{XX})S_{XX}^{-1}=ns^2(X’X)^{-1}<br>\ \therefore&amp;\ SE^*(b_k)=\sqrt{\frac{1}{n}\widehat{Avar}(b_k)}=\sqrt{\frac{1}{n}ns^2(X’X)<em>{kk}^{-1}}=\sqrt{s^2(X’X)</em>{kk}^{-1}}<br>\end{aligned}<br>$$</p>
-<h5 id="8-2-检验线性假设：-H-0-R-beta-r-，其中-R-满行秩"><a href="#8-2-检验线性假设：-H-0-R-beta-r-，其中-R-满行秩" class="headerlink" title="8.2 检验线性假设：$H_0: R\beta=r$，其中$R$满行秩"></a>8.2 检验线性假设：$H_0: R\beta=r$，其中$R$满行秩</h5><p>$$<br>W\equiv [\sqrt{n}(Rb-r)]’[R \widehat{Avar}(b)R’]^{-1}[\sqrt{n}(Rb-r)]\stackrel{d}\longrightarrow \chi^2(m)<br>$$</p>
-<h3 id="七、对二阶矩的破坏：异方差与自相关问题"><a href="#七、对二阶矩的破坏：异方差与自相关问题" class="headerlink" title="七、对二阶矩的破坏：异方差与自相关问题"></a>七、对二阶矩的破坏：异方差与自相关问题</h3><h4 id="1-异方差问题"><a href="#1-异方差问题" class="headerlink" title="1. 异方差问题"></a>1. 异方差问题</h4><h5 id="1-1-问题起源"><a href="#1-1-问题起源" class="headerlink" title="1.1 问题起源"></a>1.1 问题起源</h5><p>$$<br>Var(u|X)\equiv\Sigma=\begin{pmatrix}\sigma_1^2 &amp;0 &amp;\cdots &amp;0\ 0 &amp;\sigma_2^2 &amp;\cdots &amp;0<br>\ 0 &amp;0 &amp;\ddots &amp;0\ 0 &amp;0 &amp;\cdots &amp;\sigma_n^2\end{pmatrix}<br>$$</p>
-<ul>
+<p>证明：条件同方差意味着$E(\varepsilon_i^2|x_i)=\sigma^2&gt;0$，根据期望迭代定律：</p>
+<script type="math/tex; mode=display">
+S\equiv E(x_ix_i'\varepsilon_i^2)=E_{x_i}E(x_ix_i'\varepsilon_i^2|x_i)=E_{x_i}[x_ix_i'E(\varepsilon_i^2|x_i)]=\sigma^2E(x_ix_i')\\
+\begin{aligned}
+\because& s^2\stackrel{p}\longrightarrow \sigma^2, S_{XX}\stackrel{p}\longrightarrow E(x_ix_i')\\
+\therefore&\ s^2S_{XX}\text{是}S\text{的一致估计量}
+\\ \therefore&\ \widehat{Avar}(b)=S_{XX}^{-1}(s^2S_{XX})S_{XX}^{-1}=ns^2(X'X)^{-1}
+\\ \therefore&\ SE^*(b_k)=\sqrt{\frac{1}{n}\widehat{Avar}(b_k)}=\sqrt{\frac{1}{n}ns^2(X'X)_{kk}^{-1}}=\sqrt{s^2(X'X)_{kk}^{-1}}
+\end{aligned}</script><h5 id="8-2-检验线性假设：-H-0-R-beta-r-，其中-R-满行秩"><a href="#8-2-检验线性假设：-H-0-R-beta-r-，其中-R-满行秩" class="headerlink" title="8.2 检验线性假设：$H_0: R\beta=r$，其中$R$满行秩"></a>8.2 检验线性假设：$H_0: R\beta=r$，其中$R$满行秩</h5><script type="math/tex; mode=display">
+W\equiv [\sqrt{n}(Rb-r)]'[R \widehat{Avar}(b)R']^{-1}[\sqrt{n}(Rb-r)]\stackrel{d}\longrightarrow \chi^2(m)</script><h3 id="七、对二阶矩的破坏：异方差与自相关问题"><a href="#七、对二阶矩的破坏：异方差与自相关问题" class="headerlink" title="七、对二阶矩的破坏：异方差与自相关问题"></a>七、对二阶矩的破坏：异方差与自相关问题</h3><h4 id="1-异方差问题"><a href="#1-异方差问题" class="headerlink" title="1. 异方差问题"></a>1. 异方差问题</h4><h5 id="1-1-问题起源"><a href="#1-1-问题起源" class="headerlink" title="1.1 问题起源"></a>1.1 问题起源</h5><script type="math/tex; mode=display">
+Var(u|X)\equiv\Sigma=\begin{pmatrix}\sigma_1^2 &0 &\cdots &0\\ 0 &\sigma_2^2 &\cdots &0
+\\ 0 &0 &\ddots &0\\ 0 &0 &\cdots &\sigma_n^2\end{pmatrix}</script><ul>
 <li><p>当高的X值是高的Y值的必要不充分条件时，可能存在异方差</p>
 </li>
-<li><p>经典的异方差问题：Grouped data<br>$$<br>Var(u_g)=Var(\frac{1}{N_g}\sum_{i}u_{gi})=\frac{1}{N_{g}}\sigma^2<br>$$</p>
-</li>
+<li><p>经典的异方差问题：Grouped data</p>
+<script type="math/tex; mode=display">
+Var(u_g)=Var(\frac{1}{N_g}\sum_{i}u_{gi})=\frac{1}{N_{g}}\sigma^2</script></li>
 </ul>
-<h5 id="1-2-异方差的后果"><a href="#1-2-异方差的后果" class="headerlink" title="1.2 异方差的后果"></a>1.2 异方差的后果</h5><p>$$<br>Var(u)=\Sigma\neq\sigma^2I \<br>Var(\hat{\beta}|X)=(X’X)^{-1}X’\Sigma X(X’X)^{-1}<br>$$</p>
-<ul>
+<h5 id="1-2-异方差的后果"><a href="#1-2-异方差的后果" class="headerlink" title="1.2 异方差的后果"></a>1.2 异方差的后果</h5><script type="math/tex; mode=display">
+Var(u)=\Sigma\neq\sigma^2I \\
+Var(\hat{\beta}|X)=(X'X)^{-1}X'\Sigma X(X'X)^{-1}</script><ul>
 <li>OLS给出的对于方差$Var(u)$的估计是”downward bias”, 就是说比真实的误差方差小，进而会导致“过度拒绝”</li>
 </ul>
 <h5 id="1-3-如何发现异方差"><a href="#1-3-如何发现异方差" class="headerlink" title="1.3 如何发现异方差"></a>1.3 如何发现异方差</h5><ul>
@@ -706,11 +997,11 @@
 </li>
 <li><p>步骤：</p>
 <ol>
-<li>Divide the sample observations into three sub-samples (with m1, m2, m3 observations) and omit the middle sample<ol start="2">
+<li>Divide the sample observations into three sub-samples (with m1, m2, m3 observations) and omit the middle sample<ol>
 <li>Estimate with the OLS on the first and third sub-sample; collect the SSR(iduals) for each model, SSR1 and SSR3</li>
 </ol>
 </li>
-<li>The Goldfeld-Quandt test statistic: $GQ=\frac{SSR3/(m3−k)}{SSR1/(m1−k)}$ , where ki s the number of parameters<ol start="4">
+<li>The Goldfeld-Quandt test statistic: $GQ=\frac{SSR3/(m3−k)}{SSR1/(m1−k)}$ , where ki s the number of parameters<ol>
 <li>Under the null hypothesis, $GQ \sim F_{m3−k,m1−k}$</li>
 </ol>
 </li>
@@ -743,7 +1034,7 @@
 </li>
 <li><p>作辅助回归：</p>
 <p>$e_i^2=\alpha_0+\alpha_1x_{1i}+\alpha_2x_{2i}(+\alpha_3x_{1i}^2+\alpha_4x_{2i}^2+\alpha_5x_{1i}x_{2i})$</p>
-<ol start="3">
+<ol>
 <li><p>LM统计量$nR^2\sim \chi^2(q)$</p>
 <ul>
 <li>$q$是辅助回归里rergressor的数量</li>
@@ -761,31 +1052,64 @@
 <h5 id="1-4-Remedies"><a href="#1-4-Remedies" class="headerlink" title="1.4 Remedies"></a>1.4 Remedies</h5><ul>
 <li><strong>方法一：WLS</strong></li>
 </ul>
-<p>$$<br>\mathop{SSR}<em>{\tilde{\beta}}=\sum</em>{i=1}^{n}\frac{e_i^2}{v_i}<br>$$</p>
-<p>$$<br>H=\begin{pmatrix} 1/\sigma_1 &amp;0 &amp;\cdots &amp;0 \<br>0 &amp;1/\sigma_2 &amp;\cdots &amp;0 \<br>\vdots &amp;\vdots &amp;\ddots &amp;\vdots\<br>0 &amp;0 &amp;\cdots &amp;0 \end{pmatrix} \ \ \<br>HY=HX\beta+Hu\<br>\tilde Y=HY\<br>\tilde X=HX\<br>\tilde u =Hu \<br>\ \<br>\begin{aligned}<br>\hat{\beta}_{WLS}&amp;=(\tilde{X}’\tilde{X})^{-1}\tilde{X}’\tilde{Y}\<br>&amp;=[(HX)’HX]^{-1}(HX)’(HY)\<br>&amp;=[X’H’HX]^{-1}X’H’HY\<br>&amp;=(X’\Sigma^{-1}X)^{-1}X’\Sigma^{-1}Y\<br>&amp;=(X’\Sigma^{-1}X)^{-1}X’\Sigma^{-1}(X\beta+u)\<br>&amp;=\beta+(X’\Sigma^{-1}X)^{-1}X’\Sigma^{-1}u<br>\end{aligned}\ \ \</p>
-<p>\begin{aligned}<br>Var(\hat{\beta}_{WLS})&amp;=Var((X’\Sigma^{-1}X)^{-1}X’\Sigma^{-1}u)\<br>&amp;=(X’\Sigma^{-1}X)^{-1}X’\Sigma^{-1}Var(u)\Sigma^{-1}X(X’\Sigma^{-1}X)^{-1}\<br>&amp;=(X’\Sigma^{-1}X)^{-1}<br>\end{aligned}<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+\mathop{SSR}_{\tilde{\beta}}=\sum_{i=1}^{n}\frac{e_i^2}{v_i}</script><script type="math/tex; mode=display">
+H=\begin{pmatrix} 1/\sigma_1 &0 &\cdots &0 \\
+0 &1/\sigma_2 &\cdots &0 \\
+\vdots &\vdots &\ddots &\vdots\\
+0 &0 &\cdots &0 \end{pmatrix} \\ \ \\
+HY=HX\beta+Hu\\
+\tilde Y=HY\\
+\tilde X=HX\\
+\tilde u =Hu \\
+\ \\
+\begin{aligned}
+\hat{\beta}_{WLS}&=(\tilde{X}'\tilde{X})^{-1}\tilde{X}'\tilde{Y}\\
+&=[(HX)'HX]^{-1}(HX)'(HY)\\
+&=[X'H'HX]^{-1}X'H'HY\\
+&=(X'\Sigma^{-1}X)^{-1}X'\Sigma^{-1}Y\\
+&=(X'\Sigma^{-1}X)^{-1}X'\Sigma^{-1}(X\beta+u)\\
+&=\beta+(X'\Sigma^{-1}X)^{-1}X'\Sigma^{-1}u
+\end{aligned}\\ \ \\
+
+\begin{aligned}
+Var(\hat{\beta}_{WLS})&=Var((X'\Sigma^{-1}X)^{-1}X'\Sigma^{-1}u)\\
+&=(X'\Sigma^{-1}X)^{-1}X'\Sigma^{-1}Var(u)\Sigma^{-1}X(X'\Sigma^{-1}X)^{-1}\\
+&=(X'\Sigma^{-1}X)^{-1}
+\end{aligned}</script><ul>
 <li><p>现实中我们并不知道所有的$\sigma_i^2$s, 用n个观测值去估计这n个$\sigma_i^2$s是不可能的</p>
 </li>
-<li><p>因此背后还是依靠一种理论，比如我们认为解释变量的值越大，误差的方差就会越大<br>$$<br>Y_i=\beta_0+\beta_1X_i+u_i \<br>Var(u_i)=\sigma^2X_i^2 \<br>Y_i/X_i=\beta_0/X_i+\beta_1+u_i/X_i\<br>\therefore\ Var(u_i/X_i)=\frac{1}{X_i^2}Var(u_i)=\sigma^2\<br>\therefore\ H=\begin{pmatrix}1/X_1 &amp;0 &amp;\cdots &amp;0<br>\ 0 &amp;1/X_2 &amp;\cdots &amp;0 \<br>\vdots &amp;\vdots &amp;\ddots &amp;\vdots \<br>0 &amp;0 &amp;\cdots &amp;1/X_n\end{pmatrix}\rightarrow Var(\tilde{u})=Var(Hu)=\sigma^2I<br>$$</p>
-</li>
-<li><p>Grouped Data<br>$$<br>Var(u_g)=Var(\frac{1}{N_g}\sum_{i}u_{gi})=\frac{1}{N_g}\sigma^2\<br>H=\begin{pmatrix}\sqrt{N_1} &amp;0 &amp;\cdots &amp;0\<br>0 &amp;\sqrt{N_2} &amp;\cdots &amp;0\<br>\vdots &amp;\vdots&amp;\ddots&amp;\vdots\ 0 &amp;0 &amp;\cdots &amp;\sqrt{N_g} \end{pmatrix}<br>$$</p>
-</li>
+<li><p>因此背后还是依靠一种理论，比如我们认为解释变量的值越大，误差的方差就会越大</p>
+<script type="math/tex; mode=display">
+Y_i=\beta_0+\beta_1X_i+u_i \\
+Var(u_i)=\sigma^2X_i^2 \\
+Y_i/X_i=\beta_0/X_i+\beta_1+u_i/X_i\\
+\therefore\ Var(u_i/X_i)=\frac{1}{X_i^2}Var(u_i)=\sigma^2\\
+\therefore\ H=\begin{pmatrix}1/X_1 &0 &\cdots &0
+\\ 0 &1/X_2 &\cdots &0 \\
+\vdots &\vdots &\ddots &\vdots \\
+0 &0 &\cdots &1/X_n\end{pmatrix}\rightarrow Var(\tilde{u})=Var(Hu)=\sigma^2I</script></li>
+<li><p>Grouped Data</p>
+<script type="math/tex; mode=display">
+Var(u_g)=Var(\frac{1}{N_g}\sum_{i}u_{gi})=\frac{1}{N_g}\sigma^2\\
+H=\begin{pmatrix}\sqrt{N_1} &0 &\cdots &0\\
+0 &\sqrt{N_2} &\cdots &0\\
+\vdots &\vdots&\ddots&\vdots\\ 0 &0 &\cdots &\sqrt{N_g} \end{pmatrix}</script></li>
 </ul>
 <ul>
 <li><strong>方法二：Heteroskedasticity-robust standard errors</strong></li>
 </ul>
-<p>$$<br>Var_{rse}(\hat{\beta}_{OLS})=(X’X)^{-1}X’diag(e_1^2,e_2^2,\cdots,e_n^2)X(X’X)^{-1}<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+Var_{rse}(\hat{\beta}_{OLS})=(X'X)^{-1}X'diag(e_1^2,e_2^2,\cdots,e_n^2)X(X'X)^{-1}</script><ul>
 <li><p><strong>这是对$Var(\hat{\beta})$的一致估计量，而非对$Var(u)$的！！！</strong></p>
 </li>
-<li><p>$Var_{rse}(\hat{\beta}<em>{OLS})$依旧有downward bias，但大多数情况下比$Var</em>{CLRM}(\hat{\beta})$好一些（高一些）</p>
+<li><p>$Var_{rse}(\hat{\beta}_{OLS})$依旧有downward bias，但大多数情况下比$Var_{CLRM}(\hat{\beta})$好一些（高一些）</p>
 </li>
 <li><p>哪些情况呢？</p>
 <ul>
-<li><p>严重异方差：$Var_{CLRM}(\hat{\beta}<em>{OLS})\leq Var</em>{rse}(\hat{\beta})\leq Var(\hat{\beta}_{OLS})$</p>
+<li><p>严重异方差：$Var_{CLRM}(\hat{\beta}_{OLS})\leq Var_{rse}(\hat{\beta})\leq Var(\hat{\beta}_{OLS})$</p>
 </li>
-<li><p>只有一点异方差：$Var_{rse}(\hat{\beta}<em>{OLS})\leq Var</em>{CLRM}(\hat{\beta})\leq Var(\hat{\beta}_{OLS})$</p>
+<li><p>只有一点异方差：$Var_{rse}(\hat{\beta}_{OLS})\leq Var_{CLRM}(\hat{\beta})\leq Var(\hat{\beta}_{OLS})$</p>
 </li>
 <li><p>最稳健的做法：$max[\frac{e’e}{n-K},Var_{rse}(\hat{\beta}_{OLS})]$</p>
 </li>
@@ -796,15 +1120,24 @@
 <li><strong>方法三：GLS更广泛的讨论</strong></li>
 </ul>
 <p>$Var(\varepsilon|X)=\sigma^2V(X)\neq\sigma^2I_n$，其中$V(X)$为对称正定矩阵且已知</p>
-<p><strong>命题：对于正定矩阵$V_{n\times n}$, 存在非退化矩阵$C_{n\times n}$，使得$V^{-1}=C’C$</strong><br>$$<br>y=X\beta+\varepsilon \<br>\downarrow<br>\ Cy=CX\beta+C\varepsilon<br>\ \downarrow<br>\ \tilde{y}=\tilde{X}\beta+\tilde{\varepsilon}<br>\ \downarrow<br>\Var(\tilde{\varepsilon}|X)=E(\tilde \varepsilon\tilde \varepsilon’|X)=\sigma^2CVC’=\sigma^2C(C’C)^{-1}C’=\sigma^2CC^{-1}(C’)^{-1}C’=\sigma^2I_n\<br>\downarrow<br>\ \hat{\beta}_{GLS}=(\tilde{X}’\tilde{X})^{-1}\tilde{X}’\tilde{y}=[(CX)’(CX)]^{-1}(CX)’Cy=(X’V^{-1}X)^{-1}X’V^{-1}y<br>$$</p>
-<ul>
+<p><strong>命题：对于正定矩阵$V_{n\times n}$, 存在非退化矩阵$C_{n\times n}$，使得$V^{-1}=C’C$</strong></p>
+<script type="math/tex; mode=display">
+y=X\beta+\varepsilon \\
+\downarrow
+\\ Cy=CX\beta+C\varepsilon
+\\ \downarrow
+\\ \tilde{y}=\tilde{X}\beta+\tilde{\varepsilon}
+\\ \downarrow 
+\\Var(\tilde{\varepsilon}|X)=E(\tilde \varepsilon\tilde \varepsilon'|X)=\sigma^2CVC'=\sigma^2C(C'C)^{-1}C'=\sigma^2CC^{-1}(C')^{-1}C'=\sigma^2I_n\\
+\downarrow
+\\ \hat{\beta}_{GLS}=(\tilde{X}'\tilde{X})^{-1}\tilde{X}'\tilde{y}=[(CX)'(CX)]^{-1}(CX)'Cy=(X'V^{-1}X)^{-1}X'V^{-1}y</script><ul>
 <li><p>但是V在实践中不可知！！！</p>
 </li>
 <li><p><strong>可行GLS (FGLS)</strong></p>
 </li>
 </ul>
-<p>$$<br>\hat{\beta}_{FGLS}=(X’\hat{V}^{-1}X)^{-1}X’\hat{V}^{-1}y<br>$$</p>
-<p>​        仅有异方差的估计实践：</p>
+<script type="math/tex; mode=display">
+\hat{\beta}_{FGLS}=(X'\hat{V}^{-1}X)^{-1}X'\hat{V}^{-1}y</script><p>​        仅有异方差的估计实践：</p>
 <p>​            （1）$e_i^2=\sigma^2exp(\delta_1+\delta_2x_{i2}+\cdots+\delta_{K}x_{iK})v_{i}$</p>
 <p>​            （2）$lne_i^2=(ln\sigma^2+\delta_1)+\delta_2x_{i2}+\cdots+\delta_Kx_{iK}+lnv_i$得到$lne_i^2$的预测值$ln\hat\sigma_i^2$</p>
 <p>​            （3）$\hat{\sigma_i}^2=e^{ln\hat{\sigma_i}^2}$ ，以$1/\hat{\sigma_i}^2$为权重进行WLS估计</p>
@@ -822,21 +1155,26 @@
 </li>
 <li><strong>BG检验</strong></li>
 </ul>
-<p>$$<br>y_t=\beta_0+\beta_1x_{t1}+\cdots+\beta_{K}x_{tK}+\varepsilon_{t}\<br>\varepsilon_{t}=\rho_1\varepsilon_{t-1}+\cdots+\rho_{p}\varepsilon_{t-p}+u_{t}\<br>H_0:\rho_1=\cdots=\rho_{p}=0<br>$$</p>
-<p>使用辅助回归：$e_t\stackrel{OLS}\longrightarrow x_{i1},\cdots,x_{iK},e_{t-1},\cdots, e_{t-p}\ (t=p+1,\cdots,n)$</p>
+<script type="math/tex; mode=display">
+y_t=\beta_0+\beta_1x_{t1}+\cdots+\beta_{K}x_{tK}+\varepsilon_{t}\\
+\varepsilon_{t}=\rho_1\varepsilon_{t-1}+\cdots+\rho_{p}\varepsilon_{t-p}+u_{t}\\
+H_0:\rho_1=\cdots=\rho_{p}=0</script><p>使用辅助回归：$e_t\stackrel{OLS}\longrightarrow x_{i1},\cdots,x_{iK},e_{t-1},\cdots, e_{t-p}\ (t=p+1,\cdots,n)$</p>
 <p>$(n-p)R^2\stackrel{d}\longrightarrow\chi^2(p)$</p>
 <p>Davidson-MacKinnon (1993): 保持样本容量为$n$, $nR^2\stackrel{d}\longrightarrow\chi^2(p)$</p>
 <ul>
 <li><p><strong>Q检验</strong></p>
-<p>残差各阶样本自相关系数：<br>$$<br>\hat{\rho}<em>j\equiv \frac{\sum</em>{t=j+1}^{n}e_te_{t-j}}{\sum_{t=1}^ne_t^2}\ (j=1,2,\cdots,p)<br>$$</p>
-<p>$$<br>Q_{BP}\equiv n\sum_{j=1}^{p}\hat{\rho}<em>j^2\stackrel{d}\longrightarrow\chi^2(p)\<br>Q</em>{LB}\equiv n(n+2)\sum_{j=1}^{p}\frac{\hat{\rho}_j^2}{n-j}\stackrel{d}\longrightarrow\chi^2(p)<br>$$</p>
-<p>自相关阶数p的确定：$p=min{floor(n/2)-2,40}$</p>
+<p>残差各阶样本自相关系数：</p>
+<script type="math/tex; mode=display">
+\hat{\rho}_j\equiv \frac{\sum_{t=j+1}^{n}e_te_{t-j}}{\sum_{t=1}^ne_t^2}\ (j=1,2,\cdots,p)</script><script type="math/tex; mode=display">
+Q_{BP}\equiv n\sum_{j=1}^{p}\hat{\rho}_j^2\stackrel{d}\longrightarrow\chi^2(p)\\
+Q_{LB}\equiv n(n+2)\sum_{j=1}^{p}\frac{\hat{\rho}_j^2}{n-j}\stackrel{d}\longrightarrow\chi^2(p)</script><p>自相关阶数p的确定：$p=min\{floor(n/2)-2,40\}$</p>
 </li>
 </ul>
 <ul>
 <li><p><strong>DW检验</strong></p>
 <ul>
-<li>只能检验AR(1)<br>$$<br>DW\equiv d \equiv \frac{\sum_{t=2}^n(e_t-e_{t-1})^2}{\sum_{t=1}^ne_t^2}\approx 2-2\frac{\sum_{t=2}^ne_te_{t-1}}{\sum_{t=1}^n e_t^2}\equiv2(1-\hat{\rho}_1)<br>$$<br><img src="https://gitee.com/thuljp/md/raw/master/img/image-20200807150905356.png" alt="image-20200807150905356"></li>
+<li>只能检验AR(1)<script type="math/tex; mode=display">
+DW\equiv d \equiv \frac{\sum_{t=2}^n(e_t-e_{t-1})^2}{\sum_{t=1}^ne_t^2}\approx 2-2\frac{\sum_{t=2}^ne_te_{t-1}}{\sum_{t=1}^n e_t^2}\equiv2(1-\hat{\rho}_1)</script><img src="https://gitee.com/thuljp/md/raw/master/img/image-20200807150905356.png" alt="image-20200807150905356"></li>
 </ul>
 </li>
 </ul>
@@ -853,8 +1191,24 @@
 </li>
 </ul>
 </li>
-<li><p><strong>FGLS</strong><br>$$<br>Var(\varepsilon|X)=\sigma^2<br>\begin{pmatrix}<br>1 &amp; \rho &amp; \cdots &amp;\rho^{n-1}\<br>\rho &amp;1 &amp;\cdots &amp;\rho^{n-2}\<br>\vdots &amp;\vdots &amp; &amp;\vdots\<br>\rho^{n-1} &amp;\rho^{n-2} &amp;\cdots &amp;1<br>\end{pmatrix}\equiv \sigma^2V \ \ \<br>V^{-1}=C’C\ \ \<br>C=\frac{1}{\sqrt{1-\rho^2}}\begin{pmatrix}\sqrt{1-\rho^2} &amp;0 &amp;\cdots &amp;0 &amp;0<br>\ -\rho &amp;1 &amp;\cdots &amp;0 &amp;0\<br>0 &amp;-\rho &amp;\cdots &amp;0 &amp;0 \<br>\vdots &amp;\vdots &amp; &amp;\vdots &amp;\vdots \<br>0 &amp;0 &amp;\cdots &amp;-\rho &amp;1<br>\end{pmatrix}\ \ \</p>
-<p>H=\sqrt{1-\rho^2}C<br>$$<br><img src="https://gitee.com/thuljp/md/raw/master/img/image-20200807160203819.png" alt="image-20200807160203819"></p>
+<li><p><strong>FGLS</strong></p>
+<script type="math/tex; mode=display">
+Var(\varepsilon|X)=\sigma^2
+\begin{pmatrix}
+1 & \rho & \cdots &\rho^{n-1}\\
+\rho &1 &\cdots &\rho^{n-2}\\
+\vdots &\vdots & &\vdots\\
+\rho^{n-1} &\rho^{n-2} &\cdots &1 
+\end{pmatrix}\equiv \sigma^2V \\ \ \\
+V^{-1}=C'C\\ \ \\
+C=\frac{1}{\sqrt{1-\rho^2}}\begin{pmatrix}\sqrt{1-\rho^2} &0 &\cdots &0 &0
+\\ -\rho &1 &\cdots &0 &0\\
+0 &-\rho &\cdots &0 &0 \\
+\vdots &\vdots & &\vdots &\vdots \\
+0 &0 &\cdots &-\rho &1
+\end{pmatrix}\\ \ \\
+
+H=\sqrt{1-\rho^2}C</script><p><img src="https://gitee.com/thuljp/md/raw/master/img/image-20200807160203819.png" alt="image-20200807160203819"></p>
 </li>
 </ul>
 <h3 id="八、模型设定与数据问题"><a href="#八、模型设定与数据问题" class="headerlink" title="八、模型设定与数据问题"></a>八、模型设定与数据问题</h3><h4 id="1-遗漏变量"><a href="#1-遗漏变量" class="headerlink" title="1. 遗漏变量"></a>1. 遗漏变量</h4><h5 id="1-1-两种情况"><a href="#1-1-两种情况" class="headerlink" title="1.1 两种情况"></a>1.1 两种情况</h5><ul>
@@ -870,7 +1224,7 @@
 <li>剩余独立性：遗漏变量中不受代理变量影响的剩余部分与解释变量均不相关</li>
 </ul>
 <p><strong>命题：上述两个条件满足，使用代理变量就能获得一致的估计量</strong></p>
-<img src="https://gitee.com/thuljp/md/raw/master/img/image-20200808153617840.png" alt="image-20200808153617840" style="zoom:67%;">
+<p><img src="https://gitee.com/thuljp/md/raw/master/img/image-20200808153617840.png" alt="image-20200808153617840" style="zoom:67%;"></p>
 </li>
 <li><p>工具变量法</p>
 </li>
@@ -887,18 +1241,19 @@
 <h4 id="3-解释变量的选择"><a href="#3-解释变量的选择" class="headerlink" title="3. 解释变量的选择"></a>3. 解释变量的选择</h4><ul>
 <li><p>校正可决系数$\bar R^2$</p>
 </li>
-<li><p>AIC:<br>$$<br>\mathop{min}_{K} AIC\equiv ln(e’e/n)+\frac{2}{n}K<br>$$</p>
-</li>
+<li><p>AIC:</p>
+<script type="math/tex; mode=display">
+\mathop{min}_{K} AIC\equiv ln(e'e/n)+\frac{2}{n}K</script></li>
 </ul>
 <ul>
 <li>BIC</li>
 </ul>
-<p>$$<br>\mathop{min}_{K} BIC\equiv ln(e’e/n)+\frac{ln\ n}{n}K<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+\mathop{min}_{K} BIC\equiv ln(e'e/n)+\frac{ln\ n}{n}K</script><ul>
 <li>HQIC:</li>
 </ul>
-<p>$$<br>\mathop{min}_{K} BIC\equiv ln(e’e/n)+\frac{ln[ln\ n]}{n}K<br>$$</p>
-<p>BIC比AIC惩罚更严厉，但是BIC是p的一致估计。</p>
+<script type="math/tex; mode=display">
+\mathop{min}_{K} BIC\equiv ln(e'e/n)+\frac{ln[ln\ n]}{n}K</script><p>BIC比AIC惩罚更严厉，但是BIC是p的一致估计。</p>
 <h4 id="4-对函数形式的检验"><a href="#4-对函数形式的检验" class="headerlink" title="4. 对函数形式的检验"></a>4. 对函数形式的检验</h4><ul>
 <li>RESET检验<ul>
 <li>基本思想：如果非线性项被遗漏了，就把非线性项引入方程，并检验其系数是否显著</li>
@@ -918,7 +1273,7 @@
 <li>增减解释变量使得系数估计值发生较大变化</li>
 <li>$Var(b_k|X)=\frac{\sigma^2}{(1-R_{k}^2)S_{kk}}$<ul>
 <li>方差膨胀因子$VIF$: $VIF=\frac{1}{1-R_k^2}$</li>
-<li>经验规则：$max{VIF_1,VIF_2,\cdots,VIF_k}\leq10$</li>
+<li>经验规则：$max\{VIF_1,VIF_2,\cdots,VIF_k\}\leq10$</li>
 </ul>
 </li>
 </ul>
@@ -931,18 +1286,28 @@
 <li>$\sum_{i=1}^n lev_i=K$(解释变量个数)</li>
 </ul>
 </li>
-<li><p>记$b^{(i)}$为去掉第$i$个观测数据后的OLS估计值，可以证明：<br>$$<br>b-b^{(i)}=(\frac{1}{1-lev_i})(X’X)^{-1}x_ie_i<br>$$</p>
-</li>
+<li><p>记$b^{(i)}$为去掉第$i$个观测数据后的OLS估计值，可以证明：</p>
+<script type="math/tex; mode=display">
+b-b^{(i)}=(\frac{1}{1-lev_i})(X'X)^{-1}x_ie_i</script></li>
 </ul>
 <h4 id="7-虚拟变量"><a href="#7-虚拟变量" class="headerlink" title="7. 虚拟变量"></a>7. 虚拟变量</h4><ul>
 <li>引入虚拟变量本身</li>
 <li>引入虚拟变量与解释变量的交互项</li>
 </ul>
 <h4 id="8-经济结构变动的检验"><a href="#8-经济结构变动的检验" class="headerlink" title="8. 经济结构变动的检验"></a>8. 经济结构变动的检验</h4><h5 id="8-1-结构变动日期已知"><a href="#8-1-结构变动日期已知" class="headerlink" title="8.1 结构变动日期已知"></a>8.1 结构变动日期已知</h5><ul>
-<li><p>Chow Test<br>$$<br>\text{无约束方程：}\<br>y^1=X^1\beta^1+\varepsilon^1\<br>y^2=X^2\beta^2+\varepsilon^2\<br>\text{有约束方程：}\<br>y=X\beta+\varepsilon\<br>\ \ \ \<br>H_0: \vec{\beta^1}=\vec{\beta^2}(K\ constraints\ total)\ \ \<br>F=\frac{(e’e-e_1’e_1-e_2’e_2)/K}{(e_1’e_1+e_2’e_2)/(n-2K)}\sim F(K,n-2K)<br>$$</p>
-</li>
-<li><p>虚拟变量法<br>$$<br>y_t=\alpha+\beta x_t+\gamma D_t+\delta D_tx_t+\varepsilon_t<br>$$</p>
-<ul>
+<li><p>Chow Test</p>
+<script type="math/tex; mode=display">
+\text{无约束方程：}\\
+y^1=X^1\beta^1+\varepsilon^1\\
+y^2=X^2\beta^2+\varepsilon^2\\
+\text{有约束方程：}\\
+y=X\beta+\varepsilon\\
+\ \\ \ \\
+H_0: \vec{\beta^1}=\vec{\beta^2}(K\ constraints\ total)\\ \ \\
+F=\frac{(e'e-e_1'e_1-e_2'e_2)/K}{(e_1'e_1+e_2'e_2)/(n-2K)}\sim F(K,n-2K)</script></li>
+<li><p>虚拟变量法</p>
+<script type="math/tex; mode=display">
+y_t=\alpha+\beta x_t+\gamma D_t+\delta D_tx_t+\varepsilon_t</script><ul>
 <li><p>优点：</p>
 <ul>
 <li><p>只需生成虚拟变量即可检验</p>
@@ -962,7 +1327,7 @@
 <li>15% trimming</li>
 </ul>
 <h4 id="9-缺失数据与线性插值"><a href="#9-缺失数据与线性插值" class="headerlink" title="9. 缺失数据与线性插值"></a>9. 缺失数据与线性插值</h4><ul>
-<li><p>$x_t$对时间$t$的线性插值为：$\hat{x}<em>t=\frac{x</em>{t-1}+x_{t+1}}{2}$</p>
+<li><p>$x_t$对时间$t$的线性插值为：$\hat{x}_t=\frac{x_{t-1}+x_{t+1}}{2}$</p>
 </li>
 <li><p>对$y_t$的插值：$\hat{y}=\frac{y_1-y_0}{x_1-x_0}(x-x_0)+y_0$</p>
 </li>
@@ -984,11 +1349,23 @@
 </li>
 <li><p><strong>解释变量测量误差</strong></p>
 <ul>
-<li>真实模型：$y=\alpha+\beta x^*+\varepsilon$，$Cov(x^*,\varepsilon)=0$</li>
-<li>观测到：$x=x^*+u$，$Cov(x^*,u)=0, Cov(u,\varepsilon)=0$，因此待估计的模型$y=\alpha+\beta x+(\varepsilon-\beta u)$</li>
-<li>向0的偏误：$Cov(x^*+u,\varepsilon-\beta u)=-\beta Var(u)\neq0$, $\hat{\beta}\stackrel{p}\longrightarrow \frac{Cov(x_i,y_i)}{Var(x_i)}=\frac{\beta Var(x_i^*)}{Var(x_i^*)+Var(u)}=\beta\frac{1}{1+\frac{\sigma_u^2}{\sigma_{x^*}^2}}$</li>
+<li><p>真实模型:</p>
+<script type="math/tex; mode=display">
+y=\alpha+\beta x^*+\varepsilon</script><script type="math/tex; mode=display">
+Cov(x^*,\varepsilon)=0</script></li>
+<li><p>观测到：</p>
+<script type="math/tex; mode=display">
+x=x^*+u</script><script type="math/tex; mode=display">
+Cov(x^* , u)=0, Cov(u,\varepsilon)=0</script></li>
 </ul>
-</li>
+<p>因此待估计的模型: </p>
+<script type="math/tex; mode=display">
+y=\alpha+\beta x+(\varepsilon-\beta u)</script><ul>
+<li>向0的偏误：<script type="math/tex; mode=display">
+Cov(x^*+u,\varepsilon-\beta u)=-\beta Var(u)\neq0</script></li>
+</ul>
+<script type="math/tex; mode=display">
+\hat{\beta}\stackrel{p}\longrightarrow \frac{Cov(x_i,y_i)}{Var(x_i)}=\frac{\beta Var(x_i^*)}{Var(x_i^*)+Var(u)}=\beta\frac{1}{1+\frac{\sigma_u^2}{\sigma_{x^*}^2}}</script></li>
 <li><p><strong>被解释变量存在测量误差</strong></p>
 <ul>
 <li><p>真正的模型：$y^*=\beta x+\varepsilon$, $Cov(x,\varepsilon)=0$, $\beta\neq0$</p>
@@ -1004,15 +1381,17 @@
 <li>基本思想：用样本矩替代总体矩</li>
 <li>OLS作为一种矩估计</li>
 </ul>
-<p>$$<br>\begin{aligned}<br>E(x_i\varepsilon_i)=0&amp;\to E[x_i(y_i-x_i’\beta)]=0\<br>&amp;\to \beta=[E(x_ix_i’)]^{-1}E(x_iy_i)<br>\end{aligned}\<br>\hat{\beta}<em>{MM}=[1/n \sum(x_ix_i’)]^{-1}(1/n \sum x_iy_i)=(X’X)^{-1}(X’y)=\hat{\beta}</em>{OLS}<br>$$</p>
-<h5 id="2-2-工具变量法作为一种矩估计"><a href="#2-2-工具变量法作为一种矩估计" class="headerlink" title="2.2 工具变量法作为一种矩估计"></a>2.2 工具变量法作为一种矩估计</h5><ul>
-<li><p>正交条件：$E(z_i\varepsilon_i)=E(z_i(y_i-x_i’\beta))=0\to \beta=[E(z_ix_i’)]^{-1}E(z_iy_i)$</p>
-</li>
-<li><p>$\hat{\beta}_{IV}=[1/n \sum(z_ix_i’)]^{-1}(1/n \sum z_iy_i)=(Z’X)^{-1}(Z’y)$</p>
-</li>
+<script type="math/tex; mode=display">
+\begin{aligned}
+E(x_i\varepsilon_i)=0&\to E[x_i(y_i-x_i'\beta)]=0\\
+&\to \beta=[E(x_ix_i')]^{-1}E(x_iy_i)
+\end{aligned}\\
+\hat{\beta}_{MM}=[1/n \sum(x_ix_i')]^{-1}(1/n \sum x_iy_i)=(X'X)^{-1}(X'y)=\hat{\beta}_{OLS}</script><h5 id="2-2-工具变量法作为一种矩估计"><a href="#2-2-工具变量法作为一种矩估计" class="headerlink" title="2.2 工具变量法作为一种矩估计"></a>2.2 工具变量法作为一种矩估计</h5><ul>
+<li>正交条件：$E(z_i\varepsilon_i)=E(z_i(y_i-x_i’\beta))=0\to \beta=[E(z_ix_i’)]^{-1}E(z_iy_i)$</li>
+<li>$\hat{\beta}_{IV}=[1/n \sum(z_ix_i’)]^{-1}(1/n \sum z_iy_i)=(Z’X)^{-1}(Z’y)$</li>
 <li><p>秩条件</p>
 <ul>
-<li>若$rank[E(z_ix_i’)]=K$，则在一定的正则条件下，$\hat{\beta}<em>{IV}$是$\beta$的一致估计，且$\hat{\beta}</em>{IV}$服从渐进正态分布</li>
+<li>若$rank[E(z_ix_i’)]=K$，则在一定的正则条件下，$\hat{\beta}_{IV}$是$\beta$的一致估计，且$\hat{\beta}_{IV}$服从渐进正态分布</li>
 </ul>
 </li>
 <li><p>阶条件</p>
@@ -1037,14 +1416,15 @@
 </li>
 <li><p>步骤：</p>
 <ul>
-<li><p>第一部分：将每个解释变量$x_1,x_2,\cdots,x_K$分别对所有$L$个工具变量{$z_1,z_2,\cdots,z_L$}做OLS回归，得到拟合值<br>$$<br>\hat{x}_1=Px_1, \hat{x}_2=Px_2, \cdots, \hat{x}_K=Px_K,其中P\equiv Z(Z’Z)^{-1}Z’\<br>\hat{X}\equiv (\hat{x}_1,\cdots,\hat{x}_K)=PX=Z[(Z’Z)^{-1}Z’X]<br>$$</p>
-</li>
-<li><p>第二部分：使用外生部分$\hat{X}$进行回归<br>$$<br>\hat{\beta}_{IV}=(\hat{X}’X)^{-1}\hat{X}’y’=(\hat{X}’\hat{X})^{-1}\hat{X}’y’<br>$$</p>
-<ul>
-<li>$\hat{X}’\hat{X}=(PX)’(PX)=X’P’PX=X’P’X=\hat{X}’X$</li>
-<li>$\hat{\beta}_{2SLS}=(X’PX)^{-1}X’Py=[X’Z(Z’Z)^{-1}Z’X]^{-1}X’Z(Z’Z)^{-1}Z’y$</li>
-</ul>
-</li>
+<li><p>第一部分：将每个解释变量$x_1,x_2,\cdots,x_K$分别对所有$L$个工具变量{$z_1,z_2,\cdots,z_L$}做OLS回归，得到拟合值</p>
+<script type="math/tex; mode=display">
+\hat{x}_1=Px_1, \hat{x}_2=Px_2, \cdots, \hat{x}_K=Px_K,其中P\equiv Z(Z'Z)^{-1}Z'\\
+\hat{X}\equiv (\hat{x}_1,\cdots,\hat{x}_K)=PX=Z[(Z'Z)^{-1}Z'X]</script></li>
+<li><p>第二部分：使用外生部分$\hat{X}$进行回归</p>
+<script type="math/tex; mode=display">
+\hat{\beta}_{IV}=(\hat{X}'X)^{-1}\hat{X}'y'=(\hat{X}'\hat{X})^{-1}\hat{X}'y'</script><script type="math/tex; mode=display">
+\hat{X}'\hat{X}=(PX)'(PX)=X'P'PX=X'P'X=\hat{X}'X</script><script type="math/tex; mode=display">
+\hat{\beta}_{2SLS}=(X'PX)^{-1}X'Py=[X'Z(Z'Z)^{-1}Z'X]^{-1}X'Z(Z'Z)^{-1}Z'y</script></li>
 </ul>
 </li>
 </ul>
@@ -1077,7 +1457,7 @@
 </ul>
 <h5 id="4-4-究竟使用OLS还是工具变量：豪斯曼检验"><a href="#4-4-究竟使用OLS还是工具变量：豪斯曼检验" class="headerlink" title="4.4 究竟使用OLS还是工具变量：豪斯曼检验"></a>4.4 究竟使用OLS还是工具变量：豪斯曼检验</h5><ul>
 <li>$H_0:$所有解释变量均外生</li>
-<li>$(\hat{\beta}<em>{IV}-\hat{\beta}</em>{OLS})’D^{-}(\hat{\beta}<em>{IV}-\hat{\beta}</em>{OLS})\stackrel{d}\longrightarrow \chi^2(r)$</li>
+<li>$(\hat{\beta}_{IV}-\hat{\beta}_{OLS})’D^{-}(\hat{\beta}_{IV}-\hat{\beta}_{OLS})\stackrel{d}\longrightarrow \chi^2(r)$</li>
 <li>注意：传统豪斯曼检验不适用于异方差的情况<ul>
 <li>解决异方差的方法<ol>
 <li>bootstrap</li>
@@ -1104,7 +1484,7 @@
 <li>$E(z_ix_i’)$满列秩</li>
 </ul>
 </li>
-<li>${g_i}$为鞅差分序列<ul>
+<li>$\{g_i\}$为鞅差分序列<ul>
 <li>协方差矩阵$S=E(g_ig_i’)=E(\varepsilon_i^2z_iz_i’)$为非退化矩阵</li>
 </ul>
 </li>
@@ -1126,19 +1506,29 @@
 </li>
 <li>假设$\hat W$为一个$L\times L$维对称正定矩阵，且$plim\hat W=W$, 定义最小化的目标函数为：</li>
 </ul>
-<p>$$<br>\mathop{min}_{\hat \beta }J(\hat \beta, \hat W)\equiv n(g_n(\hat \beta))’\hat W(g_n(\hat \beta))<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+\mathop{min}_{\hat \beta }J(\hat \beta, \hat W)\equiv n(g_n(\hat \beta))'\hat W(g_n(\hat \beta))</script><ul>
 <li>GMM估计量</li>
 </ul>
-<p>$$<br>\begin{aligned}<br>\hat \beta_{GMM}(\hat W)&amp;\equiv \mathop{argmin}<em>{\hat \beta}J(\hat{\beta},\hat{W})\<br>&amp;=(S</em>{ZX}’\hat W S_{ZX})^{-1}S_{ZX}’ \hat W S_{Zy}<br>\end{aligned}<br>$$</p>
-<p>​        其中：$S_{ZX}=\frac{1}{n}\sum z_ix_i’$，$S_{Zy}=\frac{1}{n}\sum z_iy_i$</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\hat \beta_{GMM}(\hat W)&\equiv \mathop{argmin}_{\hat \beta}J(\hat{\beta},\hat{W})\\
+&=(S_{ZX}'\hat W S_{ZX})^{-1}S_{ZX}' \hat W S_{Zy}
+\end{aligned}</script><p>​        其中：$S_{ZX}=\frac{1}{n}\sum z_ix_i’$，$S_{Zy}=\frac{1}{n}\sum z_iy_i$</p>
 <p>恰好识别的情况下，GMM还原为IV，因为$\hat \beta_{GMM}(\hat W)=S_{ZX}^{-1}\hat W^{-1} S_{ZX}’^{-1}S_{ZX}’ \hat W S_{Zy}=S_{ZX}^{-1}S_{Zy}=\hat \beta_{IV}$</p>
 <ul>
 <li>GMM推导</li>
 </ul>
-<p>$$<br>\begin{aligned}<br>J(\hat{\beta},\hat{W})&amp;=n(S_{Zy}-S_{ZX}\hat{\beta})’\hat{W}(S_{Zy}-S_{ZX})=n(S_{Zy}’-\hat{\beta}’S_{ZX}’)\hat{W}(S_{Zy}-S_{ZX})\<br>&amp;=n(S_{Zy}’\hat{W}-S_{ZX}’\hat{\beta}’\hat{W})(S_{Zy}-S_{ZX})\<br>&amp;=n(S_{Zy}’\hat{W}S_{Zy}-2\hat{\beta}’S_{ZX}’\hat{W}S_{Zy}+\hat{\beta}’S_{ZX}’\hat{W}S_{ZX}\hat{\beta})\<br>\frac{\partial J(\hat{\beta},\hat{W})}{\partial \hat{\beta}}&amp;=n(-2S_{ZX}’\hat{W}S_{Zy}+2S_{ZX}’\hat{W}S_{ZX}\hat{\beta})\<br>\hat \beta_{GMM}(\hat W)&amp;\equiv \mathop{argmin}<em>{\hat \beta}J(\hat{\beta},\hat{W})\<br>&amp;=(S</em>{ZX}’\hat W S_{ZX})^{-1}S_{ZX}’ \hat W S_{Zy}<br>\end{aligned}<br>$$</p>
-<h4 id="7-GMM的大样本性质"><a href="#7-GMM的大样本性质" class="headerlink" title="7. GMM的大样本性质"></a>7. GMM的大样本性质</h4><ul>
-<li>$\hat{\beta}<em>{GMM}$为一致估计：$\mathop plim</em>{n\to \infty}\hat{\beta}_{GMM}(\hat{W})=\beta$</li>
+<script type="math/tex; mode=display">
+\begin{aligned}
+J(\hat{\beta},\hat{W})&=n(S_{Zy}-S_{ZX}\hat{\beta})'\hat{W}(S_{Zy}-S_{ZX})=n(S_{Zy}'-\hat{\beta}'S_{ZX}')\hat{W}(S_{Zy}-S_{ZX})\\
+&=n(S_{Zy}'\hat{W}-S_{ZX}'\hat{\beta}'\hat{W})(S_{Zy}-S_{ZX})\\
+&=n(S_{Zy}'\hat{W}S_{Zy}-2\hat{\beta}'S_{ZX}'\hat{W}S_{Zy}+\hat{\beta}'S_{ZX}'\hat{W}S_{ZX}\hat{\beta})\\
+\frac{\partial J(\hat{\beta},\hat{W})}{\partial \hat{\beta}}&=n(-2S_{ZX}'\hat{W}S_{Zy}+2S_{ZX}'\hat{W}S_{ZX}\hat{\beta})\\
+\hat \beta_{GMM}(\hat W)&\equiv \mathop{argmin}_{\hat \beta}J(\hat{\beta},\hat{W})\\
+&=(S_{ZX}'\hat W S_{ZX})^{-1}S_{ZX}' \hat W S_{Zy}
+\end{aligned}</script><h4 id="7-GMM的大样本性质"><a href="#7-GMM的大样本性质" class="headerlink" title="7. GMM的大样本性质"></a>7. GMM的大样本性质</h4><ul>
+<li>$\hat{\beta}_{GMM}$为一致估计：$\mathop plim_{n\to \infty}\hat{\beta}_{GMM}(\hat{W})=\beta$</li>
 <li>$\hat{\beta}_{GMM}$为渐进正态</li>
 </ul>
 <p><strong>命题</strong>：使$Avar(\hat{\beta}_{GMM})$最小化的“最优权重矩阵”为$\hat{W}=\hat{S}^{-1}$，其中$\hat{S}\equiv \frac{1}{n}\sum e_i^2z_iz_i’$是$S\equiv E(\varepsilon_i^2z_iz_i’)$的一致估计</p>
@@ -1168,41 +1558,42 @@
 <h3 id="十一、最大似然估计法"><a href="#十一、最大似然估计法" class="headerlink" title="十一、最大似然估计法"></a>十一、最大似然估计法</h3><h4 id="1-定义"><a href="#1-定义" class="headerlink" title="1. 定义"></a>1. 定义</h4><ul>
 <li>似然函数</li>
 </ul>
-<p>$$<br>L(\theta;y_1,\cdots，y_n)=\prod_{i=1}^{n}f(y_i;\theta)<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+L(\theta;y_1,\cdots，y_n)=\prod_{i=1}^{n}f(y_i;\theta)</script><ul>
 <li>对数形式</li>
 </ul>
-<p>$$<br>lnL(\theta;y_1,\cdots，y_n)=\sum_{i=1}^{n}lnf(y_i;\theta)<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+lnL(\theta;y_1,\cdots，y_n)=\sum_{i=1}^{n}lnf(y_i;\theta)</script><ul>
 <li>最大似然估计量</li>
 </ul>
-<p>$$<br>\hat{\theta}_{ML}\equiv argmax\ lnL(\theta;y)<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+\hat{\theta}_{ML}\equiv argmax\ lnL(\theta;y)</script><ul>
 <li>唯一内点解，无约束极值问题的一阶条件</li>
 </ul>
-<p>$$<br>s(\theta;y)\equiv \frac{\partial L(\theta;y)}{\partial \theta}\equiv \begin{pmatrix}\frac{\partial L(\theta;y)}{\partial \theta_1} \ \frac{\partial L(\theta;y)}{\partial \theta_2}\ \vdots \ \frac{\partial L(\theta;y)}{\partial \theta_K}\end{pmatrix}=0<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+s(\theta;y)\equiv \frac{\partial L(\theta;y)}{\partial \theta}\equiv \begin{pmatrix}\frac{\partial L(\theta;y)}{\partial \theta_1} \\ \frac{\partial L(\theta;y)}{\partial \theta_2}\\ \vdots \\ \frac{\partial L(\theta;y)}{\partial \theta_K}\end{pmatrix}=0</script><ul>
 <li><p><strong>命题：得分函数的期望为0</strong></p>
 <p>若似然函数正确，则$E[s(\theta_0;y)]=0$，其中$s(\theta_0;y)$表示得分函数$s(\theta;y)$在$\theta=\theta_0$处的取值</p>
 </li>
 </ul>
-<p>$$<br>s(\theta;y)=\frac{\partial \sum_{i=1}^{n}lnf(y_i;\theta)}{\partial \theta}=\sum\frac{lnf(y_i;\theta)}{\partial \theta}=\sum_{i=1}^{n}s_i(\theta;y_i)<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+s(\theta;y)=\frac{\partial \sum_{i=1}^{n}lnf(y_i;\theta)}{\partial \theta}=\sum\frac{lnf(y_i;\theta)}{\partial \theta}=\sum_{i=1}^{n}s_i(\theta;y_i)</script><ul>
 <li>二阶条件——负定：</li>
 </ul>
-<p>$$<br>H(\theta;y)\equiv \frac{\partial^2 lnL(\theta;y)}{\partial \theta \partial \theta’}=\sum_{i=1}^{n}\frac{\partial^2 lnL(\theta;y_i)}{\partial \theta \partial \theta’}\equiv\sum_{i=1}^{n}H_i(\theta;y_i)<br>$$</p>
-<h4 id="2-线性回归模型的最大似然估计"><a href="#2-线性回归模型的最大似然估计" class="headerlink" title="2. 线性回归模型的最大似然估计"></a>2. 线性回归模型的最大似然估计</h4><ul>
+<script type="math/tex; mode=display">
+H(\theta;y)\equiv \frac{\partial^2 lnL(\theta;y)}{\partial \theta \partial \theta'}=\sum_{i=1}^{n}\frac{\partial^2 lnL(\theta;y_i)}{\partial \theta \partial \theta'}\equiv\sum_{i=1}^{n}H_i(\theta;y_i)</script><h4 id="2-线性回归模型的最大似然估计"><a href="#2-线性回归模型的最大似然估计" class="headerlink" title="2. 线性回归模型的最大似然估计"></a>2. 线性回归模型的最大似然估计</h4><ul>
 <li><p>首先需要对扰动项的条件概率分布进行假设，如假设为正态分布$\varepsilon|X\sim N(0，\sigma^2I_n)$，则$y|X\sim N(X\beta，\sigma^2I_n)$</p>
 </li>
 <li><p>$y=X\beta+\varepsilon$</p>
 </li>
-<li><p>$f(y|X)=(2\pi\sigma^2)^{-n/2}exp{-\frac{1}{2\sigma^2}(y-X\beta)’(y-X\beta)}$</p>
+<li><p>$f(y|X)=(2\pi\sigma^2)^{-n/2}exp\{-\frac{1}{2\sigma^2}(y-X\beta)’(y-X\beta)\}$</p>
 <p>$lnL(\tilde{\beta},\tilde{\sigma}^2)=-\frac{n}{2}ln2\pi-\frac{n}{2}ln\tilde{\sigma}^2-\frac{1}{2\tilde{\sigma}^2}(y-X\tilde{\beta})’(y-X\tilde{\beta})$</p>
 </li>
-<li><p>$\hat{\beta}<em>{ML}=\hat{\beta}</em>{OLS}=(X’X)^{-1}X’y$</p>
+<li><p>$\hat{\beta}_{ML}=\hat{\beta}_{OLS}=(X’X)^{-1}X’y$</p>
 </li>
-<li><p>第二步：$lnL(\tilde{\beta},\tilde{\sigma}^2)=-\frac{n}{2}ln2\pi-\frac{n}{2}ln\tilde{\sigma}^2-\frac{1}{2\tilde{\sigma}^2}e’e$，对$\tilde\sigma^2$求导，得到<br>$$<br>\hat\sigma^2_{ML}=\frac{e’e}{n}\neq \hat\sigma^2_{OLS}=\frac{e’e}{n-K}\equiv s^2<br>$$</p>
-<ul>
+<li><p>第二步：$lnL(\tilde{\beta},\tilde{\sigma}^2)=-\frac{n}{2}ln2\pi-\frac{n}{2}ln\tilde{\sigma}^2-\frac{1}{2\tilde{\sigma}^2}e’e$，对$\tilde\sigma^2$求导，得到</p>
+<script type="math/tex; mode=display">
+\hat\sigma^2_{ML}=\frac{e'e}{n}\neq \hat\sigma^2_{OLS}=\frac{e'e}{n-K}\equiv s^2</script><ul>
 <li><p>MLE主要优点是大样本性质良好，比如一致性、最小渐近方差</p>
 </li>
 <li><p>缺点是对方差的估计是有偏的！</p>
@@ -1213,14 +1604,15 @@
 <h4 id="3-最大似然估计的数值解"><a href="#3-最大似然估计的数值解" class="headerlink" title="3. 最大似然估计的数值解"></a>3. 最大似然估计的数值解</h4><h5 id="3-1-网格搜索（Grid-Search"><a href="#3-1-网格搜索（Grid-Search" class="headerlink" title="3.1 网格搜索（Grid Search)"></a>3.1 网格搜索（Grid Search)</h5><ul>
 <li>针对一维</li>
 </ul>
-<h5 id="3-2-针对多维——迭代法【例如：牛顿法】"><a href="#3-2-针对多维——迭代法【例如：牛顿法】" class="headerlink" title="3.2 针对多维——迭代法【例如：牛顿法】"></a>3.2 针对多维——迭代法【例如：牛顿法】</h5><p>$$<br>x_{i+1}=x_i-\frac{f(x_i)}{f’(x_i)}<br>$$</p>
-<h4 id="4-信息矩阵与无偏估计的最小方差"><a href="#4-信息矩阵与无偏估计的最小方差" class="headerlink" title="4. 信息矩阵与无偏估计的最小方差"></a>4. 信息矩阵与无偏估计的最小方差</h4><h5 id="4-1-信息矩阵"><a href="#4-1-信息矩阵" class="headerlink" title="4.1 信息矩阵"></a>4.1 信息矩阵</h5><p>$$<br>I(\theta)\equiv -E[\frac{\partial^2lnL(\theta;y)}{\partial \theta\partial \theta’}]<br>$$</p>
-<ul>
+<h5 id="3-2-针对多维——迭代法【例如：牛顿法】"><a href="#3-2-针对多维——迭代法【例如：牛顿法】" class="headerlink" title="3.2 针对多维——迭代法【例如：牛顿法】"></a>3.2 针对多维——迭代法【例如：牛顿法】</h5><script type="math/tex; mode=display">
+x_{i+1}=x_i-\frac{f(x_i)}{f'(x_i)}</script><h4 id="4-信息矩阵与无偏估计的最小方差"><a href="#4-信息矩阵与无偏估计的最小方差" class="headerlink" title="4. 信息矩阵与无偏估计的最小方差"></a>4. 信息矩阵与无偏估计的最小方差</h4><h5 id="4-1-信息矩阵"><a href="#4-1-信息矩阵" class="headerlink" title="4.1 信息矩阵"></a>4.1 信息矩阵</h5><script type="math/tex; mode=display">
+I(\theta)\equiv -E[\frac{\partial^2lnL(\theta;y)}{\partial \theta\partial \theta'}]</script><ul>
 <li><p>$I(\theta)$在几何上是”平均曲率”。$I(\theta)$包含了$\theta$是否容易估计的信息，故称为“信息矩阵”    </p>
 </li>
 <li><p><strong>命题：信息矩阵等式</strong></p>
 <ul>
-<li>在$\theta=\theta_0$处，<br>$$<br>I(\theta_0)\equiv -E[\frac{\partial^2lnL(\theta_0;y)}{\partial \theta\partial \theta’}]=E[\frac{\partial lnL(\theta_0;y)}{\partial \theta} \frac{\partial lnL(\theta_0;y)}{\partial \theta’}]=E[s(\theta_0;y)s(\theta_0;y)’]<br>$$</li>
+<li>在$\theta=\theta_0$处，<script type="math/tex; mode=display">
+I(\theta_0)\equiv -E[\frac{\partial^2lnL(\theta_0;y)}{\partial \theta\partial \theta'}]=E[\frac{\partial lnL(\theta_0;y)}{\partial \theta} \frac{\partial lnL(\theta_0;y)}{\partial \theta'}]=E[s(\theta_0;y)s(\theta_0;y)']</script></li>
 </ul>
 </li>
 <li><p><strong>命题：得分函数的方差为信息矩阵</strong></p>
@@ -1232,7 +1624,7 @@
 <h5 id="4-2-Cramer-Rao-Lower-Bound"><a href="#4-2-Cramer-Rao-Lower-Bound" class="headerlink" title="4.2 Cramer-Rao Lower Bound"></a>4.2 Cramer-Rao Lower Bound</h5><ul>
 <li><p>假设$\hat{\theta}$是对真实参数$\theta_0$的任意无偏估计，则在一定的正则条件下，$\hat{\theta}$的方差不会小于$[I(\theta_0)]^{-1}$, 即$Var(\hat{\theta})\geq[I(\theta_0)]^{-1}$</p>
 <ul>
-<li>其中：$[I(\theta_0)]^{-1}=\begin{pmatrix}\sigma^2(X’X)^{-1} &amp;0 \0 &amp; 2\sigma^4/n \end{pmatrix}$</li>
+<li>其中：$[I(\theta_0)]^{-1}=\begin{pmatrix}\sigma^2(X’X)^{-1} &amp;0 \\0 &amp; 2\sigma^4/n \end{pmatrix}$</li>
 </ul>
 </li>
 </ul>
@@ -1251,16 +1643,16 @@
 </li>
 </ul>
 <p>以上性质的证明待补充。</p>
-<h4 id="6-最大似然估计量的渐进协方差矩阵"><a href="#6-最大似然估计量的渐进协方差矩阵" class="headerlink" title="6. 最大似然估计量的渐进协方差矩阵"></a>6. 最大似然估计量的渐进协方差矩阵</h4><p>$Avar(\hat{\theta}_{ML})=n[I(\theta_0)]^{-1}=n{-E[\frac{\partial^2lnL(\theta_0;y)}{\partial \theta\partial \theta’}]}^{-1}$</p>
+<h4 id="6-最大似然估计量的渐进协方差矩阵"><a href="#6-最大似然估计量的渐进协方差矩阵" class="headerlink" title="6. 最大似然估计量的渐进协方差矩阵"></a>6. 最大似然估计量的渐进协方差矩阵</h4><p>$Avar(\hat{\theta}_{ML})=n[I(\theta_0)]^{-1}=n\{-E[\frac{\partial^2lnL(\theta_0;y)}{\partial \theta\partial \theta’}]\}^{-1}$</p>
 <ul>
 <li>依赖未知参数$\theta_0$，但$\theta_0$待估</li>
 </ul>
 <p><strong>（1）期望值法</strong></p>
-<p>$Avar(\hat{\theta}<em>{ML})=n{-E[\frac{\partial^2lnL(\hat\theta</em>{ML};y)}{\partial \hat{\theta}\partial \hat{\theta}’}]}^{-1}$</p>
+<p>$Avar(\hat{\theta}_{ML})=n\{-E[\frac{\partial^2lnL(\hat\theta_{ML};y)}{\partial \hat{\theta}\partial \hat{\theta}’}]\}^{-1}$</p>
 <p><strong>（2）观测信息矩阵法 (OIM)</strong></p>
-<p>$Avar(\hat{\theta}<em>{ML})=n[-\frac{\partial^2lnL(\hat\theta</em>{ML};y)}{\partial \hat{\theta}\partial \hat{\theta}’}]^{-1}$</p>
+<p>$Avar(\hat{\theta}_{ML})=n[-\frac{\partial^2lnL(\hat\theta_{ML};y)}{\partial \hat{\theta}\partial \hat{\theta}’}]^{-1}$</p>
 <p><strong>（3）梯度向量外积或BHHH法</strong> <strong>(OPG)</strong></p>
-<p>$Avar(\hat{\theta}_{ML})=n(\sum\hat{s}<em>i\hat{s}_i’)^{-1}$，其中$\hat{s}_i\equiv \frac{\partial lnL(\hat\theta</em>{ML};y_i)}{\partial \theta}$为第$i$个观测值对得分函数的贡献之估计值</p>
+<p>$Avar(\hat{\theta}_{ML})=n(\sum\hat{s}_i\hat{s}_i’)^{-1}$，其中$\hat{s}_i\equiv \frac{\partial lnL(\hat\theta_{ML};y_i)}{\partial \theta}$为第$i$个观测值对得分函数的贡献之估计值</p>
 <h4 id="7-三类渐进等价的统计检验"><a href="#7-三类渐进等价的统计检验" class="headerlink" title="7. 三类渐进等价的统计检验"></a>7. 三类渐进等价的统计检验</h4><ul>
 <li><p><strong>Wald Test</strong></p>
 </li>
@@ -1279,8 +1671,8 @@
 <li>画图（histogram; kernel density estimation; QQ-plot）</li>
 <li>Jarque-Bera检验</li>
 </ul>
-<p>$$<br>JB\equiv \frac{n}{6}[(\frac{1}{n\hat{\sigma}^3}\sum e_i^3)^2+\frac{1}{4}(\frac{1}{n\hat{\sigma}^4}\sum e_i^4-3)^2]\stackrel{d}\longrightarrow\chi^2(2)<br>$$</p>
-<h3 id="十二、二值选择模型"><a href="#十二、二值选择模型" class="headerlink" title="十二、二值选择模型"></a>十二、二值选择模型</h3><h4 id="1-Linear-Probability-Model-LPM"><a href="#1-Linear-Probability-Model-LPM" class="headerlink" title="1. Linear Probability Model (LPM)"></a>1. Linear Probability Model (LPM)</h4><h5 id="1-1-问题起源：-varepsilon-i-与-x-i-相关"><a href="#1-1-问题起源：-varepsilon-i-与-x-i-相关" class="headerlink" title="1.1 问题起源：$\varepsilon_i$与$x_i$相关"></a>1.1 问题起源：$\varepsilon_i$与$x_i$相关</h5><ul>
+<script type="math/tex; mode=display">
+JB\equiv \frac{n}{6}[(\frac{1}{n\hat{\sigma}^3}\sum e_i^3)^2+\frac{1}{4}(\frac{1}{n\hat{\sigma}^4}\sum e_i^4-3)^2]\stackrel{d}\longrightarrow\chi^2(2)</script><h3 id="十二、二值选择模型"><a href="#十二、二值选择模型" class="headerlink" title="十二、二值选择模型"></a>十二、二值选择模型</h3><h4 id="1-Linear-Probability-Model-LPM"><a href="#1-Linear-Probability-Model-LPM" class="headerlink" title="1. Linear Probability Model (LPM)"></a>1. Linear Probability Model (LPM)</h4><h5 id="1-1-问题起源：-varepsilon-i-与-x-i-相关"><a href="#1-1-问题起源：-varepsilon-i-与-x-i-相关" class="headerlink" title="1.1 问题起源：$\varepsilon_i$与$x_i$相关"></a>1.1 问题起源：$\varepsilon_i$与$x_i$相关</h5><ul>
 <li><p>因为y只能取0或者1，因而$\varepsilon_i=1-x_i’\beta$或者$\varepsilon_i=-x_i’\beta$, 与x相关, inconsistent</p>
 </li>
 <li><p>$\varepsilon$是两点分布而不是正态分布</p>
@@ -1295,23 +1687,29 @@
 <li><p>容易得到边际效应</p>
 </li>
 </ul>
-<h4 id="2-连接函数-F-x-beta"><a href="#2-连接函数-F-x-beta" class="headerlink" title="2. 连接函数$F(x,\beta)$"></a>2. 连接函数$F(x,\beta)$</h4><h5 id="2-1-将-hat-y-E-y-x-理解为“-y-1-”发生的概率"><a href="#2-1-将-hat-y-E-y-x-理解为“-y-1-”发生的概率" class="headerlink" title="2.1 将$\hat y=E(y|x)$理解为“$y=1$”发生的概率"></a>2.1 将$\hat y=E(y|x)$理解为“$y=1$”发生的概率</h5><p>$$<br>E(y|x)=1\cdot P(y=1|x)+0\cdot P(y=0|x)=P(y=1|x)<br>$$</p>
-<h5 id="2-2-Probit-Model"><a href="#2-2-Probit-Model" class="headerlink" title="2.2 Probit Model"></a>2.2 Probit Model</h5><p>$$<br>P(y=1|x)=F(x,\beta)=\Phi(x’\beta)=\int_{-\infty}^{x’\beta}\phi(t)dt<br>$$</p>
-<ul>
+<h4 id="2-连接函数-F-x-beta"><a href="#2-连接函数-F-x-beta" class="headerlink" title="2. 连接函数$F(x,\beta)$"></a>2. 连接函数$F(x,\beta)$</h4><h5 id="2-1-将-hat-y-E-y-x-理解为“-y-1-”发生的概率"><a href="#2-1-将-hat-y-E-y-x-理解为“-y-1-”发生的概率" class="headerlink" title="2.1 将$\hat y=E(y|x)$理解为“$y=1$”发生的概率"></a>2.1 将$\hat y=E(y|x)$理解为“$y=1$”发生的概率</h5><script type="math/tex; mode=display">
+E(y|x)=1\cdot P(y=1|x)+0\cdot P(y=0|x)=P(y=1|x)</script><h5 id="2-2-Probit-Model"><a href="#2-2-Probit-Model" class="headerlink" title="2.2 Probit Model"></a>2.2 Probit Model</h5><script type="math/tex; mode=display">
+P(y=1|x)=F(x,\beta)=\Phi(x'\beta)=\int_{-\infty}^{x'\beta}\phi(t)dt</script><ul>
 <li>$F(x,\beta)$为标准正态的累积分布函数(cdf)</li>
 </ul>
-<h5 id="2-3-Logit-Model"><a href="#2-3-Logit-Model" class="headerlink" title="2.3 Logit Model"></a>2.3 Logit Model</h5><p>$$<br>P(y=1|x)=F(x,\beta)=\Lambda(x’,\beta)\equiv \frac{exp(x’\beta)}{1+exp(x’\beta)}<br>$$</p>
-<ul>
+<h5 id="2-3-Logit-Model"><a href="#2-3-Logit-Model" class="headerlink" title="2.3 Logit Model"></a>2.3 Logit Model</h5><script type="math/tex; mode=display">
+P(y=1|x)=F(x,\beta)=\Lambda(x',\beta)\equiv \frac{exp(x'\beta)}{1+exp(x'\beta)}</script><ul>
 <li><p>逻辑分布期望为0，方差为$\pi^2/3$</p>
 </li>
 <li><p>与标准正态相比，逻辑分布具有fat tails的特征</p>
 </li>
 </ul>
-<h4 id="3-Logit-Model：分析"><a href="#3-Logit-Model：分析" class="headerlink" title="3. Logit Model：分析"></a>3. Logit Model：分析</h4><h5 id="3-1-估计方法：MLE"><a href="#3-1-估计方法：MLE" class="headerlink" title="3.1 估计方法：MLE"></a>3.1 估计方法：MLE</h5><p>第i个数据的概率密度：<br>$$<br>f(y_i|x,\beta)=\begin{cases} \Lambda(x_i’\beta) &amp;\ if y_i=1\ 1-\Lambda(x_i’\beta) &amp;\ if y_i=0\end{cases}<br>$$<br>因此，<br>$$<br>f(y_i|x_i,\beta)=[\Lambda(x_i’\beta)]^{y_i}[1-\Lambda(x_i’\beta)]^{1-y_i}<br>$$</p>
-<p>取对数，<br>$$<br>ln f(y_i|x_i,\beta)=y_i ln[\Lambda(x_i’\beta)]+(1-y_i) ln[1-\Lambda(x_i’\beta)]<br>$$<br>对数似然函数：<br>$$<br>ln L(\beta|y,x)=\sum_{i=1}^{n} y_i ln[\Lambda (x_i’\beta)]+\sum_{i=1}^{n}(1-y_i)ln[1-\Lambda(x_i’\beta)]<br>$$</p>
-<p>$$<br>\hat{\beta}_{MLE}=argmax\ ln(\beta; y,x)<br>$$</p>
-<h5 id="3-2-beta-MLE-并非边际效应"><a href="#3-2-beta-MLE-并非边际效应" class="headerlink" title="3.2 $\beta_{MLE}$并非边际效应"></a>3.2 $\beta_{MLE}$并非边际效应</h5><p>$$<br>\frac{\partial P(y=1|x)}{\partial x_k}=\frac{\partial P(y=1|x)}{\partial (x’\beta)}\cdot \frac{\partial (x’\beta)}{\partial x_k}=\phi(x’\beta)\cdot \beta_k<br>$$</p>
-<p>三种常用的边际效应：</p>
+<h4 id="3-Logit-Model：分析"><a href="#3-Logit-Model：分析" class="headerlink" title="3. Logit Model：分析"></a>3. Logit Model：分析</h4><h5 id="3-1-估计方法：MLE"><a href="#3-1-估计方法：MLE" class="headerlink" title="3.1 估计方法：MLE"></a>3.1 估计方法：MLE</h5><p>第i个数据的概率密度：</p>
+<script type="math/tex; mode=display">
+f(y_i|x,\beta)=\begin{cases} \Lambda(x_i'\beta) &\ if y_i=1\\ 1-\Lambda(x_i'\beta) &\ if y_i=0\end{cases}</script><p>因此，</p>
+<script type="math/tex; mode=display">
+f(y_i|x_i,\beta)=[\Lambda(x_i'\beta)]^{y_i}[1-\Lambda(x_i'\beta)]^{1-y_i}</script><p>取对数，</p>
+<script type="math/tex; mode=display">
+ln f(y_i|x_i,\beta)=y_i ln[\Lambda(x_i'\beta)]+(1-y_i) ln[1-\Lambda(x_i'\beta)]</script><p>对数似然函数：</p>
+<script type="math/tex; mode=display">
+ln L(\beta|y,x)=\sum_{i=1}^{n} y_i ln[\Lambda (x_i'\beta)]+\sum_{i=1}^{n}(1-y_i)ln[1-\Lambda(x_i'\beta)]</script><script type="math/tex; mode=display">
+\hat{\beta}_{MLE}=argmax\ ln(\beta; y,x)</script><h5 id="3-2-beta-MLE-并非边际效应"><a href="#3-2-beta-MLE-并非边际效应" class="headerlink" title="3.2 $\beta_{MLE}$并非边际效应"></a>3.2 $\beta_{MLE}$并非边际效应</h5><script type="math/tex; mode=display">
+\frac{\partial P(y=1|x)}{\partial x_k}=\frac{\partial P(y=1|x)}{\partial (x'\beta)}\cdot \frac{\partial (x'\beta)}{\partial x_k}=\phi(x'\beta)\cdot \beta_k</script><p>三种常用的边际效应：</p>
 <ul>
 <li><p>平均边际效应：分别计算在每个样本观测值上的边际效应，然后进行简单的算术平均</p>
 </li>
@@ -1320,60 +1718,79 @@
 <li><p>在某代表值处的边际效应：$x=x^*$处的边际效应</p>
 </li>
 </ul>
-<h5 id="3-3-Log-odds-ratio"><a href="#3-3-Log-odds-ratio" class="headerlink" title="3.3 Log-odds ratio"></a>3.3 Log-odds ratio</h5><p>$$<br>p\equiv P(y=1|x),1-p\equiv P(y=0|x)\<br>p=\frac{exp(x’\beta)}{1+exp(x’\beta)}, 1-p=\frac{1}{1+exp(x’\beta)}\<br>\frac{p}{1-p}=exp(x’\beta) \<br>ln \frac{p}{1-p}=x’\beta<br>$$</p>
-<ul>
+<h5 id="3-3-Log-odds-ratio"><a href="#3-3-Log-odds-ratio" class="headerlink" title="3.3 Log-odds ratio"></a>3.3 Log-odds ratio</h5><script type="math/tex; mode=display">
+p\equiv P(y=1|x),1-p\equiv P(y=0|x)\\
+p=\frac{exp(x'\beta)}{1+exp(x'\beta)}, 1-p=\frac{1}{1+exp(x'\beta)}\\
+\frac{p}{1-p}=exp(x'\beta) \\
+ln \frac{p}{1-p}=x'\beta</script><ul>
 <li>$ln\frac{p}{1-p}$可以视作半弹性的概念，对于odds而言。即解释变量变化一个单位，odds ratio变化了百分之多少</li>
 <li>$exp(\beta_j)$的解释：解释变量变化一个单位，odds变为原来的多少倍：</li>
 </ul>
-<p>$$<br>\frac{p^*}{1-p^*}/\frac{p}{1-p}=\frac{exp(\beta_1+\beta_2x_2+\cdots+\beta_j(x_j+1)+\cdots+\beta_Kx_K)}{exp(\beta_1+\beta_2x_2+\cdots+\beta_j x_j+\cdots+\beta_Kx_K)}=exp(\beta_j)<br>$$</p>
-<h4 id="4-二值选择模型的拟合优度"><a href="#4-二值选择模型的拟合优度" class="headerlink" title="4. 二值选择模型的拟合优度"></a>4. 二值选择模型的拟合优度</h4><ul>
+<script type="math/tex; mode=display">
+\frac{p^*}{1-p^*}/\frac{p}{1-p}=\frac{exp(\beta_1+\beta_2x_2+\cdots+\beta_j(x_j+1)+\cdots+\beta_Kx_K)}{exp(\beta_1+\beta_2x_2+\cdots+\beta_j x_j+\cdots+\beta_Kx_K)}=exp(\beta_j)</script><h4 id="4-二值选择模型的拟合优度"><a href="#4-二值选择模型的拟合优度" class="headerlink" title="4. 二值选择模型的拟合优度"></a>4. 二值选择模型的拟合优度</h4><ul>
 <li>准$R^2$(Pseudo $R^2$)</li>
 </ul>
-<p>$$<br>Pseudo\ R^2\equiv \frac{ln\ L_0-ln\ L_1}{ln\ L_0}=\frac{ln \ L_1-ln\ L_0}{ln\ L_{max}-ln\ L_0}<br>$$</p>
-<h4 id="5-二值选择模型的微观基础"><a href="#5-二值选择模型的微观基础" class="headerlink" title="5. 二值选择模型的微观基础"></a>5. 二值选择模型的微观基础</h4><h5 id="5-1-扰动项的一种解释：潜变量"><a href="#5-1-扰动项的一种解释：潜变量" class="headerlink" title="5.1 扰动项的一种解释：潜变量"></a>5.1 扰动项的一种解释：潜变量</h5><ul>
+<script type="math/tex; mode=display">
+Pseudo\ R^2\equiv \frac{ln\ L_0-ln\ L_1}{ln\ L_0}=\frac{ln \ L_1-ln\ L_0}{ln\ L_{max}-ln\ L_0}</script><h4 id="5-二值选择模型的微观基础"><a href="#5-二值选择模型的微观基础" class="headerlink" title="5. 二值选择模型的微观基础"></a>5. 二值选择模型的微观基础</h4><h5 id="5-1-扰动项的一种解释：潜变量"><a href="#5-1-扰动项的一种解释：潜变量" class="headerlink" title="5.1 扰动项的一种解释：潜变量"></a>5.1 扰动项的一种解释：潜变量</h5><ul>
 <li>latent variable (潜变量)</li>
-<li>净收益(不可观测)$y^*$<br>$$<br>y^*=x’\beta+\varepsilon<br>$$</li>
+<li>净收益(不可观测)$y^*$<script type="math/tex; mode=display">
+y^*=x'\beta+\varepsilon</script></li>
 <li>净收益大于0，选择做；否则选择不做。</li>
 <li>index function</li>
 </ul>
-<p>$$<br>y=\begin{cases} 1 &amp;if\ y^*&gt;0\ 0 &amp; if\ y^*\leq 0\end{cases}<br>$$</p>
-<ul>
-<li>假设$\varepsilon\sim N(0,\sigma^2)$ or 逻辑分布：<br>$$<br>P(y=1|x)=P(\varepsilon&gt;-x’\beta|x)=P(\varepsilon&lt;x’\beta)=F_{\varepsilon}(x’\beta)<br>$$</li>
+<script type="math/tex; mode=display">
+y=\begin{cases} 1 &if\ y^*>0\\ 0 & if\ y^*\leq 0\end{cases}</script><ul>
+<li>假设$\varepsilon\sim N(0,\sigma^2)$ or 逻辑分布：<script type="math/tex; mode=display">
+P(y=1|x)=P(\varepsilon>-x'\beta|x)=P(\varepsilon<x'\beta)=F_{\varepsilon}(x'\beta)</script></li>
 </ul>
-<h5 id="5-2-另一种解释：随机效用最大化模型（RUM）"><a href="#5-2-另一种解释：随机效用最大化模型（RUM）" class="headerlink" title="5.2 另一种解释：随机效用最大化模型（RUM）"></a>5.2 另一种解释：随机效用最大化模型（RUM）</h5><p>假定$U_a=x’\beta_a+\varepsilon_a, U_b=x’\beta_b+\varepsilon_b$<br>$$<br>P(y=1|x)=P(U_a&gt;U_b|x)=P[x’(\beta_a-\beta_b)+(\varepsilon_a+\varepsilon_b)&gt;0|x]<br>$$</p>
-<h3 id="十三、多值选择模型"><a href="#十三、多值选择模型" class="headerlink" title="十三、多值选择模型"></a>十三、多值选择模型</h3><h4 id="1-多项Logit与多项Probit"><a href="#1-多项Logit与多项Probit" class="headerlink" title="1. 多项Logit与多项Probit"></a>1. 多项Logit与多项Probit</h4><ul>
-<li><p>个体i选择方案j所能带来的随机效用为<br>$$<br>U_{i j}=\boldsymbol{x}<em>{i} \boldsymbol{\beta}</em>{j}+\varepsilon_{i j} \quad(i=1, \cdots, n ; j=1, \cdots, J)<br>$$</p>
-</li>
+<h5 id="5-2-另一种解释：随机效用最大化模型（RUM）"><a href="#5-2-另一种解释：随机效用最大化模型（RUM）" class="headerlink" title="5.2 另一种解释：随机效用最大化模型（RUM）"></a>5.2 另一种解释：随机效用最大化模型（RUM）</h5><p>假定$U_a=x’\beta_a+\varepsilon_a, U_b=x’\beta_b+\varepsilon_b$</p>
+<script type="math/tex; mode=display">
+P(y=1|x)=P(U_a>U_b|x)=P[x'(\beta_a-\beta_b)+(\varepsilon_a+\varepsilon_b)>0|x]</script><h3 id="十三、多值选择模型"><a href="#十三、多值选择模型" class="headerlink" title="十三、多值选择模型"></a>十三、多值选择模型</h3><h4 id="1-多项Logit与多项Probit"><a href="#1-多项Logit与多项Probit" class="headerlink" title="1. 多项Logit与多项Probit"></a>1. 多项Logit与多项Probit</h4><ul>
+<li><p>个体i选择方案j所能带来的随机效用为</p>
+<script type="math/tex; mode=display">
+U_{i j}=\boldsymbol{x}_{i} \boldsymbol{\beta}_{j}+\varepsilon_{i j} \quad(i=1, \cdots, n ; j=1, \cdots, J)</script></li>
 <li><p>个体i选择方案j的概率：</p>
 </li>
 </ul>
-<p>$$<br>\begin{aligned}<br>\mathrm{P}\left(y_{i}=j \mid \boldsymbol{x}<em>{i}\right) &amp;=\mathrm{P}\left(U</em>{i j} \geqslant U_{i k}, \forall k \neq j\right) \<br>&amp;=\mathrm{P}\left(U_{i k}-U_{i j} \leqslant 0, \forall k \neq j\right) \<br>&amp;=\mathrm{P}\left(\varepsilon_{i k}-\varepsilon_{i j} \leqslant \boldsymbol{x}<em>{i}^{\prime} \boldsymbol{\beta}</em>{j}-\boldsymbol{x}<em>{i}^{\prime} \boldsymbol{\beta}</em>{k}, \forall k \neq j\right)<br>\end{aligned}<br>$$</p>
-<ul>
-<li><p>假设扰动项${\varepsilon}$为iid且服从I型极值分布，则有：<br>$$<br>P\left(y_{i}=j \mid x_{i}\right)=\frac{\exp \left(x_{i}^{\prime} \beta_{j}\right)}{\sum_{k=1}^{J} \exp \left(x_{i}^{\prime} \beta_{k}\right)}<br>$$</p>
-</li>
-<li><p>base category<br>$$<br>P\left(y_{i}=j \mid x_{i}\right)=\left{\begin{array}{ll}<br>\frac{1}{1+\sum_{k=2}^{J} \exp \left(x_{i}^{\prime} \boldsymbol{\beta}<em>{k}\right)} &amp; (j=1) \<br>\frac{\exp \left(\boldsymbol{x}</em>{i}’ \boldsymbol{\beta}<em>{j}\right)}{1+\sum</em>{k=2}^{J} \exp \left(\boldsymbol{x}<em>{i}^{\prime} \boldsymbol{\beta}</em>{k}\right)} &amp; (j=2, \cdots, J)<br>\end{array}\right.<br>$$</p>
-</li>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\mathrm{P}\left(y_{i}=j \mid \boldsymbol{x}_{i}\right) &=\mathrm{P}\left(U_{i j} \geqslant U_{i k}, \forall k \neq j\right) \\
+&=\mathrm{P}\left(U_{i k}-U_{i j} \leqslant 0, \forall k \neq j\right) \\
+&=\mathrm{P}\left(\varepsilon_{i k}-\varepsilon_{i j} \leqslant \boldsymbol{x}_{i}^{\prime} \boldsymbol{\beta}_{j}-\boldsymbol{x}_{i}^{\prime} \boldsymbol{\beta}_{k}, \forall k \neq j\right)
+\end{aligned}</script><ul>
+<li><p>假设扰动项$\{\varepsilon\}$为iid且服从I型极值分布，则有：</p>
+<script type="math/tex; mode=display">
+P\left(y_{i}=j \mid x_{i}\right)=\frac{\exp \left(x_{i}^{\prime} \beta_{j}\right)}{\sum_{k=1}^{J} \exp \left(x_{i}^{\prime} \beta_{k}\right)}</script></li>
+<li><p>base category</p>
+<script type="math/tex; mode=display">
+P\left(y_{i}=j \mid x_{i}\right)=\left\{\begin{array}{ll}
+\frac{1}{1+\sum_{k=2}^{J} \exp \left(x_{i}^{\prime} \boldsymbol{\beta}_{k}\right)} & (j=1) \\
+\frac{\exp \left(\boldsymbol{x}_{i}' \boldsymbol{\beta}_{j}\right)}{1+\sum_{k=2}^{J} \exp \left(\boldsymbol{x}_{i}^{\prime} \boldsymbol{\beta}_{k}\right)} & (j=2, \cdots, J)
+\end{array}\right.</script></li>
 </ul>
 <h3 id="十四、平稳时间序列"><a href="#十四、平稳时间序列" class="headerlink" title="十四、平稳时间序列"></a>十四、平稳时间序列</h3><h4 id="1-时间序列的数字特征"><a href="#1-时间序列的数字特征" class="headerlink" title="1. 时间序列的数字特征"></a>1. 时间序列的数字特征</h4><ul>
 <li>k阶自协方差</li>
 </ul>
-<p>$$<br>\gamma_{k} \equiv \operatorname{Cov}\left(y_{t}, y_{t+k}\right)=\mathrm{E}\left[\left(y_{t}-\mu\right)\left(y_{t+k}-\mu\right)\right.]<br>$$</p>
-<ul>
-<li><p>样本自协方差：<br>$$<br>\hat{\gamma}<em>{k} \equiv \frac{1}{T-k} \sum</em>{i=1}^{T-k}\left(y_{t}-\bar{y}\right)\left(y_{t+k}-\bar{y}\right)<br>$$</p>
-</li>
+<script type="math/tex; mode=display">
+\gamma_{k} \equiv \operatorname{Cov}\left(y_{t}, y_{t+k}\right)=\mathrm{E}\left[\left(y_{t}-\mu\right)\left(y_{t+k}-\mu\right)\right.]</script><ul>
+<li><p>样本自协方差：</p>
+<script type="math/tex; mode=display">
+\hat{\gamma}_{k} \equiv \frac{1}{T-k} \sum_{i=1}^{T-k}\left(y_{t}-\bar{y}\right)\left(y_{t+k}-\bar{y}\right)</script></li>
 <li><p>k阶自相关系数（对于严格平稳过程，自相关系数不依赖于时间t只依赖于滞后阶数k，因而被称作自相关函数ACF）</p>
 </li>
 </ul>
-<p>$$<br>\rho_{k} \equiv \operatorname{Corr}\left(y_{t}, y_{t+k}\right) \equiv \frac{\operatorname{Cov}\left(y_{t}, y_{t+k}\right)}{\operatorname{Var}\left(y_{t}\right)}<br>$$</p>
-<ul>
-<li><p>样本自相关系数<br>$$<br>\hat{\boldsymbol{\rho}}<em>{k} \equiv \hat{\gamma}</em>{k} / \hat{\gamma}_{0}<br>$$</p>
-</li>
-<li><p>k阶偏自相关系数：考虑k期中间各期影响下的条件相关系数(PACF)<br>$$<br>\rho_{k}^{*} \equiv \operatorname{Corr}\left(y_{t}, y_{t+k} \mid y_{t+1}, \cdots, y_{t+k-1}\right)<br>$$</p>
-</li>
+<script type="math/tex; mode=display">
+\rho_{k} \equiv \operatorname{Corr}\left(y_{t}, y_{t+k}\right) \equiv \frac{\operatorname{Cov}\left(y_{t}, y_{t+k}\right)}{\operatorname{Var}\left(y_{t}\right)}</script><ul>
+<li><p>样本自相关系数</p>
+<script type="math/tex; mode=display">
+\hat{\boldsymbol{\rho}}_{k} \equiv \hat{\gamma}_{k} / \hat{\gamma}_{0}</script></li>
+<li><p>k阶偏自相关系数：考虑k期中间各期影响下的条件相关系数(PACF)</p>
+<script type="math/tex; mode=display">
+\rho_{k}^{*} \equiv \operatorname{Corr}\left(y_{t}, y_{t+k} \mid y_{t+1}, \cdots, y_{t+k-1}\right)</script></li>
 </ul>
-<p>​       估计$\hat \rho <em>k^*$的方法：OLS估计，然后看$y</em>{t-k}$前的系数</p>
-<h4 id="2-AR-p-：自回归模型"><a href="#2-AR-p-：自回归模型" class="headerlink" title="2. AR(p)：自回归模型"></a>2. AR(p)：自回归模型</h4><p>$$<br>y_{t}=\beta_{0}+\beta_{1} y_{t-1}+\cdots+\beta_{p} y_{t-p}+\varepsilon_{t}<br>$$</p>
-<h5 id="2-1-对系数的估计方法"><a href="#2-1-对系数的估计方法" class="headerlink" title="2.1 对系数的估计方法"></a>2.1 对系数的估计方法</h5><ul>
+<p>​       估计$\hat \rho _k^*$的方法：OLS估计，然后看$y_{t-k}$前的系数</p>
+<h4 id="2-AR-p-：自回归模型"><a href="#2-AR-p-：自回归模型" class="headerlink" title="2. AR(p)：自回归模型"></a>2. AR(p)：自回归模型</h4><script type="math/tex; mode=display">
+y_{t}=\beta_{0}+\beta_{1} y_{t-1}+\cdots+\beta_{p} y_{t-p}+\varepsilon_{t}</script><h5 id="2-1-对系数的估计方法"><a href="#2-1-对系数的估计方法" class="headerlink" title="2.1 对系数的估计方法"></a>2.1 对系数的估计方法</h5><ul>
 <li>OLS：损失p个样本容量</li>
 <li>Exact MLE: 使用迭代法进行计算，更加精确但通常计算较复杂；且需要假定扰动项$N(0,\sigma_{\varepsilon}^2)$</li>
 <li>Conditional MLE: 等价于OLS, 适用于样本容量较大的情况，不依赖正态性假定</li>
@@ -1387,9 +1804,9 @@
 <li>同方差：$Var(\varepsilon_t)=\sigma_{\varepsilon}^2$</li>
 <li>无自相关：$Cov(\varepsilon_t,\varepsilon_s)=0, t\neq s$</li>
 </ol>
-<h4 id="3-MA-q-移动平均模型"><a href="#3-MA-q-移动平均模型" class="headerlink" title="3. MA(q): 移动平均模型"></a>3. MA(q): 移动平均模型</h4><p>$$<br>y_t=\mu+\varepsilon_t+\theta_1 \varepsilon_{t-1}+\theta_2 \varepsilon_{t-2}+\cdots + \theta_q \varepsilon_{t-q}<br>$$</p>
-<h4 id="4-ARMA初识与ACF-amp-PACF判断"><a href="#4-ARMA初识与ACF-amp-PACF判断" class="headerlink" title="4. ARMA初识与ACF&amp;PACF判断"></a>4. ARMA初识与ACF&amp;PACF判断</h4><p>$$<br>y_{t}=\beta_{0}+\beta_{1} y_{t-1}+\cdots+\beta_{p} y_{t-p}+\varepsilon_{t}+\theta_{1} \varepsilon_{t-1}+\cdots+\theta_{q} \varepsilon_{t-q}<br>$$</p>
-<ul>
+<h4 id="3-MA-q-移动平均模型"><a href="#3-MA-q-移动平均模型" class="headerlink" title="3. MA(q): 移动平均模型"></a>3. MA(q): 移动平均模型</h4><script type="math/tex; mode=display">
+y_t=\mu+\varepsilon_t+\theta_1 \varepsilon_{t-1}+\theta_2 \varepsilon_{t-2}+\cdots + \theta_q \varepsilon_{t-q}</script><h4 id="4-ARMA初识与ACF-amp-PACF判断"><a href="#4-ARMA初识与ACF-amp-PACF判断" class="headerlink" title="4. ARMA初识与ACF&amp;PACF判断"></a>4. ARMA初识与ACF&amp;PACF判断</h4><script type="math/tex; mode=display">
+y_{t}=\beta_{0}+\beta_{1} y_{t-1}+\cdots+\beta_{p} y_{t-p}+\varepsilon_{t}+\theta_{1} \varepsilon_{t-1}+\cdots+\theta_{q} \varepsilon_{t-q}</script><ul>
 <li>估计$(\hat p ,\hat q)$<ul>
 <li>AR(p): <ul>
 <li>ACF拖尾</li>
@@ -1408,8 +1825,8 @@
 </ul>
 </li>
 </ul>
-<h4 id="5-Autoregressive-Distributed-Lag-Model-ADL-p-q"><a href="#5-Autoregressive-Distributed-Lag-Model-ADL-p-q" class="headerlink" title="5. Autoregressive Distributed Lag Model: ADL(p,q)"></a>5. Autoregressive Distributed Lag Model: ADL(p,q)</h4><p>$$<br>y_{t}=\beta_{0}+\beta_{1} y_{t-1}+\cdots+\beta_{p} y_{t-p}+\gamma_0 x_0+\gamma_{1} x_{t-1}+\cdots+\gamma_{q} x_{t-q}+\varepsilon_{t}<br>$$</p>
-<ul>
+<h4 id="5-Autoregressive-Distributed-Lag-Model-ADL-p-q"><a href="#5-Autoregressive-Distributed-Lag-Model-ADL-p-q" class="headerlink" title="5. Autoregressive Distributed Lag Model: ADL(p,q)"></a>5. Autoregressive Distributed Lag Model: ADL(p,q)</h4><script type="math/tex; mode=display">
+y_{t}=\beta_{0}+\beta_{1} y_{t-1}+\cdots+\beta_{p} y_{t-p}+\gamma_0 x_0+\gamma_{1} x_{t-1}+\cdots+\gamma_{q} x_{t-q}+\varepsilon_{t}</script><ul>
 <li>Note：可使用OLS估计的前提<ul>
 <li>$\mathrm{E}\left(\varepsilon_{1} \mid y_{1-1}, y_{1-2}, \cdots, x_{1,1-1}, x_{1,1-2}, \cdots, x_{K, 1-1}, x_{K, t-2}, \cdots\right)=0$ 扰动项与所有解释变量的整个历史全部无关</li>
 <li>渐进独立的平稳序列</li>
@@ -1422,8 +1839,8 @@
 <li>基本思想：变量的短期变动向着这个长期均衡关系的部分调整</li>
 <li>AR(1)的ECM：</li>
 </ul>
-<p>$$<br>\Delta y_{t}=\underbrace{\left(1-\beta_{1}\right)\left(y^{*}-y_{t-1}\right)}<em>{\text {error correction }}+\varepsilon</em>{t}<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+\Delta y_{t}=\underbrace{\left(1-\beta_{1}\right)\left(y^{*}-y_{t-1}\right)}_{\text {error correction }}+\varepsilon_{t}</script><ul>
 <li>ADL的ECM：<ul>
 <li>原ADL: $y_{t}=\beta_{0}+\beta_{1} y_{t-1}+\gamma_{0} x_{t}+\gamma_{1} x_{t-1}+\varepsilon_{t}$</li>
 <li>长期关系: $y^{<em>}=\frac{\beta_{0}}{\left(1-\beta_{1}\right)}+\frac{\left(\gamma_{0}+\gamma_{1}\right)}{\left(1-\beta_{1}\right)} x^{</em>}$<ul>
@@ -1435,42 +1852,64 @@
 </ul>
 </li>
 </ul>
-<p>$$<br>\Delta y_{t}=\gamma_{0} \Delta x_{t}+\underbrace{\left(\beta_{1}-1\right)\left(y_{t-1}-\phi-\theta x_{t-1}\right)}<em>{\text {error correction }}+\varepsilon</em>{t}<br>$$</p>
-<h4 id="7-MA-infty-与滞后算子"><a href="#7-MA-infty-与滞后算子" class="headerlink" title="7. MA($\infty$)与滞后算子"></a>7. MA($\infty$)与滞后算子</h4><h5 id="7-1-MA-infty"><a href="#7-1-MA-infty" class="headerlink" title="7.1 MA($\infty$)"></a>7.1 MA($\infty$)</h5><p>$$<br>y_{t}=\mu+\sum_{j=0}^{\infty} \theta_{j} \varepsilon_{t-j}, \theta_0=1<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+\Delta y_{t}=\gamma_{0} \Delta x_{t}+\underbrace{\left(\beta_{1}-1\right)\left(y_{t-1}-\phi-\theta x_{t-1}\right)}_{\text {error correction }}+\varepsilon_{t}</script><h4 id="7-MA-infty-与滞后算子"><a href="#7-MA-infty-与滞后算子" class="headerlink" title="7. MA($\infty$)与滞后算子"></a>7. MA($\infty$)与滞后算子</h4><h5 id="7-1-MA-infty"><a href="#7-1-MA-infty" class="headerlink" title="7.1 MA($\infty$)"></a>7.1 MA($\infty$)</h5><script type="math/tex; mode=display">
+y_{t}=\mu+\sum_{j=0}^{\infty} \theta_{j} \varepsilon_{t-j}, \theta_0=1</script><ul>
 <li>“绝对值可加总”（Absolutely Summable, AS)</li>
 </ul>
-<h5 id="7-2-滞后算子"><a href="#7-2-滞后算子" class="headerlink" title="7.2 滞后算子"></a>7.2 滞后算子</h5><p>$$<br>L y_{t}=y_{t-1}, L^{2} y_{t}=L\left(L y_{t}\right)=y_{t-2}, \cdots, L^{p} y_{t}=y_{t-p}<br>$$</p>
-<ul>
+<h5 id="7-2-滞后算子"><a href="#7-2-滞后算子" class="headerlink" title="7.2 滞后算子"></a>7.2 滞后算子</h5><script type="math/tex; mode=display">
+L y_{t}=y_{t-1}, L^{2} y_{t}=L\left(L y_{t}\right)=y_{t-2}, \cdots, L^{p} y_{t}=y_{t-p}</script><ul>
 <li>特别地，$L^0y_t=1\cdot y_t=y_t$</li>
 <li>$L^p\cdot L^q=L^{p+q}$</li>
 <li>差分算子 $\Delta=1-L$, $\Delta y_t=y_t-y_{t-1}=(1-L)y_t$</li>
 </ul>
-<h5 id="7-3-AR-p-也是-MA-infty"><a href="#7-3-AR-p-也是-MA-infty" class="headerlink" title="7.3 $AR(p)$也是$MA(\infty)$"></a>7.3 $AR(p)$也是$MA(\infty)$</h5><p>$$<br>\left(1-\beta_{1} L-\cdots-\beta_{p} L^{p}\right) y_{t}=\beta_{0}+\varepsilon_{t}<br>$$</p>
-<ul>
+<h5 id="7-3-AR-p-也是-MA-infty"><a href="#7-3-AR-p-也是-MA-infty" class="headerlink" title="7.3 $AR(p)$也是$MA(\infty)$"></a>7.3 $AR(p)$也是$MA(\infty)$</h5><script type="math/tex; mode=display">
+\left(1-\beta_{1} L-\cdots-\beta_{p} L^{p}\right) y_{t}=\beta_{0}+\varepsilon_{t}</script><ul>
 <li>滞后多项式$\beta(L)=1-\beta_1L-\cdots-\beta_pL^p$</li>
 </ul>
-<h5 id="7-4-滤波"><a href="#7-4-滤波" class="headerlink" title="7.4 滤波"></a>7.4 滤波</h5><p>$$<br>\alpha(L)=\alpha_0+\alpha_1 L+\alpha_2L^2+\cdots<br>$$</p>
-<ul>
+<h5 id="7-4-滤波"><a href="#7-4-滤波" class="headerlink" title="7.4 滤波"></a>7.4 滤波</h5><script type="math/tex; mode=display">
+\alpha(L)=\alpha_0+\alpha_1 L+\alpha_2L^2+\cdots</script><ul>
 <li>命题：弱平稳过程经过AS滤波作用后，仍为弱平稳过程</li>
 <li>定义：滤波的乘积</li>
 </ul>
-<p>$$<br>\begin{aligned}<br>\delta(L) &amp; \equiv \alpha(L) \beta(L) \equiv\left(\alpha_{0}+\alpha_{1} L+\alpha_{2} L^{2}+\cdots\right)\left(\beta_{0}+\beta_{1} L+\beta_{2} L^{2}+\cdots\right) \<br>&amp;=\alpha_{0} \beta_{0}+\left(\alpha_{0} \beta_{1}+\alpha_{1} \beta_{0}\right) L+\left(\alpha_{2} \beta_{0}+\alpha_{1} \beta_{1}+\alpha_{0} \beta_{2}\right) L^{2}+\cdots<br>\end{aligned}<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\delta(L) & \equiv \alpha(L) \beta(L) \equiv\left(\alpha_{0}+\alpha_{1} L+\alpha_{2} L^{2}+\cdots\right)\left(\beta_{0}+\beta_{1} L+\beta_{2} L^{2}+\cdots\right) \\
+&=\alpha_{0} \beta_{0}+\left(\alpha_{0} \beta_{1}+\alpha_{1} \beta_{0}\right) L+\left(\alpha_{2} \beta_{0}+\alpha_{1} \beta_{1}+\alpha_{0} \beta_{2}\right) L^{2}+\cdots
+\end{aligned}</script><ul>
 <li>应用：证明$AR(1)$是$MA(\infty)$</li>
 </ul>
-<p>方法一：<br>$$<br>\begin{aligned}<br>y_{t} &amp;=\beta_{0}+\beta_{1} y_{t-1}+\varepsilon_{t} \<br>&amp;=\beta_{0}+\beta_{1}\left(\beta_{0}+\beta_{1} y_{t-2}+\varepsilon_{t-1}\right)+\varepsilon_{t} \<br>&amp;=\left(\beta_{0}+\beta_{0} \beta_{1}\right)+\beta_{1}^{2} y_{t-2}+\beta_{1} \varepsilon_{t-1}+\varepsilon_{t} \<br>&amp;=\left(\beta_{0}+\beta_{0} \beta_{1}\right)+\beta_{1}^{2}\left(\beta_{0}+\beta_{1} y_{t-3}+\varepsilon_{t-2}\right)+\beta_{1} \varepsilon_{t-1}+\varepsilon_{t} \<br>&amp;=\beta_{0}\left(1+\beta_{1}+\beta_{1}^{2}\right)+\beta_{1}^{3} y_{t-3}+\beta_{1}^{2} \varepsilon_{t-2}+\beta_{1} \varepsilon_{t-1}+\varepsilon_{t} \<br>&amp;=\cdots \<br>&amp;=\beta_{0}\left(1+\beta_{1}+\beta_{1}^{2}+\cdots\right)+\varepsilon_{t}+\beta_{1} \varepsilon_{t-1}+\beta_{1}^{2} \varepsilon_{t-2}+\beta_{1}^{3} \varepsilon_{t-3}+\cdots<br>\end{aligned}<br>$$</p>
-<p>方法二：<br>$$<br>\begin{aligned}<br>y_{t} &amp;=\left(1-\beta_{1} L\right)^{-1}\left(\beta_{0}+\varepsilon_{t}\right) \<br>&amp;=\left(1+\beta L+\beta^{2} L^{2}+\cdots\right) \beta_{0}+\left(1+\beta L+\beta^{2} L^{2}+\cdots\right) \varepsilon_{t} \<br>&amp;=\beta_{0}\left(1+\beta_{1}+\beta_{1}^{2}+\cdots\right)+\varepsilon_{t}+\beta_{1} \varepsilon_{t-1}+\beta_{1}^{2} \varepsilon_{t-2}+\beta_{1}^{3} \varepsilon_{t-3}+\<br>&amp;=\frac{\beta_{0}}{1-\beta_{1}}+\varepsilon_{t}+\beta_{1} \varepsilon_{t-1}+\beta_{1}^{2} \varepsilon_{t-2}+\beta_{1}^{3} \varepsilon_{t-3}+\cdots<br>\end{aligned}<br>$$</p>
-<ul>
+<p>方法一：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+y_{t} &=\beta_{0}+\beta_{1} y_{t-1}+\varepsilon_{t} \\
+&=\beta_{0}+\beta_{1}\left(\beta_{0}+\beta_{1} y_{t-2}+\varepsilon_{t-1}\right)+\varepsilon_{t} \\
+&=\left(\beta_{0}+\beta_{0} \beta_{1}\right)+\beta_{1}^{2} y_{t-2}+\beta_{1} \varepsilon_{t-1}+\varepsilon_{t} \\
+&=\left(\beta_{0}+\beta_{0} \beta_{1}\right)+\beta_{1}^{2}\left(\beta_{0}+\beta_{1} y_{t-3}+\varepsilon_{t-2}\right)+\beta_{1} \varepsilon_{t-1}+\varepsilon_{t} \\
+&=\beta_{0}\left(1+\beta_{1}+\beta_{1}^{2}\right)+\beta_{1}^{3} y_{t-3}+\beta_{1}^{2} \varepsilon_{t-2}+\beta_{1} \varepsilon_{t-1}+\varepsilon_{t} \\
+&=\cdots \\
+&=\beta_{0}\left(1+\beta_{1}+\beta_{1}^{2}+\cdots\right)+\varepsilon_{t}+\beta_{1} \varepsilon_{t-1}+\beta_{1}^{2} \varepsilon_{t-2}+\beta_{1}^{3} \varepsilon_{t-3}+\cdots
+\end{aligned}</script><p>方法二：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+y_{t} &=\left(1-\beta_{1} L\right)^{-1}\left(\beta_{0}+\varepsilon_{t}\right) \\
+&=\left(1+\beta L+\beta^{2} L^{2}+\cdots\right) \beta_{0}+\left(1+\beta L+\beta^{2} L^{2}+\cdots\right) \varepsilon_{t} \\
+&=\beta_{0}\left(1+\beta_{1}+\beta_{1}^{2}+\cdots\right)+\varepsilon_{t}+\beta_{1} \varepsilon_{t-1}+\beta_{1}^{2} \varepsilon_{t-2}+\beta_{1}^{3} \varepsilon_{t-3}+\\
+&=\frac{\beta_{0}}{1-\beta_{1}}+\varepsilon_{t}+\beta_{1} \varepsilon_{t-1}+\beta_{1}^{2} \varepsilon_{t-2}+\beta_{1}^{3} \varepsilon_{t-3}+\cdots
+\end{aligned}</script><ul>
 <li>Note: <ul>
 <li>$(1-\beta L)^{-1}=1+\beta L + \beta^{2}L^{2}+\beta^{3}L^{3}+\cdots$</li>
 </ul>
 </li>
 </ul>
-<h5 id="7-5-脉冲响应函数与累积脉冲响应函数"><a href="#7-5-脉冲响应函数与累积脉冲响应函数" class="headerlink" title="7.5 脉冲响应函数与累积脉冲响应函数"></a>7.5 脉冲响应函数与累积脉冲响应函数</h5><p>$$<br>I R F(j) \equiv \frac{\partial y_{t+j}}{\partial \varepsilon_{t}}=\beta_{1}^{j}<br>$$</p>
-<p>$$<br>\operatorname{CIRF}(k) \equiv \sum_{j=0}^{k} \frac{\partial y_{t+j}}{\partial \varepsilon_{t}}<br>$$</p>
-<h5 id="7-6-ARMA-p-q-也是-MA-infty"><a href="#7-6-ARMA-p-q-也是-MA-infty" class="headerlink" title="7.6 ARMA(p,q)也是$MA(\infty)$"></a>7.6 ARMA(p,q)也是$MA(\infty)$</h5><p>$$<br>\begin{array}{c}<br>y_{t}=\beta_{0}+\beta_{1} y_{t-1}+\cdots+\beta_{p} y_{t-p}+\varepsilon_{t}+\theta_{1} \varepsilon_{t-1}+\cdots+\theta_{q} \varepsilon_{t-q} \<br>y_{t}-\beta_{1} L y_{t}-\cdots-\beta_{p} L^{p} y_{t}=\beta_{0}+\varepsilon_{t}+\theta_{1} L \varepsilon_{t}+\cdots+\theta_{q} L^{q} \varepsilon_{t} \<br>\beta(L) y_{t}=\beta_{0}+\theta(L) \varepsilon_{t}<br>\end{array}<br>$$</p>
-<ul>
+<h5 id="7-5-脉冲响应函数与累积脉冲响应函数"><a href="#7-5-脉冲响应函数与累积脉冲响应函数" class="headerlink" title="7.5 脉冲响应函数与累积脉冲响应函数"></a>7.5 脉冲响应函数与累积脉冲响应函数</h5><script type="math/tex; mode=display">
+I R F(j) \equiv \frac{\partial y_{t+j}}{\partial \varepsilon_{t}}=\beta_{1}^{j}</script><script type="math/tex; mode=display">
+\operatorname{CIRF}(k) \equiv \sum_{j=0}^{k} \frac{\partial y_{t+j}}{\partial \varepsilon_{t}}</script><h5 id="7-6-ARMA-p-q-也是-MA-infty"><a href="#7-6-ARMA-p-q-也是-MA-infty" class="headerlink" title="7.6 ARMA(p,q)也是$MA(\infty)$"></a>7.6 ARMA(p,q)也是$MA(\infty)$</h5><script type="math/tex; mode=display">
+\begin{array}{c}
+y_{t}=\beta_{0}+\beta_{1} y_{t-1}+\cdots+\beta_{p} y_{t-p}+\varepsilon_{t}+\theta_{1} \varepsilon_{t-1}+\cdots+\theta_{q} \varepsilon_{t-q} \\
+y_{t}-\beta_{1} L y_{t}-\cdots-\beta_{p} L^{p} y_{t}=\beta_{0}+\varepsilon_{t}+\theta_{1} L \varepsilon_{t}+\cdots+\theta_{q} L^{q} \varepsilon_{t} \\
+\beta(L) y_{t}=\beta_{0}+\theta(L) \varepsilon_{t}
+\end{array}</script><ul>
 <li>其中，$\theta(L) \equiv 1+\theta_{1} L+\cdots+\theta_{q} L^{q}$</li>
 </ul>
 <h4 id="8-VAR：向量自回归过程"><a href="#8-VAR：向量自回归过程" class="headerlink" title="8. VAR：向量自回归过程"></a>8. VAR：向量自回归过程</h4><h5 id="8-1-二元VAR-p-系统"><a href="#8-1-二元VAR-p-系统" class="headerlink" title="8.1 二元VAR(p)系统"></a>8.1 二元VAR(p)系统</h5>
