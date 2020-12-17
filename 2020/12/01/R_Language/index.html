@@ -299,7 +299,6 @@
 </li>
 <li><p><strong>向量与步数</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">z = <span class="number">1</span></span><br><span class="line">my_factorial =c() <span class="comment">#生成空向量</span></span><br><span class="line"><span class="keyword">for</span> (i <span class="keyword">in</span> <span class="number">1</span>:<span class="number">20</span>)&#123;</span><br><span class="line">    z = z*i</span><br><span class="line">    my_factorial = c(my_factorial, z)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>注：<ul>
 <li><code>1：20</code>代表c(1,2,…,20)</li>
@@ -326,9 +325,6 @@
 </li>
 <li><p><strong>编写自定义函数</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#例如</span></span><br><span class="line">dayin_jiecheng = <span class="keyword">function</span>(x)&#123;</span><br><span class="line">    z = <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span>(i <span class="keyword">in</span> <span class="number">1</span>:x)&#123;</span><br><span class="line">        z = z*i</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>(z) <span class="comment">#返回的是因变量</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
 <h5 id="1-4-程序的逻辑"><a href="#1-4-程序的逻辑" class="headerlink" title="1.4 程序的逻辑"></a>1.4 程序的逻辑</h5><ul>
@@ -351,9 +347,6 @@
 </li>
 <li><p>思考题：判断一个数是否为质数？</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">my_func = <span class="keyword">function</span>(x)&#123;</span><br><span class="line">  s = c()</span><br><span class="line">  <span class="keyword">for</span> (i <span class="keyword">in</span> <span class="number">2</span>:x)&#123;</span><br><span class="line">    z = x%%i</span><br><span class="line">    s = c(s,z)</span><br><span class="line">  &#125;</span><br><span class="line">  a = length(which(s!=<span class="number">0</span>))</span><br><span class="line">  <span class="keyword">if</span> (a ==length(s)-<span class="number">1</span>)&#123;r = <span class="string">&quot;该数是质数&quot;</span>&#125;</span><br><span class="line">  <span class="keyword">else</span>&#123;r = <span class="string">&quot;该数不是质数&quot;</span>&#125;</span><br><span class="line">  <span class="keyword">return</span>(r)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
 <h5 id="1-5-用R读取数据"><a href="#1-5-用R读取数据" class="headerlink" title="1.5 用R读取数据"></a>1.5 用R读取数据</h5><ul>
@@ -442,9 +435,6 @@
 </li>
 <li><p><strong>分组运算</strong><code>group_by()</code> and <code>summarise()</code></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">data %&gt;% group_by(EPA_Class) %&gt;% summarise(mean(Horsepower)) </span><br><span class="line"><span class="comment"># 第一步：分组</span></span><br><span class="line"><span class="comment"># 第二步：对每一个组内的数据进行运算</span></span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
 <h5 id="1-7-分析数据（下）——data-table"><a href="#1-7-分析数据（下）——data-table" class="headerlink" title="1.7 分析数据（下）——data.table"></a>1.7 分析数据（下）——data.table</h5><ul>
@@ -467,7 +457,6 @@
 </li>
 <li><p><strong>data.table的筛选方法</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data2[Horsepower &gt; <span class="number">400</span>]</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>注：回顾下dplyr的筛选方法——pipe 与 filter()</li>
 </ul>
@@ -504,9 +493,6 @@
 </li>
 <li><p><strong>输出数据</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">write.csv(data2, file = <span class="string">&quot;sorted_csv&quot;</span>) <span class="comment">#文件保存在工作地址里，可使用getwd()获取工作地址</span></span><br><span class="line"><span class="comment">#节省内存 remove(data) </span></span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
 <h5 id="1-8-绘制图表"><a href="#1-8-绘制图表" class="headerlink" title="1.8 绘制图表"></a>1.8 绘制图表</h5><ul>
@@ -552,9 +538,6 @@
 </li>
 <li><p><strong>分离不同类别的图像</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">data %&gt;% ggplot(aes(x = Weight.lb., y = Horsepower)) + geom_point() + facet_wrap(~EPA_Class)</span><br><span class="line"><span class="comment"># facet分割成并列的几个部分</span></span><br><span class="line"><span class="comment"># Wrap合并成一张图</span></span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
 </li>
@@ -580,8 +563,7 @@
 </li>
 <li><p>实操：看cheat sheet</p>
 </li>
-<li><p>Latex: 打公式</p>
-<ul>
+<li>Latex: 打公式<ul>
 <li>基本特征：<ul>
 <li>$$中间的部分是公式</li>
 <li>上标<code>^</code>，下标<code>_</code>，大括号内是整体。特殊符号<code>\alpha</code></li>
@@ -595,11 +577,6 @@
 </li>
 </ul>
 <h5 id="1-10-一些补充——China-map"><a href="#1-10-一些补充——China-map" class="headerlink" title="1.10 一些补充——China_map"></a>1.10 一些补充——China_map</h5><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">cities = c(beijing, shanghai, zhengzhou, wulumuqi, haerbin, xian, wuhan,</span><br><span class="line">           chengdu, lasa, chongqing, kunming, guangshen) <span class="comment">#这里面每一个变量都是一个向量</span></span><br><span class="line"><span class="comment"># as.data.frame函数：将变量整合成一个数据框（矩阵）</span></span><br><span class="line">mat.cities = as.data.frame(matrix(cities, ncol = <span class="number">4</span>, byrow = <span class="literal">T</span>), stringsAsFactors = <span class="literal">F</span>)</span><br><span class="line"><span class="comment"># 重命名变量的名称</span></span><br><span class="line">names(mat.cities) = c(<span class="string">&#x27;names&#x27;</span>, <span class="string">&#x27;lat&#x27;</span>, <span class="string">&#x27;long&#x27;</span>, <span class="string">&#x27;population&#x27;</span>)</span><br><span class="line"><span class="comment"># 改变数据类型 as.numeric(as.character())</span></span><br><span class="line">mat.cities$population = as.numeric(as.character(mat.cities$population)) / <span class="number">100</span></span><br><span class="line"><span class="comment"># 给图片加标题使用title()</span></span><br><span class="line">title(<span class="string">&#x27;Population&#x27;</span>)</span><br><span class="line"><span class="comment"># 用map()函数读取地图数据</span></span><br><span class="line">china &lt;- map(<span class="string">&quot;china&quot;</span>, plot = <span class="literal">F</span>)</span><br><span class="line"><span class="comment"># ggplot2画地图格式 show.legend表示是否画图例；alpha是透明度，2深、0.5浅；geom_point()画的是点；geom_text表示数据中的文本加到图里去</span></span><br><span class="line">ggplot() + </span><br><span class="line">  geom_path(data = china, aes(long, lat, group = group), color = <span class="string">&#x27;#FD9FA4&#x27;</span>, show.legend = <span class="literal">F</span>) + </span><br><span class="line">geom_point(data = mat.cities, aes(x = long, y = lat, size = population), alpha = <span class="number">2</span>, color = <span class="string">&#x27;#8BB6D6&#x27;</span>) +  </span><br><span class="line">geom_text(data = mat.cities, aes(x = long, y = lat, label = names), family = <span class="string">&quot;STHeiti&quot;</span>) + </span><br><span class="line"><span class="comment"># labs()写图的信息注释； x指横轴；y指纵轴；title指图片标题；size图例信息</span></span><br><span class="line">labs(x = <span class="string">&#x27;经度&#x27;</span>, y = <span class="string">&#x27;纬度&#x27;</span>, title = <span class="string">&#x27;中国十二个地区人口地图&#x27;</span>, size = <span class="string">&#x27;人口（百万）&#x27;</span>) </span><br><span class="line"><span class="comment"># 格式刷的功能，每次附上</span></span><br><span class="line">theme_bw() +</span><br><span class="line">  theme(panel.border = element_blank(),</span><br><span class="line">        text = element_text(family = <span class="string">&quot;STHeiti&quot;</span>),</span><br><span class="line">        plot.title = element_text(hjust = <span class="number">0.5</span>))</span><br></pre></td></tr></table></figure>
-
-
-
-
-
 <h4 id="2-R语言回归"><a href="#2-R语言回归" class="headerlink" title="2. R语言回归"></a>2. R语言回归</h4><h5 id="2-0-概述"><a href="#2-0-概述" class="headerlink" title="2.0 概述"></a>2.0 概述</h5><ul>
 <li>概率统计基本知识</li>
 <li>线性回归：从基础到进阶</li>
@@ -640,7 +617,6 @@
 </li>
 <li><p><strong>使用R跑回归</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">model1 = lm(sales~TV, data = ad)</span><br><span class="line">summary(model1)</span><br><span class="line"><span class="comment">#lm: 线性模型</span></span><br><span class="line">data %&gt;% ggplot(aes(x=TV, y=Sales)) + geom_point() + geom_smooth(method = <span class="string">&quot;lm&quot;</span>, se = <span class="literal">F</span>, color = <span class="string">&quot;red&quot;</span>) <span class="comment">#使用ggplot2画图</span></span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>提醒：需要验证模型的假设是否成立！</li>
 </ul>
@@ -649,9 +625,6 @@
 </li>
 <li><p><strong>将总体直线（或散点）和拟合线画在一起</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 第二行是画拟合线，使用geom_smooth()</span></span><br><span class="line">data1 %&gt;% ggplot(aes(x=x, y=y)) + geom_point() + ggtitle(<span class="string">&quot;Question 1.2iv Plot&quot;</span>) +</span><br><span class="line">  geom_smooth(method = <span class="string">&quot;lm&quot;</span>, se = <span class="literal">F</span>, color = <span class="string">&quot;red&quot;</span>) + </span><br><span class="line">  geom_abline(slope = <span class="number">1.2</span>, intercept = <span class="number">1</span>, color = <span class="string">&quot;blue&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
 <ul>
@@ -666,9 +639,6 @@
 <p><code>plot(model1, 2)</code></p>
 <p>或者：</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">plot(myfit1$fitted, myfit1$resid, main = <span class="string">&quot;Residual Plot&quot;</span>) <span class="comment">#plot(x轴,y轴)的格式</span></span><br><span class="line">abline(h=<span class="number">0</span>, lwd = <span class="number">2</span>, col = <span class="string">&quot;red&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
 </li>
@@ -676,9 +646,6 @@
 <ul>
 <li><p><strong>利用线性回归模型做预测</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">new = ad[<span class="number">1</span>,]</span><br><span class="line">new[<span class="number">2</span>] = <span class="number">100</span></span><br><span class="line">predict(model1, new, interval = <span class="string">&quot;prediction&quot;</span>, se.fit = <span class="literal">TRUE</span>, level = <span class="number">0.95</span>) <span class="comment">#注意此处是new不是new[2]，要把一行都输进去，而不是只输解释变量</span></span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
 <h5 id="2-3-多元线性回归"><a href="#2-3-多元线性回归" class="headerlink" title="2.3 多元线性回归"></a>2.3 多元线性回归</h5><ul>
@@ -700,9 +667,6 @@
 </li>
 <li><p><strong>置信区间</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">confint(myfit1, <span class="string">&quot;x&quot;</span>, level = <span class="number">0.95</span>)</span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
 <ul>
@@ -715,15 +679,11 @@
 </li>
 <li><p><strong>呈现报告</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(jtools)</span><br><span class="line">export_summs(model1, model2, model3)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
 <h5 id="2-4-广义线性模型"><a href="#2-4-广义线性模型" class="headerlink" title="2.4 广义线性模型"></a>2.4 广义线性模型</h5><ul>
 <li><p><strong>二次项</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model4 = lm(sales~TV + I(TV^<span class="number">2</span>), data = ad) <span class="comment">#I for isolated</span></span><br></pre></td></tr></table></figure>
-
 <p>注：区分统计学上的显著性（看统计量）&amp; 经济学上的显著性（看估计值）！</p>
 </li>
 <li><p><strong>画图</strong></p>
@@ -764,8 +724,7 @@
 <li>思考：如果是倒U型呢？【也是增加二次项】</li>
 </ul>
 </li>
-<li><p>第三步：解决正态性问题</p>
-<ul>
+<li>第三步：解决正态性问题<ul>
 <li>常用方法：<strong>一般对自变量和因变量进行对数变换</strong></li>
 <li>思考：为什么取对数？【真实世界往往是正态+头部效益，而头部效益是指数级】</li>
 </ul>
@@ -787,18 +746,15 @@
 </ul>
 </li>
 <li>对数变换：对谁取了对数变换，谁的单位就解释成百分比的变化<ul>
-<li>$In(y)=kx+b$,  $x$增加1，$y$增加$100k%$</li>
-<li>$y = k*In(x)+b$, $x$增加$1%$, $y$增加$0.01k$</li>
-<li>$In(y) = k*In(x)+b$, $x$增加$1%$, $y$增加$k%$, “弹性”的概念</li>
+<li>$In(y)=kx+b$,  $x$增加1，$y$增加$100k\%$</li>
+<li>$y = k*In(x)+b$, $x$增加$1\%$, $y$增加$0.01k$</li>
+<li>$In(y) = k*In(x)+b$, $x$增加$1\%$, $y$增加$k\%$, “弹性”的概念</li>
 </ul>
 </li>
 </ol>
 </li>
 <li><p><strong>作业中的代码：from simulation</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">set.seed(<span class="number">1</span>) <span class="comment">#保证前后生成的随机数保持一致</span></span><br><span class="line">x &lt;- seq(<span class="number">0</span>, <span class="number">1</span>, length = <span class="number">40</span>)</span><br><span class="line">y &lt;- rnorm(<span class="number">40</span>, mean = <span class="number">0</span>, sd = <span class="number">2</span>) + <span class="number">1</span> + <span class="number">1.2</span>*x <span class="comment"># rnorm()生成正态分布的随机数</span></span><br><span class="line">data1 &lt;- as.data.frame(cbind(x,y)) <span class="comment">#cbind(x,y)将x、y横向合并</span></span><br><span class="line">data1 %&gt;% ggplot(aes(x=x, y=y)) + geom_point() + ggtitle(<span class="string">&quot;Question 1.1 Plot&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
 <h5 id="2-5-预测力与模型选择"><a href="#2-5-预测力与模型选择" class="headerlink" title="2.5 预测力与模型选择"></a>2.5 预测力与模型选择</h5><ul>
@@ -824,7 +780,6 @@
 </li>
 <li><p>画==频率直方图==</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(ggplot2)</span><br><span class="line">ggplot(newhitters) +</span><br><span class="line">geom_histogram(aes(x = Salary, y =..density..),bins = <span class="number">40</span>, fill = <span class="string">&quot;blue&quot;</span>) +</span><br><span class="line">ggtitle(<span class="string">&quot;Histogram of Salary&quot;</span>) +</span><br><span class="line">ylab(<span class="string">&quot;Density&quot;</span>)</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li><p>注：直方图分布图有一个特点：右斜（Right-skewed)——头部效应：右边有个长长的小尾巴</p>
 <p>处理方法：取对数</p>
@@ -895,33 +850,25 @@
       - $BIC = \frac&#123;1&#125;&#123;n&#125;(SSR+k\cdot(ln(n))\cdot\hat&#123;\sigma&#125;^2)$
         - 注：
           - k是计算参数 = d+1
-        - BIC越小，模型预测能力越好</code></pre>
-<ul>
+        - BIC越小，模型预测能力越好
+</code></pre><ul>
 <li><p>==<strong>模型选择</strong>==</p>
 <ul>
 <li><p>安装程序包<code>leaps</code></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">fit1 = regsubsets(Insalary~., newhitters, nvmax = <span class="number">20</span>, method = <span class="string">&quot;exhaustive&quot;</span>)</span><br><span class="line"><span class="comment"># Insalary~. 小数点表示把所有一次项都加进去</span></span><br><span class="line"><span class="comment"># 包含二次项 将Insalary~. 改成Insalary~.*.</span></span><br><span class="line"><span class="comment"># nvmax: number of variables maximum 在模型中最多加入多少自变量</span></span><br><span class="line"><span class="comment"># method 可赋3个值：&quot;exhaustive&quot;【穷举，结果更加科学准确】, &quot;forward&quot;【按解释能力最强到最差】, &quot;backward&quot;【按解释能力最差到最强】</span></span><br><span class="line">summary(fit1)$which  <span class="comment">#观察结果  其标准是：残差平方和最小</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <p>注：以上方法可以获得数个==局部最优==模型</p>
 </li>
 <li><p><strong>寻找全局最优模型</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">summary(fit1)$cp <span class="comment">#可以看到这数个局部最优模型中Cp的值</span></span><br><span class="line">summary(fit1)$bic <span class="comment">#可以看到这数个局部最优模型中BIC的值</span></span><br><span class="line"></span><br><span class="line">plot(summary(fit1)$cp, xlab = <span class="string">&quot;Number of Predictors&quot;</span>, ylab = <span class="string">&quot;Cp&quot;</span>, col = <span class="string">&quot;red&quot;</span>, type =<span class="string">&quot;p&quot;</span>, pch=<span class="number">16</span>) <span class="comment">#p指point散点图；pch=16是圆点，pch=8是星形</span></span><br><span class="line"></span><br><span class="line">plot(summary(fit1)$bic, xlab = <span class="string">&quot;Number of Predictors&quot;</span>, ylab = <span class="string">&quot;BIC&quot;</span>, col = <span class="string">&quot;blue&quot;</span>, type =<span class="string">&quot;p&quot;</span>, pch=<span class="number">16</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <p>注：$C_p$与$BIC$分别做标准时，选出的模型是不同的</p>
 <p>问：什么时候用哪个标准呢？</p>
 <p>答：==Elbow Rule==, <strong>观察那个地方是下降最明显的。就使用下降最明显附近的点。我们要找的是比上一个模型有很大改进，比下一个模型又没有差很多的模型</strong></p>
-<img src="image-20200217000400755.png" alt="image-20200217000400755" style="zoom:25%;" />
-
-
-
+<p><img src="/.io//image-20200217000400755.png" alt="image-20200217000400755" style="zoom:25%;"></p>
 </li>
 </ul>
 </li>
 </ul>
-<img src="image-20200217000437888.png" alt="image-20200217000437888" style="zoom:25%;" />
-
-
-
+<p><img src="/.io//image-20200217000437888.png" alt="image-20200217000437888" style="zoom:25%;"></p>
 <ul>
 <li>总结<ol>
 <li>目的：根据目前的的数据，找出最好的预测未来的模型</li>
@@ -933,8 +880,7 @@
 </li>
 </ul>
 <h5 id="2-6-LASSO-Least-Absolute-Shrinkage-and-Selection-Operator-【机器学习与模型筛选】"><a href="#2-6-LASSO-Least-Absolute-Shrinkage-and-Selection-Operator-【机器学习与模型筛选】" class="headerlink" title="2.6 LASSO (Least Absolute Shrinkage and Selection Operator)【机器学习与模型筛选】"></a>2.6 LASSO (Least Absolute Shrinkage and Selection Operator)【机器学习与模型筛选】</h5><ul>
-<li><p><strong>预测模型时遇到的问题</strong></p>
-<ul>
+<li><strong>预测模型时遇到的问题</strong><ul>
 <li>自变量数量太多，而数据个数又过少（少行多列）</li>
 <li>有没有办法进行数据降维，筛选出那些有意义的自变量</li>
 <li>==若想要成功跑回归，数据个数要大于自变量个数（维度的概念）==</li>
@@ -976,20 +922,16 @@
 </li>
 <li><p>==<strong>LASSO交叉检验</strong>==</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">lasso1.cv = cv.glmnet(X,Y,alpha = <span class="number">1</span>, nfolds = <span class="number">10</span>)</span><br><span class="line">plot(lasso1.cv)</span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<img src="image-20200217161251281.png" alt="image-20200217161251281" style="zoom:33%;" />
-
+<p><img src="/.io//image-20200217161251281.png" alt="image-20200217161251281" style="zoom:33%;"></p>
 <pre><code>      - 第一条竖线：MSE最小，全局最优 `lasso1.cv$lambda.min`
-      - 第二条竖线：一倍标准误：`lasso.cv$lambda.1se`  “奥卡姆剃刀原则”：世界本身是简单的，可以让渡一部分精度，去选一个更简单的模型</code></pre>
-<ul>
+      - 第二条竖线：一倍标准误：`lasso.cv$lambda.1se`  “奥卡姆剃刀原则”：世界本身是简单的，可以让渡一部分精度，去选一个更简单的模型
+</code></pre><ul>
 <li><strong>LASSO的问题</strong><ul>
 <li>没有显著性</li>
 <li>结果是有偏的</li>
@@ -1006,13 +948,12 @@
 </ul>
 <h5 id="2-7-脊回归与Elastic-Net"><a href="#2-7-脊回归与Elastic-Net" class="headerlink" title="2.7 脊回归与Elastic Net"></a>2.7 脊回归与Elastic Net</h5><ul>
 <li><p><strong>Elastic</strong> <strong>Net</strong></p>
-<p>$\frac{\sum_{i=1}^n(y_i-\beta_0-\beta_1X_{1i}-\beta_2X_{2i}-…-\beta_pX_{pi})^2}{2n}+\lambda\cdot{\frac{1-\alpha}{2}\sdot(\beta_1^2+\beta_2^2+…+\beta_p^2)+\alpha\cdot(|\beta_1|+|\beta_2|+…+|\beta_p|)}， 0\le\alpha\le1$</p>
+<p>$\frac{\sum_{i=1}^n(y_i-\beta_0-\beta_1X_{1i}-\beta_2X_{2i}-…-\beta_pX_{pi})^2}{2n}+\lambda\cdot\{\frac{1-\alpha}{2}\sdot(\beta_1^2+\beta_2^2+…+\beta_p^2)+\alpha\cdot(|\beta_1|+|\beta_2|+…+|\beta_p|)\}， 0\le\alpha\le1$</p>
 <ul>
 <li><p>LASSO: L1 Norm</p>
 </li>
 <li><p>脊回归：L2 Norm $\sum_{i=1}^n(y_i-\beta_0-\beta_1X_{1i}-\beta_2X_{2i}-…-\beta_pX_{pi})^2+\lambda\cdot(\beta_1^2+\beta_2^2+…+\beta_p^2)$</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lasso1.cv = cv.glmnet(X,Y,alpha = <span class="number">0</span>, nfolds = <span class="number">10</span>) <span class="comment">#alpha=0即为脊回归</span></span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>脊回归不具有稀疏性，系数会等比例缩小，但不会缩小到0</li>
 </ul>
@@ -1023,9 +964,6 @@
 </li>
 <li><p><strong>数据标准化</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(robustHD)</span><br><span class="line">standardize()</span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
 <h4 id="3-R语言高级功能"><a href="#3-R语言高级功能" class="headerlink" title="3. R语言高级功能"></a>3. R语言高级功能</h4><h5 id="3-0-概述"><a href="#3-0-概述" class="headerlink" title="3.0 概述"></a>3.0 概述</h5><ul>
@@ -1036,10 +974,8 @@
 <li>社会网络分析</li>
 </ul>
 <h5 id="3-1-logit回归-amp-分类"><a href="#3-1-logit回归-amp-分类" class="headerlink" title="3.1 logit回归&amp;分类"></a>3.1 logit回归&amp;分类</h5><ul>
-<li><p>因变量只有几个种类（最常见：0-1）</p>
-</li>
-<li><p><strong>Logistic模型</strong>：二分因变量训练</p>
-</li>
+<li>因变量只有几个种类（最常见：0-1）</li>
+<li><strong>Logistic模型</strong>：二分因变量训练</li>
 <li><p><strong>logistic模型的本质</strong>：log odds $log\frac{P(A)}{1-P(A)}$</p>
 </li>
 <li><p>为什么？我们希望<strong>把因变量从二元结构变成整个实数轴</strong>，将二元结构转变为从0-1的概率</p>
@@ -1050,7 +986,6 @@
 </li>
 <li><p><strong>计算机实现代码</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">log.fit = glm(Y~X, data, family = binomial(logit))</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li><strong>==模型标准：AIC越小越好==</strong></li>
 <li>为什么结果中是z value？因为最大似然估计的一个前提是==数据是正态分布的==</li>
@@ -1066,8 +1001,7 @@
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(bestglm)</span><br><span class="line">fram_data.f &lt;- na.omit(fram_data) <span class="comment">#这个函数可以使NA所在的那一行直接被忽略掉，储存到新变量中</span></span><br><span class="line">Xy &lt;- model.matrix(Heart.Disease.~.+<span class="number">0</span>,fram_data.f) <span class="comment">#design matrix +0指不使用截距项</span></span><br><span class="line">Xy &lt;- data.frame(Xy,fram_data.f$Heart.Disease.) <span class="comment">#和因变量结合到一起，data.frame格式为data.frame(x,y)</span></span><br><span class="line">fit.all&lt;-bestglm(Xy, family = binomial, method = <span class="string">&quot;exhaustive&quot;</span>, IC = <span class="string">&quot;AIC&quot;</span>, nvmax = <span class="number">10</span>) <span class="comment">#nvmax指的是允许的自变量的最大个数</span></span><br><span class="line">fit.all$BestModels</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>对概率设置分界线，反推x的界限</strong>（具体方法是人为找一个$P(A)=t$，而后反求x值）并画在上述散点图中</p>
-<img src="image-20200217201519778.png" alt="image-20200217201519778" style="zoom:20%;" />
-
+<p><img src="/.io//image-20200217201519778.png" alt="image-20200217201519778" style="zoom:20%;"></p>
 <ul>
 <li><p><strong>犯两类错误</strong></p>
 <ul>
@@ -1079,18 +1013,14 @@
 </li>
 <li><p>二者的关系图叫： <strong>ROC Curve</strong></p>
 <ul>
-<li><pre><code class="R">library(pROC)
-log.fit2 = glm(Heart.Disease.~SBP, data = fram_data.f, family = binomial(logit))
-log.fit2.roc = roc(fram_data.f$Heart.Disease., log.fit2$fitted, plot = T, col = &quot;blue&quot;)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">        &lt;img src&#x3D;&quot;image-20200217202619644.png&quot; alt&#x3D;&quot;image-20200217202619644&quot; style&#x3D;&quot;zoom:20%;&quot; &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">        - 注：</span><br><span class="line">          - 蓝色曲线下面的面积叫$AUC$，&#x3D;&#x3D;值越大，模型的预测能力越好&#x3D;&#x3D;</span><br><span class="line">          - ROC CURVE与上述的分界线无关</span><br><span class="line"></span><br><span class="line">- **如何确定&#x3D;&#x3D;合适的分界线（plot+elbow curve）&#x3D;&#x3D;**</span><br><span class="line"></span><br><span class="line">  &#96;&#96;&#96;R</span><br><span class="line">  #注意specificities&#x3D;1-变量roc</span><br><span class="line">  plot(log.fit2.roc$thresholds, 1-log.fit2.roc$specificities, col &#x3D; &quot;green&quot;, pch &#x3D; 16,</span><br><span class="line">      xlab &#x3D; &quot;Threshold on prob&quot;,</span><br><span class="line">      ylab &#x3D; &quot;False Positive&quot;,</span><br><span class="line">      main &#x3D; &quot;Thresholds vs. False Positive&quot;)</span><br></pre></td></tr></table></figure>
-</code></pre>
+<li>```R<br>library(pROC)<br>log.fit2 = glm(Heart.Disease.~SBP, data = fram_data.f, family = binomial(logit))<br>log.fit2.roc = roc(fram_data.f$Heart.Disease., log.fit2$fitted, plot = T, col = “blue”)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">        &lt;img src&#x3D;&quot;image-20200217202619644.png&quot; alt&#x3D;&quot;image-20200217202619644&quot; style&#x3D;&quot;zoom:20%;&quot; &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">        - 注：</span><br><span class="line">          - 蓝色曲线下面的面积叫$AUC$，&#x3D;&#x3D;值越大，模型的预测能力越好&#x3D;&#x3D;</span><br><span class="line">          - ROC CURVE与上述的分界线无关</span><br><span class="line"></span><br><span class="line">- **如何确定&#x3D;&#x3D;合适的分界线（plot+elbow curve）&#x3D;&#x3D;**</span><br><span class="line"></span><br><span class="line">  &#96;&#96;&#96;R</span><br><span class="line">  #注意specificities&#x3D;1-变量roc</span><br><span class="line">  plot(log.fit2.roc$thresholds, 1-log.fit2.roc$specificities, col &#x3D; &quot;green&quot;, pch &#x3D; 16,</span><br><span class="line">      xlab &#x3D; &quot;Threshold on prob&quot;,</span><br><span class="line">      ylab &#x3D; &quot;False Positive&quot;,</span><br><span class="line">      main &#x3D; &quot;Thresholds vs. False Positive&quot;)</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<img src="image-20200217203555728.png" alt="image-20200217203555728" style="zoom:20%;" />
+<p><img src="/.io//image-20200217203555728.png" alt="image-20200217203555728" style="zoom:20%;"></p>
 </li>
 </ul>
 </li>
@@ -1115,7 +1045,7 @@ log.fit2.roc = roc(fram_data.f$Heart.Disease., log.fit2$fitted, plot = T, col = 
 <li><p>随机选50人的数据作为分析样本，并画图</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">set.seed(<span class="number">1</span>)</span><br><span class="line">iqsample &lt;- iqdata[sample(nrow(iqdata), <span class="number">50</span>, replace=<span class="literal">FALSE</span>), c(<span class="string">&quot;Word&quot;</span>,<span class="string">&quot;Parag&quot;</span>, <span class="string">&quot;Math&quot;</span>, <span class="string">&quot;Arith&quot;</span>)] <span class="comment">#sample()函数</span></span><br><span class="line"><span class="comment">#找两个变量看相关性</span></span><br><span class="line">plot(iqsample$Word, iqsample$Parag, pch = <span class="number">16</span>)</span><br><span class="line">abline(<span class="number">1.7</span>, <span class="number">0.3577</span>, lwd=<span class="number">4</span>, col=<span class="string">&quot;red&quot;</span>)</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>如何用一个变量代表两个变量？【**==做投影：提取第一主成分==**】</p>
+<li><p>如何用一个变量代表两个变量？【<strong>==做投影：提取第一主成分==</strong>】</p>
 <ul>
 <li><em>找到一条线，距离这些点最近。每个点的投影（将直线看作数轴，向直线作垂线）即是新的变量</em></li>
 <li>要找到“数轴”的0点（均值）和单位长度（标准差）——将二维数据变成一维数据<ul>
@@ -1130,25 +1060,17 @@ log.fit2.roc = roc(fram_data.f$Heart.Disease., log.fit2$fitted, plot = T, col = 
 </li>
 <li><p><strong>代码实现主成分分析</strong> prcomp()函数</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">pc.1 &lt;- prcomp(iqsample[, c(<span class="string">&quot;Word&quot;</span>,<span class="string">&quot;Parag&quot;</span>)])</span><br><span class="line">pc.1$rotation <span class="comment"># weights 查看主成分占各自变量的比例</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#注意：标准化后会得到正交的矩阵</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#标准化实现（一般都要标准化）：</span></span><br><span class="line">pc.1 &lt;- prcomp(iqsample[, c(<span class="string">&quot;Word&quot;</span>,<span class="string">&quot;Parag&quot;</span>)], scale = <span class="literal">TRUE</span>)</span><br><span class="line">pc.1$rotation  <span class="comment"># weights</span></span><br><span class="line"></span><br><span class="line">pc.1$x <span class="comment"># pc scores 查看每个样本点的主成分的值</span></span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>新的主成分：principal component score</li>
 </ul>
 </li>
 <li><p>实例分析</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># pca of all subjects</span></span><br><span class="line">pca.all &lt;- prcomp(iqdata[,  c(<span class="number">11</span>:<span class="number">20</span>)], scale.=<span class="literal">TRUE</span>)</span><br><span class="line">pca.all$rotation</span><br><span class="line"></span><br><span class="line"><span class="comment"># gender role</span></span><br><span class="line">prop.table(table(iqdata$Gender))  <span class="comment"># 查看二值变量的比例</span></span><br><span class="line"><span class="comment">#挑选前2个主成分，颜色用性别这个类别变量填充【回想心脏病案例】</span></span><br><span class="line">plot(pca.all$x[, <span class="number">1</span>], pca.all$x[, <span class="number">2</span>], col=as.factor(iqdata$Gender),</span><br><span class="line">     xlim=c(-<span class="number">10</span>, <span class="number">10</span>), ylim=c(-<span class="number">10</span>, <span class="number">10</span>),</span><br><span class="line">     xlab=<span class="string">&quot;PC1&quot;</span>, ylab=<span class="string">&quot;PC2&quot;</span>)</span><br><span class="line">abline(v=<span class="number">0</span>, h=<span class="number">0</span>) <span class="comment">#增加水平的、过原点的直线&amp;竖直的、过原点的直线</span></span><br><span class="line"><span class="comment"># levels的作用类似于unique(), 将多个提取出来各取一个 </span></span><br><span class="line">legend(<span class="string">&quot;bottomright&quot;</span>, legend=c(as.character(levels(as.factor(iqdata$Gender)))),</span><br><span class="line">       lty=c(<span class="number">1</span>,<span class="number">1</span>), lwd=c(<span class="number">2</span>,<span class="number">2</span>), col=as.factor(iqdata$Gender))</span><br></pre></td></tr></table></figure>
-
-
-
 </li>
 </ul>
 <h5 id="3-3-网页爬虫"><a href="#3-3-网页爬虫" class="headerlink" title="3.3 网页爬虫"></a>3.3 网页爬虫</h5><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(rvest)</span><br><span class="line">lego_movie = html(<span class="string">&quot;http://www.imdb.com/title/tt1490017&quot;</span>)</span><br><span class="line">lego_movie %&gt;% </span><br><span class="line">html_node(<span class="string">&quot;strong span&quot;</span>) %&gt;% <span class="comment">#定位位置</span></span><br><span class="line">html_text() %&gt;%</span><br><span class="line">as.numeric()</span><br><span class="line"></span><br><span class="line">Sys.sleep(<span class="number">5</span>) <span class="comment">#让R休息5秒</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
 <h5 id="3-4-利用API（应用程序接口）获取数据"><a href="#3-4-利用API（应用程序接口）获取数据" class="headerlink" title="3.4 利用API（应用程序接口）获取数据"></a>3.4 利用API（应用程序接口）获取数据</h5><p><code>大量可用API汇总：https://github.com/public-apis/public-apis</code></p>
 <h5 id="3-5-正则表达式：适合清理数据"><a href="#3-5-正则表达式：适合清理数据" class="headerlink" title="3.5 正则表达式：适合清理数据"></a>3.5 正则表达式：适合清理数据</h5><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">\\d <span class="comment">#数码【0-9】</span></span><br><span class="line">[[:alpha:]] <span class="comment">#字母【A-z】,每次抓取一位</span></span><br><span class="line">\\w <span class="comment">#数码+字母</span></span><br><span class="line">\\s <span class="comment">#空格</span></span><br><span class="line">. <span class="comment">#除了\n以外全部</span></span><br><span class="line">^ <span class="comment">#开头</span></span><br><span class="line">$ <span class="comment">#定位到结尾</span></span><br><span class="line">+ <span class="comment">#至少抓一次，例如\\w+</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <ul>
 <li><strong>常用函数：</strong><ul>
 <li>检查是否存在某个字符串：<code>str_detect(data, &#39;TSLA&#39;)</code></li>
@@ -1157,9 +1079,6 @@ log.fit2.roc = roc(fram_data.f$Heart.Disease., log.fit2$fitted, plot = T, col = 
 </li>
 </ul>
 <h5 id="3-6-词云图"><a href="#3-6-词云图" class="headerlink" title="3.6 词云图"></a>3.6 词云图</h5><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(wordcloud)</span><br><span class="line"><span class="keyword">library</span>(RColorBrewer)</span><br><span class="line"></span><br><span class="line">number1 = c(<span class="string">&#x27;one&#x27;</span>, <span class="string">&#x27;two&#x27;</span>, <span class="string">&#x27;three&#x27;</span>, <span class="string">&#x27;four&#x27;</span>,<span class="string">&#x27;five&#x27;</span>)</span><br><span class="line"><span class="comment">#画多大</span></span><br><span class="line">number2 = <span class="number">1</span>:<span class="number">5</span></span><br><span class="line"></span><br><span class="line">cor.special = brewer.pal(<span class="number">5</span>,<span class="string">&quot;Dark2&quot;</span>) <span class="comment"># 5 = number of col&#x27;s &quot;Dark2&quot;深色系</span></span><br><span class="line"><span class="comment"># 关闭随机顺序与颜色</span></span><br><span class="line">wordcloud(number1, number2, colors=cor.special, ordered.colors = <span class="literal">F</span>, random.order = <span class="literal">F</span>, random.color = <span class="literal">F</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
 <h5 id="3-7-自然语言处理：文本分析——Bag-of-Words"><a href="#3-7-自然语言处理：文本分析——Bag-of-Words" class="headerlink" title="3.7 自然语言处理：文本分析——Bag of Words"></a>3.7 自然语言处理：文本分析——Bag of Words</h5><ul>
 <li><p>本质：每一个单词是一个自变量，取值为它出现的频数</p>
 </li>
@@ -1167,7 +1086,7 @@ log.fit2.roc = roc(fram_data.f$Heart.Disease., log.fit2$fitted, plot = T, col = 
 </li>
 </ul>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(data.table)</span><br><span class="line">setwd(<span class="string">&quot;C:/Users/lijinpu/Desktop/Data &amp; R Code/Part 3&quot;</span>)</span><br><span class="line">data.all &lt;- fread(<span class="string">&quot;yelp_subset.csv&quot;</span>, stringsAsFactors = <span class="literal">F</span>)</span><br><span class="line">dim(data.all)</span><br><span class="line">View(data.all)</span><br><span class="line">data = data.all[<span class="number">1</span>:<span class="number">1000</span>,]</span><br><span class="line"></span><br><span class="line">data$rating = c(<span class="number">0</span>) <span class="comment">#建立新变量rating，并设置为全为0的列向量</span></span><br><span class="line">data$rating[data$stars &gt;=<span class="number">4</span>] = <span class="number">1</span></span><br><span class="line">data$rating = as.factor(data$rating) <span class="comment">#设置为“类别”型格式的变量</span></span><br><span class="line"></span><br><span class="line">table(data$rating)/nrow(data) <span class="comment">#看类别型数据的比例</span></span><br><span class="line"></span><br><span class="line">data.text = data$text <span class="comment">#取出文本</span></span><br><span class="line">print(data.text[<span class="number">1</span>:<span class="number">5</span>])</span><br><span class="line"></span><br><span class="line"><span class="keyword">library</span>(tm)</span><br><span class="line"><span class="keyword">library</span>(SnowballC)</span><br><span class="line"></span><br><span class="line"><span class="comment">#step 1 转换成corpus格式</span></span><br><span class="line">mycorpus1 = VCorpus(VectorSource(data.text))</span><br><span class="line"><span class="comment">#step 2 全部转成小写字母</span></span><br><span class="line">mycorpus2 = tm_map(mycorpus1, content_transformer(tolower))</span><br><span class="line"><span class="comment">#step 3 去掉实际无意义的单词,stopwords()里面是个向量，可以自己制作</span></span><br><span class="line">mycorpus3 = tm_map(mycorpus2, removeWords, stopwords(<span class="string">&quot;english&quot;</span>))</span><br><span class="line"><span class="comment">#step 4 去掉标点符号</span></span><br><span class="line">mycorpus4 = tm_map(mycorpus3, removePunctuation)</span><br><span class="line"><span class="comment">#step 5 去掉数字</span></span><br><span class="line">mycorpus5 = tm_map(mycorpus4, removeNumbers)</span><br><span class="line"><span class="comment">#step 6 使用词根 （am, is, are变成be）</span></span><br><span class="line">mycorpus6 = tm_map(mycorpus5, stemDocument, lazy = <span class="literal">TRUE</span>) <span class="comment">#lazy是指最简单的方法</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#转换为单词频率矩阵</span></span><br><span class="line">dtm1 = DocumentTermMatrix(mycorpus6)</span><br><span class="line"><span class="comment">#查看这个矩阵(第一篇 前五十个变量)</span></span><br><span class="line">as.matrix(dtm1[<span class="number">1</span>，<span class="number">1</span>:<span class="number">50</span>])</span><br><span class="line"><span class="comment">#查看矩阵的维度</span></span><br><span class="line">dim(as.matrix(dtm1))</span><br><span class="line"></span><br><span class="line"><span class="comment">#去掉不常见单词 length()看长度</span></span><br><span class="line">threshold = <span class="number">0.01</span>*length(mycorpus6) </span><br><span class="line">words.10 = findFreqTerms(dtm1, lowfreq = threshold)</span><br><span class="line">length(words.10)</span><br><span class="line"></span><br><span class="line"><span class="comment">#制作新的矩阵</span></span><br><span class="line">dtm10 = DocumentTermMatrix(mycorpus6, control = list(dictionary = words.10))</span><br><span class="line"></span><br><span class="line"><span class="comment">#自变量个数大于数据个数，怎么办？用lasso降维！之后再跑多元线性回归。</span></span><br><span class="line"><span class="comment">#使用lasso前，将数据改为dataframe格式</span></span><br><span class="line">data.temp = data.frame(data, as.matrix(dtm10)) <span class="comment">#合并是因为需要原始数据中的因变量</span></span><br><span class="line">data2 = data.temp[,c(<span class="number">11</span>,<span class="number">14</span>:ncol(data.temp))]</span><br></pre></td></tr></table></figure>
-
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -1181,7 +1100,8 @@ log.fit2.roc = roc(fram_data.f$Heart.Disease., log.fit2$fitted, plot = T, col = 
 <th>Rating(因变量)</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>文本1</td>
 <td>2</td>
 <td>0</td>
@@ -1221,7 +1141,9 @@ log.fit2.roc = roc(fram_data.f$Heart.Disease., log.fit2$fitted, plot = T, col = 
 <td>2</td>
 <td>1</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <ul>
 <li>问题：忽略了单词间逻辑联系的问题</li>
 </ul>
@@ -1229,7 +1151,6 @@ log.fit2.roc = roc(fram_data.f$Heart.Disease., log.fit2$fitted, plot = T, col = 
 <li>颠覆性创新 vs 边际性创新</li>
 </ul>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(igraph)</span><br><span class="line"></span><br><span class="line">g1 = graph(edges = c(<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">1</span>), n=<span class="number">3</span>, directed = <span class="literal">F</span>)</span><br><span class="line">plot(g1)</span><br><span class="line"></span><br><span class="line">g2 = graph(edges = c(<span class="string">&#x27;Amy&#x27;</span>,<span class="string">&#x27;Jack&#x27;</span>,<span class="string">&#x27;Jack&#x27;</span>,<span class="string">&#x27;Sam&#x27;</span>,<span class="string">&#x27;Sam&#x27;</span>,<span class="string">&#x27;Amy&#x27;</span>),directed = <span class="literal">F</span>)</span><br><span class="line">plot(g2)</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>常用的社会网络指标：<ul>
 <li>度数（degree）<ul>
@@ -1262,9 +1183,6 @@ log.fit2.roc = roc(fram_data.f$Heart.Disease., log.fit2$fitted, plot = T, col = 
 </li>
 </ul>
 <h5 id="3-9-股票K线图"><a href="#3-9-股票K线图" class="headerlink" title="3.9 股票K线图"></a>3.9 股票K线图</h5><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(quantmod)</span><br><span class="line">getSymbols(<span class="string">&quot;GOOG&quot;</span>, src = <span class="string">&quot;yahoo&quot;</span>, from =<span class="string">&quot;2019-01-01&quot;</span>, to = <span class="string">&quot;2020-01-01&quot;</span>)</span><br><span class="line">chartSeries(GOOG)</span><br><span class="line">getSymbols(<span class="string">&quot;600028.SS&quot;</span>, src = <span class="string">&quot;yahoo&quot;</span>, from =<span class="string">&quot;2019-01-01&quot;</span>, to = <span class="string">&quot;2020-01-01&quot;</span>)</span><br><span class="line">chartSeries(`600028.SS`) <span class="comment">#文本中带小数点，因而使用``</span></span><br></pre></td></tr></table></figure>
-
-
-
 
         </div>
 
