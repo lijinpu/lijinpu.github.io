@@ -7,5 +7,6 @@ repo = Repo(dirfile)
 g = repo.git
 g.add("--all")
 g.commit("-m auto update")
+g.pull()
 g.push()
 print("Successful push!")
