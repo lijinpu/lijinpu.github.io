@@ -13,8 +13,9 @@ export default function Footer() {
         >
           Jinpu Li
         </Link>
-        . All rights reserved. Template from <a href="https://github.com/shenlu89/shenlu89.github.io">Shen Lu</a>.
+        . All rights reserved. 
       </p>
+      {/* Template from <a href="https://github.com/shenlu89/shenlu89.github.io">Shen Lu</a>. */ }
       <ul className="flex items-center py-2">
         <li>
           <Link
