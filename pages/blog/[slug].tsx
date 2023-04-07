@@ -26,7 +26,7 @@ export default function PostPage({
       <div className="flex items-start justify-between w-full md:flex-row my-8">
         <div className="flex items-center">
           <Image
-            alt="Shen Lu"
+            alt="Jinpu Li"
             height={36}
             width={36}
             sizes="20vw"

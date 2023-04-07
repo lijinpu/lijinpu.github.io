@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { GitHubIcon, TwitterIcon, DiscordIcon } from 'data/icons'
+import { GitHubIcon } from 'data/icons'
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
         {`© ${new Date().getFullYear()} `}
         <Link
           className="hover:underline hover:text-black dark:hover:text-white"
-          href={'https://github.com/shenlu89'}
+          href={'https://github.com/thuljp'}
           target={'_blank'}
         >
           Jinpu Li

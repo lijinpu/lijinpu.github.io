@@ -6,15 +6,17 @@ const Comment = () => {
 
   return (
     <Giscus
-      repo={process.env.NEXT_PUBLIC_REPO as `${string}/${string}`}
-      repoId={process.env.NEXT_PUBLIC_REPO_ID as string}
-      category={process.env.NEXT_PUBLIC_CATEGORY as string}
-      categoryId={process.env.NEXT_PUBLIC_CATEGORY_ID as string}
-      mapping="pathname"
+      id="comments"
+      repo="lijinpu/lijinpu.github.io"
+      repoId="R_kgDOJTgydw"
+      category="Announcements"
+      categoryId="DIC_kwDOJTgyd84CVmu3"
+      mapping="url"
       reactionsEnabled="1"
       emitMetadata="0"
-      inputPosition="top"
+      inputPosition="bottom"
       theme={theme === 'dark' ? 'transparent_dark' : 'light'}
+      lang="zh-CN"
       loading="lazy"
     />
   )
