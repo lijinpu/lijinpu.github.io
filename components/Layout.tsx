@@ -5,7 +5,7 @@ import type { Meta } from 'lib/types'
 import { PropsWithChildren } from 'react'
 
 import Navbar from 'components/Navbar'
-import Footer from 'components/Footer'
+/* import Footer from 'components/Footer' */
 import fonts from 'lib/fonts'
 
 const Layout: NextPage<PropsWithChildren<Meta>> = ({
@@ -31,7 +31,6 @@ const Layout: NextPage<PropsWithChildren<Meta>> = ({
       <main className="max-w-3xl container text-black dark:text-white mx-auto px-2 py-6 h-full">
         {children}
       </main>
-      <Footer />
     </div>
   )
 }
