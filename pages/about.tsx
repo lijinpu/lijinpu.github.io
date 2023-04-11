@@ -33,6 +33,7 @@ export default function About() {
         <p>
           “数据经济学”, 汤珂, 熊巧琴, 李金璞, 屈阳, <b>清华大学出版社</b>, 2023
         </p>
+        <h2>Rewards</h2>
       </div>
     </div>
   )
