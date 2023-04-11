@@ -34,6 +34,12 @@ export default function About() {
           “数据经济学”, 汤珂, 熊巧琴, 李金璞, 屈阳, <b>清华大学出版社</b>, 2023
         </p>
         <h2>Rewards</h2>
+        <p>
+        清华大学优良毕业生 (Excellent Graduates, Tsinghua University), 2021
+        </p>  
+        <p>
+        清华大学优秀本科毕业论文 (Outstanding Undergraduate Thesis, Tsinghua University), 2021
+        </p>
       </div>
     </div>
   )
