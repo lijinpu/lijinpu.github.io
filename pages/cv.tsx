@@ -1,8 +1,8 @@
 import Link from 'next/link'
-export default function About() {
+export default function CV() {
   return (
     <div className="flex flex-col relative max-w-none prose dark:prose-invert">
-      <h1>About</h1>
+      <h1>Curriculum Vitae</h1>
       <div>
         <p>
           I am Jinpu Li (李金璞), a second-year PhD candidate @ Tsinghua University. My field of interest: data economy, digital economy, and macro-finance.
@@ -19,21 +19,21 @@ export default function About() {
 
         <h2>Publications</h2>
         <p>
-        “论数据要素市场参与者的培育”,  李金璞, 汤珂, <b>西安交通大学学报 (社会科学版)</b>, 录用
+        “论数据要素市场参与者的培育”,  <b>李金璞</b>, 汤珂, 西安交通大学学报 (社会科学版), 录用.
         </p>
         <p>
-        “数据信托：可信的数据流通模式”, 黄京磊, 李金璞, 汤珂, <b>大数据</b>, 2023, 9(02), 67-78
+        “数据信托：可信的数据流通模式”, 黄京磊, <b>李金璞</b>, 汤珂, 大数据, 2023, 9(02), 67-78.
         </p>
 
         <h2>Working Papers</h2>
         <p>
-        “企业数据资产化：会计确认与价值评估”, 罗玫, 李金璞, 汤珂, 2022
+        “企业数据资产化：会计确认与价值评估”, 罗玫, <b>李金璞</b>, 汤珂, 2022.
         </p>
         <h2>Books & Book Chapters</h2>
         <p>
-          “数据经济学”, 汤珂, 熊巧琴, 李金璞, 屈阳, <b>清华大学出版社</b>, 2023
+        “数据经济学”, 汤珂, 熊巧琴, <b>李金璞</b>, 屈阳, 清华大学出版社, 2023. 
         </p>
-        <h2>Teaching Assistant</h2>
+        <h2>Teaching Experience</h2>
         <p>
         Principles of Economics (00510454) by Prof. Feng Dong. 2023 Spring.
         </p>

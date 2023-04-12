@@ -29,3 +29,36 @@
 .prose *:hover>.anchor {
   @apply visible;
 }
+
+.box_abstract {
+  border: 2px solid #CCCCCC;/* 框線顏色 */
+  margin: 2em 0;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 1px #999999; /*陰影*/
+  border-radius: 8px;
+  }
+  .box_abstract::before {
+  background-color: #fff;
+  color: #CCCCCC;
+  content: "Abstract";/*標題*/
+  font-weight: bold;
+  left: 1em;
+  padding: 0 .5em;
+  position: absolute;
+  top: -1em;
+  }
+
+.keith{text-align:justify;}
+.keith:aft{display:inline-block;width:100%;content:'';}
+
+.indeximg{ 
+  margin-top: 100px;
+
+  margin-bottom: 100px;
+  
+  margin-left: 100px;
+
+  margin-right: 100px;
+  
+  }
