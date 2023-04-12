@@ -6,16 +6,19 @@ export default function Home() {
       <div className="flex flex-col relative w-full">
         <h1 className="font-extrabold text-2xl tracking-tight mb-4">Jinpu Li &nbsp;&nbsp; 李金璞</h1>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
-        💡 PhD student in Economics
+        💡 PhD student in Economics 
         </p>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
-        🎷 Saxophone player
+        🎷 Saxophone player 
         </p>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
         ⚫ Go player
         </p>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
         🏍️ Motorcyclist
+        </p>
+        <p className="text-gray-600 dark:text-gray-400 mb-4">
+        🎮 Gamer
         </p>
         <p className="text-gray-600 dark:text-gray-400">
           {`"What is real is rational, and what is rational is real." — Hegel`}
