@@ -5,7 +5,7 @@ export default function CV() {
       <h1>Curriculum Vitae</h1>
       <div>
         <p>
-          I am Jinpu Li (李金璞), a second-year PhD candidate @ Tsinghua University. My field of interest: data economy, digital economy, and macro-finance.
+          I am Jinpu Li (李金璞), a third-year PhD candidate @ Tsinghua University. My field of interest: data economy, digital economy, and macro-finance.
         </p>
         <hr />
 
@@ -19,7 +19,7 @@ export default function CV() {
 
         <h2>Publications</h2>
         <p>
-        “论数据要素市场参与者的培育”,  <b>李金璞</b>, 汤珂, 西安交通大学学报 (社会科学版), 录用.
+        “论数据要素市场参与者的培育”,  <b>李金璞</b>, 汤珂, 西安交通大学学报 (社会科学版), 2023, 43(02), 78-89.
         </p>
         <p>
         “数据信托：可信的数据流通模式”, 黄京磊, <b>李金璞</b>, 汤珂, 大数据, 2023, 9(02), 67-78.
@@ -27,9 +27,12 @@ export default function CV() {
 
         <h2>Working Papers</h2>
         <p>
-        “企业数据资产化：会计确认与价值评估”, 罗玫, <b>李金璞</b>, 汤珂, 2022.
+        “企业数据资产化：会计确认与价值评估”, 罗玫, <b>李金璞</b>, 汤珂, 清华大学学报（哲学社会科学版）, 2023, 录用.
         </p>
         <h2>Books & Book Chapters</h2>
+        <p>
+        “数据资产化”, 汤珂主编, 人民出版社. 参与撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》.
+        </p>
         <p>
         “数据经济学”, 汤珂, 熊巧琴, <b>李金璞</b>, 屈阳, 清华大学出版社, 2023. 
         </p>
