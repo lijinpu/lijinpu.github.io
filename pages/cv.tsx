@@ -49,6 +49,12 @@ export default function CV() {
         </p>
         <h2>Rewards</h2>
         <p>
+        清华大学优秀助教奖 (Excellent Teaching Assistant, Tsinghua University), 2023
+        </p>
+        <p>
+        “清华之友——启东英才奖学金”综合优秀奖 (Qidong Talent Scholarship, Tsinghua University), 2023
+        </p> 
+        <p>
         清华大学优良毕业生 (Excellent Graduates, Tsinghua University), 2021
         </p>  
         <p>
@@ -58,13 +64,13 @@ export default function CV() {
         清华大学优秀共青团员 (Excellent League Member, Tsinghua University), 2021
         </p>
         <p>
-        唐立新奖学金综合优秀奖 (Tang Lixin Scholarship), 2020
+        “唐立新奖学金”综合优秀奖 (Tang Lixin Scholarship), 2020
         </p>
         <p>
         清华大学学业优秀奖 (Scholarship of Academic Excellence, Tsinghua University), 2019
         </p>
         <p>
-        清华大学文艺优秀奖 (Scholarship of Outstanding Art Performance, Tsinghua University), 2018-2021
+        清华大学文艺优秀奖 (Scholarship of Outstanding Art Performance, Tsinghua University), 2018-2020, 2022
         </p>
         <p>
         清华大学社会工作优秀奖 (Scholarship of Social Work, Tsinghua University), 2018
