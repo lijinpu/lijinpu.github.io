@@ -29,6 +29,10 @@ export default function CV() {
         </p>
 
         <h2>Working Papers</h2>
+
+        <p>
+          Dynamic Efficiency Redux: Evidence from China, Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang.
+        </p>
         
         <h2>Books & Book Chapters</h2>
         <p>
