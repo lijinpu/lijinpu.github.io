@@ -31,15 +31,20 @@ export default function CV() {
         <h2>Working Papers</h2>
 
         <p>
-          Dynamic Efficiency Redux: Evidence from China, Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang.
+        Dynamic Efficiency Redux: Evidence from China, Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang, 2023. Available at SSRN: https://ssrn.com/abstract=4642433
         </p>
+
+        <p>
+        Consumer Data Collection and Pricing for Two-sided Market Platforms, Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2023. Available at SSRN: https://ssrn.com/abstract=4664864.
+        </p>
+      
         
         <h2>Books & Book Chapters</h2>
         <p>
         “数据资产化”, 汤珂主编, 人民出版社. 参与撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》.
         </p>
         <p>
-        “数据经济学”, 汤珂, 熊巧琴, <b>李金璞</b>, 屈阳, 清华大学出版社, 2023. 
+        “数据经济学”, 汤珂, 熊巧琴, <b>李金璞</b>, 屈阳, 清华大学出版社, 2023. 2024年1月第二版.
         </p>
         <h2>Teaching Experience</h2>
         <p>
@@ -53,7 +58,7 @@ export default function CV() {
         </p>
         <h2>Rewards</h2>
         <p>
-        清华大学优秀助教奖 (Excellent Teaching Assistant, Tsinghua University), 2023
+        清华大学优秀助教 (Excellent Teaching Assistant, Tsinghua University), 2023
         </p>
         <p>
         “清华之友——启东英才奖学金”综合优秀奖 (Qidong Talent Scholarship, Tsinghua University), 2023

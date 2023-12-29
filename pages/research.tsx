@@ -26,15 +26,18 @@ export default function Research() {
 
         <h2>Working Papers</h2>
         <p>
-        Coming soon...
+        Dynamic Efficiency Redux: Evidence from China, Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang, 2023. Available at SSRN: https://ssrn.com/abstract=4642433
         </p>
+
+        <p>
+        Consumer Data Collection and Pricing for Two-sided Market Platforms, Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2023. Available at SSRN: https://ssrn.com/abstract=4664864.
+        </p>
+      
         <h2>Working in Progress</h2>
         <p>
-        “数据资产与企业融资约束”.
+        Bubbly Data, with Feng Dong. 
         </p>
-        <p>
-        “Consumer Data Collection and Pricing in a Two-sided Market”, with Ronghua Sui, Ke Tang, and Ruize Gao.
-        </p>
+       
         <h2>Books & Book Chapters</h2>
         <p>
        “数据资产化” , 汤珂主编, 人民出版社, 2023. 参与撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》. ISBN: 978-7-010-25804-1.
@@ -43,7 +46,7 @@ export default function Research() {
         数据作为数字经济的血液、知识经济的基石，是企业的战略性资源。将数据转化为可被企业直接使用的有价值的资产，即“数据资产化”，已经成为企业数字化转型的重要目标。本书阐明了数据资产化的意义，围绕数据资产的确认、登记、质量评估、价值评估、入表，数据高效流通及价格发现等方面，系统阐述了数据资产化的理论和实践问题。本书可以帮助读者深入了解数据资产化这一全新且充满机遇的领域，提高数据资产的管理和利用水平，推动企业数字化转型的进步和升级。
         </div>
         <p>
-          “数据经济学（第1版）”, 汤珂, 熊巧琴, <b>李金璞</b>, 屈阳, 清华大学出版社, 2023. ISBN: 978-7-302-62351-9.
+          “数据经济学（第1版）”, 汤珂, 熊巧琴, <b>李金璞</b>, 屈阳, 清华大学出版社, 2023. ISBN: 978-7-302-62351-9. 2024年1月第二版.
         </p>
         <div className="box_abstract keith">
         本书主要讨论四个话题，数据权属争议、数据交易和分配、数据技术标准与基础设施支撑体系、数据安全与发展。这四个话题涉及数据要素市场和制度体系的基础理论。第一部分数据权属争议包括数据界权的争议和数据界权的机制设计两章，从科斯产权与促进交易的辩证关系出发，对数据界权的争议、目的、考虑因素展开辨析，结合西方国家和我国相关法律法规基础，根据场景性公正原则，对个人数据，提出分别赋予数据内容提供者、数据收集者和其他数据需求者相应的有限制的分级分类数据权益；对公共数据，其所有权归国家所有，公众对合法获取的公共数据所加工形成的数据产品具有“有限制的占有权”；同时，对关乎国家安全、公共安全的数据，国家的数据主权是国家主权在网络空间的重要延伸。第二部分数据交易和分配从数据资产的低边际生产成本、可复制性等特征出发，结合数据权属，对数据共享与交易、价值评估、定价和分配机制展开分析。第三部分从采集、传输、处理、存储等数据全生命周期的技术、行业标准和大数据基础设施展开了介绍。最后，第四部分则对数据安全和发展进行了总结和展望。本书特色在于以清晰的逻辑较为全面地梳理了讨论数据权属、流通、定价等的文献以及数据安全、数据保护的相关标准及法律体系，同时还在此基础上形成了编者的观点，并进一步提出了切实可行的具体建议。
