@@ -26,7 +26,7 @@ export default function Research() {
 
         <h2>Working Papers</h2>
         <p>
-        Dynamic Efficiency Redux: Evidence from China, Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang, 2023. Available at SSRN: https://ssrn.com/abstract=4642433
+        Dynamic Efficiency Redux: Evidence from China, Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang, 2023. Available at SSRN: https://ssrn.com/abstract=4642433.
         </p>
 
         <p>
