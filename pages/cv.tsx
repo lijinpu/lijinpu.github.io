@@ -29,13 +29,20 @@ export default function CV() {
         </p>
 
         <h2>Working Papers</h2>
-
         <p>
-        Dynamic Efficiency Redux: Evidence from China, Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang, 2023. Available at SSRN: https://ssrn.com/abstract=4642433.
+        数据资产、融资约束与数据泡沫. 汤珂, <b>李金璞</b>, 孙浩宁*, 董丰, 2024. 
         </p>
 
         <p>
-        Consumer Data Collection and Pricing for Two-sided Market Platforms, Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2023. Available at SSRN: https://ssrn.com/abstract=4664864.
+        Bubbly Data. Feng Dong, <b>Jinpu Li</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4790765.
+        </p>
+
+        <p>
+        Dynamic Efficiency Redux: Evidence from China. Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang, 2023. Available at SSRN: https://ssrn.com/abstract=4642433.
+        </p>
+
+        <p>
+        Consumer Data Collection and Pricing for Two-sided Market Platforms. Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2023. Available at SSRN: https://ssrn.com/abstract=4664864.
         </p>
       
         
