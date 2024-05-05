@@ -29,22 +29,36 @@ export default function Research() {
         <p>
         数据资产、融资约束与数据泡沫. 汤珂, <b>李金璞</b>, 孙浩宁*, 董丰, 2024. 
         </p>
+        <ul>
+            <li>第二届“中国数字经济发展论坛”、中国发展经济学前沿学术会议</li>
+            <li>《管理世界》送审中</li>
+        </ul>
 
         <p>
         Bubbly Data. Feng Dong, <b>Jinpu Li</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4790765.
         </p>
+        <ul>
+            <li>AsianFA 2024, CFRC 2024</li>
+            <li>Under review at <i>Journal of Economic Theory</i></li>
+        </ul>
 
         <p>
         Dynamic Efficiency Redux: Evidence from China. Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang, 2023. Available at SSRN: https://ssrn.com/abstract=4642433.
         </p>
+        <ul>
+            <li>Under review at <i>Macroeconomic Dynamics</i></li>
+        </ul>
 
         <p>
         Consumer Data Collection and Pricing for Two-sided Market Platforms. Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2023. Available at SSRN: https://ssrn.com/abstract=4664864.
         </p>
+        <ul>
+            <li>Under review at <i>Technological Forecasting and Social Change</i></li>
+        </ul>
       
         <h2>Working in Progress</h2>
         <p>
-        
+        Data Empowerment and Crash Risk, with Manyao Deng, Liyan Han, Zhen Li.
         </p>
        
         <h2>Books & Book Chapters</h2>
