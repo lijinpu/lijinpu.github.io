@@ -38,7 +38,7 @@ export default function Research() {
         Bubbly Data. Feng Dong, <b>Jinpu Li</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4790765.
         </p>
         <ul>
-            <li>AsianFA 2024, CFRC 2024</li>
+            <li>AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024</li>
             <li>Under review at <i>Journal of Economic Theory</i></li>
         </ul>
 
