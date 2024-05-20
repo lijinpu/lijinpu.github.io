@@ -45,9 +45,6 @@ export default function Research() {
         <p>
         Dynamic Efficiency Redux: Evidence from China. Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang, 2023. Available at SSRN: https://ssrn.com/abstract=4642433.
         </p>
-        <ul>
-            <li>Under review at <i>Macroeconomic Dynamics</i></li>
-        </ul>
 
         <p>
         Consumer Data Collection and Pricing for Two-sided Market Platforms. Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2023. Available at SSRN: https://ssrn.com/abstract=4664864.
