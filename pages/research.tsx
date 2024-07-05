@@ -57,11 +57,14 @@ export default function Research() {
         <ul>
             <li>Under review at <i>Technological Forecasting and Social Change</i></li>
         </ul>
+
+        <p>
+        Data Empowerment and Crash Risk. Manyao Deng, Liyan Han, <b>Jinpu Li*</b>, Zhen Li, 2024.
+        </p>
+        
       
         <h2>Working in Progress</h2>
-        <p>
-        Data Empowerment and Crash Risk, with Manyao Deng, Liyan Han, Zhen Li.
-        </p>
+        
        
         <h2>Books & Book Chapters</h2>
         <p>
