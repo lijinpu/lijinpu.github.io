@@ -52,7 +52,7 @@ export default function Research() {
         </p>
 
         <p>
-        Consumer Data Collection and Pricing for Two-sided Market Platforms. Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2023. Available at SSRN: https://ssrn.com/abstract=4664864.
+        Consumer Data Collection and Pricing for Two-sided Market Platforms. Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4664864.
         </p>
         <ul>
             <li>Under review at <i>Technological Forecasting and Social Change</i></li>
