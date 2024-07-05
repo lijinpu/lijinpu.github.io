@@ -2,10 +2,10 @@
 
 .custom-link {
     text-decoration: none; /* 去掉下划线 */
-    color: #3498db; /* 设置颜色 */
+    color: #db34bc; /* 设置颜色 */
     cursor: pointer;
   }
   
   .custom-link:hover {
-    color: #2980b9; /* 悬停时的颜色 */
+    color: #084d7b; /* 悬停时的颜色 */
   }
