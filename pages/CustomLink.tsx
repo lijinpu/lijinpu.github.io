@@ -1,5 +1,5 @@
 import React from 'react';
-import '.styles/customstyles.css';
+import './customstyles.css';
 
 interface CustomLinkProps {
   href: string;
