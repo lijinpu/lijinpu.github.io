@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import CustomLink from './CustomLink'
 export default function CV() {
   return (
     <div className="flex flex-col relative max-w-none prose dark:prose-invert">
@@ -34,7 +35,7 @@ export default function CV() {
         </p>
 
         <p>
-        <a href="https://ssrn.com/abstract=4790765">Bubbly Data</a>. Feng Dong, <b>Jinpu Li</b>, 2024. 
+        <CustomLink href="https://ssrn.com/abstract=4790765" text='Bubbly Data'/>. Feng Dong, <b>Jinpu Li</b>, 2024. 
         </p>
 
         <p>
