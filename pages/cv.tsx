@@ -34,7 +34,7 @@ export default function CV() {
         </p>
 
         <p>
-        Bubbly Data. Feng Dong, <b>Jinpu Li</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4790765.
+        <a href="https://ssrn.com/abstract=4790765">Bubbly Data</a>. Feng Dong, <b>Jinpu Li</b>, 2024. 
         </p>
 
         <p>
