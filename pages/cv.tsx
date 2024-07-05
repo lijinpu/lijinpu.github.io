@@ -91,6 +91,12 @@ export default function CV() {
         <p>
         清华大学社会工作优秀奖 (Scholarship of Social Work, Tsinghua University), 2018
         </p>
+
+        <h2>Service</h2>
+        <ul>
+            <li>Referee: China & World Economy, International Journal of Economic Theory</li>
+            
+        </ul>
       </div>
     </div>
   )
