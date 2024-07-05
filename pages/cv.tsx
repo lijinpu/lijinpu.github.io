@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import React from 'react'
-import CustomLink from './CustomLink'
+import React from 'react';
+import CustomLink from './CustomLink';
 export default function CV() {
   return (
     <div className="flex flex-col relative max-w-none prose dark:prose-invert">
