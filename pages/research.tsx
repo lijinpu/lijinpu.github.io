@@ -6,7 +6,7 @@ export default function Research() {
         <div>
         <h2>Publications</h2>
         <p>
-        “企业数据资产化：会计确认与价值评估”. 罗玫, <b>李金璞</b>, 汤珂, 清华大学学报（哲学社会科学版）, 2023, 38(05), 195-209+226.
+        “企业数据资产化：会计确认与价值评估”. 罗玫, <b>李金璞</b>, 汤珂, 清华大学学报(哲学社会科学版), 2023, 38(05), 195-209+226.
         </p>
         {/*}
         <div className="box_abstract keith">
@@ -14,7 +14,7 @@ export default function Research() {
         </div>
          */}
         <p>
-        “论数据要素市场参与者的培育”. <b>李金璞</b>, 汤珂, 西安交通大学学报（社会科学版）, 2023, 43(04): 78-89.
+        “论数据要素市场参与者的培育”. <b>李金璞</b>, 汤珂, 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.
         </p>
         {/*
         <div className="box_abstract keith">
@@ -43,7 +43,7 @@ export default function Research() {
         Bubbly Data. Feng Dong, <b>Jinpu Li</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4790765.
         </p>
         <ul>
-            <li>AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute</li>
+            <li>AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute, SWUFE International Macro-Finance Conference 2024</li>
             <li>Under review at <i>Journal of Economic Theory</i></li>
         </ul>
 
@@ -68,17 +68,17 @@ export default function Research() {
        
         <h2>Books & Book Chapters</h2>
         <p>
-       “数据资产化” , 汤珂主编, 人民出版社, 2023. 参与撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》. ISBN: 978-7-010-25804-1.
+        “数据要素的可信流通”. 汤珂和吴志雄主编, 人民出版社, 2024年7月. 撰写第三章《数据可信流通框架》. ISBN: 978-7-010-26615-2.
         </p>
-        <div className="box_abstract keith">
-        数据作为数字经济的血液、知识经济的基石，是企业的战略性资源。将数据转化为可被企业直接使用的有价值的资产，即“数据资产化”，已经成为企业数字化转型的重要目标。本书阐明了数据资产化的意义，围绕数据资产的确认、登记、质量评估、价值评估、入表，数据高效流通及价格发现等方面，系统阐述了数据资产化的理论和实践问题。本书可以帮助读者深入了解数据资产化这一全新且充满机遇的领域，提高数据资产的管理和利用水平，推动企业数字化转型的进步和升级。
-        </div>
+       
         <p>
-          “数据经济学（第1版）”, 汤珂, 熊巧琴, <b>李金璞</b>, 屈阳, 清华大学出版社, 2023. ISBN: 978-7-302-62351-9. 2024年1月第2版.
+       “数据资产化”. 汤珂主编, 人民出版社, 2023. 撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》. ISBN: 978-7-010-25804-1.
         </p>
-        <div className="box_abstract keith">
-        在数字化时代，数据不仅是信息的载体，更已经升华为驱动经济增长的关键要素。随着全球各界对数据价值和安全的深入关注与研究，数据经济学，以其对数据要素经济运行规律的探索为核心，逐步崭露为经济学领域的璀璨之星。本书的第二版，紧扣时代脉搏，以“数据二十条”所构建的数据基础制度为旗帜，全方位解读数据的生产、交换、分配、消费的深层机制与规律。内容覆盖数据的内涵特征、权益理论、界权实践、流通难题与模式、定价与估值、收益分配、数据市场演变与生态构建，以及数据安全和治理等核心专题。
-        </div>
+        
+        <p>
+          “数据经济学”. 汤珂, 熊巧琴, <b>李金璞</b>, 屈阳, 清华大学出版社, 2023. ISBN: 978-7-302-62351-9. 2024年1月第2版.
+        </p>
+        
         </div>
     </div>      
     )
