@@ -44,7 +44,6 @@ export default function Research() {
         </p>
         <ul>
             <li>AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute, SWUFE International Macro-Finance Conference 2024</li>
-            <li>Under review at <i>Journal of Economic Theory</i></li>
         </ul>
 
         <p>
