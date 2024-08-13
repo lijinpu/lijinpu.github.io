@@ -5,7 +5,7 @@ export default function CV() {
       <h1>Curriculum Vitae</h1>
       <div>
         <p>
-          I am Jinpu Li (李金璞), a third-year PhD candidate @ Tsinghua University. My field of interest: data economy, digital economy, and macro-finance.
+          I am Jinpu Li (李金璞), a 4th-year PhD candidate @ Tsinghua University. My field of interest: data economy, digital economy, and macro-finance.
         </p>
         <hr />
 
@@ -39,7 +39,7 @@ export default function CV() {
         </li>
 
         <li>
-        <a href="https://ssrn.com/abstract=4790765" >Bubbly Data</a>, with Feng Dong, 2024. 
+        <a href="https://ssrn.com/abstract=4790765" >Asset Bubbles in the Data Economy</a>, with Feng Dong, 2024. 
         </li>
 
         <li>

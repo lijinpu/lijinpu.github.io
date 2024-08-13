@@ -36,30 +36,35 @@ export default function Research() {
         </p>
         <ul>
             <li>第二届“中国数字经济发展论坛”、第六届“中国发展经济学前沿学术会议”</li>
-            <li>《管理世界》送审中</li>
         </ul>
 
         <p>
-        Bubbly Data. Feng Dong, <b>Jinpu Li</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4790765.
+        Asset Bubbles in the Data Economy. Feng Dong, <b>Jinpu Li</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4790765.
         </p>
         <ul>
-            <li>AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute, SWUFE International Macro-Finance Conference 2024</li>
+            <li>Presentation: AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute, SWUFE International Macro-Finance Conference 2024</li>
         </ul>
 
         <p>
         Dynamic Efficiency Redux: Evidence from China. Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang, 2023. Available at SSRN: https://ssrn.com/abstract=4642433.
         </p>
+        <ul>
+            <li>Presentation: the Consumer Theme Conference “Navigating Chinese Economy: A Demand Perspective” by China & World Economy</li>
+        </ul>
 
         <p>
         Consumer Data Collection and Pricing for Two-sided Market Platforms. Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4664864.
         </p>
         <ul>
-            <li>Under review at <i>Technological Forecasting and Social Change</i></li>
+            <li>Revise & Resubmit at <i>Technological Forecasting and Social Change</i></li>
         </ul>
 
         <p>
         Data Empowerment and Crash Risk. Manyao Deng, Liyan Han, <b>Jinpu Li*</b>, Zhen Li, 2024.
         </p>
+        <ul>
+            <li>Under review at <i>Finance Research Letters</i></li>
+        </ul>
         
       
         <h2>Working in Progress</h2>
