@@ -43,7 +43,7 @@ export default function Research() {
         Asset Bubbles in the Data Economy. Feng Dong, <b>Jinpu Li</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4790765.
         </p>
         <ul>
-            <li>Under review at<i>American Economic Journal: Macroeconomics</i></li>
+            <li>Under review at<i> American Economic Journal: Macroeconomics</i></li>
             <li>Presentation: AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute, SWUFE International Macro-Finance Conference 2024</li>
         </ul>
 
