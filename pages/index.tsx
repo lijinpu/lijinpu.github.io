@@ -18,7 +18,7 @@ export default function Home() {
         🏍️ Motorcyclist
         </p>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
-        🎮 Gamer
+        📸 Photographer
         </p>
         <p className="text-gray-600 dark:text-gray-400">
           {`"What is real is rational, and what is rational is real." — Hegel`}
