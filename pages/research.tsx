@@ -51,6 +51,7 @@ export default function Research() {
         Dynamic Efficiency Redux: Evidence from China. Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang, 2023. Available at SSRN: https://ssrn.com/abstract=4642433.
         </p>
         <ul>
+            <li>Under review at<i> China & World Economy</i></li>
             <li>Presentation: the Consumer Theme Conference “Navigating Chinese Economy: A Demand Perspective” by China & World Economy</li>
         </ul>
 

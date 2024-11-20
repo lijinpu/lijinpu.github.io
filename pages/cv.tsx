@@ -87,6 +87,12 @@ export default function CV() {
         <h2>Rewards</h2>
         <ul>
         <li>
+        数炬计划——中国数据要素新锐学者 (Data Torch Plan – China Data Factor Emerging Scholars), 2024
+        </li>
+        <li>
+        “清华之友——昆华英才奖学金”综合优秀奖 (Kunhua Talent Scholarship, Tsinghua University), 2024
+        </li>
+        <li>
         清华大学优秀助教 (Excellent Teaching Assistant, Tsinghua University), 2023
         </li>
         <li>
@@ -117,7 +123,7 @@ export default function CV() {
 
         <h2>Service</h2>
         <ul>
-            <li>Referee: China & World Economy, International Journal of Economic Theory</li>
+            <li>Referee: Economic Modelling, China & World Economy, International Journal of Economic Theory</li>
             
         </ul>
       </div>
