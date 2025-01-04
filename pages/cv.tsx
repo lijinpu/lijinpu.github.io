@@ -128,7 +128,7 @@ export default function CV() {
 
         <h2>Service</h2>
         <ul>
-            <li>Referee: Economic Modelling, China & World Economy, International Journal of Economic Theory</li>
+            <li>Referee: Economic Modelling, China & World Economy, International Journal of Economic Theory, Industrial Management & Data Systems</li>
             
         </ul>
       </div>
