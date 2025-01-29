@@ -69,16 +69,15 @@ export default function Research() {
             <li>Revise & Resubmit at <i>Technological Forecasting and Social Change</i></li>
         </ul>
 
-        <p>
-        Data Empowerment and Crash Risk. Manyao Deng, Liyan Han, <b>Jinpu Li*</b>, Zhen Li, 2024.
-        </p>
-        <ul>
-            <li>Under review at <i>Finance Research Letters</i></li>
-        </ul>
+       
         
       
         <h2>Working in Progress</h2>
         
+        <p>
+        Data Empowerment and Crash Risk. Manyao Deng, Liyan Han, <b>Jinpu Li*</b>, Zhen Li, 2025.
+        </p>
+      
        
         <h2>Books & Book Chapters</h2>
         <p>

@@ -54,10 +54,6 @@ export default function CV() {
         <li>
         <a href="https://ssrn.com/abstract=4664864">Consumer Data Collection and Pricing for Two-sided Market Platforms</a>, with Ronghua Sui and Ruize Gao, 2024.
         </li>
-       
-        <li>
-        Data Empowerment and Crash Risk, with Manyao Deng, Liyan Han, and Zhen Li, 2024.
-        </li>
 
         </ul>
       
