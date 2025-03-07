@@ -35,7 +35,7 @@ export default function Research() {
         “数字时代的宏观经济学的研究新进展”. <b>李金璞</b>, 孙浩宁, 汤珂, 董丰*, 2024.
         </p>
         <ul>
-            <li>《经济学（季刊）》审稿</li>
+            <li>《经济学动态》返修</li>
         </ul>
         
         <p>
@@ -50,7 +50,6 @@ export default function Research() {
         Asset Bubbles in the Data Economy. Feng Dong, <b>Jinpu Li</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4790765.
         </p>
         <ul>
-            <li>Under review at<i> Review of Economic Dynamics</i></li>
             <li>Presentation: AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute, SWUFE International Macro-Finance Conference 2024</li>
         </ul>
 
@@ -58,25 +57,22 @@ export default function Research() {
         Dynamic Efficiency Redux: Evidence from China. Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang, 2023. Available at SSRN: https://ssrn.com/abstract=4642433.
         </p>
         <ul>
-            <li>Under review at<i> China & World Economy</i></li>
+            <li>Conditionally accepted at<i> China & World Economy</i></li>
             <li>Presentation: the Consumer Theme Conference “Navigating Chinese Economy: A Demand Perspective” by China & World Economy</li>
         </ul>
 
         <p>
-        Consumer Data Collection and Pricing for Two-sided Market Platforms. Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4664864.
+        Data Collection and Pricing for Two-sided Platforms. Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4664864.
         </p>
-        <ul>
-            <li>Revise & Resubmit at <i>Technological Forecasting and Social Change</i></li>
-        </ul>
-
+        <p>
+        Data Empowerment and Crash Risk. Manyao Deng, Liyan Han, <b>Jinpu Li*</b>, Zhen Li, 2025.
+        </p>
        
         
       
         <h2>Working in Progress</h2>
         
-        <p>
-        Data Empowerment and Crash Risk. Manyao Deng, Liyan Han, <b>Jinpu Li*</b>, Zhen Li, 2025.
-        </p>
+       
       
        
         <h2>Books & Book Chapters</h2>

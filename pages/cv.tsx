@@ -12,10 +12,13 @@ export default function CV() {
         <h2>Education</h2>
         <ul>
         <li>
-        2022&nbsp;&nbsp;&nbsp;<b>Ph.D. candidate in Economics</b>, Tsinghua University
+        <b>Ph.D. in Economics</b>, Tsinghua University, Expected 2027
         </li>
         <li>
-        2021&nbsp;&nbsp;&nbsp;<b>B.A. in Economics</b>, Tsinghua University
+        <b>Visiting Student Researcher</b>, University of California, Berkeley, 2024-2025
+        </li>
+        <li>
+        <b>B.A. in Economics</b>, Tsinghua University, 2021
         </li>
         </ul>
 
@@ -52,7 +55,7 @@ export default function CV() {
         </li>
 
         <li>
-        <a href="https://ssrn.com/abstract=4664864">Consumer Data Collection and Pricing for Two-sided Market Platforms</a>, with Ronghua Sui and Ruize Gao, 2024.
+        <a href="https://ssrn.com/abstract=4664864">Data Collection and Pricing for Two-sided Platforms</a>, with Ronghua Sui and Ruize Gao, 2024.
         </li>
 
         </ul>
@@ -77,7 +80,7 @@ export default function CV() {
         <h2>Teaching Experience</h2>
         <ul>
         <li>
-        Principles of Economics (00510454) by Prof. Feng Dong. 2024 Spring, and 2023 Spring.
+        Principles of Economics (00510454) by Prof. Feng Dong. 2025 Spring, 2024 Spring, and 2023 Spring.
         </li>
         <li>
         Econometrics II (30700932) by Prof. Sainan Jin. 2024 Spring, 2023 Spring, and 2022 Spring.
@@ -90,6 +93,9 @@ export default function CV() {
 
         <h2>Rewards</h2>
         <ul>
+        <li>
+        国家建设高水平大学公派研究生项目 (China Scholarship Council (CSC) Scholarship), 2024
+        </li>
         <li>
         数炬计划——中国数据要素新锐学者 (Data Torch Plan – China Data Factor Emerging Scholars), 2024
         </li>
