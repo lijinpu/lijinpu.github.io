@@ -6,7 +6,7 @@ export default function Teaching() {
         <div>
         <h2>Teaching Assistant at Tsinghua</h2>
         <p>
-        Principles of Economics (00510454) by Prof. Feng Dong. 2025Spring, 2024 Spring, and 2023 Spring.
+        Principles of Economics (00510454) by Prof. Feng Dong. 2025 Spring, 2024 Spring, and 2023 Spring.
         </p>
         <p>
         Econometrics II (30700932) by Prof. Sainan Jin. 2024 Spring, 2023 Spring, and 2022 Spring.
