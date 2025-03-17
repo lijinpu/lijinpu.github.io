@@ -64,9 +64,13 @@ export default function Research() {
         <p>
         Data Collection and Pricing for Two-sided Platforms. Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4664864.
         </p>
+
         <p>
         Data Empowerment and Crash Risk. Manyao Deng, Liyan Han, <b>Jinpu Li*</b>, Zhen Li, 2025.
         </p>
+        <ul>
+            <li>Under review at <i>Applied Economic Letters</i></li>
+        </ul>
        
         
       
