@@ -77,21 +77,8 @@ export default function CV() {
         </li>
         </ul>
 
-        <h2>Teaching Experience</h2>
-        <ul>
-        <li>
-        Principles of Economics (00510454) by Prof. Feng Dong. 2025 Spring, 2024 Spring, and 2023 Spring.
-        </li>
-        <li>
-        Econometrics II (30700932) by Prof. Sainan Jin. 2024 Spring, 2023 Spring, and 2022 Spring.
-        </li>
-        <li>
-        Introduction to Financial Economics (40701113) by Prof. Ke Tang. 2022 Fall, 2021 Fall, and 2020 Fall.
-        </li>
-        </ul>
 
-
-        <h2>Rewards</h2>
+        <h2>Grants & Rewards</h2>
         <ul>
         <li>
         国家建设高水平大学公派研究生项目 (China Scholarship Council (CSC) Scholarship), 2024
@@ -130,6 +117,28 @@ export default function CV() {
         清华大学社会工作优秀奖 (Scholarship of Social Work, Tsinghua University), 2018
         </li>
         </ul>
+
+        <h2>Teaching</h2>
+        <ul>
+        <li>
+        Principles of Economics (00510454) by Prof. Feng Dong. 2025 Spring, 2024 Spring, and 2023 Spring.
+        </li>
+        <li>
+        Econometrics II (30700932) by Prof. Sainan Jin. 2024 Spring, 2023 Spring, and 2022 Spring.
+        </li>
+        <li>
+        Introduction to Financial Economics (40701113) by Prof. Ke Tang. 2022 Fall, 2021 Fall, and 2020 Fall.
+        </li>
+        </ul>
+
+        <h2>Conferences</h2>
+        <ul>
+        <li>
+        2025: The 2025 MRS International Risk Conference (MRS2025)
+        2024: Asia Meeting of the Econometric Society East & Southeast Asia (AMES), China Financial Research Conference (CFRC), Asian Finance Association Annual Conference (AsianFA), CCER Summer Institute (CCERSI), SWUFE International Macro-Finance Conference, The Consumer Theme Conference “Navigating Chinese Economy: A Demand Perspective” by China and World Economy; 第二届“中国数字经济发展论坛”, 第六届“中国发展经济学前沿学术会议”
+        </li>
+        </ul>
+
 
         <h2>Service</h2>
         <ul>
