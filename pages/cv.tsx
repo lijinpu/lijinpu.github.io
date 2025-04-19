@@ -58,6 +58,10 @@ export default function CV() {
         <a href="https://ssrn.com/abstract=4664864">Data Collection and Pricing for Two-sided Platforms</a>, with Ronghua Sui and Ruize Gao, 2024.
         </li>
 
+        <li>
+        Data Empowerment and Crash Risk, with Manyao Deng, Liyan Han, and Zhen Li, 2024.
+        </li>
+
         </ul>
       
         
