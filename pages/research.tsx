@@ -66,7 +66,7 @@ export default function Research() {
         Data Empowerment and Crash Risk. Manyao Deng, Liyan Han, <b>Jinpu Li*</b>, Zhen Li, 2025.
         </p>
         <ul>
-            <li>Under review at <i>Applied Economic Letters</i></li>
+            <li>R&R at <i>Applied Economic Letters</i></li>
         </ul>
        
         

@@ -138,7 +138,7 @@ export default function CV() {
         <h2>Conferences</h2>
         <ul>
         <li>
-        2025: The 2025 MRS International Risk Conference (MRS2025)
+        2025: The 2025 MRS International Risk Conference (MRS2025), INFORMS 2025 Annual Meeting
         </li>
         <li>
         2024: Asia Meeting of the Econometric Society East & Southeast Asia (AMES), China Financial Research Conference (CFRC), Asian Finance Association Annual Conference (AsianFA), CCER Summer Institute (CCERSI), SWUFE International Macro-Finance Conference, The Consumer Theme Conference “Navigating Chinese Economy: A Demand Perspective” by China and World Economy; 第二届“中国数字经济发展论坛”, 第六届“中国发展经济学前沿学术会议”
