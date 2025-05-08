@@ -2,14 +2,14 @@ import Link from 'next/link'
 export default function CV() {
   return (
     <div className="flex flex-col relative max-w-none prose dark:prose-invert">
-      <h1>Curriculum Vitae</h1>
+      <h1>Curriculum Vitae  个人简历</h1>
       <div>
         <p>
           I am Jinpu Li (李金璞), a 4th-year PhD candidate @ Tsinghua University. My field of interest: data economy, digital economy, and macro-finance.
         </p>
         <hr />
 
-        <h2>Education</h2>
+        <h2>Education  教育背景</h2>
         <ul>
         <li>
         <b>Ph.D. in Economics</b>, Tsinghua University, Expected 2027
@@ -22,7 +22,7 @@ export default function CV() {
         </li>
         </ul>
 
-        <h2>Publications</h2>
+        <h2>Publications  学术发表</h2>
         <ul>
         <li>
         “企业数据资产化：会计确认与价值评估”. 罗玫, <b>李金璞</b>, 汤珂, 清华大学学报（哲学社会科学版）, 2023, 38(05), 195-209+226.
@@ -35,7 +35,7 @@ export default function CV() {
         </li>
         </ul>
 
-        <h2>Working Papers</h2>
+        <h2>Working Papers  工作论文</h2>
         <ul>
         
         <li>
@@ -65,7 +65,7 @@ export default function CV() {
         </ul>
       
         
-        <h2>Books & Book Chapters</h2>
+        <h2>Books & Book Chapters  专著及书目章节</h2>
         <ul>
         <li>
         “数字经济发展与治理（第4辑）”. 江小涓主编, 中信出版集团, 2025年2月. 与汤珂合作撰写《数据的可信流通》. ISBN: 978-7-521-77161-9.
@@ -82,7 +82,7 @@ export default function CV() {
         </ul>
 
 
-        <h2>Grants & Rewards</h2>
+        <h2>Grants & Rewards  资助与获奖</h2>
         <ul>
         <li>
         国家建设高水平大学公派研究生项目 (China Scholarship Council (CSC) Scholarship), 2024
@@ -122,7 +122,7 @@ export default function CV() {
         </li>
         </ul>
 
-        <h2>Teaching</h2>
+        <h2>Teaching  教学</h2>
         <ul>
         <li>
         Principles of Economics (00510454) by Prof. Feng Dong. 2025 Spring, 2024 Spring, and 2023 Spring.
@@ -135,7 +135,7 @@ export default function CV() {
         </li>
         </ul>
 
-        <h2>Conferences</h2>
+        <h2>Conferences  学术会议</h2>
         <ul>
         <li>
         2025: The 2025 MRS International Risk Conference (MRS2025), INFORMS 2025 Annual Meeting
@@ -146,7 +146,7 @@ export default function CV() {
         </ul>
 
 
-        <h2>Service</h2>
+        <h2>Service  学术服务</h2>
         <ul>
             <li>Referee: Economic Modelling, China & World Economy, International Journal of Economic Theory, Industrial Management & Data Systems</li>
             
