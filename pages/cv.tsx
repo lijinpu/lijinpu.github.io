@@ -15,7 +15,7 @@ export default function CV() {
         <b>Ph.D. in Economics</b>, Tsinghua University, Expected 2027
         </li>
         <li>
-        <b>Visiting Student Researcher</b>, University of California, Berkeley, 2024-2025
+        <b>Visiting Student Researcher</b>, University of California, Berkeley, 2024.11 - 2025.11
         </li>
         <li>
         <b>B.A. in Economics</b>, Tsinghua University, 2021
