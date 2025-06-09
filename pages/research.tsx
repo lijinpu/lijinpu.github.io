@@ -40,6 +40,7 @@ export default function Research() {
         “数据资产、融资约束与数据泡沫”. 汤珂, <b>李金璞</b>, 孙浩宁*, 董丰, 2024. 
         </p>
         <ul>
+            <li>《管理世界》返修</li>
             <li>第二届“中国数字经济发展论坛”、第六届“中国发展经济学前沿学术会议”</li>
         </ul>
 
@@ -54,13 +55,15 @@ export default function Research() {
         Dynamic Efficiency Redux: Evidence from China. Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang, 2023. Available at SSRN: https://ssrn.com/abstract=4642433.
         </p>
         <ul>
-            <li>Conditionally accepted at<i> China & World Economy</i></li>
-            <li>Presentation: the Consumer Theme Conference “Navigating Chinese Economy: A Demand Perspective” by China & World Economy</li>
+            <li>Accepted at <i>China & World Economy</i></li>
         </ul>
 
         <p>
-        Data Collection and Pricing for Two-sided Platforms. Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4664864.
+        Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4664864.
         </p>
+        <ul>
+            <li>R&R at <i>Industrial Management & Data Systems</i></li>
+        </ul>
 
         <p>
         Data Empowerment and Crash Risk. Manyao Deng, Liyan Han, <b>Jinpu Li*</b>, Zhen Li, 2025.
@@ -72,7 +75,13 @@ export default function Research() {
         
       
         <h2>Working in Progress</h2>
-        
+         <p>
+        “人工智能发展、劳动收入份额与再分配政策效应”, with 孙浩宁, 董丰.
+        </p>
+
+        <p>
+        “Data Empowerment and Bank Performance”, with Zhen Li, Shiying Wen, and Jiawen Yang.
+        </p>
        
       
        

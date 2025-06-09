@@ -55,7 +55,7 @@ export default function CV() {
         </li>
 
         <li>
-        <a href="https://ssrn.com/abstract=4664864">Data Collection and Pricing for Two-sided Platforms</a>, with Ronghua Sui and Ruize Gao, 2024.
+        <a href="https://ssrn.com/abstract=4664864">Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs</a>, with Ronghua Sui and Ruize Gao, 2024.
         </li>
 
         <li>
