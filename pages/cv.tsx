@@ -4,9 +4,7 @@ export default function CV() {
     <div className="flex flex-col relative max-w-none prose dark:prose-invert">
       <h1>Curriculum Vitae &nbsp;&nbsp; 个人简历</h1>
       <div>
-        <p>
-          I am Jinpu Li (李金璞), a 4th-year PhD candidate @ Tsinghua University. My field of interest: data economy, digital economy, and macro-finance.
-        </p>
+        
         <hr />
 
         <h2>Education &nbsp;&nbsp; 教育背景</h2>
