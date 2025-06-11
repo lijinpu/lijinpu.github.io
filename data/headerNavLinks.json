@@ -4,10 +4,6 @@
     "href": "/"
   },
   {
-    "title": "Blog",
-    "href": "/blog"
-  },
-  {
     "title": "Research",
     "href": "/research"
   },
@@ -18,5 +14,9 @@
   {
     "title": "CV",
     "href": "/cv"
+  },
+  {
+    "title": "Personal",
+    "href": "/personal"
   }
 ]
