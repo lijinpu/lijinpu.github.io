@@ -15,7 +15,9 @@ export default function Home() {
             My field of interest: data economy, digital economy, and macro-finance.
           </p>
 
-          <h2 className="font-bold text-2xl mt-8 mb-2">Hobbies</h2>
+          <div className="pt-6">
+            <h2 className="font-bold text-2xl mb-2">Hobbies</h2>
+          </div>
           <ul className="text-gray-700 dark:text-gray-400 space-y-1 mb-4 text-base">
             <li>🎷 Saxophone</li>
             <li>⚫ Go</li>
