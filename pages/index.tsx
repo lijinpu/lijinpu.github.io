@@ -25,10 +25,9 @@ export default function Home() {
         My field of interest: data economy, digital economy, and macro-finance.
       </p>
 
-
-      {/* 名言居中 */}
+      {/* 引言，注意已用 &quot; 进行转义 */}
       <p className="text-gray-600 dark:text-gray-400 mt-6 italic">
-        "What is real is rational, and what is rational is real." — Hegel
+        &quot;What is real is rational, and what is rational is real.&quot; — Hegel
       </p>
     </div>
   )
