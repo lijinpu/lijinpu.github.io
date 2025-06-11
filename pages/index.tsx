@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-12 text-center">
+    <div className="flex flex-col items-center pt-12 px-4 min-h-[80vh] text-center">
       
-      {/* 头像居中 */}
+      {/* 头像居中偏上 */}
       <div className="mb-6">
         <Image
           className="rounded-full shadow-lg"
@@ -16,16 +16,18 @@ export default function Home() {
         />
       </div>
 
-      {/* 姓名居中 */}
+      {/* 姓名 */}
       <h1 className="font-extrabold text-3xl mb-2">Jinpu Li &nbsp;&nbsp; 李金璞</h1>
 
-      {/* 简介居中 */}
-      <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl leading-relaxed mb-8">
+      {/* 简介段落拆分为两句 */}
+      <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl leading-relaxed mb-1">
         I am Jinpu Li (李金璞), a 4th-year PhD candidate @ Tsinghua University.
+      </p>
+      <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl leading-relaxed mb-8">
         My field of interest: data economy, digital economy, and macro-finance.
       </p>
 
-      {/* 引言，注意已用 &quot; 进行转义 */}
+      {/* 引言 */}
       <p className="text-gray-600 dark:text-gray-400 mt-6 italic">
         &quot;What is real is rational, and what is rational is real.&quot; — Hegel
       </p>
