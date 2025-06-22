@@ -37,7 +37,7 @@ export default function Research() {
         
         
         <p>
-        “数据资产、融资约束与数据泡沫”. 汤珂, <b>李金璞</b>, 孙浩宁*, 董丰, 2024. 
+        “数据资产泡沫：理论机制与政策权衡”.  <b>李金璞</b>, 孙浩宁*, 汤珂, 董丰, 2024. 
         </p>
         <ul>
             <li>《管理世界》返修</li>
@@ -48,6 +48,7 @@ export default function Research() {
         Asset Bubbles in the Data Economy. Feng Dong, <b>Jinpu Li</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4790765.
         </p>
         <ul>
+            <li>Under review at <i>Theoretical Economics</i></li>
             <li>Presentation: AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute, SWUFE International Macro-Finance Conference 2024</li>
         </ul>
 
@@ -76,14 +77,9 @@ export default function Research() {
       
         <h2>Working in Progress</h2>
          <p>
-        “人工智能发展、劳动收入份额与再分配政策效应”, with 孙浩宁, 董丰.
-        </p>
-
-        <p>
-        “Data Empowerment and Bank Performance”, with Zhen Li, Shiying Wen, and Jiawen Yang.
+        “人工智能时代的收入分配与政策权衡：基于任务与代际动态的理论分析”, with 孙浩宁, 董丰.
         </p>
        
-      
        
         <h2>Books & Book Chapters</h2>
         <p>
