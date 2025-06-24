@@ -59,6 +59,13 @@ export default function Research() {
             <li>Accepted at <i>China & World Economy</i></li>
         </ul>
 
+         <p>
+        Data Empowerment and Crash Risk. Manyao Deng, Liyan Han, <b>Jinpu Li*</b>, Zhen Li, 2025.
+        </p>
+        <ul>
+            <li>Accepted at <i>Applied Economic Letters</i></li>
+        </ul>
+        
         <p>
         Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4664864.
         </p>
@@ -66,14 +73,6 @@ export default function Research() {
             <li>R&R at <i>Industrial Management & Data Systems</i></li>
         </ul>
 
-        <p>
-        Data Empowerment and Crash Risk. Manyao Deng, Liyan Han, <b>Jinpu Li*</b>, Zhen Li, 2025.
-        </p>
-        <ul>
-            <li>R&R at <i>Applied Economic Letters</i></li>
-        </ul>
-       
-        
       
         <h2>Working in Progress</h2>
          <p>
