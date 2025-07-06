@@ -9,7 +9,7 @@ export default function Research() {
         <p>
 
         </p>
-            Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data empowerment and crash risk. Applied Economics Letters, 1–6. https://doi.org/10.1080/13504851.2025.2526710
+            Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data empowerment and crash risk. <i>Applied Economics Letters</i>, 1–6. https://doi.org/10.1080/13504851.2025.2526710
         <p>
         “企业数据资产化：会计确认与价值评估”. 罗玫, 李金璞, 汤珂, 清华大学学报(哲学社会科学版), 2023, 38(05), 195-209+226.
         </p>
