@@ -23,13 +23,16 @@ export default function CV() {
         <h2>Publications &nbsp;&nbsp; 学术发表</h2>
         <ul>
         <li>
-        “企业数据资产化：会计确认与价值评估”. 罗玫, <b>李金璞</b>, 汤珂, 清华大学学报（哲学社会科学版）, 2023, 38(05), 195-209+226.
+          Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data empowerment and crash risk. Applied Economics Letters, 1–6. https://doi.org/10.1080/13504851.2025.2526710
         </li>
         <li>
-        “论数据要素市场参与者的培育”.  <b>李金璞</b>, 汤珂, 西安交通大学学报 (社会科学版), 2023, 43(02), 78-89.
+        “企业数据资产化：会计确认与价值评估”. 罗玫, 李金璞, 汤珂, 清华大学学报（哲学社会科学版）, 2023, 38(05), 195-209+226.
         </li>
         <li>
-        “数据信托：可信的数据流通模式”. 黄京磊, <b>李金璞</b>, 汤珂, 大数据, 2023, 9(02), 67-78.
+        “论数据要素市场参与者的培育”.  李金璞, 汤珂, 西安交通大学学报 (社会科学版), 2023, 43(02), 78-89.
+        </li>
+        <li>
+        “数据信托：可信的数据流通模式”. 黄京磊, 李金璞, 汤珂, 大数据, 2023, 9(02), 67-78.
         </li>
         </ul>
 
@@ -37,11 +40,11 @@ export default function CV() {
         <ul>
         
         <li>
-        “数字时代的宏观经济学的研究新进展”. <b>李金璞</b>, 孙浩宁, 汤珂, 董丰*, 2024.
+        “数字时代的宏观经济学的研究新进展”. 李金璞, 孙浩宁, 汤珂, 董丰*, 2024.
         </li>
         
         <li>
-        “数据资产泡沫：理论机制与政策权衡”.  <b>李金璞</b>, 孙浩宁*, 汤珂, 董丰, 2024.
+        “数据资产泡沫：理论机制与政策权衡”.  李金璞, 孙浩宁*, 汤珂, 董丰, 2024.
         </li>
 
         <li>
@@ -54,10 +57,6 @@ export default function CV() {
 
         <li>
         <a href="https://ssrn.com/abstract=4664864">Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs</a>, with Ronghua Sui and Ruize Gao, 2024.
-        </li>
-
-        <li>
-        Data Empowerment and Crash Risk, with Manyao Deng, Liyan Han, and Zhen Li, 2024.
         </li>
 
         </ul>
@@ -75,7 +74,7 @@ export default function CV() {
         “数据资产化”. 汤珂主编, 人民出版社, 2023年8月. 撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》.
         </li>
         <li>
-        “数据经济学”. 汤珂, 熊巧琴, <b>李金璞</b>, 屈阳, 清华大学出版社, 2023年1月第1版, 2024年1月第2版.
+        “数据经济学”. 汤珂, 熊巧琴, 李金璞, 屈阳, 清华大学出版社, 2023年1月第1版, 2024年1月第2版.
         </li>
         </ul>
 

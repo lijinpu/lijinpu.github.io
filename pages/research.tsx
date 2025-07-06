@@ -5,8 +5,13 @@ export default function Research() {
         <h1>Research</h1>
         <div>
         <h2>Publications</h2>
+
         <p>
-        “企业数据资产化：会计确认与价值评估”. 罗玫, <b>李金璞</b>, 汤珂, 清华大学学报(哲学社会科学版), 2023, 38(05), 195-209+226.
+
+        </p>
+            Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data empowerment and crash risk. Applied Economics Letters, 1–6. https://doi.org/10.1080/13504851.2025.2526710
+        <p>
+        “企业数据资产化：会计确认与价值评估”. 罗玫, 李金璞, 汤珂, 清华大学学报(哲学社会科学版), 2023, 38(05), 195-209+226.
         </p>
         {/*}
         <div className="box_abstract keith">
@@ -14,37 +19,30 @@ export default function Research() {
         </div>
          */}
         <p>
-        “论数据要素市场参与者的培育”. <b>李金璞</b>, 汤珂, 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.
+        “论数据要素市场参与者的培育”. 李金璞, 汤珂, 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.
         </p>
-        {/*
-        <div className="box_abstract keith">
-        市场参与者动机匮乏构成数据要素有效供给不足、场内交易市场活跃度低的微观原因，运用“动机—能力”理论框架解析数据要素市场“参与难”问题，特别指出并非所有企业都具备成为数据要素提供者的能力条件。从市场供给侧培育的角度，提出“数据要素型企业”概念，将其定义为“数据要素市场中直接参与数据资源要素化的企业”。数据要素型企业应在数据要素生态中参与数据生产的链条，链条的最终产物是数据要素产品，其并不特指某一类型的数据商，而是强调以数据要素产品为产出的业务能力。扶植数据要素型企业可参照以“硬科技”企业为代表的高新技术企业的培育模式，同时需要结合数据价值链、数据资产的特征。基于全局视角对作为主要生产者的数据要素型企业、作为需求者的数字化转型背景下的各行业企业以及各类专业服务机构提出了系统性的、激励相容的培育方案。面向各类市场参与者，从政策设计角度提出生态互联、资质认定、财金联动、应用激发四个方面的培育机制。  
-        </div>
-        */}
+        
         <p>
-        “数据信托：可信的数据流通模式”. 黄京磊, <b>李金璞</b>, 汤珂, 大数据, 2023, 9(02), 67-78.
+        “数据信托：可信的数据流通模式”. 黄京磊, 李金璞, 汤珂, 大数据, 2023, 9(02), 67-78.
         </p>
-        {/*
-        <div className="box_abstract keith">
-        数据信托可被视作一种新型的、可信的数据流通模式。数据信托不仅是一种保障信息安全的组织结构，还是一种增进数据要素市场可信性的创新性制度设计。设计了一种数据信托的运行机制，探讨了该机制下数 据信托的组织结构、特征、功能和监管方案。指出数据信托包含两个彼此独立的法律关系。数据信托最重要的特征是参与者之间的风险隔离，这正是数据信托作为可信的数据流通模式的基础。数据信托在数据价值链中可以发挥重要作用，具体表现为数据增值、数据代管和数据共有等。最后，基于“数据二十条”的制度指引，论证了数据信托的独特优势，并指出个人数据信托和公共数据信托是可行的实践路径。   
-        </div>
-        */}
+       
+
         <h2>Working Papers</h2>
         
         <p>
-        “数字时代的宏观经济学的研究新进展”. <b>李金璞</b>, 孙浩宁, 汤珂, 董丰*, 2024.
+        “数字时代的宏观经济学的研究新进展”. 李金璞, 孙浩宁, 汤珂, 董丰*, 2024.
         </p>
         
         
         <p>
-        “数据资产泡沫：理论机制与政策权衡”.  <b>李金璞</b>, 孙浩宁*, 汤珂, 董丰, 2024. 
+        “数据资产泡沫：理论机制与政策权衡”.  李金璞, 孙浩宁*, 汤珂, 董丰, 2024. 
         </p>
         <ul>
             <li>《管理世界》待刊</li>
         </ul>
 
         <p>
-        Asset Bubbles in the Data Economy. Feng Dong, <b>Jinpu Li</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4790765.
+        Asset Bubbles in the Data Economy. Feng Dong, Jinpu Li, 2024. Available at SSRN: https://ssrn.com/abstract=4790765.
         </p>
         <ul>
             <li>Under review at <i>Theoretical Economics</i></li>
@@ -52,21 +50,15 @@ export default function Research() {
         </ul>
 
         <p>
-        Dynamic Efficiency Redux: Evidence from China. Feng Dong, <b>Jinpu Li</b>, Haoning Sun, Siqing Wang, 2023. Available at SSRN: https://ssrn.com/abstract=4642433.
+        Dynamic Efficiency Redux: Evidence from China. Feng Dong, Jinpu Li, Haoning Sun, Siqing Wang, 2023. Available at SSRN: https://ssrn.com/abstract=4642433.
         </p>
         <ul>
             <li>Accepted at <i>China & World Economy</i></li>
         </ul>
 
-         <p>
-        Data Empowerment and Crash Risk. Manyao Deng, Liyan Han, <b>Jinpu Li*</b>, Zhen Li, 2025.
-        </p>
-        <ul>
-            <li>Accepted at <i>Applied Economic Letters</i></li>
-        </ul>
         
         <p>
-        Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. Ronghua Sui, Ruize Gao, <b>Jinpu Li*</b>, 2024. Available at SSRN: https://ssrn.com/abstract=4664864.
+        Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. Ronghua Sui, Ruize Gao, Jinpu Li*, 2024. Available at SSRN: https://ssrn.com/abstract=4664864.
         </p>
         <ul>
             <li>R&R at <i>Industrial Management & Data Systems</i></li>
@@ -92,7 +84,7 @@ export default function Research() {
         </p>
         
         <p>
-          “数据经济学”. 汤珂, 熊巧琴, <b>李金璞</b>, 屈阳, 清华大学出版社, 2023年1月. ISBN: 978-7-302-62351-9. 2024年1月第2版.
+          “数据经济学”. 汤珂, 熊巧琴, 李金璞, 屈阳, 清华大学出版社, 2023年1月. ISBN: 978-7-302-62351-9. 2024年1月第2版.
         </p>
         
         </div>
