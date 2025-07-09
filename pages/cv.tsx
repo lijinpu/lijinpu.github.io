@@ -22,18 +22,11 @@ export default function CV() {
 
         <h2>Publications &nbsp;&nbsp; 学术发表</h2>
         <ul>
-        <li>
-          Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data empowerment and crash risk. <i>Applied Economics Letters</i>, 1–6. https://doi.org/10.1080/13504851.2025.2526710
-        </li>
-        <li>
-        “企业数据资产化：会计确认与价值评估”. 罗玫, 李金璞, 汤珂, 清华大学学报（哲学社会科学版）, 2023, 38(05), 195-209+226.
-        </li>
-        <li>
-        “论数据要素市场参与者的培育”.  李金璞, 汤珂, 西安交通大学学报 (社会科学版), 2023, 43(02), 78-89.
-        </li>
-        <li>
-        “数据信托：可信的数据流通模式”. 黄京磊, 李金璞, 汤珂, 大数据, 2023, 9(02), 67-78.
-        </li>
+                <li>李金璞, 汤珂. 数据的可信流通一个理论框架[J]. 数字经济发展与治理, 2025, (01): 107-120.</li>
+                <li>罗玫, 李金璞, 汤珂. 企业数据资产化：会计确认与价值评估[J]. 清华大学学报(哲学社会科学版), 2023, 38(05): 195-209+226.</li>
+                <li>李金璞, 汤珂. 论数据要素市场参与者的培育[J]. 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.</li>
+                <li>黄京磊, 李金璞, 汤珂. 数据信托：可信的数据流通模式[J]. 大数据, 2023, 9(02): 67-78.</li>
+                <li>Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data empowerment and crash risk. <i>Applied Economics Letters</i>, 1–6. <a href="https://doi.org/10.1080/13504851.2025.2526710" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/13504851.2025.2526710</a></li>
         </ul>
 
         <h2>Working Papers &nbsp;&nbsp; 工作论文</h2>
@@ -64,9 +57,6 @@ export default function CV() {
         
         <h2>Books & Book Chapters &nbsp;&nbsp; 专著及书目章节</h2>
         <ul>
-        <li>
-        “数字经济发展与治理（第4辑）”. 江小涓主编, 中信出版集团, 2025年2月. 与汤珂合作撰写《数据的可信流通》. ISBN: 978-7-521-77161-9.
-        </li>
         <li>
         “数据要素的可信流通”. 汤珂和吴志雄主编, 人民出版社, 2024年6月. 撰写第三章《数据可信流通框架》.
         </li>
