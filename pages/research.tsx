@@ -22,36 +22,36 @@ export default function Research() {
        
 
         <h2>Working Papers</h2>
+<ul>
+    <li>
+        “数字时代的宏观经济学的研究新进展”. 李金璞, 孙浩宁, 汤珂, 董丰*, 2024.
+    </li>
+    <li>
+        “数据资产泡沫：理论机制与政策权衡”. 李金璞, 孙浩宁*, 汤珂, 董丰, 2024.
         <ul>
-            <li>
-                “数字时代的宏观经济学的研究新进展”. 李金璞, 孙浩宁, 汤珂, 董丰*, 2024.
-            </li>
-            <li>
-                “数据资产泡沫：理论机制与政策权衡”. 李金璞, 孙浩宁*, 汤珂, 董丰, 2024.
-                <ul>
-                    <li>《管理世界》待刊</li>
-                </ul>
-            </li>
-            <li>
-                Asset Bubbles in the Data Economy. Feng Dong, Jinpu Li, 2024. Available at SSRN: <a href="https://ssrn.com/abstract=4790765" target="_blank" rel="noopener noreferrer">https://ssrn.com/abstract=4790765</a>.
-                <ul>
-                    <li>Under review at <em>Theoretical Economics</em></li>
-                    <li>Presentation: AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute, SWUFE International Macro-Finance Conference 2024</li>
-                </ul>
-            </li>
-            <li>
-                Dynamic Efficiency Redux: Evidence from China. Feng Dong, Jinpu Li, Haoning Sun, Siqing Wang, 2023. Available at SSRN: <a href="https://ssrn.com/abstract=4642433" target="_blank" rel="noopener noreferrer">https://ssrn.com/abstract=4642433</a>.
-                <ul>
-                    <li>Accepted at <em>China & World Economy</em></li>
-                </ul>
-            </li>
-            <li>
-                Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. Ronghua Sui, Ruize Gao, Jinpu Li*, 2024. Available at SSRN: <a href="https://ssrn.com/abstract=4664864" target="_blank" rel="noopener noreferrer">https://ssrn.com/abstract=4664864</a>.
-                <ul>
-                    <li>R&R at <em>Industrial Management & Data Systems</em></li>
-                </ul>
-            </li>
+            <li>《管理世界》待刊</li>
         </ul>
+    </li>
+    <li>
+        Asset Bubbles in the Data Economy. Feng Dong, Jinpu Li, 2024. (<a href="https://ssrn.com/abstract=4790765" target="_blank" rel="noopener noreferrer">SSRN 4790765</a>).
+        <ul>
+            <li>Under review at <em>Theoretical Economics</em></li>
+            <li>Presentation: AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute, SWUFE International Macro-Finance Conference 2024</li>
+        </ul>
+    </li>
+    <li>
+        Dynamic Efficiency Redux: Evidence from China. Feng Dong, Jinpu Li, Haoning Sun, Siqing Wang, 2023. (<a href="https://ssrn.com/abstract=4642433" target="_blank" rel="noopener noreferrer">SSRN 4642433</a>).
+        <ul>
+            <li>Accepted at <em>China & World Economy</em></li>
+        </ul>
+    </li>
+    <li>
+        Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. Ronghua Sui, Ruize Gao, Jinpu Li*, 2024. (<a href="https://ssrn.com/abstract=4664864" target="_blank" rel="noopener noreferrer">SSRN 4664864</a>).
+        <ul>
+            <li>R&R at <em>Industrial Management & Data Systems</em></li>
+        </ul>
+    </li>
+</ul>
 
       
         <h2>Working in Progress</h2>
