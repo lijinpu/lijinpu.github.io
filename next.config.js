@@ -4,7 +4,6 @@ const { withContentlayer } = require("next-contentlayer")
 const nextConfig = {
   // Optionally, add any other Next.js config below
   reactStrictMode: true,
-  swcMinify: true,
   async headers () {
     return [
       {

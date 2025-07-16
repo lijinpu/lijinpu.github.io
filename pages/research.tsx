@@ -59,6 +59,7 @@ export default function Research() {
         <li>
             “人工智能时代的收入分配与政策权衡：基于任务与代际动态的理论分析”, with 孙浩宁, 董丰.
         </li>
+        <li>Data Empowerment and Bank Credit Risk, with Zhongyang Chen, Zhen Li, Shiying Wen, and Jiawen Yang.</li>
     </ul>
 
     <h2>Books & Book Chapters</h2>

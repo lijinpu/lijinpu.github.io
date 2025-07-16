@@ -1,5 +1,5 @@
 {
-  "name": "shenlu89.github.io",
+  "name": "lijinpu.github.io",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,9 @@
     "lint": "next lint",
     "postinstall": "prisma generate --schema=./db/schema.prisma"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "@giscus/react": "^2.2.8",
     "@heroicons/react": "^2.0.17",
@@ -17,7 +20,7 @@
     "@vercel/analytics": "^0.1.11",
     "contentlayer": "^0.3.1",
     "date-fns": "^2.29.3",
-    "next": "13.2.1",
+    "next": "^15.4.1",
     "next-contentlayer": "^0.3.1",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
