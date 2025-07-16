@@ -1,12 +1,12 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "pipeline": {
+  "tasks": {
     "build": {
       "outputs": [".next/**"]
     },
     "lint": {}
   },
   "globalPassThroughEnv": [
-    "COREPACK_HOME" // <-- 在这里添加这一行
+    "COREPACK_HOME" 
   ]
 }
