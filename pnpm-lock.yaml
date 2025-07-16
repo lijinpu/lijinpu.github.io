@@ -76,7 +76,7 @@ importers:
         specifier: ^10.4.14
         version: 10.4.21(postcss@8.5.6)
       contentlayer:
-        specifier: ^0.3.1
+        specifier: ^0.3.4
         version: 0.3.4(esbuild@0.18.20)
       eslint:
         specifier: 8.28.0
@@ -85,7 +85,7 @@ importers:
         specifier: 13.1.5
         version: 13.1.5(eslint@8.28.0)(typescript@4.9.5)
       next-contentlayer:
-        specifier: ^0.3.1
+        specifier: ^0.3.4
         version: 0.3.4(contentlayer@0.3.4(esbuild@0.18.20))(esbuild@0.18.20)(next@15.4.1(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
       postcss:
         specifier: ^8.4.21
