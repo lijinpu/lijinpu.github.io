@@ -1,12 +1,10 @@
 {
-  "$schema": "https://turbo.build/schema.json",
+  "$schema": "https://turborepo.org/schema.json",
   "tasks": {
     "build": {
-      "outputs": [".next/**"]
-    },
-    "lint": {}
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    }
   },
-  "globalPassThroughEnv": [
-    "COREPACK_HOME" 
-  ]
+  "globalEnv": ["ENABLE_EXPERIMENTAL_COREPACK"]
 }
