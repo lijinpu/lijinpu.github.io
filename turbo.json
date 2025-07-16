@@ -5,5 +5,8 @@
       "outputs": [".next/**"]
     },
     "lint": {}
-  }
+  },
+  "globalPassThroughEnv": [
+    "COREPACK_HOME" 
+  ]
 }
