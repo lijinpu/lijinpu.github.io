@@ -1,12 +1,15 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "pipeline": {
+  "packages": [ // <-- 确保有这个字段
+    "."           // <-- 确保有这一行
+  ],
+  "pipeline": { // <-- 确保有这个字段
     "build": {
       "outputs": [".next/**"]
     },
     "lint": {}
   },
-  "globalPassThroughEnv": [
-    "COREPACK_HOME" 
+  "globalPassThroughEnv": [ // <-- 确保有这个字段
+    "COREPACK_HOME"
   ]
 }
