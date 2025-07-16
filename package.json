@@ -5,7 +5,8 @@
   "packageManager": "pnpm@10.13.1",
   "scripts": {
     "dev": "next dev",
-    "build": "contentlayer build || echo 'Ignore contentlayer error on Windows' && next build",
+    "contentlayer-safe": "sh -c 'contentlayer build || echo \"Ignore contentlayer error\"'",
+    "build": "pnpm run contentlayer-safe && next build",
     "start": "next start",
     "lint": "next lint",
     "postinstall": "prisma generate --schema=./db/schema.prisma"
