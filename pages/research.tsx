@@ -24,10 +24,13 @@ export default function Research() {
         <h2>Working Papers</h2>
 <ul>
     <li>
-        “数字时代的宏观经济学的研究新进展”. 李金璞, 孙浩宁, 汤珂, 董丰*, 2024.
+            [New!] “人工智能时代的收入分配与政策权衡：基于任务与代际动态的理论分析”, 2025. 合作者：董丰, 孙浩宁. 
+        </li>
+    <li>
+        “数字时代的宏观经济学的研究新进展”, 2024. 合作者：孙浩宁, 汤珂, 董丰.
     </li>
     <li>
-        “数据资产泡沫：理论机制与政策权衡”. 李金璞, 孙浩宁*, 汤珂, 董丰, 2024.
+        “数据资产泡沫：理论机制与政策权衡”, 2024. 合作者：孙浩宁, 汤珂, 董丰.
         <ul>
             <li>《管理世界》待刊</li>
         </ul>
@@ -56,9 +59,7 @@ export default function Research() {
       
         <h2>Working in Progress</h2>
     <ul>
-        <li>
-            “人工智能时代的收入分配与政策权衡：基于任务与代际动态的理论分析”, with 孙浩宁, 董丰.
-        </li>
+        <li>Data Quality and Artificial Intelligence Cycles, with Feng Dong and Haoning Sun.</li>
         <li>Data Empowerment and Bank Credit Risk, with Zhongyang Chen, Zhen Li, Shiying Wen, and Jiawen Yang.</li>
     </ul>
 

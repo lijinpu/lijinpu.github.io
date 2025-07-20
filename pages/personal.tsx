@@ -36,7 +36,7 @@ export default function PersonalPage() {
         title="Go (Weiqi)"
         description={
           <>
-            I started learning Go at the age of 7 and eventually reached amateur 5-dan level. While I used to be quite competitive, my interest in sports tournaments has mellowed over time—these days, I&apos;m more likely to spend my spare hours playing music than counting liberties.
+            I&apos;m an amateur Go player. I started learning Go at age 7 and reached an amateur 5-dan level. I also participated in the National Professional Dan Qualification Tournament. In 2017, I was lucky enough to place 5th in Tsinghua University&apos;s Go competition.
           </>
         }
       />
