@@ -59,8 +59,9 @@ export default function Research() {
       
         <h2>Working in Progress</h2>
     <ul>
-        <li>Data Quality and Artificial Intelligence Cycles, with Feng Dong and Haoning Sun.</li>
+        <li>Data Quality and Artificial Intelligence Trap, with Feng Dong and Haoning Sun.</li>
         <li>Data Empowerment and Bank Credit Risk, with Zhongyang Chen, Zhen Li, Shiying Wen, and Jiawen Yang.</li>
+        <li>数据能力与企业创新：来自千万条招聘信息的证据. 合作者：赵慧, 韦楚涵, 汤珂</li>
     </ul>
 
     <h2>Books & Book Chapters</h2>
