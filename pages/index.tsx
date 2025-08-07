@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* 简介段落拆分为两句 */}
       <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl leading-relaxed mb-1">
-        I am Jinpu Li (李金璞), a 4th-year PhD candidate @ Tsinghua University.
+        I am Jinpu Li (李金璞), an econ PhD candidate @ Tsinghua University.
       </p>
       <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl leading-relaxed mb-8">
         My field of interest: data economy, digital economy, and macro-finance.
