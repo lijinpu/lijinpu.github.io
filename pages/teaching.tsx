@@ -6,6 +6,9 @@ export default function Teaching() {
         <div>
         <h2>Teaching Assistant at Tsinghua</h2>
         <p>
+        Intermediate Macroeconomics (30510763) by Prof. Feng Dong. 2025 Fall. 
+        </p>
+        <p>
         Principles of Economics (00510454) by Prof. Feng Dong. 2025 Spring, 2024 Spring, and 2023 Spring.
         </p>
         <p>
