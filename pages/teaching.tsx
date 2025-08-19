@@ -6,6 +6,9 @@ export default function Teaching() {
         <div>
         <h2>Teaching Assistant at Tsinghua</h2>
         <p>
+        Econometrics I (30700922) by Prof. Ke Tang. 2025 Fall.
+        </p>
+        <p>
         Intermediate Macroeconomics (30510763) by Prof. Feng Dong. 2025 Fall. 
         </p>
         <p>

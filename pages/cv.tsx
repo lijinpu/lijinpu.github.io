@@ -105,6 +105,9 @@ export default function CV() {
         <h2>Teaching &nbsp;&nbsp; 教学</h2>
         <ul>
         <li>
+        Econometrics I (30700922) by Prof. Ke Tang. 2025 Fall.
+        </li>
+        <li>
         Intermediate Macroeconomics (30510763) by Prof. Feng Dong. 2025 Fall. 
         </li>
         <li>
