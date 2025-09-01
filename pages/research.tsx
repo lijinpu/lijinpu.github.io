@@ -9,6 +9,7 @@ export default function Research() {
 
          <h3>In Chinese</h3>
             <ul>
+                <li>李金璞, 孙浩宁, 汤珂, 董丰. 数据资产泡沫：理论框架与政策权衡. 管理世界, 2025, 41(09).</li>
                 <li>李金璞, 汤珂. 数据的可信流通：一个理论框架[A]//江小涓主编 (《比较》编辑部主办). 数字经济发展与治理. 北京: 中信出版集团, 2025: 107–120.</li>
                 <li>罗玫, 李金璞, 汤珂. 企业数据资产化：会计确认与价值评估[J]. 清华大学学报(哲学社会科学版), 2023, 38(05): 195-209+226. [注：人大复印报刊资料全文转载]</li>
                 <li>李金璞, 汤珂. 论数据要素市场参与者的培育[J]. 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.</li>
@@ -28,12 +29,6 @@ export default function Research() {
         </li>
     <li>
         “数字时代的宏观经济学的研究新进展”, 2024. 合作者：孙浩宁, 汤珂, 董丰.
-    </li>
-    <li>
-        “数据资产泡沫：理论框架与政策权衡”, 2024. 合作者：孙浩宁, 汤珂, 董丰.
-        <ul>
-            <li>《管理世界》待刊</li>
-        </ul>
     </li>
     <li>
         Asset Bubbles in the Data Economy. Feng Dong, Jinpu Li, 2024. (<a href="https://ssrn.com/abstract=4790765" target="_blank" rel="noopener noreferrer">SSRN 4790765</a>).
