@@ -25,8 +25,9 @@ export default function Research() {
         <h2>Working Papers</h2>
 <ul>
     <li>
-        “人工智能时代的收入分配与政策权衡：基于任务与代际动态的理论分析”, 2025. 合作者：董丰, 孙浩宁. 
-        </li>
+        “人工智能时代的收入分配与政策权衡：基于任务与代际动态的理论分析”, 2025. 合作者：孙浩宁, 董丰. 
+    </li>
+    <li>数据能力与企业创新：来自千万条招聘信息的证据. 合作者：赵慧, 韦楚涵, 汤珂.</li>
     <li>
         “数字时代的宏观经济学的研究新进展”, 2024. 合作者：孙浩宁, 汤珂, 董丰.
     </li>
@@ -55,7 +56,6 @@ export default function Research() {
     <ul>
         <li>Data Quality and Artificial Intelligence Trap, with Feng Dong and Haoning Sun.</li>
         <li>Data Empowerment and Bank Credit Risk, with Zhongyang Chen, Zhen Li, Shiying Wen, and Jiawen Yang.</li>
-        <li>数据能力与企业创新：来自千万条招聘信息的证据. 合作者：赵慧, 韦楚涵, 汤珂</li>
     </ul>
 
     <h2>Books & Book Chapters</h2>
