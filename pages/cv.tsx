@@ -22,11 +22,14 @@ export default function CV() {
 
         <h2>Publications &nbsp;&nbsp; 学术发表</h2>
         <ul>
-                <li>李金璞, 孙浩宁, 汤珂, 董丰. 数据资产泡沫：理论框架与政策权衡[J]. 管理世界, 2025, 41(09): 1-24.</li>
+                <li>李金璞, 孙浩宁*, 汤珂, 董丰. 数据资产泡沫：理论框架与政策权衡[J]. 管理世界, 2025, 41(09): 1-24.</li>
                 <li>李金璞, 汤珂. 数据的可信流通：一个理论框架[A]//江小涓主编 (《比较》编辑部主办). 数字经济发展与治理. 北京: 中信出版集团, 2025: 107–120.</li>
-                <li>罗玫, 李金璞, 汤珂. 企业数据资产化：会计确认与价值评估[J]. 清华大学学报(哲学社会科学版), 2023, 38(05): 195-209+226.</li>
-                <li>李金璞, 汤珂. 论数据要素市场参与者的培育[J]. 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.</li>
-                <li>黄京磊, 李金璞, 汤珂. 数据信托：可信的数据流通模式[J]. 大数据, 2023, 9(02): 67-78.</li>
+                <li>罗玫, 李金璞, 汤珂*. 企业数据资产化：会计确认与价值评估[J]. 清华大学学报(哲学社会科学版), 2023, 38(05): 195-209+226.</li>
+                <li>李金璞, 汤珂*. 论数据要素市场参与者的培育[J]. 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.</li>
+                <li>黄京磊, 李金璞, 汤珂*. 数据信托：可信的数据流通模式[J]. 大数据, 2023, 9(02): 67-78.</li>
+                <li>
+                    Dong, F., Li, J.*, Sun, H., & Wang, S. (2025). Dynamic Efficiency Redux: Evidence from China. <i>China & World Economy</i>, 33(05), 1-27. 
+                </li>
                 <li>Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data empowerment and crash risk. <i>Applied Economics Letters</i>, 1–6. <a href="https://doi.org/10.1080/13504851.2025.2526710" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/13504851.2025.2526710</a></li>
         </ul>
 
@@ -42,10 +45,6 @@ export default function CV() {
 
         <li>
         <a href="https://ssrn.com/abstract=4790765" >Asset Bubbles in the Data Economy</a>, with Feng Dong, 2024. 
-        </li>
-
-        <li>
-        <a href="https://ssrn.com/abstract=4642433">Dynamic Efficiency Redux: Evidence from China</a>, with Feng Dong, Haoning Sun, and Siqing Wang, 2023. 
         </li>
 
         <li>
@@ -122,7 +121,7 @@ export default function CV() {
         <h2>Conferences &nbsp;&nbsp; 学术会议</h2>
         <ul>
         <li>
-        2025: INFORMS 2025 Annual Meeting, The 2025 Modern Risk Society International Risk Conference (MRS2025); 清华大学第788期博士生学术论坛
+        2025: INFORMS 2025 Annual Meeting, The 2025 Modern Risk Society International Risk Conference (MRS2025); 《经济学（季刊）》“人工智能的经济影响：前沿研究与政策启示”专题研讨会, 清华大学第788期博士生学术论坛
         </li>
         <li>
         2024: Asia Meeting of the Econometric Society East & Southeast Asia (AMES), China Financial Research Conference (CFRC), Asian Finance Association Annual Conference (AsianFA), CCER Summer Institute (CCERSI), SWUFE International Macro-Finance Conference, The Consumer Theme Conference “Navigating Chinese Economy: A Demand Perspective”; 第二届“中国数字经济发展论坛”, 第六届“中国发展经济学前沿学术会议”, 清华大学第743期博士生学术论坛
