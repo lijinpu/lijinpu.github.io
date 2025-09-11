@@ -7,7 +7,7 @@ import Link from 'next/link'
 type Props = { lastUpdateISO: string }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const filePath = path.join(process.cwd(), 'pages', 'cv.tsx') // 指向当前简历文件
+  const filePath = path.join(process.cwd(), 'pages', 'cv.tsx') // 当前文件路径
   const mtime = fs.statSync(filePath).mtime.toISOString()
   return {
     props: { lastUpdateISO: mtime },
@@ -16,26 +16,20 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 }
 
 export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof getStaticProps>) {
-  // 统一使用香港时间 HKT
+  // 统一香港时间（HKT）
   const tz = 'Asia/Hong_Kong'
   const d = new Date(lastUpdateISO)
 
-  const en = d.toLocaleDateString('en-US', {
+  const formattedDate = d.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
-    day: '2-digit',
-    timeZone: tz,
-  })
-  const zh = d.toLocaleDateString('zh-CN', {
-    year: 'numeric',
-    month: '2-digit',
     day: '2-digit',
     timeZone: tz,
   })
 
   return (
     <div className="min-h-screen flex flex-col relative max-w-none prose dark:prose-invert mx-auto px-4">
-      {/* 主体内容：flex-1 确保 footer 固定在页面底部 */}
+      {/* 主体内容 */}
       <main className="flex-1">
         <h1>Curriculum Vitae &nbsp;&nbsp; 个人简历</h1>
 
@@ -140,9 +134,9 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
         </div>
       </main>
 
-      {/* 页脚：居中、统一 HKT 时间 */}
+      {/* 底部居中，只显示英文时间 */}
       <footer className="mt-8 w-full text-center text-gray-400 text-sm">
-        Last update: {en}（{zh} HKT）
+        Last update: {formattedDate}
       </footer>
     </div>
   )
