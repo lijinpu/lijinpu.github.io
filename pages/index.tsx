@@ -24,7 +24,7 @@ export default function Home() {
         I am Jinpu Li (李金璞), an econ PhD candidate @ Tsinghua University.
       </p>
       <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl leading-relaxed mb-8">
-        My field of interest: data economy, digital economy, and macro-finance.
+        My field of interest: Data Economy, Economics of AI, and Macro-Finance.
       </p>
 
       {/* 引言 */}
