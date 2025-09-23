@@ -43,7 +43,7 @@ export default function Research() {
     <li>
         Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. Ronghua Sui, Ruize Gao, Jinpu Li*, 2024. (<a href="https://ssrn.com/abstract=4664864" target="_blank" rel="noopener noreferrer">SSRN 4664864</a>).
         <ul>
-            <li>Accept by <em>Industrial Management & Data Systems</em></li>
+            <li>Accepted by <em>Industrial Management & Data Systems</em></li>
         </ul>
     </li>
 </ul>
