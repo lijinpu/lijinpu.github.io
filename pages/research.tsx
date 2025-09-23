@@ -43,7 +43,7 @@ export default function Research() {
     <li>
         Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. Ronghua Sui, Ruize Gao, Jinpu Li*, 2024. (<a href="https://ssrn.com/abstract=4664864" target="_blank" rel="noopener noreferrer">SSRN 4664864</a>).
         <ul>
-            <li>Minor revision at <em>Industrial Management & Data Systems</em></li>
+            <li>Accept by <em>Industrial Management & Data Systems</em></li>
         </ul>
     </li>
 </ul>
@@ -51,7 +51,7 @@ export default function Research() {
       
         <h2>Working in Progress</h2>
     <ul>
-        <li>Data Quality and Artificial Intelligence Trap, with Feng Dong and Haoning Sun.</li>
+        <li>The Data Trap: When AI Fails?, with Feng Dong and Haoning Sun.</li>
         <li>Data Empowerment and Bank Credit Risk, with Zhongyang Chen, Zhen Li, Shiying Wen, and Jiawen Yang.</li>
     </ul>
 
