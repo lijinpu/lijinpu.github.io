@@ -21,7 +21,7 @@ export default function Research() {
                 <li>
                     Dong, F., Li, J.*, Sun, H., & Wang, S. (2025). Dynamic Efficiency Redux: Evidence from China. <i>China & World Economy</i>, 33(05), 196-222. 
                 </li>
-                <li>Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data empowerment and crash risk. <i>Applied Economics Letters</i>, 1–6. <a href="https://doi.org/10.1080/13504851.2025.2526710" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/13504851.2025.2526710</a></li>
+                <li>Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data Empowerment and Crash Risk. <i>Applied Economics Letters</i>, 1–6. <a href="https://doi.org/10.1080/13504851.2025.2526710" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/13504851.2025.2526710</a></li>
             </ul>
        
 
