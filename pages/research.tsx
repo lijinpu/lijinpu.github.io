@@ -26,11 +26,7 @@ export default function Research() {
             </li>
             <li>
               Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data Empowerment and Crash Risk. 
-              <i>Applied Economics Letters</i>, Published Online. 
-
-              <a href="https://doi.org/10.1080/13504851.2025.2526710" target="_blank" rel="noopener noreferrer">
-                DOI: 10.1080/13504851.2025.2526710
-              </a>
+              <i>Applied Economics Letters</i>, Published Online. DOI: 10.1080/13504851.2025.2526710
             </li>
             </ul>
        
