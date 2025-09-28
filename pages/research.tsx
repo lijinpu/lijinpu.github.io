@@ -21,7 +21,16 @@ export default function Research() {
                 <li>
                     Dong, F., Li, J.*, Sun, H., & Wang, S. (2025). Dynamic Efficiency Redux: Evidence from China. <i>China & World Economy</i>, 33(05), 196-222. 
                 </li>
-                <li>Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data Empowerment and Crash Risk. <i>Applied Economics Letters</i>, 1–6. <a href="https://doi.org/10.1080/13504851.2025.2526710" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/13504851.2025.2526710</a></li>
+                 <li>
+                Sui, R., Gao, R., & Li, J.* (2025). Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs, <i>Industrial Management & Data Systems</i>, Published Online. DOI: 10.1108/IMDS-04-2025-0497
+            </li>
+            <li>
+              Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data Empowerment and Crash Risk. 
+              <i>Applied Economics Letters</i>, Published Online. 
+              <a href="https://doi.org/10.1080/13504851.2025.2526710" target="_blank" rel="noopener noreferrer">
+                DOI: 10.1080/13504851.2025.2526710
+              </a>
+            </li>
             </ul>
        
 
@@ -38,12 +47,6 @@ export default function Research() {
         Asset Bubbles in the Data Economy. Feng Dong, Jinpu Li, 2024. (<a href="https://ssrn.com/abstract=4790765" target="_blank" rel="noopener noreferrer">SSRN 4790765</a>).
         <ul>
             <li>Presentation: AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute, SWUFE International Macro-Finance Conference 2024</li>
-        </ul>
-    </li>
-    <li>
-        Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. Ronghua Sui, Ruize Gao, Jinpu Li*, 2024. (<a href="https://ssrn.com/abstract=4664864" target="_blank" rel="noopener noreferrer">SSRN 4664864</a>).
-        <ul>
-            <li>Accepted by <em>Industrial Management & Data Systems</em></li>
         </ul>
     </li>
 </ul>

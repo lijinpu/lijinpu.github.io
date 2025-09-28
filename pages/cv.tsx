@@ -52,10 +52,13 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
             <li>黄京磊, 李金璞, 汤珂*. 数据信托：可信的数据流通模式[J]. 大数据, 2023, 9(02): 67-78.</li>
             <li>Dong, F., Li, J.*, Sun, H., & Wang, S. (2025). Dynamic Efficiency Redux: Evidence from China. <i>China & World Economy</i>, 33(05), 196-222.</li>
             <li>
+                Sui, R., Gao, R., & Li, J.* (2025). Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs, <i>Industrial Management & Data Systems</i>, Published Online. DOI: 10.1108/IMDS-04-2025-0497
+            </li>
+            <li>
               Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data Empowerment and Crash Risk. 
-              <i>Applied Economics Letters</i>, 1–6. 
+              <i>Applied Economics Letters</i>, Published Online. 
               <a href="https://doi.org/10.1080/13504851.2025.2526710" target="_blank" rel="noopener noreferrer">
-                https://doi.org/10.1080/13504851.2025.2526710
+                DOI: 10.1080/13504851.2025.2526710
               </a>
             </li>
           </ul>
@@ -68,11 +71,6 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
             <li>
               <a href="https://ssrn.com/abstract=4790765">Asset Bubbles in the Data Economy</a>, with Feng Dong, 2024.
             </li>
-            <li>
-              <a href="https://ssrn.com/abstract=4664864">
-                Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs
-              </a>, with Ronghua Sui and Ruize Gao, 2024.
-            </li>
           </ul>
 
           <h2>Books & Book Chapters &nbsp;&nbsp; 专著及书目章节</h2>
@@ -84,8 +82,9 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
 
           <h2>Grants & Rewards &nbsp;&nbsp; 资助与获奖</h2>
           <ul>
+            <li>国家奖学金 (China National Scholarship), 2025</li>
             <li>国家建设高水平大学公派研究生项目 (China Scholarship Council (CSC) Scholarship), 2024</li>
-            <li>数炬计划——中国数据要素新锐学者 (Data Torch Plan – China Data Factor Emerging Scholars), 2024</li>
+            <li>“数炬计划——中国数据要素新锐学者”三等奖 (Data Torch Plan – China Data Factor Emerging Scholars, Third Prize), 2024</li>
             <li>“清华之友——昆华英才奖学金”综合优秀奖 (Kunhua Talent Scholarship, Tsinghua University), 2024</li>
             <li>清华大学优秀助教 (Excellent Teaching Assistant, Tsinghua University), 2023</li>
             <li>“清华之友——启东英才奖学金”综合优秀奖 (Qidong Talent Scholarship, Tsinghua University), 2023</li>
