@@ -52,7 +52,6 @@ export default function Research() {
         <h2>Working in Progress</h2>
     <ul>
         <li>The Data Trap: When AI Fails?, with Feng Dong and Haoning Sun.</li>
-        <li>Data Empowerment and Bank Credit Risk, with Zhongyang Chen, Zhen Li, Shiying Wen, and Jiawen Yang.</li>
     </ul>
 
     <h2>Books & Book Chapters</h2>
