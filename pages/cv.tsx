@@ -101,7 +101,9 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
           </ul>
 
           <h2>Conferences &nbsp;&nbsp; 学术会议</h2>
-          <small style="color:gray;">*: presented by coauthors</small>
+          <small style={{ color: 'gray', fontSize: '0.85rem' }}>
+          *: presented by coauthors
+          </small>
           <ul>
             <li>
               2025: INFORMS 2025 Annual Meeting, The 2025 Modern Risk Society International Risk Conference (MRS2025); 第二十届中国管理学年会, 第二十五届中国经济学年会 (中国女经济学者专场)*,中国数字经济联盟2025年会*, 第二届全国数字经济学术年会*,《经济学（季刊）》“人工智能的经济影响：前沿研究与政策启示”专题研讨会*, 清华大学第788期博士生学术论坛
