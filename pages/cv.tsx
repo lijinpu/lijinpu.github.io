@@ -101,24 +101,25 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
           </ul>
 
           <h2>Conferences &nbsp;&nbsp; 学术会议</h2>
+          <small style="color:gray;">*: presented by coauthors</small>
           <ul>
             <li>
-              2025: INFORMS 2025 Annual Meeting, The 2025 Modern Risk Society International Risk Conference (MRS2025); 第二十届“中国管理学年会”, 第二届“全国数字经济学术年会”,《经济学（季刊）》“人工智能的经济影响：前沿研究与政策启示”专题研讨会, 清华大学第788期博士生学术论坛
+              2025: INFORMS 2025 Annual Meeting, The 2025 Modern Risk Society International Risk Conference (MRS2025); 第二十届中国管理学年会, 第二十五届中国经济学年会 (中国女经济学者专场)*,中国数字经济联盟2025年会*, 第二届全国数字经济学术年会*,《经济学（季刊）》“人工智能的经济影响：前沿研究与政策启示”专题研讨会*, 清华大学第788期博士生学术论坛
             </li>
             <li>
               2024: Asia Meeting of the Econometric Society East & Southeast Asia (AMES),
               China Financial Research Conference (CFRC),
               Asian Finance Association Annual Conference (AsianFA),
               CCER Summer Institute (CCERSI),
-              SWUFE International Macro-Finance Conference,
+              SWUFE International Macro-Finance Conference*,
               The Consumer Theme Conference “Navigating Chinese Economy: A Demand Perspective”;
-              第二届“中国数字经济发展论坛”, 第六届“中国发展经济学前沿学术会议”, 清华大学第743期博士生学术论坛
+              第二届中国数字经济发展论坛, 第六届中国发展经济学前沿学术会议, 清华大学第743期博士生学术论坛
             </li>
           </ul>
 
           <h2>Service &nbsp;&nbsp; 学术服务</h2>
           <ul>
-            <li>Referee: Economic Modelling, China & World Economy, International Journal of Economic Theory, Industrial Management & Data Systems</li>
+            <li>Referee: <i>China Economic Review</i>, <i>Economic Modelling</i>, <i>China & World Economy</i>, <i>International Journal of Economic Theory</i>, <i>Industrial Management & Data Systems</i></li>
           </ul>
 
           <h2>Non-Academic Publications &nbsp;&nbsp; 杂志或媒体文章</h2>
