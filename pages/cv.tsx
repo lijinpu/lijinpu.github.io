@@ -62,9 +62,9 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
 
           <h2>Working Papers &nbsp;&nbsp; 工作论文</h2>
           <ul>
-            <li>“人工智能时代的收入分配与政策权衡：基于任务与代际动态的理论分析”, 2025. 合作者：孙浩宁, 董丰.</li>
-            <li>“数据能力与企业创新：来自千万条招聘信息的证据”, 2025. 合作者：赵慧, 韦楚涵, 汤珂.</li>
-            <li>“数字时代的宏观经济学的研究新进展”, 2024. 合作者：孙浩宁, 汤珂, 董丰.</li>
+            <li>人工智能时代的收入分配与政策权衡：基于任务与代际动态的理论分析, 2025. 合作者：孙浩宁, 董丰.</li>
+            <li>数据能力与企业创新：来自千万条招聘信息的证据, 2025. 合作者：赵慧, 韦楚涵, 汤珂.</li>
+            <li>数字时代的宏观经济学的研究新进展, 2024. 合作者：孙浩宁, 汤珂, 董丰.</li>
             <li>
               <a href="https://ssrn.com/abstract=4790765">Data Asset, Liquidity, and Misallocation</a>, with Feng Dong, 2024.
             </li>
@@ -72,9 +72,9 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
 
           <h2>Books & Book Chapters &nbsp;&nbsp; 专著及书目章节</h2>
           <ul>
-            <li>“数据要素的可信流通”. 汤珂和吴志雄主编, 人民出版社, 2024年6月. 撰写第三章《数据可信流通框架》.</li>
-            <li>“数据资产化”. 汤珂主编, 人民出版社, 2023年8月. 撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》.</li>
-            <li>“数据经济学”. 汤珂, 熊巧琴, 李金璞, 屈阳, 清华大学出版社, 2023年1月第1版, 2024年1月第2版.</li>
+            <li>数据要素的可信流通. 汤珂和吴志雄主编, 人民出版社, 2024年6月. 撰写第三章《数据可信流通框架》.</li>
+            <li>数据资产化. 汤珂主编, 人民出版社, 2023年8月. 撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》.</li>
+            <li>数据经济学. 汤珂, 熊巧琴, 李金璞, 屈阳, 清华大学出版社, 2023年1月第1版, 2024年1月第2版.</li>
           </ul>
 
           <h2>Grants & Rewards &nbsp;&nbsp; 资助与获奖</h2>
@@ -126,8 +126,8 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
 
           <h2>Non-Academic Publications &nbsp;&nbsp; 杂志或媒体文章</h2>
           <ul>
-            <li>“加快培育统一的数据市场”. 李金璞, 汤珂. 清华金融评论, 2025, 139(06), 39-41.</li>
-            <li>“基于数据要素价值链评估企业数据资产”. 赵丽芳, 林立, 李金璞, 企业管理, 2023(12), 88-91.</li>
+            <li>加快培育统一的数据市场. 李金璞, 汤珂. 清华金融评论, 2025, 139(06), 39-41.</li>
+            <li>基于数据要素价值链评估企业数据资产. 赵丽芳, 林立, 李金璞, 企业管理, 2023(12), 88-91.</li>
           </ul>
         </div>
       </main>
