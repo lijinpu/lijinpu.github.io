@@ -40,9 +40,12 @@ export default function Research() {
     <li>
         “数字时代的宏观经济学的研究新进展”, 2024. 合作者：孙浩宁, 汤珂, 董丰.
     </li>
+    <li>The Data Trap: When AI Fails?, Feng Dong, Jinpu Li, and Haoning Sun, 2025.
+    </li>
     <li>
-        Asset Bubbles in the Data Economy. Feng Dong, Jinpu Li, 2024. (<a href="https://ssrn.com/abstract=4790765" target="_blank" rel="noopener noreferrer">SSRN 4790765</a>).
+        Data Asset, Liquidity, and Misallocation. Feng Dong, Jinpu Li, 2024.
         <ul>
+            <li>Previously titled "Asset Bubbles in the Data Economy"</li>
             <li>Presentation: AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute, SWUFE International Macro-Finance Conference 2024</li>
         </ul>
     </li>
@@ -51,7 +54,7 @@ export default function Research() {
       
         <h2>Working in Progress</h2>
     <ul>
-        <li>The Data Trap: When AI Fails?, with Feng Dong and Haoning Sun.</li>
+        
     </ul>
 
     <h2>Books & Book Chapters</h2>

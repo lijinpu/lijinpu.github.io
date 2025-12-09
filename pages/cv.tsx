@@ -66,7 +66,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
             <li>“数据能力与企业创新：来自千万条招聘信息的证据”, 2025. 合作者：赵慧, 韦楚涵, 汤珂.</li>
             <li>“数字时代的宏观经济学的研究新进展”, 2024. 合作者：孙浩宁, 汤珂, 董丰.</li>
             <li>
-              <a href="https://ssrn.com/abstract=4790765">Asset Bubbles in the Data Economy</a>, with Feng Dong, 2024.
+              <a href="https://ssrn.com/abstract=4790765">Data Asset, Liquidity, and Misallocation</a>, with Feng Dong, 2024.
             </li>
           </ul>
 
@@ -106,7 +106,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
           </small>
           <ul>
             <li>
-              2025: INFORMS 2025 Annual Meeting, The 2025 Modern Risk Society International Risk Conference (MRS2025); 第二十届中国管理学年会, 第二十五届中国经济学年会 (中国女经济学者专场)*,中国数字经济联盟2025年会*, 第二届全国数字经济学术年会*,《经济学（季刊）》“人工智能的经济影响：前沿研究与政策启示”专题研讨会*, 清华大学第788期博士生学术论坛
+              2025: INFORMS 2025 Annual Meeting, The 2025 Modern Risk Society International Risk Conference (MRS2025), Macroeconomic Growth Outlook Forum held by Tsinghua SEM*; 第二十届中国管理学年会, 第二十五届中国经济学年会 (中国女经济学者专场)*,中国数字经济联盟2025年会, 第二届全国数字经济学术年会*,《经济学（季刊）》“人工智能的经济影响：前沿研究与政策启示”专题研讨会*, 清华大学第788期博士生学术论坛
             </li>
             <li>
               2024: Asia Meeting of the Econometric Society East & Southeast Asia (AMES),
