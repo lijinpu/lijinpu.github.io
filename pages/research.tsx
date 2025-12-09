@@ -35,18 +35,18 @@ export default function Research() {
         <h2>Working Papers</h2>
 <ul>
     <li>
-        &ldquo;人工智能时代的收入分配与政策权衡：基于任务与代际动态的理论分析&rdquo;, 2025. 合作者：孙浩宁, 董丰. 
+        人工智能时代的收入分配与政策权衡：基于任务与代际动态的理论分析, 2025. 合作者：孙浩宁, 董丰. 
     </li>
-    <li>&ldquo;数据能力与企业创新：来自千万条招聘信息的证据&rdquo;, 2025. 合作者：赵慧, 韦楚涵, 汤珂.</li>
+    <li>数据能力与企业创新：来自千万条招聘信息的证据, 2025. 合作者：赵慧, 韦楚涵, 汤珂.</li>
     <li>
-        &ldquo;数字时代的宏观经济学的研究新进展&rdquo;, 2024. 合作者：孙浩宁, 汤珂, 董丰.
+        数字时代的宏观经济学的研究新进展, 2024. 合作者：孙浩宁, 汤珂, 董丰.
     </li>
     <li>The Data Trap: When AI Fails?, Feng Dong, Jinpu Li, and Haoning Sun, 2025.
     </li>
     <li>
         Data Asset, Liquidity, and Misallocation. Feng Dong, Jinpu Li, 2024.
         <ul>
-            <li>Previously titled &ldquo;Asset Bubbles in the Data Economy&rdquo;</li>
+            <li>Previously titled <i>Bubbly Data</i> </li>
             <li>Presentation: AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute, SWUFE International Macro-Finance Conference 2024</li>
         </ul>
     </li>
@@ -56,13 +56,13 @@ export default function Research() {
     <h2>Books & Book Chapters</h2>
     <ul>
         <li>
-            汤珂和吴志雄主编. &ldquo;数据要素的可信流通&rdquo;. 人民出版社, 2024年6月. 撰写第三章《数据可信流通框架》. ISBN: 978-7-010-26615-2.
+            汤珂和吴志雄主编. 数据要素的可信流通. 人民出版社, 2024年6月. 撰写第三章《数据可信流通框架》. ISBN: 978-7-010-26615-2.
         </li>
         <li>
-            汤珂主编. &ldquo;数据资产化&rdquo;. 人民出版社, 2023年8月. 撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》. ISBN: 978-7-010-25804-1.
+            汤珂主编. 数据资产化. 人民出版社, 2023年8月. 撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》. ISBN: 978-7-010-25804-1.
         </li>
         <li>
-            汤珂, 熊巧琴, 李金璞, 屈阳. &ldquo;数据经济学&rdquo;. 清华大学出版社, 2023年1月. ISBN: 978-7-302-62351-9. 2024年1月第2版.
+            汤珂, 熊巧琴, 李金璞, 屈阳. 数据经济学. 清华大学出版社, 2023年1月. ISBN: 978-7-302-62351-9. 2024年1月第2版.
         </li>
     </ul>
         
