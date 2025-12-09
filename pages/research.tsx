@@ -51,11 +51,6 @@ export default function Research() {
     </li>
 </ul>
 
-      
-        <h2>Working in Progress</h2>
-    <ul>
-        
-    </ul>
 
     <h2>Books & Book Chapters</h2>
     <ul>
