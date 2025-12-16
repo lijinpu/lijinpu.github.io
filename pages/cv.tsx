@@ -82,6 +82,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
           <h2>Grants & Rewards &nbsp;&nbsp; 资助与获奖</h2>
           <ul>
             <li>国家奖学金 (China National Scholarship), 2025</li>
+            <li>蒋南翔奖学金 (Jiang Nanxiang Award), 2025</li>
             <li>国家建设高水平大学公派研究生项目 (China Scholarship Council (CSC) Scholarship), 2024</li>
             <li>“数炬计划——中国数据要素新锐学者”三等奖 (Data Torch Plan – China Data Factor Emerging Scholars, Third Prize), 2024</li>
             <li>“清华之友——昆华英才奖学金”综合优秀奖 (Kunhua Talent Scholarship, Tsinghua University), 2024</li>
