@@ -41,6 +41,9 @@ export default function Research() {
     <li>
         数字时代的宏观经济学的研究新进展, 2024. 合作者：孙浩宁, 汤珂, 董丰.
     </li>
+    <li>
+        Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026.
+    </li>
     <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2025.
     </li>
     <li>

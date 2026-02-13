@@ -65,6 +65,9 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
             <li>人工智能时代的收入分配与政策权衡：基于任务与代际动态的理论分析, 2025. 合作者：孙浩宁, 董丰.</li>
             <li>数据能力与企业创新：来自千万条招聘信息的证据, 2025. 合作者：赵慧, 韦楚涵, 汤珂.</li>
             <li>数字时代的宏观经济学的研究新进展, 2024. 合作者：孙浩宁, 汤珂, 董丰.</li>
+            <li>
+              Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026.
+            </li>
             <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2025.
             </li>
             <li>
