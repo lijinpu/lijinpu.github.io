@@ -44,11 +44,9 @@ export default function Research() {
     <li>
         Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026.
     </li>
-    <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2026. 
-        <a
-  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6259958"
-  target="_blank"
-  rel="noopener noreferrer"
+    <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6259958"
+    target="_blank"
+    rel="noopener noreferrer"
 >
   [SSRN link]
 </a>

@@ -68,7 +68,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
             <li>
               Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026.
             </li>
-            <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2025.
+            <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2026.
             </li>
             <li>
               Data Asset, Liquidity, and Misallocation. Feng Dong, Jinpu Li, 2024.
