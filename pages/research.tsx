@@ -44,10 +44,23 @@ export default function Research() {
     <li>
         Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026.
     </li>
-    <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2025.
+    <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2026. 
+        <a
+  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6259958"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  [SSRN link]
+</a>
     </li>
     <li>
-        Data Asset, Liquidity, and Misallocation. Feng Dong, Jinpu Li, 2024.
+        Data Asset, Liquidity, and Misallocation. Feng Dong, Jinpu Li, 2024. <a
+  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4790765"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  [SSRN link]
+</a>
         <ul>
             <li>Previously titled <i>Bubbly Data</i> </li>
             <li>Presentation: AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute, SWUFE International Macro-Finance Conference 2024</li>
