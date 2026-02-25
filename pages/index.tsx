@@ -29,7 +29,7 @@ export default function Home() {
 
       {/* 引言 */}
       <p className="text-gray-600 dark:text-gray-400 mt-6 italic">
-        &quot;What is real is rational, and what is rational is real.&quot; — Hegel
+        &quot;Intelligence is the ability to adapt to change.&quot; — Stephen Hawking
       </p>
     </div>
   )
