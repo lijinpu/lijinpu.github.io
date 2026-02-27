@@ -46,10 +46,8 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
           <h2>Publications &nbsp;&nbsp; 学术发表</h2>
           <ul>
             <li>李金璞, 孙浩宁*, 汤珂, 董丰. 数据资产泡沫：理论框架与政策权衡[J]. 管理世界, 2025, 41(09): 1-24.</li>
-            <li>李金璞, 汤珂. 数据的可信流通：一个理论框架[A]//江小涓主编 (《比较》编辑部主办). 数字经济发展与治理. 北京: 中信出版集团, 2025: 107–120.</li>
             <li>罗玫, 李金璞, 汤珂*. 企业数据资产化：会计确认与价值评估[J]. 清华大学学报(哲学社会科学版), 2023, 38(05): 195-209+226.</li>
             <li>李金璞, 汤珂*. 论数据要素市场参与者的培育[J]. 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.</li>
-            <li>黄京磊, 李金璞, 汤珂*. 数据信托：可信的数据流通模式[J]. 大数据, 2023, 9(02): 67-78.</li>
             <li>Dong, F., Li, J.*, Sun, H., & Wang, S. (2025). Dynamic Efficiency Redux: Evidence from China. <i>China & World Economy</i>, 33(05), 196-222.</li>
             <li>
                 Sui, R., Gao, R., & Li, J.* (2025). Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs, <i>Industrial Management & Data Systems</i>, Published Online. DOI: 10.1108/IMDS-04-2025-0497
@@ -130,10 +128,12 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
             <li>Referee: <i>China Economic Review</i>, <i>Economic Modelling</i>, <i>China & World Economy</i>, <i>International Journal of Economic Theory</i>, <i>Industrial Management & Data Systems</i></li>
           </ul>
 
-          <h2>Non-Academic Publications &nbsp;&nbsp; 杂志或媒体文章</h2>
+          <h2>Other Publications &nbsp;&nbsp; 杂志、媒体等其他发表</h2>
           <ul>
-            <li>加快培育统一的数据市场. 李金璞, 汤珂. 清华金融评论, 2025, 139(06), 39-41.</li>
-            <li>基于数据要素价值链评估企业数据资产. 赵丽芳, 林立, 李金璞, 企业管理, 2023(12), 88-91.</li>
+           <li>李金璞, 汤珂. 数据的可信流通：一个理论框架[A]//江小涓主编 (《比较》编辑部主办). 数字经济发展与治理. 北京: 中信出版集团, 2025: 107–120.</li>
+           <li>李金璞, 汤珂. 加快培育统一的数据市场[J]. 清华金融评论, 2025, (06):39-41. </li>
+           <li>赵丽芳, 林立, 李金璞. 基于数据要素价值链评估企业数据资产[J]. 企业管理, 2023, (12): 88-91.</li>
+           <li>黄京磊, 李金璞, 汤珂*. 数据信托：可信的数据流通模式[J]. 大数据, 2023, 9(02): 67-78. [注：期刊2023年高被引论文]</li>
           </ul>
         </div>
       </main>
