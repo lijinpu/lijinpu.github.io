@@ -2,9 +2,9 @@ import Link from 'next/link'
 export default function Teaching() {
   return (
     <div className="flex flex-col relative max-w-none prose dark:prose-invert">
-        <h1>Teaching</h1>
+        <h1>Teaching &nbsp;&nbsp; 教学</h1>
         <div>
-        <h2>Teaching Assistant at Tsinghua</h2>
+        <h2>Teaching Assistant at Tsinghua &nbsp;&nbsp; 助教经历@清华大学</h2>
         <p>
         Econometrics I (30700922) by Prof. Ke Tang. 2025 Fall.
         </p>

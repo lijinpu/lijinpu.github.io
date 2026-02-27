@@ -6,16 +6,16 @@ export default function Research() {
         <h1>Research</h1>
         <div>
 
-        <h2>Publications</h2>
+        <h2>Publications &nbsp;&nbsp; 学术发表</h2> 
 
-         <h3>In Chinese</h3>
+         <h3>In Chinese &nbsp;&nbsp; 中文发表</h3>
             <ul>
                 <li>李金璞, 孙浩宁*, 汤珂, 董丰. 数据资产泡沫：理论框架与政策权衡[J]. 管理世界, 2025, 41(09): 1-24. [注：《社会科学文摘》2025年11期转载]</li>
                 <li>罗玫, 李金璞, 汤珂*. 企业数据资产化：会计确认与价值评估[J]. 清华大学学报(哲学社会科学版), 2023, 38(05): 195-209+226. [注：人大复印报刊资料全文转载]</li>
                 <li>李金璞, 汤珂*. 论数据要素市场参与者的培育[J]. 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.</li>
             </ul>
 
-            <h3>In English</h3>
+            <h3>In English &nbsp;&nbsp; 英文发表</h3>
             <ul>
                 <li>
                     Dong, F., Li, J.*, Sun, H., & Wang, S. (2025). Dynamic Efficiency Redux: Evidence from China. <i>China & World Economy</i>, 33(05), 196-222. 
@@ -30,7 +30,7 @@ export default function Research() {
             </ul>
        
 
-        <h2>Working Papers</h2>
+        <h2>Working Papers &nbsp;&nbsp; 工作论文</h2>
 <ul>
     <li>
         人工智能时代的收入分配与政策权衡：基于任务与代际动态的理论分析, 2025. 合作者：孙浩宁, 董丰. 
@@ -65,7 +65,7 @@ export default function Research() {
 </ul>
 
 
-    <h2>Books & Book Chapters</h2>
+    <h2>Books & Book Chapters &nbsp;&nbsp; 专著及书目章节</h2>
     <ul>
         <li>
             汤珂和吴志雄主编. 数据要素的可信流通. 人民出版社, 2024年6月. 撰写第三章《数据可信流通框架》. ISBN: 978-7-010-26615-2.
