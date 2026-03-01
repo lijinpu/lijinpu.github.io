@@ -131,6 +131,14 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
            <li>黄京磊, 李金璞, 汤珂*. 数据信托：可信的数据流通模式[J]. 大数据, 2023, 9(02): 67-78. [注：期刊2023年高被引论文]</li>
            <li>赵丽芳, 林立, 李金璞. 基于数据要素价值链评估企业数据资产[J]. 企业管理, 2023, (12): 88-91.</li> 
           </ul>
+
+
+          <h2>Academic Services &nbsp;&nbsp; 学术服务</h2>
+          <ul>
+            <li>Reviewer: <i>China Economic Review</i>,<i>China & World Economy</i>, <i>Economic Modeling</i>, <i>International Journal of Economic Theory</i>, <i>Industrial Management & Data Systems</i></li>
+          </ul>
+
+
           
         </div>
       </main>
