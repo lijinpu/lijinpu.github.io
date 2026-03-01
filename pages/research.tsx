@@ -80,10 +80,11 @@ export default function Research() {
 
     <h2>Other Publications &nbsp;&nbsp; 杂志、媒体等其他发表</h2>
           <ul>
+           <li>Gao, R., Xiao, F., Li, J., & Cui, S.* (2026). Textual Semantics and Machine Learning Methods for Data Product Pricing. <i>The Review of Mathematical Economics</i>, 1(01), 129–167. DOI: 10.4310/RME.260221154937</li>
            <li>李金璞, 汤珂. 数据的可信流通：一个理论框架[A]//江小涓主编 (《比较》编辑部主办). 数字经济发展与治理. 北京: 中信出版集团, 2025: 107–120.</li>
            <li>李金璞, 汤珂. 加快培育统一的数据市场[J]. 清华金融评论, 2025, (06):39-41. </li>
-           <li>赵丽芳, 林立, 李金璞. 基于数据要素价值链评估企业数据资产[J]. 企业管理, 2023, (12): 88-91.</li>
            <li>黄京磊, 李金璞, 汤珂*. 数据信托：可信的数据流通模式[J]. 大数据, 2023, 9(02): 67-78. [注：期刊2023年高被引论文]</li>
+           <li>赵丽芳, 林立, 李金璞. 基于数据要素价值链评估企业数据资产[J]. 企业管理, 2023, (12): 88-91.</li> 
           </ul>
         
         </div>
