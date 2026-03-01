@@ -99,7 +99,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
           <ul>
             <li>Econometrics I (30700922) by Prof. Ke Tang. 2025 Fall.</li>
             <li>Intermediate Macroeconomics (30510763) by Prof. Feng Dong. 2025 Fall.</li>
-            <li>Principles of Economics (00510454) by Prof. Feng Dong. 2025 Spring, 2024 Spring, and 2023 Spring.</li>
+            <li>Principles of Economics (00510454) by Prof. Feng Dong. 2026 Spring, 2025 Spring, 2024 Spring, and 2023 Spring.</li>
             <li>Econometrics II (30700932) by Prof. Sainan Jin. 2024 Spring, 2023 Spring, and 2022 Spring.</li>
             <li>Introduction to Financial Economics (40701113) by Prof. Ke Tang. 2022 Fall, 2021 Fall, and 2020 Fall.</li>
           </ul>
@@ -123,7 +123,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
             </li>
           </ul>
 
-          <h2>Other Publications &nbsp;&nbsp; 杂志、媒体等其他发表</h2>
+          <h2>Other Publications &nbsp;&nbsp; 其他发表</h2>
           <ul>
            <li>Gao, R., Xiao, F., Li, J., & Cui, S.* (2026). Textual Semantics and Machine Learning Methods for Data Product Pricing. <i>The Review of Mathematical Economics</i>, 1(01), 129–167. DOI: 10.4310/RME.260221154937</li>
            <li>李金璞, 汤珂. 数据的可信流通：一个理论框架[A]//江小涓主编 (《比较》编辑部主办). 数字经济发展与治理. 北京: 中信出版集团, 2025: 107–120.</li>

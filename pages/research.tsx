@@ -78,7 +78,7 @@ export default function Research() {
         </li>
     </ul>
 
-    <h2>Other Publications &nbsp;&nbsp; 杂志、媒体等其他发表</h2>
+    <h2>Other Publications &nbsp;&nbsp; 其他发表</h2>
           <ul>
            <li>Gao, R., Xiao, F., Li, J., & Cui, S.* (2026). Textual Semantics and Machine Learning Methods for Data Product Pricing. <i>The Review of Mathematical Economics</i>, 1(01), 129–167. DOI: 10.4310/RME.260221154937</li>
            <li>李金璞, 汤珂. 数据的可信流通：一个理论框架[A]//江小涓主编 (《比较》编辑部主办). 数字经济发展与治理. 北京: 中信出版集团, 2025: 107–120.</li>
