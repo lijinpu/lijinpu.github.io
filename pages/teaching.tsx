@@ -4,7 +4,10 @@ export default function Teaching() {
     <div className="flex flex-col relative max-w-none prose dark:prose-invert">
         <h1>Teaching &nbsp;&nbsp; 教学</h1>
         <div>
-        <h2>Teaching Assistant at Tsinghua &nbsp;&nbsp; 助教经历@清华大学</h2>
+        <h2>Teaching Assistant at Tsinghua &nbsp;&nbsp; 助教经历@清华大学</h2>  
+        <p>
+        Academic Research Training for Xuetang Class (40512742) by Prof. Feng Dong & Binzhen Wu. 2026 Summer.
+        </p>
         <p>
         Econometrics I (30700922) by Prof. Ke Tang. 2025 Fall.
         </p>
