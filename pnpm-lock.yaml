@@ -23,6 +23,9 @@ importers:
       '@vercel/analytics':
         specifier: ^0.1.11
         version: 0.1.11(react@18.3.1)
+      '@vercel/speed-insights':
+        specifier: ^2.0.0
+        version: 2.0.0(next@15.4.8(@opentelemetry/api@1.1.0)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(react@18.3.1)
       date-fns:
         specifier: ^2.29.3
         version: 2.30.0
@@ -960,6 +963,32 @@ packages:
     resolution: {integrity: sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==}
     peerDependencies:
       react: ^16.8||^17||^18
+
+  '@vercel/speed-insights@2.0.0':
+    resolution: {integrity: sha512-jwkNcrTeafWxjmWq4AHBaptSqZiJkYU5adLC9QBSqeim0GcqDMgN5Ievh8OG1rJ6W3A4l1oiP7qr9CWxGuzu3w==}
+    peerDependencies:
+      '@sveltejs/kit': ^1 || ^2
+      next: '>= 13'
+      nuxt: '>= 3'
+      react: ^18 || ^19 || ^19.0.0-rc
+      svelte: '>= 4'
+      vue: ^3
+      vue-router: ^4
+    peerDependenciesMeta:
+      '@sveltejs/kit':
+        optional: true
+      next:
+        optional: true
+      nuxt:
+        optional: true
+      react:
+        optional: true
+      svelte:
+        optional: true
+      vue:
+        optional: true
+      vue-router:
+        optional: true
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -3931,6 +3960,11 @@ snapshots:
     dependencies:
       react: 18.3.1
 
+  '@vercel/speed-insights@2.0.0(next@15.4.8(@opentelemetry/api@1.1.0)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(react@18.3.1)':
+    optionalDependencies:
+      next: 15.4.8(@opentelemetry/api@1.1.0)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+
   acorn-jsx@5.3.2(acorn@8.15.0):
     dependencies:
       acorn: 8.15.0
@@ -4454,7 +4488,7 @@ snapshots:
       eslint: 8.28.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(eslint@8.28.0))(eslint@8.28.0)
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.5))(eslint-import-resolver-typescript@3.10.1)(eslint@8.28.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.5))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@8.28.0))(eslint@8.28.0))(eslint@8.28.0)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@8.28.0)
       eslint-plugin-react: 7.37.5(eslint@8.28.0)
       eslint-plugin-react-hooks: 4.6.2(eslint@8.28.0)
@@ -4484,7 +4518,7 @@ snapshots:
       tinyglobby: 0.2.14
       unrs-resolver: 1.11.1
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.5))(eslint-import-resolver-typescript@3.10.1)(eslint@8.28.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.5))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@8.28.0))(eslint@8.28.0))(eslint@8.28.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -4499,7 +4533,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.5))(eslint-import-resolver-typescript@3.10.1)(eslint@8.28.0):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.5))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@8.28.0))(eslint@8.28.0))(eslint@8.28.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
