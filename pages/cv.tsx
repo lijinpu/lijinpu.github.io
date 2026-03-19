@@ -46,7 +46,6 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
           <h2>Publications &nbsp;&nbsp; 学术发表</h2>
           <ul>
             <li>李金璞, 孙浩宁*, 汤珂, 董丰. 数据资产泡沫：理论框架与政策权衡[J]. 管理世界, 2025, 41(09): 1-24. [注：《社会科学文摘》2025年11期转载]</li>
-            <li>孙浩宁, 李金璞*, 董丰. 人工智能时代的收入分配与宏观治理——基于任务替代与代际交叠的一般均衡分析[J]. 经济学(季刊), 2026, 待刊.</li>
             <li>李金璞, 孙浩宁*, 董丰, 汤珂. 数字时代宏观经济学的研究新进展[J]. 经济学动态, 2026, 待刊.</li>
             <li>罗玫, 李金璞, 汤珂*. 企业数据资产化：会计确认与价值评估[J]. 清华大学学报(哲学社会科学版), 2023, 38(05): 195-209+226. [注：人大复印报刊资料《财务与会计导刊（理论版）》2023年12期全文转载]</li>
             <li>李金璞, 汤珂*. 论数据要素市场参与者的培育[J]. 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.</li>
@@ -62,6 +61,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
 
           <h2>Working Papers &nbsp;&nbsp; 工作论文</h2>
           <ul>
+            <li>孙浩宁, 李金璞*, 董丰. 人工智能时代的收入分配与宏观治理——基于任务替代与代际交叠的一般均衡分析. 2025.</li>
             <li>
               Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026.
             </li>
