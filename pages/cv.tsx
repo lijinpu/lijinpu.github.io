@@ -67,7 +67,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
             </li>
             <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2026.
             </li>
-            <li>Networked Dollarization: Stablecoin, Reallocation, and Fragility. Feng Dong, Jinpu Li, Zhenyang Xu, 2026.</li>
+            <li>Networked Dollarization: Stablecoin, Reallocation, and Fragility. Feng Dong, Jinpu Li, and Zhenyang Xu, 2026.</li>
             <li>
               When Valuations Misallocate: A Macro-Finance Model in the Data Economy. Feng Dong, Jinpu Li, 2024.
             </li>

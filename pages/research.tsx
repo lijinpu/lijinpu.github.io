@@ -44,7 +44,7 @@ export default function Research() {
   [SSRN link]
 </a>
     </li>
-    <li>Networked Dollarization: Stablecoin, Reallocation, and Fragility. Feng Dong, Jinpu Li, Zhenyang Xu, 2026.</li>
+    <li>Networked Dollarization: Stablecoin, Reallocation, and Fragility. Feng Dong, Jinpu Li, and Zhenyang Xu, 2026.</li>
     <li>
         When Valuations Misallocate: A Macro-Finance Model in the Data Economy. Feng Dong, Jinpu Li, 2024. <a
   href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4790765"
