@@ -11,7 +11,7 @@ export default function Home() {
           alt="Jinpu Li"
           width={180}
           height={180}
-          src="/images/saxophone.jpg"
+          src="/images/icon.jpg"
           priority
         />
       </div>
