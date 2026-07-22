@@ -47,7 +47,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
           <ul>
             <li>李金璞, 孙浩宁*, 汤珂, 董丰. 数据资产泡沫：理论框架与政策权衡[J]. 管理世界, 2025, 41(09): 1-24. [注：《社会科学文摘》2025年11期转载]</li>
             <li>孙浩宁, 李金璞*, 董丰. 人工智能冲击下的收入分配与政策权衡——基于任务替代与代际交叠的一般均衡分析. 经济学(季刊), 2026, 26(03): 831-851.</li>
-            <li>李金璞, 孙浩宁*, 董丰, 汤珂. 数字时代宏观经济学研究新进展[J]. 经济学动态, 2026, (03): 201-224.</li>
+            <li>李金璞, 孙浩宁*, 董丰, 汤珂. 数字时代宏观经济学研究新进展[J]. 经济学动态, 2026, (03): 201-224.</li> [注：人大复印报刊资料《国民经济管理》2026年7期全文转载]
             <li>罗玫, 李金璞, 汤珂*. 企业数据资产化：会计确认与价值评估[J]. 清华大学学报(哲学社会科学版), 2023, 38(05): 195-209+226. [注：人大复印报刊资料《财务与会计导刊(理论版)》2023年12期全文转载]</li>
             <li>李金璞, 汤珂*. 论数据要素市场参与者的培育[J]. 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.</li>
             <li>Dong, F., Li, J.*, Sun, H., & Wang, S. (2025). Dynamic Efficiency Redux: Evidence from China. <i>China & World Economy</i>, 33(05), 196-222.</li>
@@ -63,11 +63,11 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
           <h2>Working Papers &nbsp;&nbsp; 工作论文</h2>
           <ul>
             <li>
-              Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026.
+              Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <i>R&R</i>.
             </li>
             <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2026.
             </li>
-            <li>Networked Dollarization: Stablecoin, Reallocation, and Fragility. Feng Dong, Jinpu Li, and Zhenyang Xu, 2026.</li>
+            <li>Networked Dollarization: Stablecoins, Cross-border Reallocation, and Fragility. Feng Dong, Jinpu Li, and Zhenyang Xu, 2026.</li>
             <li>
               When Valuations Misallocate: A Macro-Finance Model in the Data Economy. Feng Dong, Jinpu Li, 2024.
             </li>
@@ -119,7 +119,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
           </small>
           <ul>
             <li>
-              2026: Asia Meeting of the Econometric Society China (AMES), China International Conference in Macroeconomics (CICM), 2026 CES China Annual Conference (CES), China International Conference in Finance (CICF)<sup>#</sup>; 首届数字经济与贸易高质量论文报告会<sup>&</sup>, 第二届管理科学与工程自主知识体系前沿学术研讨会*
+              2026: Asia Meeting of the Econometric Society China (AMES), China International Conference in Macroeconomics (CICM), 2026 CES China Annual Conference (CES), China International Conference in Finance (CICF)<sup>#</sup>, International Symposium on GenAI and Economics*, "The New Dynamics of International Finance and Trade: Geoeconomics, Supply Chains, and the Future of Global Integration" Conference*; 首届数字经济与贸易高质量论文报告会<sup>&</sup>, 第二届管理科学与工程自主知识体系前沿学术研讨会*
             </li>
             <li>
               2025: INFORMS 2025 Annual Meeting<sup>&</sup>, The 2025 Modern Risk Society International Risk Conference (MRS2025), Macroeconomic Growth Outlook Forum held by Tsinghua SEM*; 第二十届中国管理学年会, 第二十五届中国经济学年会 (中国女经济学者专场)*,中国数字经济联盟2025年会, 第二届全国数字经济学术年会*,《经济学（季刊）》“人工智能的经济影响：前沿研究与政策启示”专题研讨会*, 清华大学第788期博士生学术论坛
@@ -146,7 +146,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
 
           <h2>Academic Services &nbsp;&nbsp; 学术服务</h2>
           <ul>
-            <li>Reviewer: <i>China Economic Review</i>,<i>China & World Economy</i>, <i>Economic Modeling</i>, <i>International Journal of Economic Theory</i>, <i>Industrial Management & Data Systems</i></li>
+            <li>Reviewer: <i>China Economic Review</i>,<i>China & World Economy</i>, <i>Economic Modeling</i>, <i>International Review of Economics & Finance</i>, <i>International Journal of Economic Theory</i>, <i>Industrial Management & Data Systems; 《管理世界》</i></li>
           </ul>
 
 

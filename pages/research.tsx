@@ -12,7 +12,7 @@ export default function Research() {
             <ul>
                 <li>李金璞, 孙浩宁*, 汤珂, 董丰. 数据资产泡沫：理论框架与政策权衡[J]. 管理世界, 2025, 41(09): 1-24. [注：《社会科学文摘》2025年11期转载]</li>
                 <li>孙浩宁, 李金璞*, 董丰. 人工智能冲击下的收入分配与政策权衡——基于任务替代与代际交叠的一般均衡分析. 经济学(季刊), 2026, 26(03): 831-851.</li>
-                <li>李金璞, 孙浩宁*, 董丰, 汤珂. 数字时代宏观经济学研究新进展[J]. 经济学动态, 2026, (03): 201-224.</li>
+                <li>李金璞, 孙浩宁*, 董丰, 汤珂. 数字时代宏观经济学研究新进展[J]. 经济学动态, 2026, (03): 201-224.</li> [注：人大复印报刊资料《国民经济管理》2026年7期全文转载]
                 <li>罗玫, 李金璞, 汤珂*. 企业数据资产化：会计确认与价值评估[J]. 清华大学学报(哲学社会科学版), 2023, 38(05): 195-209+226. [注：人大复印报刊资料《财务与会计导刊(理论版)》2023年12期全文转载]</li>
                 <li>李金璞, 汤珂*. 论数据要素市场参与者的培育[J]. 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.</li>
             </ul>
@@ -35,7 +35,7 @@ export default function Research() {
         <h2>Working Papers &nbsp;&nbsp; 工作论文</h2>
 <ul>
     <li>
-        Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026.
+        Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <i>R&R</i>.
     </li>
     <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6259958"
     target="_blank"
@@ -44,7 +44,7 @@ export default function Research() {
   [SSRN link]
 </a>
     </li>
-    <li>Networked Dollarization: Stablecoin, Reallocation, and Fragility. Feng Dong, Jinpu Li, and Zhenyang Xu, 2026.</li>
+    <li>Networked Dollarization: Stablecoins, Cross-border Reallocation, and Fragility. Feng Dong, Jinpu Li, and Zhenyang Xu, 2026.</li>
     <li>
         When Valuations Misallocate: A Macro-Finance Model in the Data Economy. Feng Dong, Jinpu Li, 2024. <a
   href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4790765"
