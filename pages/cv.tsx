@@ -119,6 +119,9 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
           </small>
           <ul>
             <li>
+              2027: AEA 2027 Annual Meeting (oral, accepted)
+            </li>
+            <li>
               2026: Asia Meeting of the Econometric Society China (AMES), China International Conference in Macroeconomics (CICM), 2026 CES China Annual Conference (CES), China International Conference in Finance (CICF)<sup>#</sup>, International Symposium on GenAI and Economics*, &quot;The New Dynamics of International Finance and Trade: Geoeconomics, Supply Chains, and the Future of Global Integration&quot; Conference*; 首届数字经济与贸易高质量论文报告会<sup>&</sup>, 第二届管理科学与工程自主知识体系前沿学术研讨会*
             </li>
             <li>
