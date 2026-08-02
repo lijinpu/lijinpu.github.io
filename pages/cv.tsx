@@ -63,14 +63,14 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
           <h2>Working Papers &nbsp;&nbsp; 工作论文</h2>
           <ul>
             <li>
+              When Valuations Misallocate: A Macro-Finance Model in the Data Economy. Feng Dong, Jinpu Li, 2026. <i>R&R</i>.
+            </li>
+            <li>
               Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <i>R&R</i>.
             </li>
             <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2026.
             </li>
             <li>Networked Dollarization: Stablecoins, Cross-border Reallocation, and Fragility. Feng Dong, Jinpu Li, and Zhenyang Xu, 2026.</li>
-            <li>
-              When Valuations Misallocate: A Macro-Finance Model in the Data Economy. Feng Dong, Jinpu Li, 2024.
-            </li>
           </ul>
 
           <h2>Work in Progress &nbsp;&nbsp; 进行中工作</h2>
@@ -138,7 +138,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
             </li>
           </ul>
 
-          <h2>Other Publications &nbsp;&nbsp; 其他发表</h2>
+          <h2>Media, Policy & Other Writings &nbsp;&nbsp; 媒体、政策评论与其他发表</h2>
           <ul>
            <li>Gao, R., Xiao, F., Li, J., & Cui, S.* (2026). Textual Semantics and Machine Learning Methods for Data Product Pricing. <i>The Review of Mathematical Economics</i>, 1(01), 129–167. DOI: 10.4310/RME.260221154937</li>
            <li>李金璞, 汤珂. 加快培育统一的数据市场[J]. 清华金融评论, 2025, (06):39-41. </li>
@@ -149,7 +149,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
 
           <h2>Academic Services &nbsp;&nbsp; 学术服务</h2>
           <ul>
-            <li>Reviewer: <i>China Economic Review</i>,<i>China & World Economy</i>, <i>Economic Modeling</i>, <i>International Review of Economics & Finance</i>, <i>International Journal of Economic Theory</i>, <i>Industrial Management & Data Systems; 《管理世界》</i></li>
+            <li>Reviewer: <i>China Economic Review</i>,<i>China & World Economy</i>, <i>Economic Modeling</i>; 《管理世界》</i></li>
           </ul>
 
 

@@ -34,6 +34,15 @@ export default function Research() {
 
         <h2>Working Papers &nbsp;&nbsp; 工作论文</h2>
 <ul>
+        <li>
+        When Valuations Misallocate: A Macro-Finance Model in the Data Economy. Feng Dong, Jinpu Li, 2026. <i>R&R</i>. <a
+  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4790765"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  [SSRN link]
+</a>
+    </li>
     <li>
         Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <i>R&R</i>.
     </li>
@@ -45,18 +54,6 @@ export default function Research() {
 </a>
     </li>
     <li>Networked Dollarization: Stablecoins, Cross-border Reallocation, and Fragility. Feng Dong, Jinpu Li, and Zhenyang Xu, 2026.</li>
-    <li>
-        When Valuations Misallocate: A Macro-Finance Model in the Data Economy. Feng Dong, Jinpu Li, 2024. <a
-  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4790765"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  [SSRN link]
-</a>
-        <ul>
-            <li>Presentation: AsianFA 2024, CFRC 2024, AMES Southeast & East Asia 2024, 8th CCER Summer Institute, SWUFE International Macro-Finance Conference 2024</li>
-        </ul>
-    </li>
 </ul>
 
     <h2>Work in Progress &nbsp;&nbsp; 进行中工作</h2>
@@ -78,14 +75,6 @@ export default function Research() {
             汤珂主编. 数据资产化. 人民出版社, 2023年8月. 撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》. ISBN: 978-7-010-25804-1.
         </li>    
     </ul>
-
-    <h2>Other Publications &nbsp;&nbsp; 其他发表</h2>
-          <ul>
-           <li>Gao, R., Xiao, F., Li, J., & Cui, S.* (2026). Textual Semantics and Machine Learning Methods for Data Product Pricing. <i>The Review of Mathematical Economics</i>, 1(01), 129–167. DOI: 10.4310/RME.260221154937</li>
-           <li>李金璞, 汤珂. 加快培育统一的数据市场[J]. 清华金融评论, 2025, (06):39-41. </li>
-           <li>黄京磊, 李金璞, 汤珂*. 数据信托：可信的数据流通模式[J]. 大数据, 2023, 9(02): 67-78. [注：期刊2023年高被引论文]</li>
-           <li>赵丽芳, 林立, 李金璞. 基于数据要素价值链评估企业数据资产[J]. 企业管理, 2023, (12): 88-91.</li> 
-          </ul>
         </div>
     </div>      
   )
