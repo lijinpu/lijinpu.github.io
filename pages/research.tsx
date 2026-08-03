@@ -46,6 +46,9 @@ export default function Research() {
     <li>
         Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <i>R&R</i>.
     </li>
+    <li>
+        Big Push Toward Big Data, with Feng Dong, and Haoning Sun. [New draft coming soon]
+    </li>
     <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6259958"
     target="_blank"
     rel="noopener noreferrer"
@@ -56,11 +59,6 @@ export default function Research() {
     <li>Networked Dollarization: Stablecoins, Cross-border Reallocation, and Fragility. Feng Dong, Jinpu Li, and Zhenyang Xu, 2026.</li>
 </ul>
 
-    <h2>Work in Progress &nbsp;&nbsp; 进行中工作</h2>
-
-    <ul>
-        <li>Big Push Toward Big Data, with Feng Dong, and Haoning Sun. [New draft coming soon]</li>
-    </ul>
 
     <h2>Books & Book Chapters &nbsp;&nbsp; 专著及书目章节</h2>
     <ul>
