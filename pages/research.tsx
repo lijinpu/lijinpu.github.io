@@ -2,7 +2,16 @@ import Link from 'next/link'
 
 export default function Research() {
   return (
-    <div className="flex flex-col relative max-w-none prose dark:prose-invert">
+     <div
+      className="
+        flex flex-col relative max-w-none
+        prose dark:prose-invert
+        prose-li:my-1
+        [&_li>ul]:my-1
+        [&_li>ul]:pl-6
+        [&_li>ul>li]:my-0
+      "
+    >
         <h1>Research &nbsp;&nbsp; 研究</h1>
         <div>
 
