@@ -9,7 +9,7 @@ const Navbar: NextPage = () => {
   const { asPath } = useRouter()
 
   return (
-    <header className="flex justify-between max-w-3xl container mx-auto py-2">
+    <header className="flex justify-between w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
       <nav className="flex flex-row">
         {headerNavLinks?.map((nav) => (
           <Link
