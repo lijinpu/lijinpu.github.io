@@ -97,10 +97,10 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
           <h2>Working Papers &nbsp;&nbsp; 工作论文</h2>
           <ul>
             <li>
-              When Valuations Misallocate: A Macro-Finance Model in the Data Economy. Feng Dong, Jinpu Li, 2026. <i>R&R</i>.
+              When Valuations Misallocate: A Macro-Finance Model in the Data Economy. Feng Dong, Jinpu Li, 2026. <b><i>R&R</i></b>.
             </li>
             <li>
-              Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <i>R&R</i>.
+              Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <b><i>R&R</i></b>.
             </li>
             <li>
               Big Push Toward Big Data, with Feng Dong, and Haoning Sun. [New draft coming soon]
@@ -108,6 +108,9 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
             <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2026.
             </li>
             <li>Networked Dollarization: Stablecoins, Cross-border Reallocation, and Fragility. Feng Dong, Jinpu Li, and Zhenyang Xu, 2026.
+            </li>
+            <li>
+              AI Wave, Collaborative Network, and Firm Markups. Feng Dong, Jinpu Li, Haoning Sun, and Guang Yang, 2026.
             </li>
           </ul>
 

@@ -81,6 +81,9 @@ export default function Research() {
     <li>
         Networked Dollarization: Stablecoins, Cross-border Reallocation, and Fragility. Feng Dong, Jinpu Li, and Zhenyang Xu, 2026.
     </li>
+    <li>
+        AI Wave, Collaborative Network, and Firm Markups. Feng Dong, Jinpu Li, Haoning Sun, and Guang Yang, 2026.
+    </li>
 </ul>
 
 
