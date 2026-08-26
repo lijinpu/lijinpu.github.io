@@ -10,6 +10,8 @@ export default function Research() {
         [&_li>ul]:my-1
         [&_li>ul]:pl-6
         [&_li>ul>li]:my-0
+        [&_li>ul>li]:text-gray-500
+        dark:[&_li>ul>li]:text-gray-400
       "
     >
         <h1>Research &nbsp;&nbsp; 研究</h1>
