@@ -109,7 +109,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
         Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <b><i>R&R</i></b>.
     </li>
     <li>
-        Big Push Toward Big Data, with Feng Dong, and Haoning Sun. <a
+         Big Push Toward Big Data. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <a
   href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352938"
   target="_blank"
   rel="noopener noreferrer"
