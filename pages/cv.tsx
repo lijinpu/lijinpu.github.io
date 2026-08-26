@@ -87,7 +87,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
               Dong, F., Li, J.*, Sun, H., & Wang, S. (2025). Dynamic Efficiency Redux: Evidence from China. <i>China & World Economy</i>, 33(05), 196-222.
             </li>
             <li>
-              Sui, R., Gao, R., & Li, J.* (2025). Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs, <i>Industrial Management & Data Systems</i>, Published Online. DOI: 10.1108/IMDS-04-2025-0497
+              Sui, R., Gao, R., & Li, J.* (2025). Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. <i>Industrial Management & Data Systems</i>, Published Online. DOI: 10.1108/IMDS-04-2025-0497
             </li>
             <li>
               Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data Empowerment and Crash Risk. <i>Applied Economics Letters</i>, Published Online. DOI: 10.1080/13504851.2025.2526710
@@ -96,23 +96,47 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
 
           <h2>Working Papers &nbsp;&nbsp; 工作论文</h2>
           <ul>
-            <li>
-              When Valuations Misallocate: A Macro-Finance Model in the Data Economy. Feng Dong, Jinpu Li, 2026. <b><i>R&R</i></b>.
-            </li>
-            <li>
-              Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <b><i>R&R</i></b>.
-            </li>
-            <li>
-              Big Push Toward Big Data, with Feng Dong, and Haoning Sun. [New draft coming soon]
-            </li>
-            <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2026.
-            </li>
-            <li>Networked Dollarization: Stablecoins, Cross-border Reallocation, and Fragility. Feng Dong, Jinpu Li, and Zhenyang Xu, 2026.
-            </li>
-            <li>
-              AI Wave, Collaborative Network, and Firm Markups. Feng Dong, Jinpu Li, Haoning Sun, and Guang Yang, 2026.
-            </li>
-          </ul>
+        <li>
+        When Valuations Misallocate: A Macro-Finance Model in the Data Economy. Feng Dong, Jinpu Li, 2026. <b><i>R&R</i></b>. <a
+  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4790765"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  [SSRN link]
+</a>
+    </li>
+    <li>
+        Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <b><i>R&R</i></b>.
+    </li>
+    <li>
+        Big Push Toward Big Data, with Feng Dong, and Haoning Sun. <a
+  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352938"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  [SSRN link]
+</a>
+    </li>
+    <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6259958"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+  [SSRN link]
+</a>
+    </li>
+    <li>
+        Networked Dollarization: Stablecoin Adoption and Cross-Border Reallocation. Feng Dong, Jinpu Li, and Zhenyang Xu, 2026. <a
+  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352963"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  [SSRN link]
+</a>
+    </li>
+    <li>
+        AI Wave, Collaborative Network, and Firm Markups. Feng Dong, Jinpu Li, Haoning Sun, and Guang Yang, 2026.
+    </li>
+</ul>
 
           <h2>Books & Book Chapters &nbsp;&nbsp; 专著及书目章节</h2>
           <ul>
