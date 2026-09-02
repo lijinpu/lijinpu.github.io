@@ -185,7 +185,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
               2027: AEA 2027 Annual Meeting (oral, accepted)
             </li>
             <li>
-              2026: Asia Meeting of the Econometric Society China (AMES), China International Conference in Macroeconomics (CICM), 2026 CES China Annual Conference (CES), China International Conference in Finance (CICF)<sup>#</sup>, International Symposium on GenAI and Economics*, &quot;The New Dynamics of International Finance and Trade: Geoeconomics, Supply Chains, and the Future of Global Integration&quot; Conference*; 首届数字经济与贸易高质量论文报告会<sup>&</sup>, 第二届管理科学与工程自主知识体系前沿学术研讨会*
+              2026: Asia Meeting of the Econometric Society China (AMES), China International Conference in Macroeconomics (CICM), 2026 CES China Annual Conference (CES), China International Conference in Finance (CICF)<sup>#</sup>, International Symposium on GenAI and Economics*, &quot;The New Dynamics of International Finance and Trade: Geoeconomics, Supply Chains, and the Future of Global Integration&quot; Conference*; 第二十六届中国经济学年会, 首届数字经济与贸易高质量论文报告会<sup>&</sup>, 第二届管理科学与工程自主知识体系前沿学术研讨会*
             </li>
             <li>
               2025: INFORMS 2025 Annual Meeting<sup>&</sup>, The 2025 Modern Risk Society International Risk Conference (MRS2025), Macroeconomic Growth Outlook Forum held by Tsinghua SEM*; 第二十届中国管理学年会, 第二十五届中国经济学年会 (中国女经济学者专场)*,中国数字经济联盟2025年会, 第二届全国数字经济学术年会*,《经济学（季刊）》“人工智能的经济影响：前沿研究与政策启示”专题研讨会*, 清华大学第788期博士生学术论坛
