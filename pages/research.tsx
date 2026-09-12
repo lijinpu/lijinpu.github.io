@@ -58,7 +58,7 @@ export default function Research() {
         <h2>Working Papers &nbsp;&nbsp; 工作论文</h2>
 <ul>
         <li>
-        When Valuations Misallocate: A Macro-Finance Model in the Data Economy. Feng Dong, Jinpu Li, 2026. <b><i>R&R</i></b>. <a
+        When Valuations Misallocate: A Macro-Finance Model in the Data Economy (with Feng Dong). <b><i>R&R</i></b>. <a
   href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4790765"
   target="_blank"
   rel="noopener noreferrer"
@@ -67,10 +67,10 @@ export default function Research() {
 </a>
     </li>
     <li>
-        Macroeconomics of Artificial Intelligence: A Review and Agenda. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <b><i>R&R</i></b>.
+        Macroeconomics of Artificial Intelligence: A Review and Agenda (with Feng Dong and Haoning Sun). <b><i>R&R</i></b>.
     </li>
     <li>
-        Big Push Toward Big Data. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <a
+         Big Push Toward Big Data (with Feng Dong and Haoning Sun). <a
   href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352938"
   target="_blank"
   rel="noopener noreferrer"
@@ -78,7 +78,7 @@ export default function Research() {
   [SSRN link]
 </a>
     </li>
-    <li>The Data Trap: When AI Fails?. Feng Dong, Jinpu Li, and Haoning Sun, 2026. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6259958"
+    <li>The Data Trap: When AI Fails? (with Feng Dong and Haoning Sun). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6259958"
     target="_blank"
     rel="noopener noreferrer"
 >
@@ -86,7 +86,7 @@ export default function Research() {
 </a>
     </li>
     <li>
-        Networked Dollarization: Stablecoin Adoption and Cross-Border Reallocation. Feng Dong, Jinpu Li, and Zhenyang Xu, 2026. <a
+        Networked Dollarization: Stablecoin Adoption and Cross-Border Reallocation (with Feng Dong and Zhenyang Xu). <a
   href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352963"
   target="_blank"
   rel="noopener noreferrer"
@@ -95,7 +95,13 @@ export default function Research() {
 </a>
     </li>
     <li>
-        AI Wave, Collaborative Network, and Firm Markups. Feng Dong, Jinpu Li, Haoning Sun, and Guang Yang, 2026.
+        Runnable Bubbles (with Feng Dong, Yi Dong, and Jiahong Gao).
+    </li>
+    <li>
+        The Supply of Patience: Population Growth and Bubble Capacity (with Yi Dong, Dongzhou Mei, and Zhenyang Xu).
+    </li>
+    <li>
+        AI Wave, Collaborative Network, and Firm Markups (with Feng Dong, Haoning Sun, and Guang Yang).
     </li>
 </ul>
 
