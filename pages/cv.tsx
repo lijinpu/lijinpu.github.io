@@ -91,7 +91,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
               Dong, F., Li, J.*, Sun, H., & Wang, S. (2025). Dynamic Efficiency Redux: Evidence from China. <i>China & World Economy</i>, 33(05), 196-222.
             </li>
             <li>
-              Sui, R., Gao, R., & Li, J.* (2025). Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. <i>Industrial Management & Data Systems</i>, Published Online. DOI: 10.1108/IMDS-04-2025-0497
+              Sui, R., Gao, R., & Li, J.* (2026). Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. <i>Industrial Management & Data Systems</i>, 126(09), 2572-2601.
             </li>
             <li>
               Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data Empowerment and Crash Risk. <i>Applied Economics Letters</i>, Published Online. DOI: 10.1080/13504851.2025.2526710
