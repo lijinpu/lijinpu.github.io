@@ -128,7 +128,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
   [SSRN link]
 </a>
     </li>
-    <li>Lemon Data Ecosystem (with Feng Dong and Haoning Sun). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7588741"
+    <li>Lemon Data Ecosystem (with Feng Dong, Yi Dong, and Haoning Sun). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7588741"
     target="_blank"
     rel="noopener noreferrer"
 >
