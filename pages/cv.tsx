@@ -99,7 +99,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
           </ul>
 
           <h2>Working Papers &nbsp;&nbsp; 工作论文</h2>
-          <ul>
+<ul>
         <li>
         When Valuations Misallocate: A Macro-Finance Model in the Data Economy (with Feng Dong). <b><i>R&R</i></b>. <a
   href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4790765"
@@ -128,6 +128,13 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
   [SSRN link]
 </a>
     </li>
+    <li>Lemon Data Ecosystem (with Feng Dong and Haoning Sun). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7588741"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+  [SSRN link]
+</a>
+    </li>
     <li>
         Networked Dollarization: Stablecoin Adoption and Cross-Border Reallocation (with Feng Dong and Zhenyang Xu). <a
   href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352963"
@@ -138,7 +145,13 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
 </a>
     </li>
     <li>
-        Runnable Bubbles (with Feng Dong, Yi Dong, and Jiahong Gao).
+        Runnable Bubbles (with Feng Dong, Yi Dong, and Jiahong Gao). <a
+  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7587218"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  [SSRN link]
+</a>
     </li>
     <li>
         The Supply of Patience: Population Growth and Bubble Capacity (with Yi Dong, Dongzhou Mei, and Zhenyang Xu).
