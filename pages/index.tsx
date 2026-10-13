@@ -30,7 +30,7 @@ export default function Home() {
   I am on the 2026-2027 job market.
   {" "}Here is my{" "}
   <a
-    href="https://cloud.tsinghua.edu.cn/f/2674e6c779a842df8035/"
+    href="https://cloud.tsinghua.edu.cn/f/cb9b7795bc654f65a4cb/"
     target="_blank"
     rel="noopener noreferrer"
     className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300"
