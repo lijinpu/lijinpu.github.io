@@ -26,6 +26,18 @@ export default function Home() {
       <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl leading-relaxed mb-8">
         My field of interest: Data Economy, Economics of AI, and Macro-Finance.
       </p>
+      <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl leading-relaxed mb-8">
+  I am on the 2026-2027 job market.
+  {" "}Here is my{" "}
+  <a
+    href="https://cloud.tsinghua.edu.cn/f/2674e6c779a842df8035/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300"
+  >
+    research statement
+  </a>.
+</p>
 
       {/* 引言 */}
       <p className="text-gray-600 dark:text-gray-400 mt-6 italic">

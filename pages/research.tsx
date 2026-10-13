@@ -111,7 +111,13 @@ export default function Research() {
 </a>
     </li>
     <li>
-        The Supply of Patience: Population Growth and Bubble Capacity (with Yi Dong, Dongzhou Mei, and Zhenyang Xu).
+        The Supply of Patience: Population Growth and Bubble Capacity (with Yi Dong, Dongzhou Mei, and Zhenyang Xu). <a
+  href=" https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7601580"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  [SSRN link]
+</a>
     </li>
     <li>
         AI Wave, Collaborative Network, and Firm Markups (with Feng Dong, Haoning Sun, and Guang Yang).
