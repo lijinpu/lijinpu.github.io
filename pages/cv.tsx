@@ -3,6 +3,9 @@ import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import fs from 'fs'
 import path from 'path'
 
+import Page from 'components/Page'
+import { Tag, Status } from 'components/Paper'
+
 type Props = { lastUpdateISO: string }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
@@ -27,158 +30,112 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
   })
 
   return (
-    <div
-      className="
-        min-h-screen flex flex-col relative max-w-none
-        prose dark:prose-invert
-        prose-ul:my-2 prose-li:my-1
-        prose-h2:mt-8 prose-h2:mb-3
-        prose-h3:mt-5 prose-h3:mb-2
-        [&_li>ul]:my-1
-        [&_li>ul]:pl-6
-        [&_li>ul>li]:my-0
-        [&_li>ul>li]:text-gray-500
-        dark:[&_li>ul>li]:text-gray-400
-      "
-    >
+    <div className="min-h-screen flex flex-col">
       {/* 主体内容 */}
-      <main className="flex-1">
-        <h1>Curriculum Vitae &nbsp;&nbsp; 个人简历</h1>
-
-        <div>
-          <hr />
-
-          <h2>Education &nbsp;&nbsp; 教育背景</h2>
+      <div className="flex-1">
+        <Page title="Curriculum Vitae" zh="个人简历">
+          <h2>Education<span className="zh">教育背景</span></h2>
           <ul>
             <li><b>Ph.D. in Economics</b>, Tsinghua University, Expected 2027</li>
             <li><b>Visiting Student Researcher</b>, University of California, Berkeley, 2024.11 - 2025.11</li>
             <li><b>B.A. in Economics</b>, Tsinghua University, 2021</li>
           </ul>
 
-          <h2>Publications &nbsp;&nbsp; 学术发表</h2>
+          <h2>Publications<span className="zh">学术发表</span></h2>
 
-          <h3>In Chinese &nbsp;&nbsp; 中文发表</h3>
+          <h3>In Chinese<span className="zh">中文发表</span></h3>
           <ul>
             <li>
-              李金璞, 孙浩宁*, 汤珂, 董丰. 数据资产泡沫：理论框架与政策权衡[J]. 管理世界, 2025, 41(09): 1-24.
+              <b>李金璞</b>, 孙浩宁*, 汤珂, 董丰. 数据资产泡沫：理论框架与政策权衡[J]. 管理世界, 2025, 41(09): 1-24.
               <ul>
                 <li>《社会科学文摘》2025年11期转载</li>
               </ul>
             </li>
             <li>
-              孙浩宁, 李金璞*, 董丰. 人工智能冲击下的收入分配与政策权衡——基于任务替代与代际交叠的一般均衡分析. 经济学(季刊), 2026, 26(03): 831-851.
+              孙浩宁, <b>李金璞</b>*, 董丰. 人工智能冲击下的收入分配与政策权衡——基于任务替代与代际交叠的一般均衡分析. 经济学(季刊), 2026, 26(03): 831-851.
               <ul>
                 <li>《中国社会科学文摘》2026年第9期转载</li>
               </ul>
             </li>
             <li>
-              李金璞, 孙浩宁*, 董丰, 汤珂. 数字时代宏观经济学研究新进展[J]. 经济学动态, 2026, (03): 201-224.
+              <b>李金璞</b>, 孙浩宁*, 董丰, 汤珂. 数字时代宏观经济学研究新进展[J]. 经济学动态, 2026, (03): 201-224.
               <ul>
                 <li>人大复印报刊资料《国民经济管理》2026年7期全文转载</li>
               </ul>
             </li>
             <li>
-              罗玫, 李金璞, 汤珂*. 企业数据资产化：会计确认与价值评估[J]. 清华大学学报(哲学社会科学版), 2023, 38(05): 195-209+226.
+              罗玫, <b>李金璞</b>, 汤珂*. 企业数据资产化：会计确认与价值评估[J]. 清华大学学报(哲学社会科学版), 2023, 38(05): 195-209+226.
               <ul>
                 <li>人大复印报刊资料《财务与会计导刊(理论版)》2023年12期全文转载</li>
               </ul>
             </li>
             <li>
-              李金璞, 汤珂*. 论数据要素市场参与者的培育[J]. 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.
+              <b>李金璞</b>, 汤珂*. 论数据要素市场参与者的培育[J]. 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.
             </li>
           </ul>
 
-          <h3>In English &nbsp;&nbsp; 英文发表</h3>
+          <h3>In English<span className="zh">英文发表</span></h3>
           <ul>
             <li>
-              Dong, F., Li, J.*, Sun, H., & Wang, S. (2025). Dynamic Efficiency Redux: Evidence from China. <i>China & World Economy</i>, 33(05), 196-222.
+              Dong, F., <b>Li, J.</b>*, Sun, H., & Wang, S. (2025). Dynamic Efficiency Redux: Evidence from China. <i>China & World Economy</i>, 33(05), 196-222.
             </li>
             <li>
-              Sui, R., Gao, R., & Li, J.* (2026). Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. <i>Industrial Management & Data Systems</i>, 126(09), 2572-2601.
+              Sui, R., Gao, R., & <b>Li, J.</b>* (2026). Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. <i>Industrial Management & Data Systems</i>, 126(09), 2572-2601.
             </li>
             <li>
-              Deng, M., Han, L., Li, J.*, & Li, Z. (2025). Data Empowerment and Crash Risk. <i>Applied Economics Letters</i>, Published Online. DOI: 10.1080/13504851.2025.2526710
+              Deng, M., Han, L., <b>Li, J.</b>*, & Li, Z. (2025). Data Empowerment and Crash Risk. <i>Applied Economics Letters</i>, Published Online. DOI: 10.1080/13504851.2025.2526710
             </li>
           </ul>
 
-          <h2>Working Papers &nbsp;&nbsp; 工作论文</h2>
-<ul>
-        <li>
-        When Valuations Misallocate: A Macro-Finance Model in the Data Economy (with Feng Dong). <b><i>R&R</i></b>. <a
-  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4790765"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  [SSRN link]
-</a>
-    </li>
-    <li>
-        Macroeconomics of Artificial Intelligence: A Review and Agenda (with Feng Dong and Haoning Sun). <b><i>R&R</i></b>.
-    </li>
-    <li>
-         Big Push Toward Big Data (with Feng Dong and Haoning Sun). <a
-  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352938"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  [SSRN link]
-</a>
-    </li>
-    <li>The Data Trap: When AI Fails? (with Feng Dong and Haoning Sun). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6259958"
-    target="_blank"
-    rel="noopener noreferrer"
->
-  [SSRN link]
-</a>
-    </li>
-    <li>Lemon Data Ecosystem (with Feng Dong, Yi Dong, and Haoning Sun). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7588741"
-    target="_blank"
-    rel="noopener noreferrer"
->
-  [SSRN link]
-</a>
-    </li>
-    <li>
-        Networked Dollarization: Stablecoin Adoption and Cross-Border Reallocation (with Feng Dong and Zhenyang Xu). <a
-  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352963"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  [SSRN link]
-</a>
-    </li>
-    <li>
-        Runnable Bubbles (with Feng Dong, Yi Dong, and Jiahong Gao). <a
-  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7587218"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  [SSRN link]
-</a>
-    </li>
-    <li>
-        The Supply of Patience: Population Growth and Bubble Capacity (with Yi Dong, Dongzhou Mei, and Zhenyang Xu). <a
-  href=" https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7601580"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  [SSRN link]
-    </a>
-    </li>
-    <li>
-        AI Wave, Collaborative Network, and Firm Markups (with Feng Dong, Haoning Sun, and Guang Yang).
-    </li>
-</ul>
-
-          <h2>Books & Book Chapters &nbsp;&nbsp; 专著及书目章节</h2>
+          <h2>Working Papers<span className="zh">工作论文</span></h2>
           <ul>
-            <li>李金璞, 汤珂. 数据的可信流通：一个理论框架[A]//江小涓主编 (《比较》编辑部主办). 数字经济发展与治理. 北京: 中信出版集团, 2025: 107–120.</li>
-            <li>数据经济学. 汤珂, 熊巧琴, 李金璞, 屈阳, 清华大学出版社, 2023年1月第1版, 2024年1月第2版.</li>
+            <li>
+              When Valuations Misallocate: A Macro-Finance Model in the Data Economy (with Feng Dong).
+              <Status>R&R</Status>
+              <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4790765">SSRN</Tag>
+            </li>
+            <li>
+              Macroeconomics of Artificial Intelligence: A Review and Agenda (with Feng Dong and Haoning Sun).
+              <Status>R&R</Status>
+            </li>
+            <li>
+              Big Push Toward Big Data (with Feng Dong and Haoning Sun).
+              <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352938">SSRN</Tag>
+            </li>
+            <li>
+              The Data Trap: When AI Fails? (with Feng Dong and Haoning Sun).
+              <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6259958">SSRN</Tag>
+            </li>
+            <li>
+              Lemon Data Ecosystem (with Feng Dong, Yi Dong, and Haoning Sun).
+              <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7588741">SSRN</Tag>
+            </li>
+            <li>
+              Networked Dollarization: Stablecoin Adoption and Cross-Border Reallocation (with Feng Dong and Zhenyang Xu).
+              <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352963">SSRN</Tag>
+            </li>
+            <li>
+              Runnable Bubbles (with Feng Dong, Yi Dong, and Jiahong Gao).
+              <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7587218">SSRN</Tag>
+            </li>
+            <li>
+              The Supply of Patience: Population Growth and Bubble Capacity (with Yi Dong, Dongzhou Mei, and Zhenyang Xu).
+              <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7601580">SSRN</Tag>
+            </li>
+            <li>
+              AI Wave, Collaborative Network, and Firm Markups (with Feng Dong, Haoning Sun, and Guang Yang).
+            </li>
+          </ul>
+
+          <h2>Books & Book Chapters<span className="zh">专著及书目章节</span></h2>
+          <ul>
+            <li><b>李金璞</b>, 汤珂. 数据的可信流通：一个理论框架[A]//江小涓主编 (《比较》编辑部主办). 数字经济发展与治理. 北京: 中信出版集团, 2025: 107–120.</li>
+            <li>数据经济学. 汤珂, 熊巧琴, <b>李金璞</b>, 屈阳, 清华大学出版社, 2023年1月第1版, 2024年1月第2版.</li>
             <li>数据要素的可信流通. 汤珂和吴志雄主编, 人民出版社, 2024年6月. 撰写第三章《数据可信流通框架》.</li>
-            <li>数据资产化. 汤珂主编, 人民出版社, 2023年8月. 撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》.</li> 
+            <li>数据资产化. 汤珂主编, 人民出版社, 2023年8月. 撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》.</li>
           </ul>
 
-          <h2>Grants & Rewards &nbsp;&nbsp; 资助与获奖</h2>
+          <h2>Grants & Rewards<span className="zh">资助与获奖</span></h2>
           <ul>
             <li>国家奖学金 (China National Scholarship), 2025</li>
             <li>蒋南翔奖学金 (Jiang Nanxiang Award), 2025</li>
@@ -193,10 +150,9 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
             <li>“唐立新奖学金”综合优秀奖 (Tang Lixin Scholarship), 2020</li>
           </ul>
 
-          <h2>Teaching &nbsp;&nbsp; 教学</h2>
+          <h2>Teaching<span className="zh">教学</span></h2>
           <ul>
-            <li>
-            Academic Research Training for Xuetang Class (40512742) by Prof. Feng Dong & Binzhen Wu. 2026 Summer.</li>
+            <li>Academic Research Training for Xuetang Class (40512742) by Prof. Feng Dong & Binzhen Wu. 2026 Summer.</li>
             <li>Econometrics I (30700922) by Prof. Ke Tang. 2025 Fall.</li>
             <li>Intermediate Macroeconomics (30510763) by Prof. Feng Dong. 2025 Fall.</li>
             <li>Principles of Economics (00510454) by Prof. Feng Dong. 2026 Spring, 2025 Spring, 2024 Spring, and 2023 Spring.</li>
@@ -204,9 +160,9 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
             <li>Introduction to Financial Economics (40701113) by Prof. Ke Tang. 2022 Fall, 2021 Fall, and 2020 Fall.</li>
           </ul>
 
-          <h2>Conferences &nbsp;&nbsp; 学术会议</h2>
-          <small style={{ color: 'gray', fontSize: '0.85rem' }}>
-          *: presented by coauthors; &: invited presentation; #: as discussant
+          <h2>Conferences<span className="zh">学术会议</span></h2>
+          <small className="text-sm text-gray-500 dark:text-gray-400">
+            *: presented by coauthors; &: invited presentation; #: as discussant
           </small>
           <ul>
             <li>
@@ -229,25 +185,20 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
             </li>
           </ul>
 
-          <h2>Media, Policy & Other Writings &nbsp;&nbsp; 媒体、政策评论与其他发表</h2>
+          <h2>Media, Policy & Other Writings<span className="zh">媒体、政策评论与其他发表</span></h2>
           <ul>
-           <li>Gao, R., Xiao, F., Li, J., & Cui, S.* (2026). Textual Semantics and Machine Learning Methods for Data Product Pricing. <i>The Review of Mathematical Economics</i>, 1(01), 129–167. DOI: 10.4310/RME.260221154937</li>
-           <li>李金璞, 汤珂. 加快培育统一的数据市场[J]. 清华金融评论, 2025, (06):39-41. </li>
-           <li>黄京磊, 李金璞, 汤珂*. 数据信托：可信的数据流通模式[J]. 大数据, 2023, 9(02): 67-78. [注：期刊2023年高被引论文]</li>
-           <li>赵丽芳, 林立, 李金璞. 基于数据要素价值链评估企业数据资产[J]. 企业管理, 2023, (12): 88-91.</li> 
+            <li>Gao, R., Xiao, F., <b>Li, J.</b>, & Cui, S.* (2026). Textual Semantics and Machine Learning Methods for Data Product Pricing. <i>The Review of Mathematical Economics</i>, 1(01), 129–167. DOI: 10.4310/RME.260221154937</li>
+            <li><b>李金璞</b>, 汤珂. 加快培育统一的数据市场[J]. 清华金融评论, 2025, (06):39-41.</li>
+            <li>黄京磊, <b>李金璞</b>, 汤珂*. 数据信托：可信的数据流通模式[J]. 大数据, 2023, 9(02): 67-78. [注：期刊2023年高被引论文]</li>
+            <li>赵丽芳, 林立, <b>李金璞</b>. 基于数据要素价值链评估企业数据资产[J]. 企业管理, 2023, (12): 88-91.</li>
           </ul>
 
-
-          <h2>Academic Services &nbsp;&nbsp; 学术服务</h2>
+          <h2>Academic Services<span className="zh">学术服务</span></h2>
           <ul>
-            <li>Reviewer: <i>China Economic Review</i>,<i>China & World Economy</i>, <i>Economic Modeling</i>; 《管理世界》
-            </li>
+            <li>Reviewer: <i>China Economic Review</i>, <i>China & World Economy</i>, <i>Economic Modeling</i>; 《管理世界》</li>
           </ul>
-
-
-          
-        </div>
-      </main>
+        </Page>
+      </div>
 
       {/* 底部居中，只显示英文时间 */}
       <footer className="mt-8 w-full text-center text-gray-400 text-sm">

@@ -17,11 +17,13 @@ export default function Home() {
       </div>
 
       {/* 姓名 */}
-      <h1 className="font-extrabold text-3xl mb-2">Jinpu Li &nbsp;&nbsp; 李金璞</h1>
+      <h1 className="font-bold text-3xl mb-3">
+        Jinpu Li<span className="zh">李金璞</span>
+      </h1>
 
       {/* 简介段落拆分为两句 */}
       <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl leading-relaxed mb-1">
-        I am Jinpu Li (李金璞), an econ PhD candidate @ Tsinghua University.
+        I am Jinpu Li (李金璞), a Ph.D. candidate in Economics at Tsinghua University.
       </p>
       <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl leading-relaxed mb-8">
         My field of interest: Data Economy, Economics of AI, and Macro-Finance.
@@ -33,16 +35,12 @@ export default function Home() {
     href="https://cloud.tsinghua.edu.cn/f/cb9b7795bc654f65a4cb/"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300"
+    className="text-blue-700 dark:text-blue-400 underline underline-offset-[3px] hover:text-blue-900 dark:hover:text-blue-300"
   >
     research statement
   </a>.
 </p>
 
-      {/* 引言 */}
-      <p className="text-gray-600 dark:text-gray-400 mt-6 italic">
-        &quot;Intelligence is the ability to adapt to change.&quot; — Stephen Hawking
-      </p>
     </div>
   )
 }

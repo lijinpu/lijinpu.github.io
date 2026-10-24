@@ -17,26 +17,30 @@ module.exports = {
           css: {
             'blockquote p:first-of-type::before': { content: 'none' },
             'blockquote p:first-of-type::after': { content: 'none' },
+            // 全站统一强调色：blue-700（深色模式 blue-400）
             a: {
-              color: theme('colors.blue.600'),
+              color: theme('colors.blue.700'),
+              textUnderlineOffset: '3px',
               '&:hover': {
-                color: theme('colors.blue.800')
+                color: theme('colors.blue.900')
               },
-              code: { color: theme('colors.blue.600') }
+              code: { color: theme('colors.blue.700') }
             },
             code: {
               color: theme('colors.pink.600'),
             },
+            // 标题统一用 bold (700)，不再用 extrabold (800)
             h1: {
+              fontWeight: theme('fontWeight.bold'),
               fontSize: theme('fontSize.2xl'),
               marginBottom: 0
             },
             h2: {
-              fontWeight: theme('fontWeight.extrabold'),
+              fontWeight: theme('fontWeight.bold'),
               fontSize: theme('fontSize.xl'),
             },
             h3: {
-              fontWeight: theme('fontWeight.extrabold'),
+              fontWeight: theme('fontWeight.bold'),
               fontSize: theme('fontSize.lg'),
             },
             hr: {
@@ -83,7 +87,7 @@ module.exports = {
             a: {
               color: theme('colors.blue.400'),
               '&:hover': {
-                color: theme('colors.blue.600')
+                color: theme('colors.blue.300')
               },
               code: { color: theme('colors.blue.400') }
             },
