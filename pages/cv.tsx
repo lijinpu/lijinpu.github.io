@@ -30,180 +30,173 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
   })
 
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* 主体内容 */}
-      <div className="flex-1">
-        <Page title="Curriculum Vitae" zh="个人简历">
-          <h2>Education<span className="zh">教育背景</span></h2>
+    <Page title="Curriculum Vitae" zh="个人简历">
+      <h2>Education<span className="zh">教育背景</span></h2>
+      <ul>
+        <li><b>Ph.D. in Economics</b>, Tsinghua University, Expected 2027</li>
+        <li><b>Visiting Student Researcher</b>, University of California, Berkeley, 2024.11 - 2025.11</li>
+        <li><b>B.A. in Economics</b>, Tsinghua University, 2021</li>
+      </ul>
+
+      <h2>Publications<span className="zh">学术发表</span></h2>
+
+      <h3>In Chinese<span className="zh">中文发表</span></h3>
+      <ul>
+        <li>
+          <b>李金璞</b>, 孙浩宁*, 汤珂, 董丰. 数据资产泡沫：理论框架与政策权衡[J]. 管理世界, 2025, 41(09): 1-24.
           <ul>
-            <li><b>Ph.D. in Economics</b>, Tsinghua University, Expected 2027</li>
-            <li><b>Visiting Student Researcher</b>, University of California, Berkeley, 2024.11 - 2025.11</li>
-            <li><b>B.A. in Economics</b>, Tsinghua University, 2021</li>
+            <li>《社会科学文摘》2025年11期转载</li>
           </ul>
-
-          <h2>Publications<span className="zh">学术发表</span></h2>
-
-          <h3>In Chinese<span className="zh">中文发表</span></h3>
+        </li>
+        <li>
+          孙浩宁, <b>李金璞</b>*, 董丰. 人工智能冲击下的收入分配与政策权衡——基于任务替代与代际交叠的一般均衡分析[J]. 经济学(季刊), 2026, 26(03): 831-851.
           <ul>
-            <li>
-              <b>李金璞</b>, 孙浩宁*, 汤珂, 董丰. 数据资产泡沫：理论框架与政策权衡[J]. 管理世界, 2025, 41(09): 1-24.
-              <ul>
-                <li>《社会科学文摘》2025年11期转载</li>
-              </ul>
-            </li>
-            <li>
-              孙浩宁, <b>李金璞</b>*, 董丰. 人工智能冲击下的收入分配与政策权衡——基于任务替代与代际交叠的一般均衡分析. 经济学(季刊), 2026, 26(03): 831-851.
-              <ul>
-                <li>《中国社会科学文摘》2026年第9期转载</li>
-              </ul>
-            </li>
-            <li>
-              <b>李金璞</b>, 孙浩宁*, 董丰, 汤珂. 数字时代宏观经济学研究新进展[J]. 经济学动态, 2026, (03): 201-224.
-              <ul>
-                <li>人大复印报刊资料《国民经济管理》2026年7期全文转载</li>
-              </ul>
-            </li>
-            <li>
-              罗玫, <b>李金璞</b>, 汤珂*. 企业数据资产化：会计确认与价值评估[J]. 清华大学学报(哲学社会科学版), 2023, 38(05): 195-209+226.
-              <ul>
-                <li>人大复印报刊资料《财务与会计导刊(理论版)》2023年12期全文转载</li>
-              </ul>
-            </li>
-            <li>
-              <b>李金璞</b>, 汤珂*. 论数据要素市场参与者的培育[J]. 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.
-            </li>
+            <li>《中国社会科学文摘》2026年第9期转载</li>
           </ul>
-
-          <h3>In English<span className="zh">英文发表</span></h3>
+        </li>
+        <li>
+          <b>李金璞</b>, 孙浩宁*, 董丰, 汤珂. 数字时代宏观经济学研究新进展[J]. 经济学动态, 2026, (03): 201-224.
           <ul>
-            <li>
-              Dong, F., <b>Li, J.</b>*, Sun, H., & Wang, S. (2025). Dynamic Efficiency Redux: Evidence from China. <i>China & World Economy</i>, 33(05), 196-222.
-            </li>
-            <li>
-              Sui, R., Gao, R., & <b>Li, J.</b>* (2026). Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. <i>Industrial Management & Data Systems</i>, 126(09), 2572-2601.
-            </li>
-            <li>
-              Deng, M., Han, L., <b>Li, J.</b>*, & Li, Z. (2025). Data Empowerment and Crash Risk. <i>Applied Economics Letters</i>, Published Online. DOI: 10.1080/13504851.2025.2526710
-            </li>
+            <li>人大复印报刊资料《国民经济管理》2026年7期全文转载</li>
           </ul>
-
-          <h2>Working Papers<span className="zh">工作论文</span></h2>
+        </li>
+        <li>
+          罗玫, <b>李金璞</b>, 汤珂*. 企业数据资产化：会计确认与价值评估[J]. 清华大学学报(哲学社会科学版), 2023, 38(05): 195-209+226.
           <ul>
-            <li>
-              When Valuations Misallocate: A Macro-Finance Model in the Data Economy (with Feng Dong).
-              <Status>R&R</Status>
-              <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4790765">SSRN</Tag>
-            </li>
-            <li>
-              Macroeconomics of Artificial Intelligence: A Review and Agenda (with Feng Dong and Haoning Sun).
-              <Status>R&R</Status>
-            </li>
-            <li>
-              Big Push Toward Big Data (with Feng Dong and Haoning Sun).
-              <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352938">SSRN</Tag>
-            </li>
-            <li>
-              The Data Trap: When AI Fails? (with Feng Dong and Haoning Sun).
-              <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6259958">SSRN</Tag>
-            </li>
-            <li>
-              Lemon Data Ecosystem (with Feng Dong, Yi Dong, and Haoning Sun).
-              <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7588741">SSRN</Tag>
-            </li>
-            <li>
-              Networked Dollarization: Stablecoin Adoption and Cross-Border Reallocation (with Feng Dong and Zhenyang Xu).
-              <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352963">SSRN</Tag>
-            </li>
-            <li>
-              Runnable Bubbles (with Feng Dong, Yi Dong, and Jiahong Gao).
-              <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7587218">SSRN</Tag>
-            </li>
-            <li>
-              The Supply of Patience: Population Growth and Bubble Capacity (with Yi Dong, Dongzhou Mei, and Zhenyang Xu).
-              <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7601580">SSRN</Tag>
-            </li>
-            <li>
-              AI Wave, Collaborative Network, and Firm Markups (with Feng Dong, Haoning Sun, and Guang Yang).
-            </li>
+            <li>人大复印报刊资料《财务与会计导刊(理论版)》2023年12期全文转载</li>
           </ul>
+        </li>
+        <li>
+          <b>李金璞</b>, 汤珂*. 论数据要素市场参与者的培育[J]. 西安交通大学学报(社会科学版), 2023, 43(04): 78-89.
+        </li>
+      </ul>
 
-          <h2>Books & Book Chapters<span className="zh">专著及书目章节</span></h2>
-          <ul>
-            <li><b>李金璞</b>, 汤珂. 数据的可信流通：一个理论框架[A]//江小涓主编 (《比较》编辑部主办). 数字经济发展与治理. 北京: 中信出版集团, 2025: 107–120.</li>
-            <li>数据经济学. 汤珂, 熊巧琴, <b>李金璞</b>, 屈阳, 清华大学出版社, 2023年1月第1版, 2024年1月第2版.</li>
-            <li>数据要素的可信流通. 汤珂和吴志雄主编, 人民出版社, 2024年6月. 撰写第三章《数据可信流通框架》.</li>
-            <li>数据资产化. 汤珂主编, 人民出版社, 2023年8月. 撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》.</li>
-          </ul>
+      <h3>In English<span className="zh">英文发表</span></h3>
+      <ul>
+        <li>
+          Dong, F., <b>Li, J.</b>*, Sun, H., & Wang, S. (2025). Dynamic Efficiency Redux: Evidence from China. <i>China & World Economy</i>, 33(05), 196-222.
+        </li>
+        <li>
+          Sui, R., Gao, R., & <b>Li, J.</b>* (2026). Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. <i>Industrial Management & Data Systems</i>, 126(09), 2572-2601.
+        </li>
+        <li>
+          Deng, M., Han, L., <b>Li, J.</b>*, & Li, Z. (2025). Data Empowerment and Crash Risk. <i>Applied Economics Letters</i>, Published Online. DOI: 10.1080/13504851.2025.2526710
+        </li>
+      </ul>
 
-          <h2>Grants & Rewards<span className="zh">资助与获奖</span></h2>
-          <ul>
-            <li>国家奖学金 (China National Scholarship), 2025</li>
-            <li>蒋南翔奖学金 (Jiang Nanxiang Award), 2025</li>
-            <li>国家建设高水平大学公派研究生项目 (China Scholarship Council (CSC) Scholarship), 2024</li>
-            <li>“数炬计划——中国数据要素新锐学者”三等奖 (Data Torch Plan – China Data Factor Emerging Scholars, Third Prize), 2024</li>
-            <li>“清华之友——昆华英才奖学金”综合优秀奖 (Kunhua Talent Scholarship, Tsinghua University), 2024</li>
-            <li>清华大学优秀助教 (Excellent Teaching Assistant, Tsinghua University), 2023</li>
-            <li>“清华之友——启东英才奖学金”综合优秀奖 (Qidong Talent Scholarship, Tsinghua University), 2023</li>
-            <li>清华大学优良毕业生 (Excellent Graduates, Tsinghua University), 2021</li>
-            <li>清华大学优秀本科毕业论文 (Outstanding Undergraduate Thesis, Tsinghua University), 2021</li>
-            <li>清华大学优秀共青团员 (Excellent League Member, Tsinghua University), 2021</li>
-            <li>“唐立新奖学金”综合优秀奖 (Tang Lixin Scholarship), 2020</li>
-          </ul>
+      <h2>Working Papers<span className="zh">工作论文</span></h2>
+      <ul>
+        <li>
+          When Valuations Misallocate: A Macro-Finance Model in the Data Economy (with Feng Dong).
+          <Status>R&R</Status>
+          <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4790765">SSRN</Tag>
+        </li>
+        <li>
+          Macroeconomics of Artificial Intelligence: A Review and Agenda (with Feng Dong and Haoning Sun).
+          <Status>R&R</Status>
+        </li>
+        <li>
+          Big Push Toward Big Data (with Feng Dong and Haoning Sun).
+          <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352938">SSRN</Tag>
+        </li>
+        <li>
+          The Data Trap: When AI Fails? (with Feng Dong and Haoning Sun).
+          <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6259958">SSRN</Tag>
+        </li>
+        <li>
+          Lemon Data Ecosystem (with Feng Dong, Yi Dong, and Haoning Sun).
+          <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7588741">SSRN</Tag>
+        </li>
+        <li>
+          Networked Dollarization: Stablecoin Adoption and Cross-Border Reallocation (with Feng Dong and Zhenyang Xu).
+          <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352963">SSRN</Tag>
+        </li>
+        <li>
+          Runnable Bubbles (with Feng Dong, Yi Dong, and Jiahong Gao).
+          <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7587218">SSRN</Tag>
+        </li>
+        <li>
+          The Supply of Patience: Population Growth and Bubble Capacity (with Yi Dong, Dongzhou Mei, and Zhenyang Xu).
+          <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7601580">SSRN</Tag>
+        </li>
+        <li>
+          AI Wave, Collaborative Network, and Firm Markups (with Feng Dong, Haoning Sun, and Guang Yang).
+        </li>
+      </ul>
 
-          <h2>Teaching<span className="zh">教学</span></h2>
-          <ul>
-            <li>Academic Research Training for Xuetang Class (40512742) by Prof. Feng Dong & Binzhen Wu. 2026 Summer.</li>
-            <li>Econometrics I (30700922) by Prof. Ke Tang. 2025 Fall.</li>
-            <li>Intermediate Macroeconomics (30510763) by Prof. Feng Dong. 2025 Fall.</li>
-            <li>Principles of Economics (00510454) by Prof. Feng Dong. 2026 Spring, 2025 Spring, 2024 Spring, and 2023 Spring.</li>
-            <li>Econometrics II (30700932) by Prof. Sainan Jin. 2024 Spring, 2023 Spring, and 2022 Spring.</li>
-            <li>Introduction to Financial Economics (40701113) by Prof. Ke Tang. 2022 Fall, 2021 Fall, and 2020 Fall.</li>
-          </ul>
+      <h2>Books & Book Chapters<span className="zh">专著及书目章节</span></h2>
+      <ul>
+        <li><b>李金璞</b>, 汤珂. 数据的可信流通：一个理论框架[A]//江小涓主编 (《比较》编辑部主办). 数字经济发展与治理. 北京: 中信出版集团, 2025: 107–120.</li>
+        <li>汤珂, 熊巧琴, <b>李金璞</b>, 屈阳. 数据经济学[M]. 北京: 清华大学出版社, 2023年1月第1版, 2024年1月第2版. ISBN: 978-7-302-62351-9.</li>
+        <li>汤珂, 吴志雄主编. 数据要素的可信流通[M]. 北京: 人民出版社, 2024年6月. 撰写第三章《数据可信流通框架》. ISBN: 978-7-010-26615-2.</li>
+        <li>汤珂主编. 数据资产化[M]. 北京: 人民出版社, 2023年8月. 撰写第二章《数据资产的确认》, 第五章《数据资产价值评估》. ISBN: 978-7-010-25804-1.</li>
+      </ul>
 
-          <h2>Conferences<span className="zh">学术会议</span></h2>
-          <small className="text-sm text-gray-500 dark:text-gray-400">
-            *: presented by coauthors; &: invited presentation; #: as discussant
-          </small>
-          <ul>
-            <li>
-              2027: AEA 2027 Annual Meeting (oral, accepted)
-            </li>
-            <li>
-              2026: Asia Meeting of the Econometric Society China (AMES), China International Conference in Macroeconomics (CICM), 2026 CES China Annual Conference (CES), China International Conference in Finance (CICF)<sup>#</sup>, International Symposium on GenAI and Economics*, &quot;The New Dynamics of International Finance and Trade: Geoeconomics, Supply Chains, and the Future of Global Integration&quot; Conference*; 第二十六届中国经济学年会, 首届数字经济与贸易高质量论文报告会<sup>&</sup>, 第二届管理科学与工程自主知识体系前沿学术研讨会*
-            </li>
-            <li>
-              2025: INFORMS 2025 Annual Meeting<sup>&</sup>, The 2025 Modern Risk Society International Risk Conference (MRS2025), Macroeconomic Growth Outlook Forum held by Tsinghua SEM*; 第二十届中国管理学年会, 第二十五届中国经济学年会 (中国女经济学者专场)*,中国数字经济联盟2025年会, 第二届全国数字经济学术年会*,《经济学（季刊）》“人工智能的经济影响：前沿研究与政策启示”专题研讨会*, 清华大学第788期博士生学术论坛
-            </li>
-            <li>
-              2024: Asia Meeting of the Econometric Society East & Southeast Asia (AMES),
-              China Financial Research Conference (CFRC),
-              Asian Finance Association Annual Conference (AsianFA),
-              CCER Summer Institute (CCERSI),
-              SWUFE International Macro-Finance Conference*,
-              The Consumer Theme Conference “Navigating Chinese Economy: A Demand Perspective”;
-              第二届中国数字经济发展论坛, 第六届中国发展经济学前沿学术会议, 清华大学第743期博士生学术论坛
-            </li>
-          </ul>
+      <h2>Grants & Rewards<span className="zh">资助与获奖</span></h2>
+      <ul>
+        <li>国家奖学金 (China National Scholarship), 2025</li>
+        <li>蒋南翔奖学金 (Jiang Nanxiang Award), 2025</li>
+        <li>国家建设高水平大学公派研究生项目 (China Scholarship Council (CSC) Scholarship), 2024</li>
+        <li>“数炬计划——中国数据要素新锐学者”三等奖 (Data Torch Plan – China Data Factor Emerging Scholars, Third Prize), 2024</li>
+        <li>“清华之友——昆华英才奖学金”综合优秀奖 (Kunhua Talent Scholarship, Tsinghua University), 2024</li>
+        <li>清华大学优秀助教 (Excellent Teaching Assistant, Tsinghua University), 2023</li>
+        <li>“清华之友——启东英才奖学金”综合优秀奖 (Qidong Talent Scholarship, Tsinghua University), 2023</li>
+        <li>清华大学优良毕业生 (Excellent Graduates, Tsinghua University), 2021</li>
+        <li>清华大学优秀本科毕业论文 (Outstanding Undergraduate Thesis, Tsinghua University), 2021</li>
+        <li>清华大学优秀共青团员 (Excellent League Member, Tsinghua University), 2021</li>
+        <li>“唐立新奖学金”综合优秀奖 (Tang Lixin Scholarship), 2020</li>
+      </ul>
 
-          <h2>Media, Policy & Other Writings<span className="zh">媒体、政策评论与其他发表</span></h2>
-          <ul>
-            <li>Gao, R., Xiao, F., <b>Li, J.</b>, & Cui, S.* (2026). Textual Semantics and Machine Learning Methods for Data Product Pricing. <i>The Review of Mathematical Economics</i>, 1(01), 129–167. DOI: 10.4310/RME.260221154937</li>
-            <li><b>李金璞</b>, 汤珂. 加快培育统一的数据市场[J]. 清华金融评论, 2025, (06):39-41.</li>
-            <li>黄京磊, <b>李金璞</b>, 汤珂*. 数据信托：可信的数据流通模式[J]. 大数据, 2023, 9(02): 67-78. [注：期刊2023年高被引论文]</li>
-            <li>赵丽芳, 林立, <b>李金璞</b>. 基于数据要素价值链评估企业数据资产[J]. 企业管理, 2023, (12): 88-91.</li>
-          </ul>
+      <h2>Teaching<span className="zh">教学</span></h2>
+      <ul>
+        <li>Academic Research Training for Xuetang Class (40512742) by Prof. Feng Dong & Binzhen Wu. 2026 Summer.</li>
+        <li>Econometrics I (30700922) by Prof. Ke Tang. 2025 Fall.</li>
+        <li>Intermediate Macroeconomics (30510763) by Prof. Feng Dong. 2025 Fall.</li>
+        <li>Principles of Economics (00510454) by Prof. Feng Dong. 2026 Spring, 2025 Spring, 2024 Spring, and 2023 Spring.</li>
+        <li>Econometrics II (30700932) by Prof. Sainan Jin. 2024 Spring, 2023 Spring, and 2022 Spring.</li>
+        <li>Introduction to Financial Economics (40701113) by Prof. Ke Tang. 2022 Fall, 2021 Fall, and 2020 Fall.</li>
+      </ul>
 
-          <h2>Academic Services<span className="zh">学术服务</span></h2>
-          <ul>
-            <li>Reviewer: <i>China Economic Review</i>, <i>China & World Economy</i>, <i>Economic Modeling</i>; 《管理世界》</li>
-          </ul>
-        </Page>
-      </div>
+      <h2>Conferences<span className="zh">学术会议</span></h2>
+      <small className="text-sm text-gray-500 dark:text-gray-400">
+        *: presented by coauthors; &: invited presentation; #: as discussant
+      </small>
+      <ul>
+        <li>
+          2027: AEA 2027 Annual Meeting (oral, accepted)
+        </li>
+        <li>
+          2026: Asia Meeting of the Econometric Society China (AMES), China International Conference in Macroeconomics (CICM), 2026 CES China Annual Conference (CES), China International Conference in Finance (CICF)<sup>#</sup>, International Symposium on GenAI and Economics*, &quot;The New Dynamics of International Finance and Trade: Geoeconomics, Supply Chains, and the Future of Global Integration&quot; Conference*; 第二十六届中国经济学年会, 首届数字经济与贸易高质量论文报告会<sup>&</sup>, 第二届管理科学与工程自主知识体系前沿学术研讨会*
+        </li>
+        <li>
+          2025: INFORMS 2025 Annual Meeting<sup>&</sup>, The 2025 Modern Risk Society International Risk Conference (MRS2025), Macroeconomic Growth Outlook Forum held by Tsinghua SEM*; 第二十届中国管理学年会, 第二十五届中国经济学年会 (中国女经济学者专场)*,中国数字经济联盟2025年会, 第二届全国数字经济学术年会*,《经济学（季刊）》“人工智能的经济影响：前沿研究与政策启示”专题研讨会*, 清华大学第788期博士生学术论坛
+        </li>
+        <li>
+          2024: Asia Meeting of the Econometric Society East & Southeast Asia (AMES),
+          China Financial Research Conference (CFRC),
+          Asian Finance Association Annual Conference (AsianFA),
+          CCER Summer Institute (CCERSI),
+          SWUFE International Macro-Finance Conference*,
+          The Consumer Theme Conference “Navigating Chinese Economy: A Demand Perspective”;
+          第二届中国数字经济发展论坛, 第六届中国发展经济学前沿学术会议, 清华大学第743期博士生学术论坛
+        </li>
+      </ul>
 
-      {/* 底部居中，只显示英文时间 */}
-      <footer className="mt-8 w-full text-center text-gray-400 text-sm">
-        Last update: {formattedDate}
-      </footer>
-    </div>
+      <h2>Media, Policy & Other Writings<span className="zh">媒体、政策评论与其他发表</span></h2>
+      <ul>
+        <li>Gao, R., Xiao, F., <b>Li, J.</b>, & Cui, S.* (2026). Textual Semantics and Machine Learning Methods for Data Product Pricing. <i>The Review of Mathematical Economics</i>, 1(01), 129–167. DOI: 10.4310/RME.260221154937</li>
+        <li><b>李金璞</b>, 汤珂. 加快培育统一的数据市场[J]. 清华金融评论, 2025, (06):39-41.</li>
+        <li>黄京磊, <b>李金璞</b>, 汤珂*. 数据信托：可信的数据流通模式[J]. 大数据, 2023, 9(02): 67-78. [注：期刊2023年高被引论文]</li>
+        <li>赵丽芳, 林立, <b>李金璞</b>. 基于数据要素价值链评估企业数据资产[J]. 企业管理, 2023, (12): 88-91.</li>
+      </ul>
+
+      <h2>Academic Services<span className="zh">学术服务</span></h2>
+      <ul>
+        <li>Reviewer: <i>China Economic Review</i>, <i>China & World Economy</i>, <i>Economic Modeling</i>; 《管理世界》</li>
+      </ul>
+
+      {/* 更新时间：放在简历正文末尾（全站页脚在 components/Footer.tsx） */}
+      <p className="mt-10 text-sm text-gray-400 dark:text-gray-500">Last updated: {formattedDate}</p>
+    </Page>
   )
 }

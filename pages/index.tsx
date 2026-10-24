@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Tag } from 'components/Paper'
 
 export default function Home() {
   return (
@@ -23,23 +24,21 @@ export default function Home() {
 
       {/* 简介段落拆分为两句 */}
       <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl leading-relaxed mb-1">
-        I am Jinpu Li (李金璞), a Ph.D. candidate in Economics at Tsinghua University.
+        I am a Ph.D. candidate in Economics at Tsinghua University.
       </p>
       <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl leading-relaxed mb-8">
         My field of interest: Data Economy, Economics of AI, and Macro-Finance.
       </p>
       <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl leading-relaxed mb-8">
-  I am on the 2026-2027 job market.
-  {" "}Here is my{" "}
-  <a
-    href="https://cloud.tsinghua.edu.cn/f/cb9b7795bc654f65a4cb/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-blue-700 dark:text-blue-400 underline underline-offset-[3px] hover:text-blue-900 dark:hover:text-blue-300"
-  >
-    research statement
-  </a>.
-</p>
+        I am on the 2026–2027 job market.
+        {/* 首页主要入口，标签比其他地方略大一号 */}
+        <Tag
+          href="https://cloud.tsinghua.edu.cn/f/cb9b7795bc654f65a4cb/"
+          className="!ml-2 !px-3 !text-sm !leading-6"
+        >
+          Research Statement
+        </Tag>
+      </p>
 
     </div>
   )

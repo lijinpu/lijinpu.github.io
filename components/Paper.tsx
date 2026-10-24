@@ -10,9 +10,23 @@
 import { useState } from 'react'
 import type { ReactNode } from 'react'
 
-export function Tag({ href, children }: { href: string; children: ReactNode }) {
+export function Tag({
+  href,
+  children,
+  className = ''
+}: {
+  href: string
+  children: ReactNode
+  className?: string
+}) {
+  // 外部网页在新标签页打开；mailto: 和站内链接不需要
+  const external = /^https?:\/\//.test(href)
   return (
-    <a className="paper-tag" href={href} target="_blank" rel="noopener noreferrer">
+    <a
+      className={`paper-tag ${className}`}
+      href={href}
+      {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+    >
       {children}
     </a>
   )

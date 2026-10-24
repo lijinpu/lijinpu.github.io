@@ -6,9 +6,9 @@ import type { Meta } from 'lib/types'
 import { PropsWithChildren } from 'react'
 
 import Navbar from 'components/Navbar'
+import Footer from 'components/Footer'
 import headerNavLinks from 'data/headerNavLinks.json'
-/* import Footer from 'components/Footer' */
-import fonts from 'lib/fonts'
+import { pagella, notoSerifSC } from 'lib/fonts'
 
 const Layout: NextPage<PropsWithChildren<Meta>> = ({
   children,
@@ -27,7 +27,7 @@ const Layout: NextPage<PropsWithChildren<Meta>> = ({
   }
 
   return (
-    <div className={`${fonts.className} flex flex-col h-full`}>
+    <div className={`${pagella.variable} ${notoSerifSC.variable} font-site flex flex-col flex-1 min-h-screen`}>
       <Head>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
@@ -36,9 +36,10 @@ const Layout: NextPage<PropsWithChildren<Meta>> = ({
         )}
       </Head>
       <Navbar />
-      <main className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 h-full text-black dark:text-white">
+      <main className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-black dark:text-white">
         {children}
       </main>
+      <Footer />
     </div>
   )
 }

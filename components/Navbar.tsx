@@ -15,10 +15,11 @@ const Navbar: NextPage = () => {
       <nav className="flex flex-row min-w-0 -ml-[5px] sm:-ml-2">
         {headerNavLinks?.map((nav) => (
           <Link
-            className={`px-[5px] py-2 sm:p-2 text-sm sm:text-base whitespace-nowrap underline-offset-4 hover:underline outline-none ${
+            className={`px-[5px] py-2 sm:p-2 text-sm sm:text-base whitespace-nowrap underline-offset-[6px] decoration-1 outline-none ${
               asPath === nav?.href
-                ? 'font-bold no-underline'
-                : 'text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-gray-200'
+                ? // 当前页：加粗 + 细下划线
+                  'font-bold text-black underline decoration-gray-800 dark:text-white dark:decoration-gray-200'
+                : 'text-gray-600 hover:text-black hover:underline decoration-gray-300 dark:text-gray-400 dark:hover:text-gray-200 dark:decoration-gray-600'
             }`}
             key={nav?.title}
             href={nav?.href}

@@ -3,9 +3,44 @@
 @tailwind utilities;
 
 #__next {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-flow: column;
+}
+
+/* 全站字体：英文 TeX Gyre Pagella（Palatino），中文思源宋体子集；
+   都缺字时依次退到系统自带的 Palatino 和宋体 */
+.font-site {
+  font-family: var(--font-pagella), 'Palatino Linotype', Palatino, 'Book Antiqua',
+    var(--font-noto-serif-sc), 'Songti SC', STSong, 'Noto Serif CJK SC', 'Source Han Serif SC', serif;
+}
+
+/* 内容页里论文条目下的转载注释：不用圆点，改为细折线标记（类似 ↳）加小号灰字，像脚注 */
+.page li > ul {
+  list-style: none;
+  margin-top: 0.1em;
+  margin-bottom: 0.3em;
+  padding-left: 0;
+}
+
+.page li > ul > li {
+  position: relative;
+  margin: 0;
+  padding-left: 1.4em;
+  font-size: 0.875em;
+  @apply text-gray-500 dark:text-gray-400;
+}
+
+.page li > ul > li::before {
+  content: '';
+  position: absolute;
+  left: 0.3em;
+  top: 0.3em;
+  width: 0.6em;
+  height: 0.5em;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  @apply border-gray-300 dark:border-gray-600;
 }
 
 /* 中文副标题：放在英文标题后面，小号、常规字重、灰色 */

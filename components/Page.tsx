@@ -13,16 +13,11 @@ export default function Page({ title, zh, children }: PageProps) {
   return (
     <article
       className="
-        relative max-w-none
+        page relative max-w-none
         prose dark:prose-invert
         prose-ul:my-2 prose-li:my-1
         prose-h2:mt-8 prose-h2:mb-3
         prose-h3:mt-5 prose-h3:mb-2
-        [&_li>ul]:my-1
-        [&_li>ul]:pl-6
-        [&_li>ul>li]:my-0
-        [&_li>ul>li]:text-gray-500
-        dark:[&_li>ul>li]:text-gray-400
       "
     >
       <h1>
