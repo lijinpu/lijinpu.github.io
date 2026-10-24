@@ -29,7 +29,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
   return (
     <div
       className="
-        min-h-screen flex flex-col relative max-w-none mx-auto px-4
+        min-h-screen flex flex-col relative max-w-none
         prose dark:prose-invert
         prose-ul:my-2 prose-li:my-1
         prose-h2:mt-8 prose-h2:mb-3
@@ -67,6 +67,9 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
             </li>
             <li>
               孙浩宁, 李金璞*, 董丰. 人工智能冲击下的收入分配与政策权衡——基于任务替代与代际交叠的一般均衡分析. 经济学(季刊), 2026, 26(03): 831-851.
+              <ul>
+                <li>《中国社会科学文摘》2026年第9期转载</li>
+              </ul>
             </li>
             <li>
               李金璞, 孙浩宁*, 董丰, 汤珂. 数字时代宏观经济学研究新进展[J]. 经济学动态, 2026, (03): 201-224.
