@@ -91,7 +91,7 @@ export default function Research() {
           <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7601580">SSRN</Tag>
         </li>
         <li>
-          AI Wave, Collaborative Network, and Firm Markups (with Feng Dong, Haoning Sun, and Guang Yang).
+          Who Gains from AI Waves? Standard-Setting Networks and Firm Markups (with Feng Dong, Haoning Sun, and Guang Yang).
         </li>
       </ul>
 
