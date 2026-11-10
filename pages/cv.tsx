@@ -134,6 +134,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
 
       <h2>Grants & Rewards<span className="zh">资助与获奖</span></h2>
       <ul>
+        <li>“清华校友——兆易奖学金”综合优秀奖 (GigaDevice Scholarship), 2026</li>
         <li>国家奖学金 (China National Scholarship), 2025</li>
         <li>蒋南翔奖学金 (Jiang Nanxiang Award), 2025</li>
         <li>国家建设高水平大学公派研究生项目 (China Scholarship Council (CSC) Scholarship), 2024</li>
@@ -192,7 +193,7 @@ export default function CV({ lastUpdateISO }: InferGetStaticPropsType<typeof get
 
       <h2>Academic Services<span className="zh">学术服务</span></h2>
       <ul>
-        <li>Reviewer: <i>China Economic Review</i>, <i>China & World Economy</i>, <i>Economic Modeling</i>; 《管理世界》</li>
+        <li>Reviewer: <i>Macroeconomic Dynamics</i>, <i>China Economic Review</i>, <i>China & World Economy</i>, <i>Economic Modeling</i>; 《管理世界》</li>
       </ul>
 
       {/* 更新时间：放在简历正文末尾（全站页脚在 components/Footer.tsx） */}
