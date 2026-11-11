@@ -56,6 +56,12 @@
   @apply dark:border-gray-600 dark:text-blue-400 dark:hover:border-blue-400 dark:hover:bg-blue-400/10 dark:hover:text-blue-300;
 }
 
+/* 首页 Teaching Statement：紫色，和蓝色的 Research Statement 区分 */
+.paper-tag.tag-teaching {
+  @apply text-violet-700 hover:border-violet-700 hover:bg-violet-50 hover:text-violet-800;
+  @apply dark:text-violet-400 dark:hover:border-violet-400 dark:hover:bg-violet-400/10 dark:hover:text-violet-300;
+}
+
 button.paper-tag {
   @apply cursor-pointer bg-transparent;
 }

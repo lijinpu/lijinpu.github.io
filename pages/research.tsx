@@ -71,7 +71,7 @@ export default function Research() {
           <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352938">SSRN</Tag>
         </li>
         <li>
-          The Data Trap: When AI Fails? (with Feng Dong and Haoning Sun).
+          The Data Trap: When AI Fails (with Feng Dong and Haoning Sun).
           <Status>Under Review</Status>
           <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6259958">SSRN</Tag>
         </li>

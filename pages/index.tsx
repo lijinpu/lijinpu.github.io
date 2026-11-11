@@ -33,10 +33,16 @@ export default function Home() {
         I am on the 2026–2027 job market.
         {/* 首页主要入口，标签比其他地方略大一号 */}
         <Tag
-          href="https://cloud.tsinghua.edu.cn/f/cb9b7795bc654f65a4cb/"
+          href="https://cloud.tsinghua.edu.cn/f/ff215f70ddde45809210/"
           className="!ml-2 !px-3 !text-sm !leading-6"
         >
           Research Statement
+        </Tag>
+        <Tag
+          href="https://cloud.tsinghua.edu.cn/f/61a46d9cebbb4c1b8058/"
+          className="tag-teaching !ml-2 !px-3 !text-sm !leading-6"
+        >
+          Teaching Statement
         </Tag>
       </p>
 
