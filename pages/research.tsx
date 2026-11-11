@@ -3,7 +3,7 @@ import { Tag, Status } from 'components/Paper'
 
 // 论文条目小部件用法见 components/Paper.tsx：
 //   <Tag href="...">SSRN</Tag>   链接标签
-//   <Status>R&R</Status>         状态标签
+//   <Status>Under Review</Status>  状态标签：默认灰色；tone="rr" 蓝色，tone="accepted" 绿色
 //   <Abstract>摘要文字</Abstract>  可展开摘要（放在条目最后）
 
 export default function Research() {
@@ -59,7 +59,7 @@ export default function Research() {
       <ul>
         <li>
           When Valuations Misallocate: A Macro-Finance Model in the Data Economy (with Feng Dong).
-          <Status>R&R</Status>
+          <Status tone="rr">R&R</Status>
           <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4790765">SSRN</Tag>
         </li>
         <li>
@@ -72,26 +72,32 @@ export default function Research() {
         </li>
         <li>
           The Data Trap: When AI Fails? (with Feng Dong and Haoning Sun).
+          <Status>Under Review</Status>
           <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6259958">SSRN</Tag>
         </li>
         <li>
           Lemon Data Ecosystem (with Feng Dong, Yi Dong, and Haoning Sun).
+          <Status>Under Review</Status>
           <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7588741">SSRN</Tag>
         </li>
         <li>
           Networked Dollarization: Stablecoin Adoption and Cross-Border Reallocation (with Feng Dong and Zhenyang Xu).
+          <Status>Under Review</Status>
           <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7352963">SSRN</Tag>
         </li>
         <li>
           Runnable Bubbles (with Feng Dong, Yi Dong, and Jiahong Gao).
+          <Status>Under Review</Status>
           <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7587218">SSRN</Tag>
         </li>
         <li>
           The Supply of Patience: Population Growth and Bubble Capacity (with Yi Dong, Dongzhou Mei, and Zhenyang Xu).
+          <Status>Under Review</Status>
           <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7601580">SSRN</Tag>
         </li>
         <li>
           Who Gains from AI Waves? Standard-Setting Networks and Firm Markups (with Feng Dong, Haoning Sun, and Guang Yang).
+          <Status>Under Review</Status>
         </li>
       </ul>
 

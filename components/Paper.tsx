@@ -3,7 +3,7 @@
 //
 // 用法示例：
 //   Big Push Toward Big Data (with Feng Dong and Haoning Sun).
-//   <Status>R&R</Status>
+//   <Status tone="rr">R&R</Status>
 //   <Tag href="https://papers.ssrn.com/...">SSRN</Tag>
 //   <Tag href="/papers/xxx.pdf">PDF</Tag>
 //   <Abstract>这里写摘要……</Abstract>   ← 放在条目最后，点击后在下方展开
@@ -32,15 +32,18 @@ export function Tag({
   )
 }
 
-// tone="accepted" 用于已接收的论文，显示为绿色；期刊名写在正文里，标签只放一个词
+// 论文状态标签，颜色由 tone 决定：
+//   <Status>Under Review</Status>            灰色（默认）
+//   <Status tone="rr">R&R</Status>           蓝色
+//   <Status tone="accepted">Accepted</Status> 绿色；期刊名写在正文里，标签只放一个词
 export function Status({
   children,
-  tone = 'default'
+  tone = 'review'
 }: {
   children: ReactNode
-  tone?: 'default' | 'accepted'
+  tone?: 'review' | 'rr' | 'accepted'
 }) {
-  return <span className={`status-tag${tone === 'accepted' ? ' status-accepted' : ''}`}>{children}</span>
+  return <span className={`status-tag status-${tone}`}>{children}</span>
 }
 
 export function Abstract({ children }: { children: ReactNode }) {

@@ -60,15 +60,27 @@ button.paper-tag {
   @apply cursor-pointer bg-transparent;
 }
 
-/* 论文状态标签（R&R 等）：灰底，不可点击 */
+/* 论文状态标签：实心底色 + 细内描边，不可点击；
+   和 SSRN 等链接标签（白底灰框）区分开。颜色按进度：灰 → 蓝 → 绿 */
 .status-tag {
-  @apply ml-1.5 inline-flex items-center rounded-full bg-gray-100 px-2 text-xs font-semibold leading-5 text-gray-700 align-[0.1em];
-  @apply dark:bg-gray-800 dark:text-gray-300;
+  @apply ml-1.5 inline-flex items-center rounded-full px-2 text-xs font-semibold leading-5 ring-1 ring-inset align-[0.1em];
 }
 
-/* 已接收（Accepted）：淡绿底，和 R&R 区分 */
+/* Under Review：灰色 */
+.status-tag.status-review {
+  @apply bg-gray-100 text-gray-600 ring-gray-200;
+  @apply dark:bg-gray-800 dark:text-gray-300 dark:ring-gray-700;
+}
+
+/* R&R：蓝色 */
+.status-tag.status-rr {
+  @apply bg-blue-50 text-blue-700 ring-blue-200;
+  @apply dark:bg-blue-400/10 dark:text-blue-300 dark:ring-blue-400/30;
+}
+
+/* Accepted：绿色 */
 .status-tag.status-accepted {
-  @apply bg-emerald-50 text-emerald-800 ring-1 ring-inset ring-emerald-200;
+  @apply bg-emerald-50 text-emerald-800 ring-emerald-200;
   @apply dark:bg-emerald-400/10 dark:text-emerald-300 dark:ring-emerald-400/30;
 }
 
