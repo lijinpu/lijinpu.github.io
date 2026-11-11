@@ -51,7 +51,7 @@ export default function Research() {
           Sui, R., Gao, R., & <b>Li, J.</b>* (2026). Optimal Data Pricing Decisions of Competitive Two-sided Platforms with Heterogeneous Data Costs. <i>Industrial Management & Data Systems</i>, 126(09), 2572-2601.
         </li>
         <li>
-          Deng, M., Han, L., <b>Li, J.</b>*, & Li, Z. (2025). Data Empowerment and Crash Risk. <i>Applied Economics Letters</i>, Published Online. DOI: 10.1080/13504851.2025.2526710
+          Deng, M., Han, L., <b>Li, J.</b>*, & Li, Z. (2026). Data Empowerment and Crash Risk. <i>Applied Economics Letters</i>, 33(19), 3779-3784.
         </li>
       </ul>
 
@@ -64,7 +64,7 @@ export default function Research() {
         </li>
         <li>
           Macroeconomics of Artificial Intelligence: A Review and Agenda (with Feng Dong and Haoning Sun).
-          <Status>R&R</Status>
+          <Status>Accepted at <i>Fundamental Research</i></Status>
         </li>
         <li>
           Big Push Toward Big Data (with Feng Dong and Haoning Sun).
