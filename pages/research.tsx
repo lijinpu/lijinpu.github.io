@@ -63,8 +63,8 @@ export default function Research() {
           <Tag href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4790765">SSRN</Tag>
         </li>
         <li>
-          Macroeconomics of Artificial Intelligence: A Review and Agenda (with Feng Dong and Haoning Sun).
-          <Status>Accepted at <i>Fundamental Research</i></Status>
+          Macroeconomics of Artificial Intelligence: A Review and Agenda (with Feng Dong and Haoning Sun). <i>Fundamental Research</i>, forthcoming.
+          <Status tone="accepted">Accepted</Status>
         </li>
         <li>
           Big Push Toward Big Data (with Feng Dong and Haoning Sun).
