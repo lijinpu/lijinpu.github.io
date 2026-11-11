@@ -66,6 +66,12 @@ button.paper-tag {
   @apply dark:bg-gray-800 dark:text-gray-300;
 }
 
+/* 已接收（Accepted）：淡绿底，和 R&R 区分 */
+.status-tag.status-accepted {
+  @apply bg-emerald-50 text-emerald-800 ring-1 ring-inset ring-emerald-200;
+  @apply dark:bg-emerald-400/10 dark:text-emerald-300 dark:ring-emerald-400/30;
+}
+
 /* 点击 Abstract 后展开的摘要 */
 .paper-abstract {
   @apply mt-2 mb-1 border-l-2 border-gray-200 pl-3 text-sm leading-relaxed text-gray-600;

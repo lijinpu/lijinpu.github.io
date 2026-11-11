@@ -32,8 +32,15 @@ export function Tag({
   )
 }
 
-export function Status({ children }: { children: ReactNode }) {
-  return <span className="status-tag">{children}</span>
+// tone="accepted" 用于已接收的论文，显示为绿色；期刊名写在正文里，标签只放一个词
+export function Status({
+  children,
+  tone = 'default'
+}: {
+  children: ReactNode
+  tone?: 'default' | 'accepted'
+}) {
+  return <span className={`status-tag${tone === 'accepted' ? ' status-accepted' : ''}`}>{children}</span>
 }
 
 export function Abstract({ children }: { children: ReactNode }) {
